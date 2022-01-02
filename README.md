@@ -1,3 +1,79 @@
+# Website
+
+My website is currently being served by `Github Pages` and can be found
+[here](www.ducloscavalcanti.com). It was based on the [al-folio](https://github.com/alshedivat/al-folio) jekyll
+theme/template.
+
+### Dependencies Arch Linux:
+1. `ruby` 
+2. `ruby-bundler`
+3. (Optional) `dnsutils`
+
+### File Structure:
+```
+.
+├── 404.html
+├── assets
+├── _bibliography
+├── bin
+├── blog
+├── CNAME
+├── _config.yml
+├── CONTRIBUTING.md
+├── _data
+├── Gemfile
+├── _includes
+├── _layouts
+├── LICENSE
+├── _news
+├── _pages
+├── _plugins
+├── _posts
+├── _projects
+├── README.md
+├── robots.txt
+└── _sass
+
+13 directories, 8 files
+```
+
+1. `assets`: contains images, pdfs, js and css files.
+2. `_bibliography`: contains bib files if needed for publications.
+3. `_bin`: has scripts needed to deploy the website
+4. `_blog`: TBD
+5. `_CNAME`: Displayed name of website.
+6. `_config.yml`: Jekyll/Github Pages config file
+7. `_data`: TBD
+8. `_Gemfile`: Needed ruby dependencies for the project.
+9. `_includes`: HTML include files for repetitive patterns in the Website.
+10. `_layouts`: Pre-defined layouts.
+11. `_news`: Contains the `md` files needed to display news and news posts.
+12. `_pages`: Contains the `md` files needed to main pages.
+13. `_plugins`: TBD
+14. `_posts`: Contains the `md` files needed for posts. To be tested yet.
+15. `_projects`: Contains the `md` files needed project posts.
+16. `_sass`: Generally responsible for colors, themes, etc.
+17. `robots.txt`: TBD
+
+### Configuration
+
+1. Buy Domain, in this case done through google domains.
+2. Add a `CNAME` file within the project pointing to said bought domain.
+3. Add a `CNAME` DNS record through your DNS provider pointing to `<username>.github.io`.
+4. (Optional) Add needed `A` DNS records through your DNS provider pointing to github's IP addresses.
+    - To know which they are, run `www.ducloscavalcanti.com +nostats +nocomments +nocmd`
+    ```
+    duclos-cavalcanti.github.io. 3600 IN    A       185.199.108.153
+    duclos-cavalcanti.github.io. 3600 IN    A       185.199.110.153
+    duclos-cavalcanti.github.io. 3600 IN    A       185.199.111.153
+    duclos-cavalcanti.github.io. 3600 IN    A       185.199.109.153
+    ```
+    - Or look at the official github documentation. 
+
+Now, the original `al-folio` **README** can be seen. Extra information and features
+regarding this project can be thoroughly read there, as well as FAQs.
+
+
 # al-folio
 
 [![build status](https://travis-ci.org/alshedivat/al-folio.svg?branch=master)](https://travis-ci.org/alshedivat/al-folio)
