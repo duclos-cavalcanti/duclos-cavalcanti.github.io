@@ -25,7 +25,11 @@ $yellow-color:        #efcc00 !default;
 
 $grey-color:          #828282 !default;
 $grey-color-light:    lighten($grey-color, 40%);
-$grey-color-dark:     #1C1C1D;
+$grey-color-dark:     #0d1117;
+
+$fg-color-dark:          #ffffff !default;
+$fg-color-light-dark:    lighten($grey-color, 40%);
+$back-color-dark:     #0d1117;
 
 $white-color: #ffffff !default;
 $black-color: #000000 !default;
