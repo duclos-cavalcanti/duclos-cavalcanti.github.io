@@ -10,7 +10,7 @@ profile:
   image: prof_pic.jpg
   address: >
     <p>Rio de Janeiro, Brazil</p>
-    <p>Munich, 80798, Germany</p>
+    <p>Munich, Germany</p>
 
 news: true  # includes a list of news items
 social: true  # includes social icons at the bottom of the page
