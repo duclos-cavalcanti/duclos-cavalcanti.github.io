@@ -2,23 +2,22 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href="https://www.ei.tum.de/en/welcome/">ECE</a> Masters Student at <a href="https://www.tum.de/">TUM</a>.
+
 
 profile:
   align: right
   image: prof_pic.jpg
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Rio de Janeiro, Brazil</p>
+    <p>Munich, 80798, Germany</p>
 
 news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+As of now, I am currently enrolled in the third semester of my Electrical and Computer Engineering Masters Program at TUM. Therefore I am looking for internships and work experiences in various fields within Computer Science, Software Engineering, Embedded Systems and Machine Learning.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+What once begun as a general interest for programming languages has evolved to a broader curiosity towards computers and cyber-physical systems in their entirety. Embedded Systems and Computer Science in general are central passions of mine, where I find myself continuously interested and engaged with. All low and high level challenges regarding these fields interest me, especially around TinyML or machine learning on embedded devices.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Being born in Minneapolis, USA and having the opportunity to live in Brazil for 12+ years has given me a unique perspective and background on all things from culture to work. Giving me, what I would like to think, different tools on how to approach both people and problems.
