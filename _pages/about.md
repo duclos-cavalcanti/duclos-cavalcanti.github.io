@@ -16,8 +16,9 @@ news: true  # includes a list of news items
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hello There! I'm an American and Brazilian Computer Engineer currently pursuing grad
-school degree. Feel free to look around :)
+Hello There! 
+
+I'm an American and Brazilian Computer Engineer currently pursuing grad school degree. Feel free to look around :)
 
 Being born in Minneapolis, USA and having the opportunity to live in Brazil for 12+ years has given me a unique perspective and background on all things from culture to work. Giving me, what I would like to think, different tools on how to approach both people and problems. 
 

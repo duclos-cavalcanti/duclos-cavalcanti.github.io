@@ -70,6 +70,15 @@ theme/template.
     ```
     - Or look at the official github documentation. 
 
+5. At the github pages tab of this project, enable all actions and set deployment to be
+   built on the `gh-pages` branch!
+
+### Deployment
+
+1. Make the wished changes in the correct `md` or `html` files, then commit and push your changes.
+2. Run `./bin/deploy`
+3. Have Fun!
+
 Now, the original `al-folio` **README** can be seen. Extra information and features
 regarding this project can be thoroughly read there, as well as FAQs.
 
