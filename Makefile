@@ -7,6 +7,11 @@ all:
 clean:
 	@echo "## Removing Outputted files ##"
 
+.PHONY: update-cv
+update-cv:
+	@echo "## Updating CV ##"
+	@cp -vi ~/Documents/projects/personal/curriculum-vitae/project/main.pdf ./assets/pdf/CV.pdf
+
 .PHONY: git-push
 git-push:
 	@echo "## Pushing to Git ##"
