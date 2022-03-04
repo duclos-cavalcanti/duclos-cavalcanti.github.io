@@ -1,6 +1,8 @@
 SHELL := /bin/bash
 FILE := $(lastword $(MAKEFILE_LIST))
 
+CV=~/Documents/projects/personal/curriculum-vitae/project/main.pdf
+
 all: 
 
 .PHONY: clean
@@ -10,7 +12,9 @@ clean:
 .PHONY: update-cv
 update-cv:
 	@echo "## Updating CV ##"
-	@cp -vi ~/Documents/projects/personal/curriculum-vitae/project/main.pdf ./assets/pdf/CV.pdf
+	@if [ -f ${CV} ]; then\
+	 	cp -vi ~/Documents/projects/personal/curriculum-vitae/project/main.pdf ./assets/pdf/CV.pdf;\
+	fi
 
 .PHONY: git-push
 git-push:

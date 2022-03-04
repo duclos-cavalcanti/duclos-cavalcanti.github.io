@@ -55,6 +55,10 @@ theme/template.
 16. `_sass`: Generally responsible for colors, themes, etc.
 17. `robots.txt`: TBD
 
+### Installation
+1. Make sure `ruby` and `ruby-bundler` are installed!
+2. run `bundle install` in this repo or run `make install`
+
 ### Configuration
 
 1. Buy Domain, in this case done through google domains.
@@ -76,7 +80,7 @@ theme/template.
 ### Deployment
 
 1. Make the wished changes in the correct `md` or `html` files, then commit and push your changes.
-2. Run `./bin/deploy`
+2. Run `./bin/deploy` or run `make deploy`
 3. Have Fun!
 
 Now, the original `al-folio` **README** can be seen. Extra information and features
