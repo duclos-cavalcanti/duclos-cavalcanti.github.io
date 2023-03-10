@@ -1,9 +1,45 @@
-<a href="https://www.youtube.com" target="_blank">
-  Link
-</a>
+<!DOCTYPE html>
 
-<p>
-  Paragraph of Text
-</p>
+<html>
+  <head>
+    <title> Hello World </title>
+  </head>
+  <body>
+    <h1>
+      Header
+    </h1>
+    <button class="click-button">
+      <a href="https://www.youtube.com" target="_blank">
+        Click
+      </a>
+    </button>
+    <p>
+      Paragraph of Text
+    </p>
+  </body>
+</html>
 
+<style>
+  button {
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .click-button {
+    background-color: red;
+    color: white;
+    border: none;
+    height: 30px;
+    width: 105px;
+    margin-right: 8px;
+    transition: opacity 1s;
+  }
 
+  .click-button:hover {
+    opacity: 0.7;
+  }
+
+  .click-button:active {
+    background-color: blue;
+  }
+
+</style>
