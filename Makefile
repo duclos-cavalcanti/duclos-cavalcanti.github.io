@@ -1,32 +1,34 @@
 SHELL := /bin/bash
 PWD := $(shell pwd)
 
-IS_APACHE := $(shell docker images | tail -n +2 | awk '{print $$1}' | grep -o httpd)
-IS_APACHE_RUNNING := $(shell docker ps -a | tail -n +2 | awk '{print $$7}' | grep -o httpd)
-
 APACHE_NAME := apache-serve-blog
+APACHE_ID := $(shell docker ps -a | grep ${APACHE_NAME} | awk '{print $$1}')
 
-.PHONY: build serve clean
-all: build
+IS_APACHE := $(shell docker images | tail -n +2 | awk '{print $$1}' | grep -o httpd)
+IS_APACHE_RUNNING := $(shell docker ps -a | grep -o ${APACHE_NAME})
+
+.PHONY: clean build serve serve-pull serve-attach
+all: build serve
 
 clean:
-	rm -rf www
-	mkdir www
+	@rm -rf public
+	@mkdir public
 
 build:
-	@./BUILD
+	@./build.sh
 
 serve-pull:
-	docker pull httpd
+	@docker pull httpd
 
-attach:
+serve-attach:
 	@[ -n ${IS_APACHE_RUNNING} ] && docker exec -it ${APACHE_NAME} bash
 
 serve: $(if ${IS_APACHE}, , serve-pull )
-	@echo 'http://localhost:8080' | xclip -i -sel clip
-	docker run --rm \
+	@[ -n ${IS_APACHE_RUNNING} ] && echo docker stop ${APACHE_ID}
+	@docker run --rm \
+			   --detach \
 			   --name ${APACHE_NAME} \
 			   -p 8080:80 \
-			   -v ${PWD}/www:/usr/local/apache2/htdocs \
+			   -v ${PWD}/public:/usr/local/apache2/htdocs \
 			   httpd:latest
 
