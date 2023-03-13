@@ -2,11 +2,6 @@
 
 LOG=()
 
-err() {
-    printf "%s\n" "$1"
-    exit 1
-}
-
 log() {
     [ -n "${1}" ] && printf "%s\n" "${1}"
 }
@@ -23,10 +18,14 @@ build_page() {
     dst="$2"
     style="$3"
 
-    [ -f ${src} ] || return 1
+    [ -f ${src} ]   || return 1
+    [ -f ${style} ] || style=assets/css/style.css
+
     pandoc -s -f markdown ${src} \
            -o ${dst} \
-           -H templates/header.html
+           -c ${style} \
+           --include-in-header=templates/header.html \
+           --template=templates/pandoc.html
 }
 
 main() {
@@ -35,7 +34,7 @@ main() {
     cp -r assets/ public/
 
     # build home page
-    build_page home/index.md public/index.html
+    build_page home/index.md public/index.html assets/css/style.css
     [ $? -eq 0 ] && log "[X] HOME BUILT" || log "[ ] HOME BUILT"
 
     # build pages/posts

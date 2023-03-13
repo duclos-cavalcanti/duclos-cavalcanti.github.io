@@ -17,6 +17,9 @@ clean:
 build:
 	@./build.sh
 
+deploy:
+	@git push origin $(git subtree split --prefix public master):gh-pages --force
+
 serve-pull:
 	@docker pull httpd
 
