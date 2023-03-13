@@ -99,7 +99,8 @@ These files are released under the MIT license. See [LICENSE](LICENSE).
 ## Thanks
 * [ssg](https://github.com/andrew-ayers/ssg)
 * [pandoc-ssg](https://github.com/kevin-nel/pandoc-ssg)
-* [sebastian-tronto](https://sebastiano.tronto.net/blog/2022-08-14-website/)
+* [how-I-update-my-website](https://sebastiano.tronto.net/blog/2022-08-14-website/)
+* [how-to-setup-github-pages](https://roelofjanelsinga.com/articles/how-to-set-up-automatically-deploy-website-github-pages/)
 
 ## References
 * [HTML & CSS Course](https://www.youtube.com/watch?v=G3e-cpL7ofc)
