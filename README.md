@@ -97,8 +97,8 @@ apart and hack up their own.
 These files are released under the MIT license. See [LICENSE](LICENSE).
 
 ## Thanks
-* [pandoc-ssg](https://github.com/kevin-nel/pandoc-ssg)
 * [ssg](https://github.com/andrew-ayers/ssg)
+* [pandoc-ssg](https://github.com/kevin-nel/pandoc-ssg)
 * [sebastian-tronto](https://sebastiano.tronto.net/blog/2022-08-14-website/)
 
 ## References
