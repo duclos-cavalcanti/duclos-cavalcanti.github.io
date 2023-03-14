@@ -5,7 +5,7 @@ APACHE_NAME := apache-serve-blog
 APACHE_ID := $(shell docker ps -a | grep ${APACHE_NAME} | awk '{print $$1}')
 
 IS_APACHE := $(shell docker images | tail -n +2 | awk '{print $$1}' | grep -o httpd)
-IS_APACHE_RUNNING := $(shell docker ps -a | grep -o ${APACHE_NAME})
+IS_APACHE_RUNNING := $(shell docker ps -a | grep ${APACHE_NAME})
 
 .PHONY: clean build serve serve-pull serve-attach
 all: build serve

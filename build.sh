@@ -29,7 +29,9 @@ build_page() {
            --template=templates/pandoc.html
 }
 
-copy_assets() {
+copy_data() {
+    cp CNAME public/
+
     for dir in $(ls assets); do 
         if [ -d assets/${dir} ]; then 
             [ -d public/${dir} ] && rm -rf public/${dir}
@@ -41,7 +43,7 @@ copy_assets() {
 }
 
 main() {
-    copy_assets
+    copy_data
 
     # build home page
     build_page home/index.md public/index.html css/style.css
