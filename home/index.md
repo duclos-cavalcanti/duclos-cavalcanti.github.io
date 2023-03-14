@@ -6,6 +6,6 @@ description: "Introduction"
 
 # Daniel Duclos-Cavalcanti
 
-![](assets/images/photo.jpg){class="profile-img"}
+![](images/photo.jpg){class="profile-img"}
 
 Hello World

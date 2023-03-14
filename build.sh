@@ -19,7 +19,7 @@ build_page() {
     style="$3"
 
     [ -f ${src} ]   || return 1
-    [ -f ${style} ] || style=assets/css/style.css
+    [ -f ${style} ] || style=css/style.css
 
     pandoc -s -f markdown ${src} \
            -o ${dst} \
@@ -28,13 +28,20 @@ build_page() {
            --template=templates/pandoc.html
 }
 
+copy_assets() {
+    for d in $(ls assets); do 
+        if [ -d ${d} ]; then 
+            [ -d public/${d} ] && rm -rf public/$[d]
+            cp -r assets/${d} public/
+        fi
+    done
+}
+
 main() {
-    # copy assets over
-    [ -d public/assets ] && rm -rf public/assets
-    cp -r assets/ public/
+    copy_assets
 
     # build home page
-    build_page home/index.md public/index.html assets/css/style.css
+    build_page home/index.md public/index.html css/style.css
     [ $? -eq 0 ] && log "[X] HOME BUILT" || log "[ ] HOME BUILT"
 
     # build pages/posts
