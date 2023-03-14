@@ -18,7 +18,14 @@ build:
 	@./build.sh
 
 deploy:
-	@git push origin $(git subtree split --prefix public master):gh-pages --force
+	@git subtree split --prefix public -b gh-pages
+	@git checkout gh-pages
+	@mv public/* ./
+	@rm -rf public
+	@git add --all && git commit -m "Update"
+	@git push origin gh-pages --force
+	@git checkout main
+	@git branch -D gh-pages
 
 serve-pull:
 	@docker pull httpd
