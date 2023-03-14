@@ -100,12 +100,9 @@ These files are released under the MIT license. See [LICENSE](LICENSE).
 * [ssg](https://github.com/andrew-ayers/ssg)
 * [pandoc-ssg](https://github.com/kevin-nel/pandoc-ssg)
 * [pandoc-templates](https://github.com/kjhealy/pandoc-templates)
-* [easy-pandoc-templates](https://github.com/ryangrose/easy-pandoc-templates)
-* [how-I-update-my-website](https://sebastiano.tronto.net/blog/2022-08-14-website/)
-* [how-to-setup-github-pages](https://roelofjanelsinga.com/articles/how-to-set-up-automatically-deploy-website-github-pages/)
-* [md-website-cv](https://github.com/LukeSmithxyz/md-website-cv)
+* [kisslinux website](https://github.com/kisslinux/website)
 
 ## References
-* [HTML & CSS Course](https://www.youtube.com/watch?v=G3e-cpL7ofc)
-* [HTML Tutorial](https://www.youtube.com/watch?v=qz0aGYrrlhU)
+* [HTML Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [CSS Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
