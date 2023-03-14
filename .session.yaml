@@ -1,12 +1,12 @@
-session_name: www
-start_directory: "~/Documents/topics/personal/static-website"
+session_name: web
+start_directory: "~/Documents/topics/personal/duclos-cavalcanti.github.io/"
 windows:
   - window_name: readme
     panes:
       - nvim README.md
   - window_name: web
     panes:
-      - nvim blog
+      - nvim home/index.md
   - window_name: bash
     layout: even-horizontal
     panes:
