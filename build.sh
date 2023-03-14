@@ -3,7 +3,8 @@
 LOG=()
 
 log() {
-    [ -n "${1}" ] && printf "%s\n" "${1}"
+    [ $? -eq 0 ] && check="[X]" || check="[ ]"
+    [ -n "${1}" ] && printf "${check} %s\n" "${1}"
 }
 
 dependencies() {
@@ -29,10 +30,12 @@ build_page() {
 }
 
 copy_assets() {
-    for d in $(ls assets); do 
-        if [ -d ${d} ]; then 
-            [ -d public/${d} ] && rm -rf public/$[d]
-            cp -r assets/${d} public/
+    for dir in $(ls assets); do 
+        if [ -d assets/${dir} ]; then 
+            [ -d public/${dir} ] && rm -rf public/${dir}
+            cp -r assets/${dir} public/
+
+            [ -d public/${dir} ]; log "CREATED public/${dir}"
         fi
     done
 }
@@ -42,7 +45,7 @@ main() {
 
     # build home page
     build_page home/index.md public/index.html css/style.css
-    [ $? -eq 0 ] && log "[X] HOME BUILT" || log "[ ] HOME BUILT"
+    [ $? -eq 0 ]; log "HOME BUILT"
 
     # build pages/posts
     for p in $(ls pages/ | sort -r); do
@@ -54,7 +57,7 @@ main() {
             [ -d ${dir} ] || mkdir -p www/${p}
 
             build_page ${file} ${page}
-            [ $? -eq 0 ] && log "[X] ${p^^} BUILT" || log "[ ] ${p^^} BUILT"
+            [ $? -eq 0 ]; log "${p^^} BUILT"
         fi
     done
 }
