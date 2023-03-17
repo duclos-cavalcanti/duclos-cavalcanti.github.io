@@ -1,10 +1,16 @@
 #!/bin/bash
 
-LOG=()
+ERR_MSG=""
 
 log() {
-    [ $? -eq 0 ] && check="[X]" || check="[ ]"
-    [ -n "${1}" ] && printf "${check} %s\n" "${1}"
+    if [ $? -eq 0 ]; then 
+        local check="[X]"
+        local err=""
+    else 
+        local check="[ ]"
+        local err=" => ${ERR_MSG}"
+    fi
+    [ -n "${1}" ] && printf "${check} %s${err}\n" "${1}"
 }
 
 dependencies() {
@@ -14,40 +20,46 @@ dependencies() {
     fi
 }
 
+copy_data() {
+    cp CNAME public/
+
+    [ -d public/assets ] && rm -rf public/assets
+    cp -r assets public/
+}
+
 build_page() {
     src="$1"
     dst="$2"
     style="$3"
 
-    [ -f ${src} ]   || return 1
-    [ -f ${style} ] || style=css/style.css
+    if ! [ -f ${src} ]; then 
+        ERR_MSG="${src} file doesn't exist!" 
+        return 1
+    fi
 
-    pandoc -s -f markdown ${src} \
+    if ! [ -f ${style} ]; then 
+        ERR_MSG="${style} file doesn't exist!" 
+        return 1
+    fi
+
+    # first sed appends to all headers (h1-h6) a underline tag
+    cat ${src} | \
+    sed -E 's/^(#+\s+.*)$/\1 \n\n<hr \/>/' | \
+    pandoc -s \
+           -f markdown \
            -o ${dst} \
            -c ${style} \
-           --include-in-header=templates/header.html \
+           --include-before-body=templates/top.html \
+           --include-after-body=templates/bottom.html \
            --template=templates/pandoc.html
-}
-
-copy_data() {
-    cp CNAME public/
-
-    for dir in $(ls assets); do 
-        if [ -d assets/${dir} ]; then 
-            [ -d public/${dir} ] && rm -rf public/${dir}
-            cp -r assets/${dir} public/
-
-            [ -d public/${dir} ]; log "CREATED public/${dir}"
-        fi
-    done
 }
 
 main() {
     copy_data
 
     # build home page
-    build_page home/index.md public/index.html css/style.css
-    [ $? -eq 0 ]; log "HOME BUILT"
+    build_page home/index.md public/index.html assets/css/style.css
+    log "HOME BUILT"
 
     # build pages/posts
     for p in $(ls pages/ | sort -r); do
@@ -64,10 +76,5 @@ main() {
     done
 }
 
-parse() {
-    :
-}
-
-parse $@
 dependencies
 main

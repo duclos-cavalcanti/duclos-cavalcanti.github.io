@@ -1,4 +1,4 @@
-/* variables/colors */
+/* basics/variables/colors */
 :root {
     --bg:       #151515;
     --fg:       #FAFAFA;
@@ -12,26 +12,21 @@
     --grey:     #616161;
 }
 
-/* header/navigation */
-header nav table {
-	width: 100%;
-}
+/* titles, content and navigation */
 
-.nav-tokens {
-	text-align:	left;
-	font-weight: bold;
-    color: var(--red);
-}
-
-.ls,
-.nav-tokens>a {
+html, body {
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 95%;
+    background-color: var(--black);
     color: var(--fg);
 }
 
-/* titles and content */
-html {
-    display: table;
-    margin: auto;
+body {
+    font: 16px monospace,monospace;
+    text-align: justify;
 }
 
 h1,
@@ -42,37 +37,73 @@ h5,
 h6 {
 	text-align:	left;
 	text-decoration: none;
-    color: var(--grey);
+    color: var(--green);
     font-size: 18px;
 }
 
-code {
-
-}
-
 hr {
-    height: 0.5px;
-    background-color: var(--grey)
+    height: 0.2px;
+    background-color: var(--green)
 }
 
-body {
-    font: 16px monospace,monospace;
-    background-color: var(--bg);
-    color: var(--fg);
-
-    text-align: justify;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+#footer {
+	text-align:	right;
 }
 
-a { 
+#footer a { 
+    color: var(--bg); 
+    text-decoration: none; 
+}
+
+.footer-logo {
+    color: var(--bg);
+    width: 18px;
+    transition: opacity 0.1s;
+}
+
+.footer-logo:hover {
+    opacity: 0.5;
+}
+
+#main {
+	margin: 0 0 0 200px;
+    height: 80vh;
+}
+
+#main a { 
     color: var(--blue); 
-    text-decoration: none;
+    text-decoration: none; 
 }
 
-a:hover { 
+#main a:hover {
     text-decoration: underline; 
+}
+
+#nav {
+    float: left;
+	text-align:	left;
+    height: 80vh;
+	border-right: 1px solid var(--grey);
+}
+
+#nav li {
+    list-style: none;
+}
+
+#nav a {
+    color: var(--grey); 
+    text-decoration: none; 
+}
+
+#nav a:hover {
+    color: var(--white); 
+    text-decoration: underline; 
+}
+
+#nav li a {
+	display: block;
+	margin: 0;
+	padding: 0 2em 1.6ex 0.2em;
 }
 
 /* Images */
