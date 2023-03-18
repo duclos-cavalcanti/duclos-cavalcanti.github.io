@@ -46,37 +46,24 @@ hr {
     background-color: var(--green)
 }
 
-#footer {
+#menu {
+    padding-top: 0.2em;
 	text-align:	right;
 }
 
-#footer a { 
+#menu a {
     color: var(--bg); 
     text-decoration: none; 
 }
 
-.footer-logo {
+.menu-logo {
     color: var(--bg);
     width: 18px;
     transition: opacity 0.1s;
 }
 
-.footer-logo:hover {
+.menu-logo:hover {
     opacity: 0.5;
-}
-
-#main {
-	margin: 0 0 0 200px;
-    height: 80vh;
-}
-
-#main a { 
-    color: var(--blue); 
-    text-decoration: none; 
-}
-
-#main a:hover {
-    text-decoration: underline; 
 }
 
 #nav {
@@ -96,7 +83,7 @@ hr {
 }
 
 #nav a:hover {
-    color: var(--white); 
+    color: var(--fg); 
     text-decoration: underline; 
 }
 
@@ -106,4 +93,32 @@ hr {
 	padding: 0 2em 1.6ex 0.2em;
 }
 
-/* Images */
+
+#main {
+	margin: 0 0 0 200px;
+    height: 100vh;
+}
+
+#main a { 
+    color: var(--blue); 
+    text-decoration: none; 
+}
+
+#main a:hover {
+    text-decoration: underline; 
+}
+
+#footer {
+    font-size: 15px;
+	text-align:	right;
+}
+
+#footer a { 
+    color: var(--bg); 
+    text-decoration: none; 
+}
+
+#footer a:hover { 
+    color: var(--bg); 
+    text-decoration: underline; 
+}
