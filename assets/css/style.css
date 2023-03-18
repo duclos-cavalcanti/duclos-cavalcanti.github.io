@@ -1,8 +1,8 @@
 /* basics/variables/colors */
 :root {
-    --bg:       #151515;
+    --bg:       #222222;
     --fg:       #FAFAFA;
-    --black:    #272727;
+    --black:    #151515;
     --red:      #e01a4f;
     --green:    #87a556;
     --yellow:   #f9c22e;
@@ -20,7 +20,7 @@ html, body {
     padding: 0;
     height: 100%;
     width: 95%;
-    background-color: var(--black);
+    background-color: var(--bg);
     color: var(--fg);
 }
 
@@ -52,12 +52,12 @@ hr {
 }
 
 #menu a {
-    color: var(--bg); 
+    color: var(--black); 
     text-decoration: none; 
 }
 
 .menu-logo {
-    color: var(--bg);
+    color: var(--black);
     width: 18px;
     transition: opacity 0.1s;
 }
@@ -114,7 +114,7 @@ hr {
 }
 
 #footer a { 
-    color: var(--bg); 
+    color: var(--black); 
     text-decoration: none; 
 }
 
