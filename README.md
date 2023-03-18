@@ -59,17 +59,19 @@ apart and hack up their own.
 │   ├── css
 │   │   └── style.css
 │   ├── images
+│   │   ├── github.svg
+│   │   ├── gmail.svg
+│   │   ├── linkedin.svg
 │   │   └── photo.jpg
 │   └── pdfs
 │       └── resume.pdf
 ├── build.sh
 ├── CNAME
 ├── docs
-├── home
-│   └── index.md
 ├── LICENSE
 ├── Makefile
 ├── pages
+│   ├── index.md
 │   ├── about
 │   ├── blog
 │   ├── books
@@ -77,9 +79,11 @@ apart and hack up their own.
 ├── public
 ├── README.md
 └── templates
-    ├── footer.html
-    ├── header.html
-    └── pandoc.html
+    ├── bottom.html
+    ├── pandoc.html
+    └── top.html
+
+12 directories, 15 files
 ```
 
 

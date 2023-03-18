@@ -28,7 +28,7 @@ deploy:
 	@git branch -D gh-pages
 
 stop:
-	@[ -n ${IS_APACHE_RUNNING} ] && docker stop ${APACHE_ID}
+	@docker stop ${APACHE_ID}
 
 serve-pull:
 	@docker pull httpd

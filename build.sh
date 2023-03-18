@@ -58,7 +58,7 @@ main() {
     copy_data
 
     # build home page
-    build_page home/index.md public/index.html assets/css/style.css
+    build_page pages/index.md public/index.html assets/css/style.css
     log "HOME BUILT"
 
     # build pages/posts
