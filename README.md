@@ -49,9 +49,12 @@ markdown files.
 
 ## Usage
 
-Before running the make targets, an overview of the worfklow will be illustrated, serving as 
-a way to explain what is being done, but also be useful to those who wish to nitpick the script 
-apart and hack up their own.
+The snippet below serves as an illustration to how the project is organized. The markdown files are located 
+within the `pages` folder, HTML Templates within `templates` and the necessary resources for the website 
+are inside `assets`. The `build.sh` script leveraged the already mentioned `pandoc` tool that makes use of templates 
+to stitch together the web pages based on a given markdown file, a header, a footer and a template file. After the script is 
+ran the static website data can be found within `public`, which is then through the *git subtree split* command used to push its 
+contents onto the **gh-pages** branch. This branch is watched by *github-pages* and is used to serve the website.
 
 ```sh 
 .
@@ -86,15 +89,25 @@ apart and hack up their own.
 12 directories, 15 files
 ```
 
-
-**Build/Deploy**
+**Build**
   ```sh
-  make build
+  make
+  # or make build
+  ```
+
+**Deploy**
+  ```sh
+  make deploy
   ```
 
 **Serve Locally**
   ```sh
   make serve
+  ```
+
+**Stop local serving**
+  ```sh
+  make stop
   ```
 
 ## License
@@ -104,7 +117,6 @@ These files are released under the MIT license. See [LICENSE](LICENSE).
 * [ssg](https://github.com/andrew-ayers/ssg)
 * [pandoc-ssg](https://github.com/kevin-nel/pandoc-ssg)
 * [pandoc-templates](https://github.com/kjhealy/pandoc-templates)
-* [kisslinux website](https://github.com/kisslinux/website)
 
 ## References
 * [HTML Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML)
