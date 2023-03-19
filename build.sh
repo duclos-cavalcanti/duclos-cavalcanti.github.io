@@ -20,13 +20,6 @@ dependencies() {
     fi
 }
 
-copy_data() {
-    cp CNAME public/
-
-    [ -d public/assets ] && rm -rf public/assets
-    cp -r assets public/
-}
-
 build_page() {
     src="$1"
     dst="$2"
@@ -42,9 +35,7 @@ build_page() {
         return 1
     fi
 
-    # first sed appends to all headers (h1-h6) a underline tag
     cat ${src} | \
-    sed -E 's/^(#+\s+.*)$/\1 \n\n<hr \/>/' | \
     pandoc -s \
            -f markdown \
            -o ${dst} \
@@ -55,7 +46,7 @@ build_page() {
 }
 
 main() {
-    copy_data
+    [ -d public/assets ] && rm -rf public/assets
 
     # build home page
     build_page pages/index.md public/index.html assets/css/style.css
@@ -64,16 +55,21 @@ main() {
     # build pages/posts
     for p in $(ls pages/ | sort -r); do
         if [ -d pages/${p} ]; then
-            local dir=pages/${p}
+            local dir=public/${p}
             local file=pages/${p}/index.md
             local page=public/${p}/index.html
 
-            [ -d ${dir} ] || mkdir -p www/${p}
+            [ -d ${dir} ] || mkdir -p ${dir}
 
-            build_page ${file} ${page}
-            [ $? -eq 0 ]; log "${p^^} BUILT"
+            build_page ${file} ${page} assets/css/style.css
+            log "${p^^} BUILT"
+
+            [ -f ${page} ] && cp -r assets ${dir}/
         fi
     done
+
+    cp CNAME public/
+    cp -r assets public/
 }
 
 dependencies

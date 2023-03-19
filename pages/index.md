@@ -1,13 +1,18 @@
 ---
 title: 'Profile'
 author: "Daniel Duclos-Cavalcanti"
-description: "Introduction"
+description: "Introduction to myself :)"
 ---
 
-# Daniel Duclos-Cavalcanti
+# Hi!
+<hr />
 
-As of now, I am going into my last semester of my Electrical and Computer Engineering Masters Program at TUM. Therefore I am looking for internships in the form of a masters thesis in various fields within Computer Science, Software Engineering, Embedded Systems and Machine Learning.
+My name is *Daniel Duclos-Cavalcanti* and I am an American and Brazilian Electrical/Computer Engineer currently living in Munich, Germany. I have completed my B.Sc. at the Technical University of Munich ([TUM](https://www.tum.de/)), where I've also enrolled in my M.Sc. in the very same field. As of now I am in my very last semester of this degree, which means I'm currently looking for Master Thesis opportunities both within an Academic and if possible an Industrial setting. My general interests as a computer scientist lie within:
 
-What once begun as a general interest for programming languages has evolved to a broader curiosity towards computers and cyber-physical systems in their entirety. Embedded Systems and Computer Science in general are central passions of mine, where I find myself continuously interested and engaged with. All low and high level challenges regarding these fields interest me, especially around TinyML or machine learning on embedded devices.
++ Operating Systems 
++ Compilers 
++ Natural Language Processing 
++ TinyML / Machine Learning on Embedded Systems
 
-Being born in Minneapolis, USA and having the opportunity to live in Brazil for 12+ years has given me a unique perspective and background on all things from culture to work. Giving me, what I would like to think, different tools on how to approach both people and problems.
+Feel free to look around and to reach out to me either on Github, Linkedin or Email. The corresponding links can be accessed through the logo's displayed on the top right corner of this page! 
+

@@ -3,7 +3,8 @@
 ## Introduction
 Source code to my personal website, currently served through [Github Pages](https://pages.github.com/) and can be reached at [www.ducloscavalcanti.com](www.ducloscavalcanti.com). The webpage is deployed through a simple `bash` script which acts as a handy wrapper around the `pandoc` tool, generating html files 
 based on templates and given markdown pages. Please feel free to take snippets, ideas and even the project itself 
-to create your own workflow. If so, please reference this work, it would be much appreciated.
+to create your own workflow. If so, please reference this work, it would be much appreciated. Logos are taken from 
+[here](https://simpleicons.org/).
 
 ## Background and Motivation
 
