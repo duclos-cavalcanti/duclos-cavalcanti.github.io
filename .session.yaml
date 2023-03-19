@@ -4,9 +4,12 @@ windows:
   - window_name: readme
     panes:
       - nvim README.md
+  - window_name: toolchain
+    panes:
+      - nvim build.sh
   - window_name: web
     panes:
-      - nvim home/index.md
+      - nvim pages/index.md
   - window_name: bash
     layout: even-horizontal
     panes:
