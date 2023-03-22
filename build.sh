@@ -34,7 +34,7 @@ build_page() {
         ERR_MSG="${style} file doesn't exist!" 
         return 1
     fi
-
+    
     cat ${src} | \
     pandoc -s \
            -f markdown \
@@ -43,6 +43,8 @@ build_page() {
            --include-before-body=templates/top.html \
            --include-after-body=templates/bottom.html \
            --template=templates/pandoc.html
+
+    cp -r assets $(dirname ${dst})
 }
 
 main() {
@@ -52,19 +54,27 @@ main() {
     build_page pages/index.md public/index.html assets/css/style.css
     log "HOME BUILT"
 
-    # build pages/posts
+    # build main pages
     for p in $(ls pages/ | sort -r); do
         if [ -d pages/${p} ]; then
             local dir=public/${p}
-            local file=pages/${p}/index.md
-            local page=public/${p}/index.html
-
             [ -d ${dir} ] || mkdir -p ${dir}
 
-            build_page ${file} ${page} assets/css/style.css
+            build_page pages/${p}/index.md public/${p}/index.html assets/css/style.css
             log "${p^^} BUILT"
 
-            [ -f ${page} ] && cp -r assets ${dir}/
+            # build blog posts
+            if [ ${p} == "blog" ]; then
+                for b in $(ls pages/blog | sort -r); do
+                    if [ -d pages/blog/${b} ]; then
+                        dir=public/blog/${b}
+                        [ -d ${dir} ] || mkdir -p ${dir}
+
+                        build_page pages/blog/${b}/index.md public/blog/${b}/index.html assets/css/style.css
+                        log "${p^^}/${b^^} BUILT"
+                    fi
+                done
+            fi
         fi
     done
 

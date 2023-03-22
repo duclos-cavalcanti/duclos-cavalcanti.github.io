@@ -1,7 +1,7 @@
 /* basics/variables/colors */
 :root {
-    --bg:       #222222;
-    --fg:       #FAFAFA;
+    --bg:       #FAFAFA;
+    --fg:       #222222;
     --black:    #151515;
     --red:      #e01a4f;
     --green:    #87a556;
@@ -37,7 +37,7 @@ body {
 }
 
 ul {
-    test-align: left;
+    text-align: left;
 }
 
 h1 {
@@ -72,7 +72,6 @@ table {
   table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
-  /* border: 3px solid var(--black); */
 }
 
 th, td {
@@ -150,12 +149,12 @@ th, td {
 }
 
 #footer a { 
-    color: var(--black); 
+    color: var(--grey); 
     text-decoration: none; 
 }
 
 #footer a:hover { 
-    color: var(--bg); 
+    color: var(--blue); 
     text-decoration: underline; 
 }
 

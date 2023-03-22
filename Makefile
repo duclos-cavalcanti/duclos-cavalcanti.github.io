@@ -13,6 +13,7 @@ all: build
 clean:
 	@rm -rf public
 	@mkdir public
+	@touch public/.gitkeep
 
 build:
 	@./build.sh
