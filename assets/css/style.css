@@ -1,7 +1,7 @@
 /* basics/variables/colors */
 :root {
     --bg:       #FAFAFA;
-    --fg:       #222222;
+    --fg:       #151515; /* #222222 */
     --black:    #151515;
     --red:      #e01a4f;
     --green:    #87a556;
@@ -29,6 +29,13 @@ body {
     text-align: justify;
 }
 
+#dots {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
 .date {
     float: right;
 	text-align:	right;
@@ -45,11 +52,13 @@ h1 {
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 16px;
+    text-indent: 3em;
 }
 
 h3 {
     font-size: 15px;
+    text-indent: 5em;
 }
 
 h1,
@@ -116,7 +125,7 @@ th, td {
 }
 
 #nav a:hover {
-    color: var(--fg); 
+    color: var(--blue); 
     text-decoration: underline; 
 }
 
