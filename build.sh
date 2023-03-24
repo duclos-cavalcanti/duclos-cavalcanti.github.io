@@ -3,77 +3,78 @@
 ERR_MSG=""
 
 log() {
-    if [ $? -eq 0 ]; then 
-        local check="[X]"
-        local err=""
+    local res=$?
+    local check=
+    local err=
+
+    if [ ${res} -eq 0 ]; then 
+        check="[T]"
+        err=""
     else 
-        local check="[ ]"
-        local err=" => ${ERR_MSG}"
+        check="[F]"
+        err="=> ${ERR_MSG}"
     fi
-    [ -n "${1}" ] && printf "${check} %s${err}\n" "${1}"
+
+    [ -n "${1}" ] && printf "${check} %s ${err}\n" "${1}"
 }
 
-dependencies() {
-    if ! command -v pandoc &>/dev/null; then
-        printf "pandoc is not installed!\n"
-        exit 1
-    fi
-}
+build() {
+    local file="${1}"
 
-build_page() {
-    src="$1"
-    dst="$2"
-    style="$3"
-
-    if ! [ -f ${src} ]; then 
-        ERR_MSG="${src} file doesn't exist!" 
+    if ! [ -f ${file} ]; then 
+        ERR_MSG="${file} file doesn't exist!" 
         return 1
     fi
 
-    cat ${src} | \
+    local dir="$(dirname ${file})"
+    local dst=${dir/pages/public}
+    [ -d ${dst} ] || mkdir -p ${dst}
+
+    local styles=(-c /assets/css/base.css)
+    local c_style=assets/css/$(basename ${dir}).css
+    [ -f ${c_style} ] && styles+=(-c /${c_style})
+
     pandoc -s \
            -f markdown \
-           -o ${dst} \
-           -c ${style} \
+           -o ${dst}/index.html \
            --include-before-body=templates/top.html \
            --include-after-body=templates/bottom.html \
-           --template=templates/pandoc.html
+           --template=templates/pandoc.html \
+           ${styles[@]} \
+           ${file}
 }
 
-main() {
-    [ -d public/assets ] && rm -rf public/assets
+step() {
+    local dir="${1}"
+    if ! [ -d ${dir} ]; then 
+        printf "%s\n" "Non-existing directory ${dir}" 
+        exit 1
+    fi
 
-    # build home page
-    build_page pages/index.md public/index.html /assets/css/style.css
-    log "HOME BUILT"
-
-    # build main pages
-    for p in $(ls pages/ | sort -r); do
-        if [ -d pages/${p} ]; then
-            local dir=public/${p}
-            [ -d ${dir} ] || mkdir -p ${dir}
-
-            build_page pages/${p}/index.md public/${p}/index.html /assets/css/style.css
-            log "${p^^} BUILT"
-
-            # build blog posts
-            if [ ${p} == "blog" ]; then
-                for b in $(ls pages/blog | sort -r); do
-                    if [ -d pages/blog/${b} ]; then
-                        dir=public/blog/${b}
-                        [ -d ${dir} ] || mkdir -p ${dir}
-
-                        build_page pages/blog/${b}/index.md public/blog/${b}/index.html /assets/css/style.css
-                        log "${p^^}/${b^^} BUILT"
-                    fi
-                done
+    for d in $(ls ${dir} | sort -r); do 
+        if [ -d ${dir}/${d} ]; then 
+            step ${dir}/${d}
+        else
+            if [ ${d} == "index.md" ]; then 
+                build ${dir}/index.md
+                log "${dir^^} BUILT"
             fi
         fi
     done
-
-    cp CNAME public/
-    cp -r assets public/
 }
 
-dependencies
+main() {
+    # cleaning and copying assets
+    [ -d public/assets ] && rm -rf public/assets
+    cp -r assets public/
+
+    # build web
+    step pages
+}
+
+if ! command -v pandoc &>/dev/null; then
+    printf "pandoc is not installed!\n"
+    exit 1
+fi
+
 main

@@ -7,15 +7,18 @@ description: "More to me"
 # About
 <hr />
 
-Being born in Minneapolis, USA 🇺🇸 and having the opportunity to live in Brazil 🇧🇷 for 12+ years has given me a unique perspective and background on all things from culture to work.
+Being born in Minneapolis, USA and having the opportunity to live both in Brazil and Germany has given me a unique perspective and background on all things from culture to work.
 
 ## Background
 
 What once begun as a general interest for programming languages has evolved to a broader curiosity towards computers and cyber-physical systems in their entirety. I find myself continuously engaged and interested in UNIX systems, their tools and hacking on them for my own needs. I use the infamous UNIX clone ([Linux](https://www.linux.org/pages/download/)) on a daily basis and have done so for a long time. I am quite fond of the experience, the strong freedom within it's ecosystem and user base.
 
-## Tools and Workflow
++ Operating Systems 
++ Compilers 
++ Natural Language Processing 
++ TinyML / Machine Learning on Embedded Systems
 
-This is text 
+## Tools and Workflow
 
 ![](/assets/images/dotfiles.png){id="dots"}
 

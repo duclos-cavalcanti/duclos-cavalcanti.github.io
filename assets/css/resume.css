@@ -1,0 +1,18 @@
+.date {
+    float: right;
+	text-align:	right;
+    font-size: 13px;
+    color: var(--grey);
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+    padding: 2px;
+    border: 1px dashed var(--grey);
+}
+

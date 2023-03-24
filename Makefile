@@ -19,6 +19,7 @@ build:
 	@./build.sh
 
 deploy:
+	@cp -v CNAME public/
 	@git subtree split --prefix public -b gh-pages
 	@git checkout gh-pages
 	@mv public/* ./
