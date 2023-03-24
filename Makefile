@@ -32,6 +32,8 @@ deploy:
 stop:
 	@docker stop ${APACHE_ID}
 
+restart: stop serve
+
 serve-pull:
 	@docker pull httpd
 
