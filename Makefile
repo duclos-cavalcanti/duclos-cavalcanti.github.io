@@ -32,19 +32,19 @@ deploy:
 stop:
 	@docker stop ${APACHE_ID}
 
-restart: stop serve
-
-serve-pull:
-	@docker pull httpd
-
-serve-attach:
-	@[ -n ${IS_APACHE_RUNNING} ] && docker exec -it ${APACHE_NAME} bash
-
-serve: $(if ${IS_APACHE}, , serve-pull )
+serve: $(if ${IS_APACHE}, , pull)
 	@docker run --rm \
 			   --detach \
 			   --name ${APACHE_NAME} \
 			   -p 8080:80 \
 			   -v ${PWD}/public:/usr/local/apache2/htdocs \
 			   httpd:latest
+
+restart: stop serve
+
+pull:
+	@docker pull httpd
+
+attach:
+	@[ -n ${IS_APACHE_RUNNING} ] && docker exec -it ${APACHE_NAME} bash
 
