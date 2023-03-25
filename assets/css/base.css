@@ -18,6 +18,10 @@ html, body {
     padding: 0;
     min-height: 100%;
     max-width: 80%;
+
+    overflow: scroll;
+    white-space: nowrap;
+
     background-color: var(--bg);
     color: var(--fg);
 }
@@ -63,7 +67,7 @@ h1 {
 }
 
 #home li, #pages li {
-    display: flex;
+    display: inline;
     font: 13px monospace,monospace;
     padding-right: 1em;
 }
