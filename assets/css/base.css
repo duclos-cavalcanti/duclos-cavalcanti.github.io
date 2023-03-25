@@ -63,7 +63,7 @@ h1 {
 }
 
 #home li, #pages li {
-    display: inline;
+    display: flex;
     font: 13px monospace,monospace;
     padding-right: 1em;
 }

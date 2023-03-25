@@ -40,7 +40,7 @@ serve: $(if ${IS_APACHE}, , pull)
 			   -v ${PWD}/public:/usr/local/apache2/htdocs \
 			   httpd:latest
 
-restart: stop serve
+restart: stop serve build
 
 pull:
 	@docker pull httpd
