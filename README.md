@@ -30,11 +30,12 @@ of specifying an additional domain name so that your webpage can be accessed thr
 
 ## Dependencies 
 - [`pandoc`](https://pandoc.org/MANUAL.html)
+- [`pdflatex`](https://www.tug.org/applications/pdftex/)
 - [`Docker`](https://docs.docker.com/engine/install/) *(optional)* 
 
 **Debian/Ubuntu** 
 ```sh 
-sudo apt install pandoc
+sudo apt install pandoc wkhtmltopdf
 ```
 
 **Arch Linux** 
@@ -118,6 +119,8 @@ These files are released under the MIT license. See [LICENSE](LICENSE).
 * [ssg](https://github.com/andrew-ayers/ssg)
 * [pandoc-ssg](https://github.com/kevin-nel/pandoc-ssg)
 * [pandoc-templates](https://github.com/kjhealy/pandoc-templates)
+* [markdown-cv](https://github.com/elipapa/markdown-cv)
+* [resume.md](https://github.com/mikepqr/resume.md)
 
 ## References
 * [HTML Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML)

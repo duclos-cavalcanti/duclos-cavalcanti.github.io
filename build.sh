@@ -18,34 +18,75 @@ log() {
     [ -n "${1}" ] && printf "${check} %s ${err}\n" "${1}"
 }
 
-build() {
+get_path() {
     local file="${1}"
-
-    if ! [ -f ${file} ]; then 
-        ERR_MSG="${file} file doesn't exist!" 
-        return 1
-    fi
 
     local dir="$(dirname ${file})"
     local dst=${dir/pages/public}
-    [ -d ${dst} ] || mkdir -p ${dst}
 
-    local styles=(-c /assets/css/base.css)
-    local c_style=assets/css/$(basename ${dir}).css
-    [ -f ${c_style} ] && styles+=(-c /${c_style})
+    [ -d ${dst} ] || mkdir -p ${dst}
+    echo "${dst}/index.html"
+}
+
+get_styles() {
+    local arr=()
+    local default="${1}"
+    local extra="${2}"
+
+    default=assets/css/${default}.css
+    extra=assets/css/${extra}.css
+
+    if [ -f ${default} ]; then 
+        arr+=(-c /${default})
+    fi
+
+    if [ -f ${extra} ]; then 
+        arr+=(-c /${extra})
+    fi
+
+    echo "${arr[@]}"
+}
+
+build() {
+    local src="${1}"
+    local dst=$(get_path "${src}")
+    local top="${2}"
+    local bottom="${3}"
+    shift 3; local styles="${@}"
+
+    if ! [ -f ${src} ]; then 
+        ERR_MSG="${src} file doesn't exist!" 
+        return 1
+    fi
 
     pandoc -s \
            -f markdown \
-           -o ${dst}/index.html \
-           --include-before-body=templates/top.html \
-           --include-after-body=templates/bottom.html \
+           -o ${dst} \
+           --include-before-body=${top} \
+           --include-after-body=${bottom} \
            --template=templates/pandoc.html \
-           ${styles[@]} \
-           ${file}
+           ${styles} \
+           ${src}
+}
+
+pdf() {
+    local src="${1}"
+    local dst="${2}"
+    local st="${2}"
+
+    if ! [ -f ${src} ]; then 
+        ERR_MSG="${src} file doesn't exist!" 
+        return 1
+    fi
+
+    cat ${src} | \
+    sed "s|/assets/css|$(pwd)/assets/css|" | \
+    wkhtmltopdf --enable-local-file-access - ${dst} 2> /dev/null
 }
 
 step() {
     local dir="${1}"
+    local name=
     if ! [ -d ${dir} ]; then 
         printf "%s\n" "Non-existing directory ${dir}" 
         exit 1
@@ -56,7 +97,20 @@ step() {
             step ${dir}/${d}
         else
             if [ ${d} == "index.md" ]; then 
-                build ${dir}/index.md
+                name=$(basename ${dir})
+                if [[ ${dir} == *"resume"* ]] || [[ ${dir} == *"isaac"* ]]; then
+                    build ${dir}/index.md \
+                          templates/empty.html \
+                          templates/empty.html \
+                          $(get_styles reset ${name})
+
+                    pdf ${dir/pages/public}/index.html assets/pdfs/resume.pdf
+                else
+                    build ${dir}/index.md \
+                          templates/top.html \
+                          templates/bottom.html \
+                          $(get_styles base ${name})
+                fi
                 log "${dir^^} BUILT"
             fi
         fi
@@ -64,17 +118,21 @@ step() {
 }
 
 main() {
-    # cleaning and copying assets
+    # clean copying assets
     [ -d public/assets ] && rm -rf public/assets
-    cp -r assets public/
 
     # build web
     step pages
+
+    # copying assets
+    cp -r assets public/
 }
 
-if ! command -v pandoc &>/dev/null; then
-    printf "pandoc is not installed!\n"
-    exit 1
-fi
+for p in wkhtmltopdf pandoc; do 
+    if ! command -v ${p} &>/dev/null; then
+        printf "${p} is not installed!\n"
+        exit 1
+    fi
+done
 
 main

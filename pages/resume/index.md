@@ -4,118 +4,95 @@ author: "Daniel Duclos-Cavalcanti"
 description: "my CV/Resume"
 ---
 
-# Resume [(pdf)](assets/pdfs/resume.pdf)
-<hr />
+# Daniel Duclos-Cavalcanti <span id="click-here"> <a href="/assets/pdfs/resume.pdf">(PDF)</a> </span>
 
-<!-- ![](assets/images/photo.jpg){class=profile-image} -->
+- <me@duclos.dev>
+- [www.duclos.dev](www.duclos.dev)
+- Munich, Germany
 
-An American and Brazilian computer scientist living in Munich, Germany. I have completed my bachelors degree in EE at TUM and
-am on my way to finish my masters at the very same university. Currently my interests lie in Operating Systems, Compilers, NLP
-and TinyML.
-
-- **Native**: English and Portuguese
-- **Fluent**: German
-- **Beginner**: German
+American/Brazilian Electrical and Computer Engineer by the Technical University of Munich. Experienced in 
+Systems, SoC and Embedded development, as well as TinyMl applications. Currently, more interested in Natural 
+Language Processing as a field of research.
 
 ## Education
-<hr />
 
-### M.Sc - Technical University of Munich <span class="date">Oct 2020 -- Now</span>
-Electrical and Computer Engineering 
+### <span>M.Sc. Electrical/Computer Engineering, TU Munich </span> <span id="h3-date">Oct 2020 -- Now</span>
 
-+ **GPA:** 3.0 (American Standards) | 2.5 (German Standards)
-+ **Currently enrolled in last semester**
++ GPA: 3.0 (American Standards) | 2.5 (German Standards)
++ Currently enrolled in last semester
 
-### B.Sc. - Technical University of Munich <span class="date">Feb 2017 -- Sept 2020</span>
-Electrical and Computer Engineering 
+### <span>B.Sc. Electrical/Computer Engineering, TU Munich </span> <span id="h3-date">Feb 2017 -- Sept 2020</span>
 
-+ **GPA:** 3.1 (American Standards) | 2.2 (German Standards)
-+ **Bachelor Thesis**, 1.3 -- *Netlist Error Modeling*
-+ **Unfinished Previous B.Sc.**, PUC-RIO, Brazil -- 144/238 Credits from 2013-2016
++ GPA: 3.1 (American Standards) | 2.2 (German Standards)
++ Bachelor Thesis, 1.3 -- *Netlist Error Modeling*
++ Unfinished Previous B.Sc., PUC-RIO, Brazil -- 144/238 Credits from 2013-2016
 
 ## Experience
-<hr />
 
-### Working Student - TU Munich <span class="date">Jul 2022 -- Oct 2022 / Munich, Germany</span>
-A working student among the research staff at the Electronic Design Automation (EDA) department at TUM.
+<!-- You have to wrap the "left" and "right" half of these headings in spans by hand -->
+### <span>Working Student, TU Munich</span> <span id="h3-date">Jul 2022 -- Oct 2022</span>
 
-+ **Python** development to automate and build a Design‑Space‑Exploration framework.
-+  Said framework is used to find optimal heteregeneous hardware configurations to run inference on given ML models.
+Assisted ongoing research within the Electronic Design Automation (EDA) department at TUM.
 
-### Working Student - Molabo GmbH <span class="date">Aug 2021 -- Jan 2022 / Munich, Germany</span>
-A working student performing as an Embedded and FPGA Engineer across different tasks.
+- Python development to automate and build a Design‑Space‑Exploration framework.
+-  Framework's goal was to find optimal heteregeneous hardware configurations to run inference on given ML models.
 
-+ Supervised the team’s CI Pipeline via Jenkins and responsible for writting **Jenkinsfiles** to automate integration and development.
+### <span>Working Student, Molabo GmbH</span> <span id="h3-date">Aug 2021 -- Jan 2022</span>
+
+Assisted the motor-drive team, developing for their Embedded and FPGA devices.
+
++ Supervised and responsible for the team’s CI Pipeline via Jenkins.
 + Development of:
-  - containerized unit tests in **C++** through **gTest/GoogleTest** with code coverage via gcov
-  - embedded **C** code for **microcontrollers**, **VHDL** Modules for **FPGAs**
-  - build Systems/toolchains written in **CMake**, **Make** with use of **Dockers**
-  - **Python** and **Bash** scripts to automate development
+  - Jenkinsfiles to automate integration and development.
+  - containerized unit tests in C++ through gTest/GoogleTest with code coverage via gcov
+  - embedded C code for microcontrollers, VHDL Modules for FPGAs
+  - build Systems/toolchains written in CMake, Make with use of Dockers
+  - Python and Bash scripts to automate development
 
-### Tutor - TU Munich <span class="date">April 2021 -- Aug 2021 / Munich, Germany</span>
-Tutor for the Embedded Systems ProgrammIng Lab at TUM within the RCS department.
+### <span>Tutor, RCS Department - TU Munich</span> <span id="h3-date">Aug 2021 -- Jan 2022</span>
+Assisted in teaching the Embedded Systems Programming Lab course given at TU Munich.
 
-+ Assisted students during their course work and their final project, which consisted of writing **FreeRTOS applications** in **C**.
++ Helped students during their course work and their final project, which consisted of writing FreeRTOS applications in C.
 
-### Research Intern - TU Munich <span class="date">Oct 2020 -- Feb 2021 / Munich, Germany</span>
-Full-time research intern at TUM within the RCS department.
+### <span>Research Intern, RCS Department - TU Munich</span> <span id="h3-date">Oct 2020 -- Feb 2021</span>
+Full-time research intern at the Real-Time Computer Systems department within TUM.
 
-+ Working with **Google’s Edge Coral TPU**, benchmarking it’s performance through the analysis of USB traffic during inference.
-+ Automated the training, freezing, inference and Hardware deployment of several ML Models through **Tensorflow**.
++ Working with Google’s Edge Coral TPU, benchmarking it’s performance through the analysis of USB traffic during model inference.
++ Automated the training, freezing, inference and hardware deployment of several ML Models through Tensorflow.
 
-### Research Intern - TU Munich <span class="date">Aug 2019 -- Dez 2019 / Munich, Germany</span>
-Part-time research intern at TUM within the LKN department.
+<!-- ### <span>Research Intern, TU Munich</span> <span id="h3-date">Oct 2020 -- Feb 2021</span> -->
+<!-- Part-time research intern at the LKN department within TUM. -->
+<!---->
+<!-- + Testing, debugging and analyzing the behavior of a software switch implemented through the P4 programming language. -->
 
-+ Testing, debugging and analyzing the behavior of a software switch implemented through the P4 programming language.
+## Skills
 
-## Skills and Tools
-<hr />
+- Embedded/Low-level Development: C(__Experienced__), Rust(__Basics__)
+- Scripting: Python(__Intermediate__), Lua(__Intermediate__), Bash(__Experienced__)
+- Tool-chain Development: CMake, GNU Make, Git, Ansible
+- Containerization/CI and CD: Docker, Jenkins, Travis CI
+- Frameworks/Tools: OpenMPI, OpenMP, Tensorflow, GoogleTest, PyTest, Python CFFI, SDL2
+- OS/Systems: FreeRTOS, Contiki OS, Linux, Arch Linux, Ubuntu
 
-<table>
-<tr>
-  <th>Programming Languages</th>
-  <th>Software Tools</th>
-  <th>Frameworks & Libraries</th>
-  <th>Systems</th>
-</tr>
-<tr>
-  <td><b>Experienced:</b> C, Python C++, Lua, VHDL</td>
-  <td>CMake, GNU Make, Git</td>
-  <td>OpenMPI, OpenMP and Tensorflow</td>
-  <td>FreeRTOS</td>
-</tr>
-<tr>
-  <td><b>Intermediate:</b> Golang, Bash Rust, Tcl, Markdown</td>
-  <td>Docker and Dockerfiles</td>
-  <td>GoogleTest, PyTest and Python CFFI</td>
-  <td>Contiki OS</td>
-</tr>
-<tr>
-  <td><b>Basics:</b> HTML and CSS</td>
-  <td>Jenkins, Travis CI and Ansible</td>
-  <td>SDL2</td>
-  <td>Linux, Arch Linux, Ubuntu</td>
-</tr>
-</table> 
-
-## Projects & Certificates
-<hr />
-
-<table>
+<table id="misc">
 <tr>
   <th>Projects</th>
   <th>Certificates</th>
+  <th>Languages</th>
 </tr>
 <tr>
-  <td><b>Error Detection (VHDL/C)</b></td>
-  <td><b>UCSD:</b> Data Structures Fundamentals</td>
+  <td>FreeRTOS Space Invaders (C)</td>
+  <td>UCSD: Data Structures Fundamentals</td>
+  <td>English/Portuguese - <em>Native</em></td>
 </tr>
 <tr>
-  <td><b>FreeRTOS Space Invaders (C)</b></td>
-  <td><b>UT Austin:</b> Embedded Systems - Microcontroller I/O</td>
+  <td>Hamming-Code Error Detection (VHDL/C)</td>
+  <td>UT Austin: Embedded Systems - Microcontroller I/O</td>
+  <td>German - <em>Fluent</em></td>
 </tr>
 <tr>
   <td><b>Serve (golang)</b>: small cli tool</td>
-  <td></td>
+  <td>NUS - Singapore: Natural Language Processing - Foundations</td>
+  <td>Spanish - <em>Beginner</em></td>
 </tr>
 </table> 
