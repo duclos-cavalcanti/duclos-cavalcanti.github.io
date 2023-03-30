@@ -21,7 +21,7 @@ I am not only deeply interested in the science and its various applications, but
 
 I really feel that human language is one of the most transforming technologies we've ever developed. In this day and age, being able to reproduce language understanding within computers is just a fascinating and mind-bending task. Being able to be a part of this movement in itself is already all the fulfillment I could ask for.
 
-## Skills and Knowledge
+## Experience
 
 + [TinyML](https://tinyml.mit.edu/)
 + Real Time Operating Systems (RTOS) 
@@ -30,13 +30,13 @@ I really feel that human language is one of the most transforming technologies w
   - Embedded Systems
   - Kernel Space 
   - User Space
-+ Toolchain Development
++ Toolchain and Integration
   - Automation (GNU Make, CMake, Ansible)
   - Containerization (Docker)
   - Testing (GoogleTest, PyTest)
   - CI/CD (Travis, Jenkins, Github/Gitlab Workflows)
 + Tooling
-  - Linux, Git 
+  - Linux, BSD's, Git 
   - Bash, POSIX shell
   - UNIX/GNU utilities
 

@@ -30,7 +30,7 @@ Language Processing as a field of research.
 ## Experience
 
 <!-- You have to wrap the "left" and "right" half of these headings in spans by hand -->
-### <span>Working Student, TU Munich</span> <span id="h3-date">Jul 2022 -- Oct 2022</span>
+### <span>Working Student, EDA Department - TU Munich</span> <span id="h3-date">Jul 2022 -- Oct 2022</span>
 
 Assisted ongoing research within the Electronic Design Automation (EDA) department at TUM.
 
@@ -41,13 +41,11 @@ Assisted ongoing research within the Electronic Design Automation (EDA) departme
 
 Assisted the motor-drive team, developing for their Embedded and FPGA devices.
 
-+ Supervised and responsible for the team’s CI Pipeline via Jenkins.
-+ Development of:
-  - Jenkinsfiles to automate integration and development.
-  - containerized unit tests in C++ through gTest/GoogleTest with code coverage via gcov
-  - embedded C code for microcontrollers, VHDL Modules for FPGAs
-  - build Systems/toolchains written in CMake, Make with use of Dockers
-  - Python and Bash scripts to automate development
++ Responsible for the team’s Jenkins Pipeline, hand-crafting Jenkinsfiles and supervising successful pipeline execution.
++ Began containerized unit tests in C++ through gTest/GoogleTest with coverage via gcov.
++ Aided development on embedded C code and VHDL Modules for the company's SoC.
++ Built toolchains via CMake and GNU Make.
++ Automation through one-off Python and Bash scripts.
 
 ### <span>Tutor, RCS Department - TU Munich</span> <span id="h3-date">Aug 2021 -- Jan 2022</span>
 Assisted in teaching the Embedded Systems Programming Lab course given at TU Munich.
@@ -57,7 +55,8 @@ Assisted in teaching the Embedded Systems Programming Lab course given at TU Mun
 ### <span>Research Intern, RCS Department - TU Munich</span> <span id="h3-date">Oct 2020 -- Feb 2021</span>
 Full-time research intern at the Real-Time Computer Systems department within TUM.
 
-+ Working with Google’s Edge Coral TPU, benchmarking it’s performance through the analysis of USB traffic during model inference.
++ Working with Google’s Edge Coral TPU and benchmarking it’s performance.
++ Benchmarking is done through the analysis of USB traffic during model inference.
 + Automated the training, freezing, inference and hardware deployment of several ML Models through Tensorflow.
 
 <!-- ### <span>Research Intern, TU Munich</span> <span id="h3-date">Oct 2020 -- Feb 2021</span> -->

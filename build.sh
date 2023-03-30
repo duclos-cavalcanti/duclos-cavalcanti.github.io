@@ -81,6 +81,7 @@ pdf() {
 
     cat ${src} | \
     sed "s|/assets/css|$(pwd)/assets/css|" | \
+    sed "s|(PDF)||" | \
     wkhtmltopdf --enable-local-file-access - ${dst} 2> /dev/null
 }
 
