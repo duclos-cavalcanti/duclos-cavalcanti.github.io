@@ -52,7 +52,7 @@ I use the infamous UNIX clone ([Linux](https://www.linux.org/pages/download/)) o
 
 ![](/assets/images/dotfiles.png){id="dots"}
 
-Check out my [dotfiles](www.github.com/duclos-cavalcanti/dotfiles)!
+Check out my [dotfiles](https://www.github.com/duclos-cavalcanti/dotfiles)!
 
 ## Etc
 

@@ -7,7 +7,7 @@ description: "my projects"
 # Projects
 <hr />
 
-## [FreeRTOS Space-Invaders](https://github.com/duclos-cavalcanti/microsemi-error-detection)
+## [FreeRTOS Space-Invaders](https://github.com/duclos-cavalcanti/FreeRTOS-SpaceInvaders)
 
 A loosely based version of the classic arcade video game - Space Invaders - developed by Tomohiro Nishikado and released in 1978. 
 The work was written in C and based upon a FreeRTOS emulator.
