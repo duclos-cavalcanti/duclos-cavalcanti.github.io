@@ -30,7 +30,7 @@ of specifying an additional domain name so that your webpage can be accessed thr
 
 ## Dependencies 
 - [`pandoc`](https://pandoc.org/MANUAL.html)
-- [`pdflatex`](https://www.tug.org/applications/pdftex/)
+- [`wkhtmltopdf`](https://wkhtmltopdf.org/)
 - [`Docker`](https://docs.docker.com/engine/install/) *(optional)* 
 
 **Debian/Ubuntu** 
