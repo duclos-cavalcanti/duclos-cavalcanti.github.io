@@ -18,7 +18,7 @@ The work was written in C and based upon a FreeRTOS emulator.
 
 ## [Value Iteration with OpenMPI](https://github.com/duclos-cavalcanti/Open-MPI-ValueIteration)
 
-The goal was implement an asynchronous value iteration model configured as a dynamic programming problem. This was done using 
+The project's objective was implement an asynchronous value iteration model configured as a dynamic programming problem. This was done using 
 Open-MPI to distribute the workload across different machines.
 
 + Keywords: __C++ - Dynamic Programming - High Performance Computing__
