@@ -15,6 +15,9 @@ clean:
 	@mkdir public
 	@touch public/.gitkeep
 
+update-session:
+	@cp .session.yaml ~/.dotfiles/assets/sessions/duclos.yaml
+
 build:
 	@./build.sh
 
