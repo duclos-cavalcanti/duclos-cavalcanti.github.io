@@ -1,10 +1,11 @@
 #!/bin/bash
 
 check() {
-    if [ -z "$(git status --porcelain)" ]; then 
+    if [ -z "$(git status --porcelain)" ] || \
+       [ -n "$(ls public)" ]; then 
         return 0;
     else 
-        printf "%s:\n\n%s\n" "Repo isn't ready for deployment!" "$(git status)"
+        printf "%s\n" "Repo isn't ready for deployment!"
         exit 1
     fi
 }
@@ -37,20 +38,11 @@ main() {
     # pre-check 
     check 
 
-    echo "Building..."
-    # build web
-    {
-        make clean 
-        make build
-    } 2> /dev/null
-    sleep 1s
-
 	cp CNAME public/
 
-    echo "Git Kung fu..."
     create_gh_pages
-    # deploy
-    # delete_gh_pages
+    deploy
+    delete_gh_pages
 }
 
 main 
