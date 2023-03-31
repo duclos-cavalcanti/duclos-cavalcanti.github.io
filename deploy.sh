@@ -38,15 +38,17 @@ main() {
     # pre-check 
     check 
 
+    echo "Building..."
     # build web
     {
         make clean 
         make build
     } 2> /dev/null
+    sleep 1s
 
-    # copy over CNAME
 	cp CNAME public/
 
+    echo "Git Kung fu..."
     create_gh_pages
     deploy
     delete_gh_pages
