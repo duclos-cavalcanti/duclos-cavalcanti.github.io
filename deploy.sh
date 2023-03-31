@@ -1,7 +1,7 @@
 #!/bin/bash
 
 check() {
-    if [ -z "$(git status --porcelain)" ] || \
+    if [ -z "$(git status --porcelain)" ] && \
        [ -n "$(ls public)" ]; then 
         return 0;
     else 
