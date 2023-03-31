@@ -105,7 +105,7 @@ step() {
                           templates/empty.html \
                           $(get_styles reset ${name})
 
-                    pdf ${dir/pages/public}/index.html assets/pdfs/resume.pdf
+                    pdf ${dir/pages/public}/index.html pages/assets/pdfs/resume.pdf
                 else
                     build ${dir}/index.md \
                           templates/top.html \
@@ -119,14 +119,12 @@ step() {
 }
 
 main() {
-    # clean copying assets
+    # clean and copying assets
     [ -d public/assets ] && rm -rf public/assets
+    cp -r assets public/
 
     # build web
     step pages
-
-    # copying assets
-    cp -r assets public/
 }
 
 for p in wkhtmltopdf pandoc; do 
