@@ -31,7 +31,6 @@ deploy() {
 delete_gh_pages() {
 	git checkout main
 	git branch -D gh-pages
-
 }
 
 main() {
@@ -50,8 +49,8 @@ main() {
 
     echo "Git Kung fu..."
     create_gh_pages
-    deploy
-    delete_gh_pages
+    # deploy
+    # delete_gh_pages
 }
 
 main 
