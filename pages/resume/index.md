@@ -11,7 +11,7 @@ description: "my CV/Resume"
 - Munich, Germany
 
 American/Brazilian Electrical and Computer Engineer by the Technical University of Munich. Experienced in 
-Low-Level, FPGA, and Embedded development; as well as TinyMl-related applications. 
+Low-Level, FPGA, and Embedded development; as well as TinyML-related applications. 
 Currently, more interested in Natural Language Processing as a field of research.
 
 ## Education
