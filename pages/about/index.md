@@ -37,7 +37,7 @@ On some sub-conscious, I do believe that mastering a crafter's tools are as impo
 the craft itself. Either that, or I just love procrastinating through endlessly hacking on my system :)
 
 Regardless, as somewhat of a hobby, when I'm not engaged in topics mentioned above, I find myself continuously learning and interested in all things UNIX. 
-That goes from the their tools, the OSes themselves and hacking both of them for my needs. 
+That goes from the their tools, the OSes themselves and extending both of them for my needs. 
 
 I use the infamous UNIX clone - _Linux_ - on a daily basis and have done so for a long time. I am quite fond of the experience, the strong freedom within it's ecosystem and user base.
 
