@@ -23,32 +23,23 @@ I really feel that human language is one of the most transforming technologies w
 
 ## Experience
 
-+ [TinyML](https://tinyml.mit.edu/)
++ TinyML
 + Real Time Operating Systems (RTOS) 
 + Digital Design 
-+ C-Development
-  - Embedded Systems
-  - Kernel Space 
-  - User Space
++ Low-Level Development
 + Toolchain and Integration
-  - Automation (GNU Make, CMake, Ansible)
-  - Containerization (Docker)
-  - Testing (GoogleTest, PyTest)
-  - CI/CD (Travis, Jenkins, Github/Gitlab Workflows)
-+ Tooling
-  - Linux, BSD's, Git 
-  - Bash, POSIX shell
-  - UNIX/GNU utilities
 
-## Tools
+Check out [_resume_](/resume) for more details.
 
-On some level unbeknownst to me, I do believe that mastering a crafter's tools are as important as understanding 
+## Tooling
+
+On some sub-conscious, I do believe that mastering a crafter's tools are as important as understanding 
 the craft itself. Either that, or I just love procrastinating through learning more about UNIX-like systems and their 
 beautiful software. 
 
 Regardless, as somewhat of a hobby, when not engaged in topics mentioned above, I find myself continuously learning and interested in all UNIX-like systems. That goes from the their tools, the OSes itself and hacking both of them for my own needs. 
 
-I use the infamous UNIX clone ([Linux](https://www.linux.org/pages/download/)) on a daily basis and have done so for a long time. I am quite fond of the experience, the strong freedom within it's ecosystem and user base.
+I use the infamous UNIX clone - _Linux_ - on a daily basis and have done so for a long time. I am quite fond of the experience, the strong freedom within it's ecosystem and user base.
 
 ![](/assets/images/dotfiles.png){id="dots"}
 

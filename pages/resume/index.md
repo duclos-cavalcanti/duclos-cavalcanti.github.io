@@ -11,8 +11,8 @@ description: "my CV/Resume"
 - Munich, Germany
 
 American/Brazilian Electrical and Computer Engineer by the Technical University of Munich. Experienced in 
-Systems, SoC and Embedded development, as well as TinyMl applications. Currently, more interested in Natural 
-Language Processing as a field of research.
+Low-Level, FPGA, and Embedded development; as well as TinyMl-related applications. 
+Currently, more interested in Natural Language Processing as a field of research.
 
 ## Education
 
@@ -56,7 +56,7 @@ Assisted in teaching the Embedded Systems Programming Lab course given at TU Mun
 Full-time research intern at the Real-Time Computer Systems department within TUM.
 
 + Working with Google’s Edge Coral TPU and benchmarking it’s performance.
-+ Benchmarking is done through the analysis of USB traffic during model inference.
++ Benchmarking is done through the analysis of USB traffic during model inference _(Wireshark, pyshark)_
 + Automated the training, freezing, inference and hardware deployment of several ML Models through Tensorflow.
 
 <!-- ### <span>Research Intern, TU Munich</span> <span id="h3-date">Oct 2020 -- Feb 2021</span> -->

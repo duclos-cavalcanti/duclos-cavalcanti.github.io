@@ -22,15 +22,7 @@ build:
 	@./build.sh
 
 deploy:
-	@cp -v CNAME public/
-	@git subtree split --prefix public -b gh-pages
-	@git checkout gh-pages
-	@mv public/* ./
-	@rm -rf public
-	@git add --all && git commit -m "Update"
-	@git push origin gh-pages --force
-	@git checkout main
-	@git branch -D gh-pages
+	@./deploy.sh
 
 stop:
 	@docker stop ${APACHE_ID}
