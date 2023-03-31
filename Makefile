@@ -23,6 +23,7 @@ build:
 
 deploy:
 	@./deploy.sh
+	@${MAKE} restart
 
 stop:
 	@docker stop ${APACHE_ID}
