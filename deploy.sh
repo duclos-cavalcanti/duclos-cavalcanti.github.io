@@ -16,6 +16,7 @@ create_gh_pages() {
 
 	if [ -d public ]; then
         {
+            [ -d assets ] && rm -rf assets
             mv public/* ./
 	        rm -rf public
         } 2> /dev/null
