@@ -15,8 +15,3 @@ description: "Introduction to myself :)"
 <p id="profile-caption">
   Computer Scientist and Electrical Engineer
 </p>
-
-<p id="profile-caption">
-  B.Sc. and M.Sc. in ECE from the <a href="https://www.tum.de/en/">Technical University of Munich</a>
-</p>
-

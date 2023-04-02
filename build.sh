@@ -102,9 +102,9 @@ step() {
                     pdf ${dir/pages/public}/index.html assets/pdfs/resume.pdf
 
                     build ${dir}/index.md \
-                          templates/top.html \
+                          templates/empty.html \
                           templates/bottom.html \
-                          $(get_styles reset ${name} top bottom)
+                          $(get_styles ${name} top bottom)
                 else
                     build ${dir}/index.md \
                           templates/top.html \

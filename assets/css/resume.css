@@ -16,10 +16,10 @@
 body {
     color: #000000;
     background: var(--bg);
-    font: 1.1em "Times New Roman";
     line-height: 1.2;
     margin: 0 auto;
     max-width: 95%;
+    font-size: 100%;
 }
 
 #main{
@@ -189,12 +189,15 @@ h3 + ul, h3 + p + ul {
 }
 
 @media screen and (max-width: 800px) {
-    body {
-        font-size: 16pt;
-        margin: 0;
+    html, body {
+        margin: 0 auto;
         padding: 0;
-        background: #FFFFFF !important;
-        max-width: 100%;
+        min-height: 100%;
+        width: 800px;
+    	font-size: 93%;
+
+        overflow-y: hidden;
+        overflow-x: scroll;
     }
 }
 
