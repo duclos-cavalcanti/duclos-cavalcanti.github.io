@@ -41,7 +41,7 @@ That goes from the their tools, the OSes themselves and extending both of them f
 
 I use the infamous UNIX clone - _Linux_ - on a daily basis and have done so for a long time. I am quite fond of the experience, the strong freedom within it's ecosystem and user base.
 
-![](/assets/images/dotfiles.png){id="dots"}
+![](/assets/images/dotfiles.png){id="media"}
 
 Check out my [dotfiles](https://www.github.com/duclos-cavalcanti/dotfiles)!
 

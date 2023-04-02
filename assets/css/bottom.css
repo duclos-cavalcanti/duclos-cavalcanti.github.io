@@ -1,0 +1,33 @@
+/* Bottom or Footer */
+#bottom {
+    font-size: 85%;
+	text-align:	center;
+    height: 10%;
+    padding-top: 1em;
+}
+
+#links, #links a {
+    color: var(--fg);
+    text-decoration: none; 
+}
+
+#mail, #mail a {
+    color: var(--fg);
+    text-decoration: none; 
+}
+
+#mail a:hover {
+    color: var(--fg);
+    text-decoration: underline; 
+}
+
+#links-logo {
+    color: var(--fg);
+    width: 1em;
+    transition: opacity 0.1s;
+}
+
+#links-logo:hover {
+    opacity: 0.5;
+}
+

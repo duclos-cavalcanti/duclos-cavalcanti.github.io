@@ -14,6 +14,7 @@
     --faded:    #EEEEEE
 }
 
+/* General */
 html, body {
     display: block;
     margin: 0 auto;
@@ -21,7 +22,6 @@ html, body {
     min-height: 100%;
     max-width: 80%;
 
-    /* white-space: ; */
     overflow: scroll;
 
     background-color: var(--bg);
@@ -30,7 +30,6 @@ html, body {
 
 body {
     font: 100% monospace,monospace;
-    /* text-align: justify; */
 }
 
 blockquote {
@@ -54,40 +53,15 @@ h1 {
 	text-align:	center;
 }
 
-#top {
-    padding-top: 1.5em;
-    padding-bottom: 3.5em;
-
-	text-align:	center;
-    margin: 0 auto;
-}
-
-#pages ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-#pages li {
-    display: inline;
-    font: 90% monospace,monospace;
-    padding-right: 1em;
-}
-
-#pages a {
-    color: var(--grey); 
-    text-decoration: none; 
-}
-
-#pages a:hover {
-    color: var(--green); 
-    text-decoration: underline; 
-}
-
+/* Main content and media */
 #main{
     padding-top: 1.0em;
     height: 90%;
     clear: both;
+}
+
+#logo {
+    width: 1.5em;
 }
 
 #profile-image {
@@ -99,14 +73,6 @@ h1 {
     border-radius: 50%;
 }
 
-#media {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 85%;
-    height: 40%;
-}
-
 #profile-caption {
     font: 85% monospace,monospace;
     color: var(--grey);
@@ -114,34 +80,9 @@ h1 {
     text-align: center;
 }
 
-#bottom {
-    font-size: 85%;
-	text-align:	center;
-    height: 10%;
-    padding-top: 1em;
-}
-
-#links, #links a {
-    color: var(--fg);
-    text-decoration: none; 
-}
-
-#mail, #mail a {
-    color: var(--fg);
-    text-decoration: none; 
-}
-
-#mail a:hover {
-    color: var(--fg);
-    text-decoration: underline; 
-}
-
-#links-logo {
-    color: var(--fg);
-    width: 1em;
-    transition: opacity 0.1s;
-}
-
-#links-logo:hover {
-    opacity: 0.5;
+#media {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
 }

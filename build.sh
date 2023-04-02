@@ -30,19 +30,13 @@ get_path() {
 
 get_styles() {
     local arr=()
-    local default="${1}"
-    local extra="${2}"
 
-    default=assets/css/${default}.css
-    extra=assets/css/${extra}.css
-
-    if [ -f ${default} ]; then 
-        arr+=(-c /${default})
-    fi
-
-    if [ -f ${extra} ]; then 
-        arr+=(-c /${extra})
-    fi
+    for c in $@; do 
+        local file=assets/css/${c}.css
+        if [ -f ${file} ]; then 
+            arr+=(-c /${file})
+        fi
+    done
 
     echo "${arr[@]}"
 }
@@ -105,12 +99,17 @@ step() {
                           templates/empty.html \
                           $(get_styles reset ${name})
 
-                    pdf ${dir/pages/public}/index.html pages/assets/pdfs/resume.pdf
+                    pdf ${dir/pages/public}/index.html assets/pdfs/resume.pdf
+
+                    build ${dir}/index.md \
+                          templates/top.html \
+                          templates/bottom.html \
+                          $(get_styles reset ${name} top bottom)
                 else
                     build ${dir}/index.md \
                           templates/top.html \
                           templates/bottom.html \
-                          $(get_styles base ${name})
+                          $(get_styles base top bottom ${name})
                 fi
                 log "${dir^^} BUILT"
             fi
@@ -119,12 +118,14 @@ step() {
 }
 
 main() {
-    # clean and copying assets
+    # cleaning assets
     [ -d public/assets ] && rm -rf public/assets
-    cp -r assets public/
 
     # build web
     step pages
+
+    # copying assets
+    cp -r assets public/
 }
 
 for p in wkhtmltopdf pandoc; do 

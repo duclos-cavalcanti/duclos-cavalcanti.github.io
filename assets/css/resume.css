@@ -22,6 +22,11 @@ body {
     max-width: 95%;
 }
 
+#main{
+    padding-top: 1.0em;
+    clear: both;
+}
+
 p {
     margin: 0 0 0.5em 0;
     padding: 0;
@@ -163,14 +168,6 @@ h3 + ul, h3 + p + ul {
         padding: 0;
         background: none;
     }
-    #resume {
-        margin: 0;
-        padding: 0;
-        border: 0px;
-        background: none;
-        box-shadow: none;
-        -webkit-box-shadow: none;
-    }
     /* Do not underline abbr tags in PDF */
     abbr {
         text-decoration: none;
@@ -183,6 +180,7 @@ h3 + ul, h3 + p + ul {
         text-decoration: underline;
     }
 }
+
 @page {
     /* Change margins and paper size of PDF */
     /* https://developer.mozilla.org/en-US/docs/Web/CSS/@page */
@@ -198,12 +196,5 @@ h3 + ul, h3 + p + ul {
         background: #FFFFFF !important;
         max-width: 100%;
     }
-    #resume {
-        margin: 0;
-        padding: 1em;
-        border: 0px;
-        background: none;
-        box-shadow: none;
-        -webkit-box-shadow: none;
-    }
 }
+
