@@ -72,7 +72,7 @@ Full-time research intern at the Real-Time Computer Systems department within TU
 - Containerization/CI and CD: Docker, Jenkins, Travis CI
 - Frameworks/Tools: OpenMPI, OpenMP, Tensorflow, GoogleTest, PyTest, Python CFFI, SDL2
 - OS/Systems: FreeRTOS, Contiki OS, Linux, Arch Linux, Ubuntu
-- Wev Development: Basics of HTML, CSS and Javascript
+- Web Development: Basics of HTML, CSS and Javascript
 
 <table id="misc">
 <tr>

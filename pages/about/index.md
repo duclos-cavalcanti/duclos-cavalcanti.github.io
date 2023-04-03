@@ -26,8 +26,8 @@ I really feel that human language is one of the most transforming technologies w
 + TinyML
 + Real Time Operating Systems (RTOS) 
 + Digital Design 
-+ Low-Level Development
-+ Toolchain and Integration
++ System/Embedded Development
++ Toolchains/CI/CD
 
 Check out [_resume_](/resume) for more details.
 
