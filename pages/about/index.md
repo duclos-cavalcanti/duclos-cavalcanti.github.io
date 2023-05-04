@@ -13,6 +13,10 @@ What once begun as a general interest for programming languages has evolved to a
 
 ## Interests
 
++ Operating Systems
+
+Being able to understand the base software that interacts with our computers has always been an interest of mine. Linux was my first introduction to the concept of Operating Systems in general. That meant, looking at a computer as more than a machine that magically works and seeing it's underlying technology that enables our daily interaction with it and its many parts. It always baffled me how it was possible to write software so complex, yet so simple that makes our devices usable. To be able to dive more into this topic would be an amazing opportunity and a much wanted wish come true.
+
 + Natural Language Processing (NLP)
 
 Currently, as many already, I've been drawn in by the NLP hype with amazing contributions that have hit the mainstream, such as [Chat-GPT](https://openai.com/blog/chatgpt) and it's different versions. Initially, there was a general curiosity that led me to dive into this topic, however at this moment it has grown into much more. 
