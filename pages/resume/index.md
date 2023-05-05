@@ -72,7 +72,7 @@ Full-time research intern at the Real-Time Computer Systems department within TU
 - Containerization/CI and CD: Docker, Jenkins, Travis CI
 - Frameworks/Tools: OpenMPI, OpenMP, Tensorflow, GoogleTest, PyTest, Python CFFI, SDL2
 - OS/Systems: FreeRTOS, Contiki OS, Linux, Arch Linux, Ubuntu
-- Web Development: Basics of HTML, CSS and Javascript
+- Web Development: HTML, CSS, Javascript and ReactJS
 
 <table id="misc">
 <tr>
@@ -94,5 +94,10 @@ Full-time research intern at the Real-Time Computer Systems department within TU
   <td>Serve (golang): small cli tool</td>
   <td>NUS - Singapore: Natural Language Processing - Foundations</td>
   <td>Spanish - <em>Beginner</em></td>
+</tr>
+<tr>
+  <td></td>
+  <td>UDEMY: Ultimate Rust Crash Course</td>
+  <td></td>
 </tr>
 </table> 
