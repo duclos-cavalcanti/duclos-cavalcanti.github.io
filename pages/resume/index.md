@@ -37,7 +37,7 @@ Assisted ongoing research within the Electronic Design Automation (EDA) departme
 - Python development to automate and build a Design‑Space‑Exploration framework.
 -  Framework's goal was to find optimal heteregeneous hardware configurations to run inference on given ML models.
 
-### <span>Working Student, Molabo GmbH</span> <span id="h3-date">Aug 2021 -- Jan 2022</span>
+### <span>Working Student, Molabo GmbH - Ottobrun, Germany</span> <span id="h3-date">Aug 2021 -- Jan 2022</span>
 
 Assisted the motor-drive team, developing for their Embedded and FPGA devices.
 
@@ -47,7 +47,7 @@ Assisted the motor-drive team, developing for their Embedded and FPGA devices.
 + Built toolchains via CMake and GNU Make.
 + Automation through one-off Python and Bash scripts.
 
-### <span>Tutor, RCS Department - TU Munich</span> <span id="h3-date">Aug 2021 -- Jan 2022</span>
+### <span>Tutor, RCS Department - TU Munich</span> <span id="h3-date">Apr 2021 -- Aug 2021</span>
 Assisted in teaching the Embedded Systems Programming Lab course given at TU Munich.
 
 + Helped students during their course work and their final project, which consisted of writing FreeRTOS applications in C.
@@ -87,17 +87,12 @@ Full-time research intern at the Real-Time Computer Systems department within TU
 </tr>
 <tr>
   <td>Hamming-Code Error Detection (VHDL/C)</td>
-  <td>UT Austin: Embedded Systems - Microcontroller I/O</td>
+  <td>UT Austin: Embedded Systems - uC I/O</td>
   <td>German - <em>Fluent</em></td>
 </tr>
 <tr>
   <td>Serve (golang): small cli tool</td>
-  <td>NUS - Singapore: Natural Language Processing - Foundations</td>
+  <td>NUS - Singapore: NLP - Foundations</td>
   <td>Spanish - <em>Beginner</em></td>
-</tr>
-<tr>
-  <td></td>
-  <td>UDEMY: Ultimate Rust Crash Course</td>
-  <td></td>
 </tr>
 </table> 
