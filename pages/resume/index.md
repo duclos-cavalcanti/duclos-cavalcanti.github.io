@@ -76,23 +76,24 @@ Full-time research intern at the Real-Time Computer Systems department within TU
 
 <table id="misc">
 <tr>
-  <th>Projects</th>
   <th>Certificates</th>
   <th>Languages</th>
 </tr>
 <tr>
-  <td>FreeRTOS Space Invaders (C)</td>
   <td>UCSD: Data Structures Fundamentals</td>
   <td>English/Portuguese - <em>Native</em></td>
 </tr>
 <tr>
-  <td>Hamming-Code Error Detection (VHDL/C)</td>
   <td>UT Austin: Embedded Systems - uC I/O</td>
   <td>German - <em>Fluent</em></td>
 </tr>
 <tr>
-  <td>Serve (golang): small cli tool</td>
   <td>NUS - Singapore: NLP - Foundations</td>
   <td>Spanish - <em>Beginner</em></td>
 </tr>
 </table> 
+
+## Projects
+- FreeRTOS Space Invaders (C)
+- Hamming-Code Error Detection (VHDL/C)
+- Serve (golang): small cli tool
