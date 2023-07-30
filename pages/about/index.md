@@ -52,3 +52,6 @@ Beyond computer science I have a variety of different interests. These go from L
 I am a huge fan of *Stand-up Comedy* and have been since I first saw it as a kid. Among many contemporaries, I'd say my favorite current comedians would be *Dave Chapelle*, *Bill Burr*, *Ricky Gervais* and *Andrew Schulz*.
 
 *American Rap* has also been my music of choice since I can remember, there is something about the raw expression and linguistic exercise of this art form that has always drawn me in.
+
+<!-- - Small but lion hearted -->
+<!-- - Don't take my word, double check all of my flows -->
