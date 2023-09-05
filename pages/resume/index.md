@@ -12,9 +12,15 @@ description: "my CV/Resume"
 
 American/Brazilian Electrical and Computer Engineer by the Technical University of Munich. Experienced in 
 Low-Level, FPGA, and Embedded development, as well as TinyML-related applications. 
-Currently, more interested in Natural Language Processing as a field of research.
+Currently, more interested in Operating Systems as a field of research.
 
 ## Education
+
+### <span> (Exchange) M.Sc. Computer Science, New York University </span> <span id="h3-date">Sept 2023 -- Now</span>
+
++ Visiting Graduate Student at NYU's GSAS
++ Courses: CSCI-GA 2250 - Operating Systems
+
 
 ### <span>M.Sc. Electrical/Computer Engineering, TU Munich </span> <span id="h3-date">Oct 2020 -- Now</span>
 

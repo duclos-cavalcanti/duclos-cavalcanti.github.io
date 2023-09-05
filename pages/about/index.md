@@ -7,7 +7,9 @@ description: "More to me"
 # About
 <hr />
 
-My name is Daniel Duclos-Cavalcanti, I'm a Computer Engineer currently living in Munich, Germany. I was born in the United States, more specifically in Minneapolis. However, I've lived most of my formative years in Brazil, where my family takes up residence. Eventually, my studies brought me to Germany, where I've pursued a B.Sc. and a M.Sc. in Electrical and Computer Engineering at the Technical University of Munich.
+My name is Daniel Duclos-Cavalcanti, I'm a Computer Engineer currently living in New York City, USA. 
+
+I was born in the United States, more specifically in Minneapolis. However, I've lived most of my formative years in Brazil, where my family takes up residence. Eventually, my studies brought me to Germany, where I've pursued a B.Sc. and a M.Sc. in Electrical and Computer Engineering at the Technical University of Munich.
 
 What once begun as a general interest for programming languages has evolved to a broader curiosity towards computers, algorithms, digital electronics and cyber-physical systems in their entirety. All challenge's both at high and low level's of computational abstraction interest me and peak my curiosity in different ways.
 
