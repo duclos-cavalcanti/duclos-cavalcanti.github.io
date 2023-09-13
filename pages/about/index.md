@@ -15,6 +15,12 @@ What once begun as a general interest for programming languages has evolved to a
 
 ## Interests
 
++ Operating Systems
+
+Since my first programming class, I guess the will to understand programs and the machines that execute them 
+eventually brought me both to study digital electronics and then later on the software abstractions that enable us 
+to use computers - Operating Systems. They are, for me at least, at the heart of computer science and beautifully tie hardware and software into a single system and play a huge part in so many fields and applications.
+
 + Natural Language Processing (NLP)
 
 Currently, as many already, I've been drawn in by the NLP hype with amazing contributions that have hit the mainstream, such as [Chat-GPT](https://openai.com/blog/chatgpt) and it's different versions. Initially, there was a general curiosity that led me to dive into this topic, however at this moment it has grown into much more. 
@@ -35,11 +41,11 @@ Check out [_resume_](/resume) for more details.
 
 ## Tooling
 
-On some sub-conscious, I do believe that mastering a crafter's tools are as important as understanding 
-the craft itself. Either that, or I just love procrastinating through endlessly hacking on my system :)
+On some level, I do believe that mastering one's tools are as important as understanding 
+the craft itself. Either that, or I just love procrastinating through endlessly hacking.
 
-Regardless, as somewhat of a hobby, when I'm not engaged in topics mentioned above, I find myself continuously learning and interested in all things UNIX. 
-That goes from the their tools, the OSes themselves and extending both of them for my needs. 
+Regardless, as somewhat of a hobby, when I'm not engaged in topics mentioned above, I find myself continuously learning and interested in all things UNIX. That goes from the their tools, the OSes themselves and 
+extending both of them for my needs. 
 
 I use the infamous UNIX clone - _Linux_ - on a daily basis and have done so for a long time. I am quite fond of the experience, the strong freedom within it's ecosystem and user base.
 
