@@ -19,6 +19,7 @@ Currently, more interested in Operating Systems as a field of research.
 ### <span> (Exchange) M.Sc. Computer Science, New York University </span> <span id="h3-date">Sept 2023 -- Now</span>
 
 + Visiting Graduate Student at NYU's GSAS
++ Master Thesis
 + Courses: CSCI-GA 2250 - Operating Systems
 
 
