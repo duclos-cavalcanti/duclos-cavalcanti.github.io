@@ -21,13 +21,13 @@ Since my first programming class, I guess the will to understand programs and th
 eventually brought me both to study digital electronics and then later on the software abstractions that enable us 
 to use computers - Operating Systems. They are, for me at least, at the heart of computer science and beautifully tie hardware and software into a single system and play a huge part in so many fields and applications.
 
-+ Natural Language Processing (NLP)
-
-Currently, as many already, I've been drawn in by the NLP hype with amazing contributions that have hit the mainstream, such as [Chat-GPT](https://openai.com/blog/chatgpt) and it's different versions. Initially, there was a general curiosity that led me to dive into this topic, however at this moment it has grown into much more. 
-
-I am not only deeply interested in the science and its various applications, but the linguistics component to this field means to me just as much. Being born in a bilingual household, language has always been present in my life as more than a means to an end. Different languages have shown me different perspectives on how to transmit information, how to approach a subject, how to express myself. I've lead life with with what I believed were two separate passions: language and science. Now, even though a tad late to the party, I've found the one thing that these two become one and that excites me tremendously.
-
-I really feel that human language is one of the most transforming technologies we've ever developed. In this day and age, being able to reproduce language understanding within computers is just a fascinating and mind-bending task. Being able to be a part of this movement in itself is already all the fulfillment I could ask for.
+<!-- + Natural Language Processing (NLP) -->
+<!---->
+<!-- Currently, as many already, I've been drawn in by the NLP hype with amazing contributions that have hit the mainstream, such as [Chat-GPT](https://openai.com/blog/chatgpt) and it's different versions. Initially, there was a general curiosity that led me to dive into this topic, however at this moment it has grown into much more.  -->
+<!---->
+<!-- I am not only deeply interested in the science and its various applications, but the linguistics component to this field means to me just as much. Being born in a bilingual household, language has always been present in my life as more than a means to an end. Different languages have shown me different perspectives on how to transmit information, how to approach a subject, how to express myself. I've lead life with with what I believed were two separate passions: language and science. Now, even though a tad late to the party, I've found the one thing that these two become one and that excites me tremendously. -->
+<!---->
+<!-- I really feel that human language is one of the most transforming technologies we've ever developed. In this day and age, being able to reproduce language understanding within computers is just a fascinating and mind-bending task. Being able to be a part of this movement in itself is already all the fulfillment I could ask for. -->
 
 ## Experience
 
