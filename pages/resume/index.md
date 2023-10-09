@@ -75,11 +75,11 @@ Full-time research intern at the Real-Time Computer Systems department within TU
 
 - Development: C(__Experienced__), Rust(__Basics__), Golang(__Intermediate__)
 - Scripting: Python(__Intermediate__), Lua(__Intermediate__), Bash/sh(__Experienced__)
-- Tool-chain Development: CMake, GNU Make, Git, Ansible
+- Toolchain/Build Systems: CMake, GNU Make, Git, Ansible
 - Containerization/CI and CD: Docker, Jenkins, Travis CI
 - Frameworks/Tools: OpenMPI, OpenMP, Tensorflow, GoogleTest, PyTest, Python CFFI, SDL2
-- OS/Systems: FreeRTOS, Contiki OS, Linux, Arch Linux, Ubuntu
-- Web Development: HTML, CSS, Javascript and ReactJS
+- Operating Systems: FreeRTOS, Contiki OS, Linux, Arch Linux, Ubuntu, NixOS
+- Web: HTML, CSS, Javascript and ReactJS
 
 <table id="misc">
 <tr>
@@ -100,7 +100,21 @@ Full-time research intern at the Real-Time Computer Systems department within TU
 </tr>
 </table> 
 
-## Projects
-- FreeRTOS Space Invaders (C)
-- Hamming-Code Error Detection (VHDL/C)
-- Serve (golang): small cli tool
+<table id="projects">
+<tr>
+  <th>Projects</th>
+  <th></th>
+</tr>
+<tr>
+  <td>FreeRTOS Space Invaders __(C)__</td>
+  <td>Serve __(Golang)__: Small cli tool</td>
+</tr>
+<tr>
+  <td>Hamming-Code Error Detection __(VHDL and C)__</td>
+</tr>
+</table> 
+
+<!-- ## Projects -->
+<!-- - FreeRTOS Space Invaders (C) -->
+<!-- - Hamming-Code Error Detection (VHDL/C) -->
+<!-- - Serve (golang): small cli tool -->

@@ -123,6 +123,21 @@ h1 + ul + p {
     text-align: left;
 }
 
+#projects {
+    margin: 1em 0 0 0;
+}
+
+#projects th {
+    font-size: 130%;
+    text-align: left;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000000;
+}
+
+#projects tbody td {
+    text-align: left;
+}
+
 /* Major Categories=Education, Experience, Skills */
 h2 {
     border-bottom: 1px solid #000000;
