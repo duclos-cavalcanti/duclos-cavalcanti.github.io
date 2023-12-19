@@ -15,7 +15,11 @@ What once begun as a general interest for programming languages has evolved to a
 
 ## Interests
 
-+ Operating Systems, Distributed Systems, Scheduling Theory, Virtualization
++ Operating Systems 
+- Scheduling Theory 
+- Virtualization
+- Distributed Systems 
+- Networking
 
 Since my first programming class, I guess the will to understand programs and the machines that execute them 
 eventually brought me both to study digital electronics and then later on the software abstractions that enable us 
