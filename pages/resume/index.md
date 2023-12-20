@@ -8,11 +8,11 @@ description: "my CV/Resume"
 
 - <me@duclos.dev>
 - [www.duclos.dev](www.duclos.dev)
-- Munich, Germany
+- New York, USA
 
 American/Brazilian Electrical and Computer Engineer by the Technical University of Munich. Experienced in 
-Low-Level, FPGA, and Embedded development, as well as TinyML-related and HPC applications. 
-Currently, more interested in Operating Systems as a field of research.
+Low-Level, FPGA, and Embedded development. Currently, more interested in Operating Systems and Distributed
+Systems as a field of work.
 
 ## Education
 
@@ -26,7 +26,7 @@ Currently, more interested in Operating Systems as a field of research.
 ### <span>M.Sc. Electrical/Computer Engineering, TU Munich </span> <span id="h3-date">Oct 2020 -- Now</span>
 
 + GPA: 3.0 (American Standards) | 2.5 (German Standards)
-+ Currently enrolled in last semester
++ Last Credit: Master Thesis _(ongoing)_
 
 ### <span>B.Sc. Electrical/Computer Engineering, TU Munich </span> <span id="h3-date">Feb 2017 -- Sept 2020</span>
 
