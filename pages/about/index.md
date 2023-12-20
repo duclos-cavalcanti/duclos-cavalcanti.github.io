@@ -7,7 +7,7 @@ description: "More to me"
 # About
 <hr />
 
-My name is Daniel Duclos-Cavalcanti, I'm a Computer Engineer currently living in New York City, USA. 
+My name is Daniel Duclos-Cavalcanti, I'm an American/Brazilian Computer Engineer currently living in __New York City, USA__. 
 
 I was born in the United States, more specifically in Minneapolis. However, I've lived most of my formative years in Brazil, where my family takes up residence. Eventually, my studies brought me to Germany, where I've pursued a B.Sc. and a M.Sc. in Electrical and Computer Engineering at the Technical University of Munich.
 
@@ -22,18 +22,19 @@ What once begun as a general interest for programming languages has evolved to a
 - Networking
 
 Since my first programming class, I guess the will to understand programs and the machines that execute them 
-eventually brought me both to study digital electronics and then later on the software abstractions that enable us 
-to use computers - Operating Systems. They are, for me at least, at the heart of computer science and beautifully tie hardware and software into a single system and play a huge part in so many fields and applications.
+eventually brought me both to study electronics and then later on the software abstractions that leverage 
+hardware into a cohesive system -- Operating Systems. Everything that interfaces with Kernel Enginering 
+both in the singular or plural context of computation intrigue me.
 
 ## Experience
 
++ Operating Systems (Linux), as well as Real-Time OSs (RTOS)
++ Embedded/FPGA and SoC/System Development
 + TinyML
-+ Real Time Operating Systems (RTOS) 
-+ Digital Design 
-+ System/Embedded Development
 + Toolchains/CI/CD
++ Digital Design 
 
-Check out [_resume_](/resume) for more details.
+Check out my [__RESUME__](/resume) for more in-depth details.
 
 ## Tooling
 
