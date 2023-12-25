@@ -72,7 +72,7 @@ Full-time research intern at the Real-Time Computer Systems department within TU
 
 ## Skills
 
-- Development: C(__Experienced__), Rust(__Basics__), Golang(__Intermediate__)
+- Development: C(__Experienced__), C++(__Intermediate__), Rust(__Basics__), Golang(__Intermediate__)
 - Scripting: Python(__Intermediate__), Lua(__Intermediate__), Bash/sh(__Experienced__)
 - Toolchain/Build Systems: CMake, GNU Make, Git, Ansible
 - Containerization/CI and CD: Docker, Jenkins, Travis CI
