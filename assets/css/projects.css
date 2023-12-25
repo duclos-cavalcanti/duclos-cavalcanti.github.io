@@ -10,7 +10,7 @@ h2 a {
 }
 
 h2 a:hover {
-    color: var(--green);
+    color: var(--blue);
     text-decoration: underline;
 }
 

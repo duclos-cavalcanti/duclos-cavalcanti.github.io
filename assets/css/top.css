@@ -43,7 +43,7 @@
 }
 
 .dropdown-content a:hover {
-	color: var(--green);
+	color: var(--blue);
 }
 
 .dropdown:hover .dropdown-content {
