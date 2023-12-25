@@ -18,8 +18,9 @@ Operating Systems, Embedded/FPGA/SoC Development as well as System Programming.
 ### <span> (Exchange) M.Sc. Computer Science, New York University </span> <span id="h3-date">Sept 2023 -- Now</span>
 
 + Visiting Graduate Student at NYU's GSAS
-+ Courses: __CSCI-GA 2250 - Operating Systems__ -- A _(Final)_
-+ Master Thesis _(ongoing)_
+    + Master Thesis _(ongoing)_
+    + CSCI-GA 3033 - __Cryptography of Blockchains__ _(Spring Term)_
+    + CSCI-GA 2250 - __Operating Systems__ -- __A__  _(Fall Term)_
 
 
 ### <span>M.Sc. Electrical/Computer Engineering, TU Munich </span> <span id="h3-date">Oct 2020 -- Now</span>
