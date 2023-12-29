@@ -7,7 +7,9 @@ description: "More to me"
 # About
 <hr />
 
-My name is Daniel Duclos-Cavalcanti, I'm an American/Brazilian Computer Engineer currently living in __New York City, USA__. 
+American/Brazilian Computer Engineer finishing off a M.Sc. in ECE through an exchange at NYU's Graduate School of Arts and Science. I'm currently living in New York and am searching for full-time roles to further my stay in the city, as well as move into the next chapter of my career in Software/Computer Engineering.
+
+I earned my B.Sc. in Electrical and Computer Engineering by the Technical University of Munich, where from I also will soon receive my masters degree from as well.
 
 I was born in the United States, more specifically in Minneapolis. However, I've lived most of my formative years in Brazil, where my family takes up residence. Eventually, my studies brought me to Germany, where I've pursued a B.Sc. and a M.Sc. in Electrical and Computer Engineering at the Technical University of Munich.
 
@@ -16,7 +18,7 @@ What once begun as a general interest for programming languages has evolved to a
 ## Interests
 
 + Operating Systems 
-- Scheduling Theory 
+- High-Performance Computing
 - Virtualization
 - Distributed Systems 
 - Networking

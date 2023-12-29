@@ -11,7 +11,7 @@ description: "my CV/Resume"
 - New York, USA
 
 American/Brazilian Electrical and Computer Engineer by the Technical University of Munich. Experienced in 
-Operating Systems, Embedded/FPGA/SoC Development as well as System Programming. 
+Operating Systems, High-Performance Computing, Embedded/FPGA/SoC Development as well as Systems Programming. 
 
 ## Education
 
