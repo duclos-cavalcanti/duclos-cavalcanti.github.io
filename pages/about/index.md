@@ -18,10 +18,9 @@ What once begun as a general interest for programming languages has evolved to a
 ## Interests
 
 + Operating Systems 
-- High-Performance Computing
 - Virtualization
-- Distributed Systems 
-- Networking
+- Distributed Systems/Networking
+- High-Performance Computing
 
 Since my first programming class, I guess the will to understand programs and the machines that execute them 
 eventually brought me both to study electronics and then later on the software abstractions that leverage 
