@@ -1,14 +1,7 @@
 #!/bin/bash
 
 main() {
-    # cleaning assets
-    [ -d public/assets ] && rm -rf public/assets
-
-    # build web
-    step pages
-
-    # copying assets
-    cp -r assets public/
+    pandoc --template=cover/template.tex cover/cover.md -o cover/cover.pdf
 }
 
 for p in wkhtmltopdf pandoc; do 

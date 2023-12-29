@@ -19,6 +19,10 @@ build:
 	@./build.sh
 	@cp ./assets/pdfs/resume.pdf ~/Downloads/
 
+cover:
+	@./cover.sh
+	@cp ./cover/cover.pdf ~/Downloads/
+
 deploy:
 	@./deploy.sh
 	@${MAKE} restart
