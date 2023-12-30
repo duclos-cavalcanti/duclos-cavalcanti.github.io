@@ -18,8 +18,8 @@ What once begun as a general interest for programming languages has evolved to a
 ## Interests
 
 + Operating Systems 
-- Virtualization
-- Distributed Systems/Networking
+- Virtualization and Containerization
+- Distributed Systems and Networks
 - High-Performance Computing
 
 Since my first programming class, I guess the will to understand programs and the machines that execute them 

@@ -1,41 +1,23 @@
 ---
-author:
-- Aaron Wolen
-- Your Organization
-opening: To whom it may concern,
-closing: Sincerely,
-date: 12 December 2020
-address: 
-- 123 Street Rd
-- Chicago, IL
-return-address: 
-- My Home
-- 456 Road St.
-- New York, NY
-cc:
-- Recipient 1
-- Recipient 2
-encl:
-- Enclosure 1
-- Enclosure 2
-ps: |
-  PS Lorem ipsum dolor sit amet, *consectetur* adipiscing elit.
-fontfamily: mathpazo
-fontsize: 12pt
-geometry: margin=1in
-blockquote: true
-letterhead: cover/letterhead.pdf
-signature: cover/signature.pdf
-signature-before: -8ex
-signature-after: 0ex
-closing-indentation: 0pt
-links-as-notes: true
-colorlinks: true
-...
+size: 11pt
+firstname: 'Daniel'
+lastname: 'Duclos-Cavalcanti'
+address: 'XXXX'
+zip: 20000
+state: NY
+city: New York
+phone: 'XXXXXXXX'
+email: 'daniel.duclos.cavalcanti@gmail.com'
+web: 'www.duclos.dev'
+title: 'Computer Engineer'
+opening: 'To whom it may concern'
+---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mollis dolor vitae tristique eleifend. Quisque non ipsum sit amet velit malesuada consectetur. Praesent vel facilisis leo. Sed facilisis varius orci, ut aliquam lorem malesuada in. Morbi nec purus at nisi fringilla varius non ut dui. Pellentesque bibendum sapien velit. Nulla purus justo, congue eget enim a, elementum sollicitudin eros. Cras porta augue ligula, vel adipiscing odio ullamcorper eu. In tincidunt nisi sit amet tincidunt tincidunt. Maecenas elementum neque eget dolor [egestas fringilla](http://example.com):
+We submit for your review: "The role of the microbiome in health and disease" by Geoffrey Hannigan and colleagues. We believe this work to be especially well suited for publication in Science and highly relevant to a broader scientific readership as well as the general public.
 
-> Nullam eget dapibus quam, sit amet sagittis magna. Nam tincidunt, orci ac imperdiet ultricies, neque metus ultrices quam, id gravida augue lacus ac leo. 
+\noindent
+Our lab strives to set high standards of reproducibility and transparency, while generating and publishing high quality data. As such, all analysis work-flows, scripts, and datasets have been made publicly available for other researchers to utilize.
 
-Vestibulum id sodales lectus, sed scelerisque quam. Nullam auctor mi et feugiat commodo. Duis interdum imperdiet nulla, vitae bibendum eros placerat non. Cras ornare, risus in faucibus malesuada, libero sem fringilla quam, ut luctus enim sapien eget dolor.
-
+\noindent
+The data presented in this manuscript are original and the manuscript is not under consideration elsewhere. A preprint version of this manuscript has been made available through BioRxiv.
+We thank you for your consideration and look forward to your response.

@@ -7,7 +7,13 @@ APACHE_ID := $(shell docker ps -a | grep ${APACHE_NAME} | awk '{print $$1}')
 IS_APACHE := $(shell docker images | tail -n +2 | awk '{print $$1}' | grep -o httpd)
 IS_APACHE_RUNNING := $(shell docker ps -a | grep ${APACHE_NAME})
 
-.PHONY: clean build serve serve-pull serve-attach
+LATEX := pandoc-latex-custom
+LATEX_NAME := latex-cover
+
+IS_LATEX = $(shell docker image ls | grep ${LATEX} | tr -s ' ' | cut -f2 -d ' ')
+IS_LATEX_RUNNING = $(shell docker ps -a | grep ${LATEX_NAME})
+
+.PHONY: clean build cover cover-pull serve serve-pull serve-attach
 all: build
 
 clean:
@@ -19,8 +25,21 @@ build:
 	@./build.sh
 	@cp ./assets/pdfs/resume.pdf ~/Downloads/
 
+# cover-pull:
+# 	@docker build --tag=${LATEX} .
+#
+# cover: $(if ${IS_LATEX}, , cover-pull)
+# 	@docker run --rm \
+# 		   		--name=${LATEX_NAME} \
+# 		   		--user=$(shell id -u) \
+# 		   		-v ${PWD}:/data \
+# 		   		-w /data \
+# 		   		-it ${LATEX} \
+# 				cover/cover.md -o cover/cover.pdf --pdf-engine=xelatex --template=cover/template.tex
+# 	@cp ./cover/cover.pdf ~/Downloads/
+
 cover:
-	@./cover.sh
+	@pandoc cover/cover.md -o cover/cover.pdf --pdf-engine=xelatex --template=cover/template.tex
 	@cp ./cover/cover.pdf ~/Downloads/
 
 deploy:

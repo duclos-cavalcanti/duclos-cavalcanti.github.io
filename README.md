@@ -36,8 +36,9 @@ of specifying an additional domain name so that your webpage can be accessed thr
 **Debian/Ubuntu** 
 ```sh 
 sudo apt install pandoc wkhtmltopdf
-# need to add yourself to docker group
-sudo usermod -aG docker $(whoami)
+sudo apt install texlive-latex-base texlive-xetex
+# need to install docker and
+# add yourself to docker group
 ```
 
 Docker is only needed to be able to serve your website locally, so one can visualize its deployment
