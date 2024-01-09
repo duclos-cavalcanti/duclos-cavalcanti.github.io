@@ -44,9 +44,9 @@ Assisted ongoing research within the Electronic Design Automation (EDA) departme
 - Python development to automate and build a Design‑Space‑Exploration framework.
 -  Framework's goal was to find optimal heteregeneous hardware configurations to run inference on given ML models.
 
-### <span>Working Student, Molabo GmbH - Ottobrun, Germany</span> <span id="h3-date">Aug 2021 -- Jan 2022</span>
+### <span>Embedded Engineer, Molabo GmbH - Ottobrun, Germany</span> <span id="h3-date">Aug 2021 -- Jan 2022</span>
 
-Assisted the motor-drive team, developing for their Embedded and FPGA devices.
+Assisted the motor-drive team as a part-time working student, developing for their Embedded and FPGA devices.
 
 + Responsible for the team’s Jenkins Pipeline, hand-crafting Jenkinsfiles and supervising successful pipeline execution.
 + Began containerized unit tests in C++ through gTest/GoogleTest with coverage via gcov.
@@ -111,10 +111,6 @@ Full-time research intern at the Real-Time Computer Systems department within TU
 </tr>
 <tr>
   <td>Hamming-Code Error Detection __(VHDL and C)__</td>
+  <td>OpenMPI Value Iteration __(C++)__: Dynamic model</td>
 </tr>
 </table> 
-
-<!-- ## Projects -->
-<!-- - FreeRTOS Space Invaders (C) -->
-<!-- - Hamming-Code Error Detection (VHDL/C) -->
-<!-- - Serve (golang): small cli tool -->

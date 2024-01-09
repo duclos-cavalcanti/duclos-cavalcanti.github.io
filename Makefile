@@ -25,19 +25,6 @@ build:
 	@./build.sh
 	@cp ./assets/pdfs/resume.pdf ~/Downloads/
 
-# cover-pull:
-# 	@docker build --tag=${LATEX} .
-#
-# cover: $(if ${IS_LATEX}, , cover-pull)
-# 	@docker run --rm \
-# 		   		--name=${LATEX_NAME} \
-# 		   		--user=$(shell id -u) \
-# 		   		-v ${PWD}:/data \
-# 		   		-w /data \
-# 		   		-it ${LATEX} \
-# 				cover/cover.md -o cover/cover.pdf --pdf-engine=xelatex --template=cover/template.tex
-# 	@cp ./cover/cover.pdf ~/Downloads/
-
 cover:
 	@pandoc cover/cover.md -o cover/cover.pdf --pdf-engine=xelatex --template=cover/template.tex
 	@cp ./cover/cover.pdf ~/Downloads/
@@ -64,4 +51,17 @@ pull:
 
 attach:
 	@[ -n ${IS_APACHE_RUNNING} ] && docker exec -it ${APACHE_NAME} bash
+
+# cover-pull:
+# 	@docker build --tag=${LATEX} .
+#
+# cover: $(if ${IS_LATEX}, , cover-pull)
+# 	@docker run --rm \
+# 		   		--name=${LATEX_NAME} \
+# 		   		--user=$(shell id -u) \
+# 		   		-v ${PWD}:/data \
+# 		   		-w /data \
+# 		   		-it ${LATEX} \
+# 				cover/cover.md -o cover/cover.pdf --pdf-engine=xelatex --template=cover/template.tex
+# 	@cp ./cover/cover.pdf ~/Downloads/
 

@@ -53,6 +53,35 @@ h1 {
 	text-align:	center;
 }
 
+
+/* tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+/* table headers */
+th {
+  background-color: var(--bg);
+  text-align: center;
+  padding: 4px;
+  border: 1px dashed var(--grey);
+}
+
+/* table cells */
+td {
+  text-align: left;
+  padding: 4px;
+  border: 1px dashed var(--black);
+}
+
+/* table rows */
+tr:nth-child(odd),
+tr:nth-child(even) {
+    background-color: var(--bg);
+}
+
 /* Main content and media */
 #main{
     padding-top: 1.0em;
