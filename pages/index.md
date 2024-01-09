@@ -12,7 +12,8 @@ description: "Introduction to myself :)"
 <img id="logo" src="/assets/images/icon.png">
 </p>
 
-<p id="profile-caption">
-  Computer Scientist and Electrical Engineer
+<p align="center" id="profile-caption">
+  Computer Engineer:
+  [[info]](/about)
 </p>
 
