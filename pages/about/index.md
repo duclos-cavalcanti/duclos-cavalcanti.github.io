@@ -29,8 +29,8 @@ Networks                    | Software-Defined Networks, P4 |
 
 Since my first programming class I had the will to understand programs and the machines that execute them.
 This eventually brought me both to study electronics and then later on the software mechanisms that leverage 
-hardware into a cohesive system. These topics then stretch from operating systems, distributed systems to
-even embedded systems and systems-on-chip.
+hardware into a cohesive system. These topics then stretched from operating/distributed systems to
+even embedded processors, systems-on-chip and FPGAs.
 Everything that interfaces with computers from the lowest to the highest abstraction level interest me.
 
 Check out my [__RESUME__](/resume) for more in-depth details.
