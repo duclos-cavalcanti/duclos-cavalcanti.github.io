@@ -10,4 +10,3 @@ description: "my blog posts"
 
 1. Workflow
 2. Research
-    1. [Natural Language Processing - Foundations](/blog/nlp)

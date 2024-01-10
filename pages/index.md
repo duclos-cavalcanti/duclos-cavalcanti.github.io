@@ -14,6 +14,6 @@ description: "Introduction to myself :)"
 
 <p align="center" id="profile-caption">
   Computer Engineer:
-  [[info]](/about)
+  [[info](/about)]
 </p>
 

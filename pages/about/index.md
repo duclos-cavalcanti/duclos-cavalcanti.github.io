@@ -27,10 +27,11 @@ High Performance Computing  | OpenMPI, C, C++ |
 AI/ML                       | TinyML, Tensorflow, TFLite |
 Networks                    | Software-Defined Networks, P4 |
 
-Since my first programming class, I guess the will to understand programs and the machines that execute them 
-eventually brought me both to study electronics and then later on the software abstractions that leverage 
-hardware into a cohesive system -- Operating Systems. Everything that interfaces with Kernel Enginering 
-both in the singular or plural context of computation intrigue me.
+Since my first programming class, I had the will to understand programs and the machines that execute them.
+This eventually brought me both to study electronics and then later on the software mechanisms that leverage 
+hardware into a cohesive system. These topics then stretch from operating systems, distributed systems to
+even embedded systems and systems-on-chip.
+Everything that interfaces with computers from the lowest to the highest abstraction level interest me.
 
 Check out my [__RESUME__](/resume) for more in-depth details.
 
