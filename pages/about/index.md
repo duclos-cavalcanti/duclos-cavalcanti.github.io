@@ -27,7 +27,7 @@ High Performance Computing  | OpenMPI, C, C++ |
 AI/ML                       | TinyML, Tensorflow, TFLite |
 Networks                    | Software-Defined Networks, P4 |
 
-Since my first programming class, I had the will to understand programs and the machines that execute them.
+Since my first programming class I had the will to understand programs and the machines that execute them.
 This eventually brought me both to study electronics and then later on the software mechanisms that leverage 
 hardware into a cohesive system. These topics then stretch from operating systems, distributed systems to
 even embedded systems and systems-on-chip.
