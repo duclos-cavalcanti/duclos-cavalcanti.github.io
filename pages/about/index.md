@@ -25,7 +25,7 @@ Tooling                     | Scripting/Toolchains/CI/CD |
 Containerization            | Docker |
 High Performance Computing  | OpenMPI, C, C++ |
 AI/ML                       | TinyML, Tensorflow, TFLite |
-Networks                    | Software-Defined Networks, P4 |
+Network Engineering         | Kernel Networking Stack, SDNs, P4 |
 
 Since my first programming class I had the will to understand programs and the machines that execute them.
 This eventually brought me both to study electronics and then later on the software mechanisms that leverage 
