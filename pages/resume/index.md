@@ -19,7 +19,8 @@ Operating Systems, High-Performance Computing, Embedded/FPGA/SoC Development as 
 
 + Visiting Graduate Student at NYU's GSAS
     + Master Thesis _(ongoing)_
-    + CSCI-GA 2274 - __Advanced Computer Graphics__ _(Spring Term)_
+    + CSCI-GA 3033 - __Special Topics: Technologies in Finance__ _(Spring Term)_
+    + CSCI-GA 2621 - __Distributed Systems__ _(Spring Term)_
     + CSCI-GA 2250 - __Operating Systems__ -- __A__  _(Fall Term)_
 
 
@@ -65,11 +66,6 @@ Full-time research intern at the Real-Time Computer Systems department within TU
 + Working with Google’s Edge Coral TPU and benchmarking it’s performance.
 + Benchmarking is done through the analysis of USB traffic during model inference _(Wireshark, pyshark)_
 + Automated the training, freezing, inference and hardware deployment of several ML Models through Tensorflow.
-
-<!-- ### <span>Research Intern, TU Munich</span> <span id="h3-date">Oct 2020 -- Feb 2021</span> -->
-<!-- Part-time research intern at the LKN department within TUM. -->
-<!---->
-<!-- + Testing, debugging and analyzing the behavior of a software switch implemented through the P4 programming language. -->
 
 ## Skills
 

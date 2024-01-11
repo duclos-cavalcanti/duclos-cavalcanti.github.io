@@ -22,7 +22,7 @@ Interests | Experience |
 Operating Systems           | Linux, as well as Real-Time OSes (FreeRTOS) |
 Distributed Systems         | Embedded/FPGA/SoC and System Development |
 Tooling                     | Scripting/Toolchains/CI/CD |
-Containerization            | Docker, Singularity |
+Containerization            | Docker |
 High Performance Computing  | OpenMPI, C, C++ |
 AI/ML                       | TinyML, Tensorflow, TFLite |
 Networks                    | Software-Defined Networks, P4 |
