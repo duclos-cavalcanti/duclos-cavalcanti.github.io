@@ -21,7 +21,7 @@ Interests | Experience |
 ---|---|
 Operating Systems           | Linux, as well as Real-Time OSes (FreeRTOS) |
 Distributed Systems         | Embedded/FPGA/SoC and System Development |
-Network Engineering         | OSI Layers/Protocols, Kernel Networking Stack |
+Network Engineering         | UDP, TCP, Kernel Networking Stack |
 Tooling                     | Scripting/Toolchains/CI/CD |
 Containerization            | Docker |
 High Performance Computing  | OpenMPI, OpenMP |
