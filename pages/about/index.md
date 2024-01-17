@@ -38,7 +38,7 @@ Check out my [__RESUME__](/resume) for more in-depth details.
 ## Tooling
 
 On some level, I do believe that mastering one's tools are as important as understanding 
-the craft itself. Either that, or I just endless hacking.
+the craft itself. Either that, or I just enjoy endless hacking.
 
 Regardless, as somewhat of a hobby, when I'm not engaged in topics mentioned above, I find myself continuously learning and interested in all things UNIX. That goes from the their tools, the OSes themselves and 
 extending both of them for my needs. 
