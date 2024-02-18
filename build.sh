@@ -20,7 +20,6 @@ log() {
 
 get_path() {
     local file="${1}"
-
     local dir="$(dirname ${file})"
     local dst=${dir/pages/public}
 
@@ -104,13 +103,17 @@ step() {
                     build ${dir}/index.md \
                           templates/empty.html \
                           templates/bottom.html \
-                          $(get_styles ${name} top bottom)
+                          $(get_styles colors ${name} top bottom)
                 else
                     build ${dir}/index.md \
                           templates/top.html \
                           templates/bottom.html \
-                          $(get_styles base top bottom ${name})
+                          $(get_styles colors base ${name} top bottom)
                 fi
+                # build ${dir}/index.md \
+                #       templates/top.html \
+                #       templates/bottom.html \
+                #       $(get_styles colors base top bottom ${name})
                 log "${dir^^} BUILT"
             fi
         fi

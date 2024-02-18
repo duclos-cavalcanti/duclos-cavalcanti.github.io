@@ -1,26 +1,10 @@
-/* basics/variables/colors */
-:root {
-    --bg:       #FAFAFA;
-    --fg:       #151515;
-    --black:    #222222;
-    --red:      #e01a4f;
-    --green:    #87a556;
-    --yellow:   #f9c22e;
-    --blue:     #43acc7;
-    --magenta:  #8E56A4;
-    --cyan:     #84dcc6;
-    --grey:     #616161;
-
-    --faded:    #EEEEEE
-}
-
 /* General */
 html, body {
     display: block;
     margin: 0 auto;
     padding: 0;
     min-height: 100%;
-    max-width: 90%;
+    max-width: 80%;
 
     overflow: scroll;
 

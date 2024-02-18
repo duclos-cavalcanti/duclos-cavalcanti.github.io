@@ -20,7 +20,6 @@ Operating Systems, High-Performance Computing, Embedded/FPGA/SoC Development as 
 + Visiting Graduate Student at NYU's GSAS
     + Master Thesis _(ongoing)_
     + CSCI-GA 3033 - __Special Topics: Technologies in Finance__ _(Spring Term)_
-    + CSCI-GA 2621 - __Distributed Systems__ _(Spring Term)_
     + CSCI-GA 2250 - __Operating Systems__ -- __A__  _(Fall Term)_
 
 

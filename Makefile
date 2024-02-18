@@ -1,67 +1,54 @@
 SHELL := /bin/bash
 PWD := $(shell pwd)
 
-APACHE_NAME := apache-serve-blog
-APACHE_ID := $(shell docker ps -a | grep ${APACHE_NAME} | awk '{print $$1}')
+ifeq (, $(shell which docker))
+$(error Docker not found)
+endif
 
-IS_APACHE := $(shell docker images | tail -n +2 | awk '{print $$1}' | grep -o httpd)
-IS_APACHE_RUNNING := $(shell docker ps -a | grep ${APACHE_NAME})
+DOCKER := httpd
+NAME := web-serve-blog
 
-LATEX := pandoc-latex-custom
-LATEX_NAME := latex-cover
+.PHONY: exit \
+		clean \
+		pull \
+		stop \
+		build \
+		resume \
+		deploy \
+		serve \ 
+		rebuild
 
-IS_LATEX = $(shell docker image ls | grep ${LATEX} | tr -s ' ' | cut -f2 -d ' ')
-IS_LATEX_RUNNING = $(shell docker ps -a | grep ${LATEX_NAME})
+all: serve
 
-.PHONY: clean build cover cover-pull serve serve-pull serve-attach
-all: build
+exit:
+	$(error Exiting Makefile)
 
 clean:
 	@rm -rf public
 	@mkdir public
 	@touch public/.gitkeep
 
-build:
-	@./build.sh
-	@cp ./assets/pdfs/resume.pdf ~/Downloads/
+pull:
+	@docker pull ${DOCKER}
 
-cover:
-	@pandoc cover/cover.md -o cover/cover.pdf --pdf-engine=xelatex --template=cover/template.tex
-	@cp ./cover/cover.pdf ~/Downloads/
+stop: $(if $(shell docker ps --filter "name=${NAME}" --format "{{.ID}}") , ,exit)
+	@docker stop $(shell docker ps --filter "name=${NAME}" --format "{{.ID}}")
+
+build:
+	@./build.sh 
+
+resume:
+	@(MAKE) -C resume
 
 deploy:
 	@./deploy.sh
-	@${MAKE} restart
 
-stop:
-	@docker stop ${APACHE_ID}
-
-serve: $(if ${IS_APACHE}, , pull)
+serve: $(if $(shell docker images --format "{{.Repository}}" | grep ${DOCKER}), , pull)
 	@docker run --rm \
 			   --detach \
-			   --name ${APACHE_NAME} \
+			   --name ${NAME} \
 			   -p 8080:80 \
 			   -v ${PWD}/public:/usr/local/apache2/htdocs \
-			   httpd:latest
+			   ${DOCKER}:latest
 
-restart: stop serve build
-
-pull:
-	@docker pull httpd
-
-attach:
-	@[ -n ${IS_APACHE_RUNNING} ] && docker exec -it ${APACHE_NAME} bash
-
-# cover-pull:
-# 	@docker build --tag=${LATEX} .
-#
-# cover: $(if ${IS_LATEX}, , cover-pull)
-# 	@docker run --rm \
-# 		   		--name=${LATEX_NAME} \
-# 		   		--user=$(shell id -u) \
-# 		   		-v ${PWD}:/data \
-# 		   		-w /data \
-# 		   		-it ${LATEX} \
-# 				cover/cover.md -o cover/cover.pdf --pdf-engine=xelatex --template=cover/template.tex
-# 	@cp ./cover/cover.pdf ~/Downloads/
-
+rebuild: stop serve build

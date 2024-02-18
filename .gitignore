@@ -1,6 +1,9 @@
 public/*
 
-cover/cover.md
-cover/cover.pdf
-
 resume.pdf
+
+*.aux
+*.bcf
+*.log
+*.run.xml
+*.xmpi
