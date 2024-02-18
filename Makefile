@@ -38,7 +38,7 @@ build:
 	@./build.sh 
 
 resume:
-	@(MAKE) -C resume
+	@$(MAKE) -C resume
 
 deploy:
 	@./deploy.sh

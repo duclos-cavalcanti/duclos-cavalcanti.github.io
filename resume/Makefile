@@ -18,7 +18,12 @@ exit:
 	$(error Exiting Makefile)
 
 clean:
-	$(info clean)
+	@rm -f *.aux 
+	@rm -f *.bcf 
+	@rm -f *.log 
+	@rm -f *.xml 
+	@rm -f *.xmpi 
+
 
 pull:
 	@docker pull ${DOCKER}
@@ -30,3 +35,4 @@ run: $(if $(shell docker images --format "{{.Repository}}" | grep ${DOCKER}), , 
 			   -w /data \
 			   ${DOCKER}:latest \
 			   pdflatex resume.tex
+	$(MAKE) clean
