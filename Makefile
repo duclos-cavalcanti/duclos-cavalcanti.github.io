@@ -14,6 +14,7 @@ NAME := web-serve-blog
 		stop \
 		build \
 		pages \
+		cover \
 		resume \
 		deploy \
 		serve \ 
@@ -41,6 +42,10 @@ pages:
 resume:
 	@$(MAKE) -C resume
 	@cp ./resume/resume.pdf ./assets/pdfs/resume.pdf
+
+cover:
+	@$(MAKE) -C cover
+	@cp ./cover/cover.pdf ~/Downloads/
 
 build: resume pages
 
