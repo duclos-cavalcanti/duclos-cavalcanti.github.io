@@ -18,6 +18,7 @@ create_gh_pages() {
         {
             [ -d assets ] && rm -rf assets
             [ -d resume ] && rm -rf resume
+	        rm -f public/.gitkeep
             mv public/* ./
 	        rm -rf public
         } 2> /dev/null
