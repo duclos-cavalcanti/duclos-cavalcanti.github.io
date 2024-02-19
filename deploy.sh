@@ -1,13 +1,17 @@
 #!/bin/bash
 
 check() {
-    if [ -z "$(git status --porcelain)" ] && \
-       [ -n "$(ls public)" ]; then 
-        return 0;
-    else 
-        printf "%s\n" "Repo isn't ready for deployment!"
+    if [ -n "$(git status --porcelain)" ]; then
+        printf "%s\n" "Staging Area not clean!"
         exit 1
     fi
+
+    if [ -n "$(ls public)" ]; then 
+        printf "%s\n" "Public folder empty! Build first!"
+        exit 1
+    fi
+
+    return 0;
 }
 
 create_gh_pages() {
@@ -18,7 +22,6 @@ create_gh_pages() {
         {
             [ -d assets ] && rm -rf assets
             [ -d resume ] && rm -rf resume
-	        rm -f public/.gitkeep
             mv public/* ./
 	        rm -rf public
         } 2> /dev/null
