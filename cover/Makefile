@@ -19,6 +19,6 @@ clean:
 
 cover: .cover
 
-.cover: cover.md
-	@pandoc cover.md -o cover.pdf --pdf-engine=xelatex --template=template.tex
+.cover: cover_.md
+	@pandoc cover_.md -o cover.pdf --pdf-engine=xelatex --template=template.tex
 	@touch .cover
