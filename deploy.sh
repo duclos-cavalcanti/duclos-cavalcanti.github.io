@@ -18,8 +18,6 @@ create_gh_pages() {
         {
             [ -d assets ] && rm -rf assets
             [ -d resume ] && rm -rf resume
-            [ -d cover ] && rm -rf cover
-            [ -f deploy.sh ] && rm -rf deploy.sh
             mv public/* ./
 	        rm -rf public
         } 2> /dev/null

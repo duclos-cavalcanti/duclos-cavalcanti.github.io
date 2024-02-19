@@ -2,22 +2,21 @@
 size: 11pt
 firstname: 'Daniel'
 lastname: 'Duclos-Cavalcanti'
-address: 'XXXXX'
-zip: XXXXX
 state: NY
 city: New York
-phone: 'XXXXXX'
+phone: '+1 516 912 7975'
 email: 'daniel.duclos.cavalcanti@gmail.com'
 web: 'https://duclos.dev'
 title: 'Computer Engineer'
-opening: 'To whom it may concern'
+opening: 'Dear Jane Street Team'
 ---
 
-We are submit for your review: "The role of the microbiome in health and disease" by Geoffrey Hannigan and colleagues. We believe this work to be especially well suited for publication in Science and highly relevant to a broader scientific readership as well as the general public.
+I'm an American Computer Engineer from the Technical University of Munich. Currently, finishing an M.Sc. degree through an exchange at the New York University. 
 
-\noindent
-Our lab strives to set high standards of reproducibility and transparency, while generating and publishing high quality data. As such, all analysis work-flows, scripts, and datasets have been made publicly available for other researchers to utilize.
+I'm collaborating with Dr.Sivaraman and his research team at Systems@NYU on a project around High-Performance Multicasting on the Cloud, aimed at aiding the potential transition of High-Frequency Trading's current infrastructure to the public cloud.  A link to a pre-print of that work, currently called Jasper, will be available at the end of this letter.
 
-\noindent
-The data presented in this manuscript are original and the manuscript is not under consideration elsewhere. A preprint version of this manuscript has been made available through BioRxiv.
-We thank you for your consideration and look forward to your response.
+My ongoing thesis, also co-advised by Prof. Sivaraman, should be delivered around late July / early August. The main goal is to develop a heuristic to better choose a subset of VMs on a platform that fits the latency needs imposed by Jasper. Previously, as I interviewed the mentioned professor to work with his team, he spoke about his research around High-Frequency Trading and the computing infrastructures that support it. I wasn't aware of how interesting these systems were and as a son of two economists, it felt like an amazing crossover between my background and the career I've chosen. 
+
+I've heard of Jane Street both through personal friends, as well as through the Professor's class on "Technologies in Finance" currently underway this Spring Term. I've found the way Jane Street employs technology at a high level within financial exchanges extremely interesting and also the value placed on good engineering and science was equally fulfilling to me personally. I truly believe that my profile, my knowledge in FPGAs, Linux, Computer and Software Engineering, as well as the current pivot in interest around the computing infrastructures of financial exchanges, makes me a great candidate for your company. 
+
+Moreover, as someone who is always seeking to learn and adores an intellectually challenging environment, I see Jane Street as a place where I could reach my true potential as an engineer. I'm looking forward to hearing from you.
