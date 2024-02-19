@@ -10,9 +10,9 @@ NAME := latex-resume
 
 .PHONY: exit \
 		clean \
-		build
+		resume
 
-all: run
+all: resume
 
 exit:
 	$(error Exiting Makefile)
@@ -28,11 +28,14 @@ clean:
 pull:
 	@docker pull ${DOCKER}
 
-run: $(if $(shell docker images --format "{{.Repository}}" | grep ${DOCKER}), , pull)
+resume: .resume
+
+.resume: resume.tex
 	docker run --rm \
 			   --name ${NAME} \
 			   -v ${PWD}:/data \
 			   -w /data \
 			   ${DOCKER}:latest \
 			   pdflatex resume.tex
-	$(MAKE) clean
+	@$(MAKE) clean
+	@touch .resume

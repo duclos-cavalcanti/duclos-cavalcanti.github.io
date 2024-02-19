@@ -7,19 +7,15 @@ endif
 
 .PHONY: exit \
 		clean \
-		run
+		cover
 
-all: run
+all: cover
 
 exit:
 	$(error Exiting Makefile)
 
 clean:
-	@rm -f *.aux 
-	@rm -f *.bcf 
-	@rm -f *.log 
-	@rm -f *.xml 
-	@rm -f *.xmpi 
+	@$(info clean)
 
-run:
+cover:
 	@pandoc cover.md -o cover.pdf --pdf-engine=xelatex --template=template.tex

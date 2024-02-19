@@ -105,6 +105,7 @@ embed {
     height: 80vh;
 }
 
+/* Less Wide Screens */
 /* Media query for screens smaller than 800px */
 @media screen and (max-width: 800px) {
     html, body {
@@ -125,6 +126,7 @@ embed {
     }
 }
 
+/* Wider Screens */
 /* Media query for screens larger than 800px */
 @media screen and (min-width: 800px) {
     html, body {
@@ -132,7 +134,7 @@ embed {
         padding: 0;
         min-height: 100%;
         max-width: 70%;
-    	font-size: 95%;
+    	font-size: 105%;
         overflow: scroll;
     }
 }

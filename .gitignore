@@ -1,8 +1,11 @@
 public/*
 
+.resume
 resume.pdf
 cover.pdf
+cover.md
 
+*.out
 *.aux
 *.bcf
 *.log
