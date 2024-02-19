@@ -2,8 +2,9 @@ public/*
 
 resume/.resume
 resume.pdf
-cover.pdf
-cover.md
+
+cover/*.pdf
+cover/*.md
 
 *.out
 *.aux
