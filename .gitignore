@@ -4,7 +4,8 @@ resume/.resume
 resume.pdf
 
 cover/*.pdf
-cover/*.md
+cover/cover.md
+cover.md
 
 *.out
 *.aux
