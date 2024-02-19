@@ -17,5 +17,8 @@ exit:
 clean:
 	@$(info clean)
 
-cover:
+cover: .cover
+
+.cover: template.tex
 	@pandoc cover.md -o cover.pdf --pdf-engine=xelatex --template=template.tex
+	@touch .cover
