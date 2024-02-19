@@ -4,9 +4,9 @@
 Source code to my personal website, currently served via _Github Pages_ at [https://www.duclos.dev](https://www.duclos.dev). 
 The webpage is deployed through a simple `bash` script which acts as a handy wrapper around the `pandoc` tool, generating html files 
 based on templates and given markdown pages. Please feel free to take snippets and ideas. 
-If so, please reference this work, it would be much appreciated. Logos are taken from [here](https://simpleicons.org/).
+If so, please reference this work, it would be much appreciated.
 
-## Background and Motivation
+## Background
 
 The purpose of this repository is not only to easily deploy a static website, but also serve as a minor working example of how one can start a
 blog with no use of frameworks. The pro's to that approach are nothing other than just having a better understanding of how the website is created 
