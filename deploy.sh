@@ -17,6 +17,7 @@ create_gh_pages() {
 	if [ -d public ]; then
         {
             [ -d assets ] && rm -rf assets
+            [ -d resume ] && rm -rf resume
             mv public/* ./
 	        rm -rf public
         } 2> /dev/null
