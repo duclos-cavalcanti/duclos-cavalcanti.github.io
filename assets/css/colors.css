@@ -1,14 +1,14 @@
 :root {
-    --bg:       #FAFAFA;
-    --fg:       #151515;
-    --black:    #222222;
-    --red:      #e01a4f;
-    --green:    #87a556;
-    --yellow:   #f9c22e;
-    --blue:     #43acc7;
-    --magenta:  #8E56A4;
-    --cyan:     #84dcc6;
-    --grey:     #616161;
+    --bg:       #F6F5F4;
+    --fg:       #1D1D1D;
+    --black:    #1D1D1D;
+    --red:      #ED333B;
+    --green:    #57E389;
+    --yellow:   #FF7800;
+    --blue:     #62A0EA;
+    --magenta:  #9141AC;
+    --cyan:     #5BC8AF;
+    --grey:     #9A9996;
 
     --faded:    #EEEEEE
 }
