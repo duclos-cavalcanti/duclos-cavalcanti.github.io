@@ -6,7 +6,7 @@ check() {
         exit 1
     fi
 
-    if [ -n "$(ls public)" ]; then 
+    if [ -z "$(ls public)" ]; then 
         printf "%s\n" "Public folder empty! Build first!"
         exit 1
     fi
