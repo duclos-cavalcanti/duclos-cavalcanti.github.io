@@ -60,7 +60,7 @@ either before shooting it off to github pages or one's own personal deployment m
   ```
 
 ## License
-These files are released under the MIT license. See [LICENSE](LICENSE).
+These files are released under the GPL 3.0 license. See [LICENSE](LICENSE).
 
 ## Thanks
 * [ssg](https://github.com/andrew-ayers/ssg)
