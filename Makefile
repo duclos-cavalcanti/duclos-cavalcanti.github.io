@@ -13,12 +13,13 @@ NAME := web-serve-blog
 		pull \
 		stop \
 		build \
+		pages \
 		resume \
 		deploy \
 		serve \ 
 		rebuild
 
-all: serve
+all: build
 
 exit:
 	$(error Exiting Makefile)
@@ -34,11 +35,14 @@ pull:
 stop: $(if $(shell docker ps --filter "name=${NAME}" --format "{{.ID}}") , ,exit)
 	@docker stop $(shell docker ps --filter "name=${NAME}" --format "{{.ID}}")
 
-build:
+pages:
 	@./build.sh 
 
 resume:
 	@$(MAKE) -C resume
+	@cp ./resume/resume.pdf ./assets/pdfs/resume.pdf
+
+build: resume pages
 
 deploy:
 	@./deploy.sh

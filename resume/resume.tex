@@ -28,15 +28,13 @@
 % Change the colours if you want to
 \definecolor{SlateGrey}{HTML}{2E2E2E}
 \definecolor{LightGrey}{HTML}{666666}
-\definecolor{DarkPastelRed}{HTML}{450808}
-\definecolor{PastelRed}{HTML}{8F0D0D}
-\definecolor{GoldenEarth}{HTML}{E7D192}
+\definecolor{TealGreen}{HTML}{5BC8AF}
 \colorlet{name}{black}
-\colorlet{tagline}{PastelRed}
-\colorlet{heading}{DarkPastelRed}
-\colorlet{headingrule}{GoldenEarth}
-\colorlet{subheading}{PastelRed}
-\colorlet{accent}{PastelRed}
+\colorlet{tagline}{black}
+\colorlet{heading}{black}
+\colorlet{headingrule}{gray}
+\colorlet{subheading}{blue}
+\colorlet{accent}{TealGreen}
 \colorlet{emphasis}{SlateGrey}
 \colorlet{body}{LightGrey}
 
@@ -64,35 +62,17 @@
 % \renewcommand{\locationname}{Ubicación}
 % \renewcommand{\datename}{Fecha}
 
-
-%% Use (and optionally edit if necessary) this .tex if you
-%% want to use an author-year reference style like APA(6)
-%% for your publication list
-% \input{pubs-authoryear.cfg}
-
-%% Use (and optionally edit if necessary) this .tex if you
-%% want an originally numerical reference style like IEEE
-%% for your publication list
-\input{pubs-num.cfg}
-
-%% sample.bib contains your publications
-\addbibresource{sample.bib}
-
 \begin{document}
-\name{Your Name Here}
-\tagline{Your Position or Tagline Here}
+\name{Daniel Duclos-Cavalcanti}
+\tagline{American/Brazilian -- Computer Engineer}
 
 \personalinfo{%
   % Not all of these are required!
-  \email{your_name@email.com}
-  \phone{000-00-0000}
-  \mailaddress{Åddrésş, Street, 00000 Cóuntry}
-  \location{Location, COUNTRY}
-  \homepage{www.homepage.com}
-  \twitter{@twitterhandle}
-  \linkedin{your_id}
-  \github{your_id}
-  \orcid{0000-0000-0000-0000}
+  \homepage{www.duclos.dev}
+  \email{me@duclos.dev}
+  \phone{+1-516-912-7975}
+  \location{New York, NY, USA}
+  \github{duclos-cavalcanti}
   %% You can add your own arbitrary detail with
   %% \printinfo{symbol}{detail}[optional hyperlink prefix]
   % \printinfo{\faPaw}{Hey ho!}[https://example.com/]
@@ -123,100 +103,123 @@
 % Start a 2-column paracol. Both the left and right columns will automatically
 % break across pages if things get too long.
 \begin{paracol}{2}
+\cvsection{Education}
+
+\cvevent{M.S.\ Computer Science (Visiting Student)}
+        {New York University}
+        {Sept 2023 -- Now}{}
+\begin{itemize}
+\item Master Thesis - Multicasting on the Cloud for HFT
+\item CSCI-GA 3033  - Technologies in Finance - \textit{TBD}
+\item CSCI-GA 2250  - Operating Systems - \textbf{A}
+\end{itemize}
+
+\divider
+
+\cvevent{M.Sc.\ Electrical and Computer Engineering}
+        {Technical University of Munich}
+        {Oct 2020 -- Now}{}
+\begin{itemize}
+\item GPA: 3.0 (American Standards) | 2.5 (German Standards) 
+\item Last Credit: Master Thesis \textit{(Ongoing at NYU)}
+\end{itemize}
+\divider
+
+\cvevent{B.Sc.\ Electrical and Computer Engineering}
+        {Technical University of Munich}
+        {Feb 2017 -- Sept 2020}{}
+\begin{itemize}
+\item GPA: 3.1 (American Standards) | 2.2 (German Standards)
+\item Bachelor Thesis, 1.3 -- Netlist Error Modeling
+\item Unfinished Previous B.Sc., PUC-RIO, Brazil -- 2013-2016
+\end{itemize}
+
 \cvsection{Experience}
 
-\cvevent{Job Title 1}{Company 1}{Month 20XX -- Ongoing}{Location}
+\cvevent{Student Assistant Researcher}{EDA Department - TU Munich}{Jul 2022 -- Oct 2022}{Munich, Germany}
+Aided research within the EDA Department. Python Development of a Design‑Space‑Exploration 
+framework to find the optimal hardware configuration to run inference of TFLite ML Models.
+
+\divider
+
+\cvevent{Embedded Engineer}{Molabo GmbH}{Aug 2021 -- Jan 2022}{Ottobrunn, Germany}
+Assisted the motor-drive team as a part-time working student, developing for their Embedded and FPGA devices.
+Responsible for:
 \begin{itemize}
-\item Job description 1
-\item Job description 2
+\item Writing Jenkinsfiles and supervising pipeline execution.
+\item Development of containerized unit tests through GoogleTest.
+\item Development of embedded code and FPGA Modules.
+\item Building toolchains via CMake and GNU Make.
 \end{itemize}
 
 \divider
 
-\cvevent{Job Title 2}{Company 2}{Month 20XX -- Ongoing}{Location}
-\begin{itemize}
-\item Job description 1
-\item Job description 2
-\end{itemize}
-
-\cvsection{Projects}
-
-\cvevent{Project 1}{Funding agency/institution}{}{}
-\begin{itemize}
-\item Details
-\end{itemize}
-
-\divider
-
-\cvevent{Project 2}{Funding agency/institution}{Project duration}{}
-A short abstract would also work.
+\cvevent{Tutor}{RCS Department - TU Munich}{Apr 2021 -- Aug 2021}{Munich, Germany}
+Assisted in teaching the Embedded Systems Programming Lab course given at TU Munich.
+Aided students regarding their course work and their final project, which 
+consisted of writing embedded FreeRTOS applications in C.
 
 \medskip
-
 
 \nocite{*}
 
 \switchcolumn
 
-\cvsection{My Life Philosophy}
+\cvsection{Skills}
 
-\begin{quote}
-``Something smart or heartfelt, preferably in one sentence.''
-\end{quote}
-
-\cvsection{Most Proud of}
-
-\cvachievement{\faTrophy}{Fantastic Achievement}{and some details about it}
-
-\divider
-
-\cvachievement{\faHeartbeat}{Another achievement}{more details about it of course}
-
-\divider
-
-\cvachievement{\faHeartbeat}{Another achievement}{more details about it of course}
+\cvtag{C/C++} \cvtag{Linux}\cvtag{FPGA/SoC Development}\\
+\cvtag{Computer Networking}\cvtag{TCP/UDP}\cvtag{ZeroMQ}\\
+\cvtag{High Performance Computing}\cvtag{Git}\cvtag{CMake}\\
+\cvtag{Systems Development}\cvtag{FreeRTOS}\cvtag{Bash}\\
+\cvtag{GNU Make}\cvtag{Jenkins}\cvtag{Travis CI}\cvtag{Tensorflow}\\
+\cvtag{OpenMP}\cvtag{OpenMPI}\cvtag{GoogleTest}\cvtag{PyTest}\\
+\cvtag{Python}\cvtag{Golang}\cvtag{Lua}\cvtag{Rust}\cvtag{JS}\cvtag{Latex}\\
+\cvtag{Markdown}\cvtag{HTML}\cvtag{CSS}
 
 \cvsection{Strengths}
 
-\cvtag{Hard-working}
-\cvtag{Eye for detail}\\
-\cvtag{Motivator \& Leader}
-
-\divider\smallskip
-
-\cvtag{C++}
-\cvtag{Embedded Systems}\\
-\cvtag{Statistical Analysis}
+\cvtag{Hard-working}\cvtag{Detail-Oriented}\\
+\cvtag{Teamworker}\cvtag{Communication}
 
 \cvsection{Languages}
 
 \cvskill{English}{5}
 \divider
 
-\cvskill{Spanish}{4}
+\cvskill{German}{5}
 \divider
 
-\cvskill{German}{3.5} %% Supports X.5 values.
-
-%% Yeah I didn't spend too much time making all the
-%% spacing consistent... sorry. Use \smallskip, \medskip,
-%% \bigskip, \vspace etc to make adjustments.
-\medskip
-
-\cvsection{Education}
-
-\cvevent{Ph.D.\ in Your Discipline}{Your University}{Sept 2002 -- June 2006}{}
-Thesis title: Wonderful Research
-
+\cvskill{Portuguese}{5}
 \divider
 
-\cvevent{M.Sc.\ in Your Discipline}{Your University}{Sept 2001 -- June 2002}{}
+\cvskill{Spanish}{2.5}
 
-\divider
+\cvsection{Certificates}
 
-\cvevent{B.Sc.\ in Your Discipline}{Stanford University}{Sept 1998 -- June 2001}{}
+\cvevent{Data Structures Fundamentals}
+        {UCSD}{}{}
+\cvevent{Embedded Systems - uC I/O}
+        {UT Austin}{}{}
+
+\cvsection{Projects}
+
+\textbf{FreeRTOS Space Invaders}
+\begin{itemize}
+	\item Inspired by the classic arcade video game.
+	\item The work was written in C and done so as a multi-threaded FreeRTOS application based upon an available emulator. 
+\end{itemize}
+
+\textbf{Hamming-Code Error Detection}
+\begin{itemize}
+	\item Typical (16,11) Hamming Encoding error detection and correction algorithm implemented on the Microsemi SmartFusion2 SoC.
+    \item Bare-metal embedded software coupled with hand-rolled FPGA modules.
+\end{itemize}
+
+\textbf{Serve}
+\begin{itemize}
+	\item Small CLI menu in Golang.
+\end{itemize}
 
 \end{paracol}
-
 \end{document}
 

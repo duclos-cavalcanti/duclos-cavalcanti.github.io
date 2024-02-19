@@ -92,28 +92,11 @@ step() {
         else
             if [ ${d} == "index.md" ]; then 
                 name=$(basename ${dir})
-                if [[ ${dir} == *"resume"* ]] || [[ ${dir} == *"isaac"* ]]; then
-                    build ${dir}/index.md \
-                          templates/empty.html \
-                          templates/empty.html \
-                          $(get_styles reset ${name})
+                build ${dir}/index.md \
+                      templates/top.html \
+                      templates/bottom.html \
+                      $(get_styles colors base top bottom ${name})
 
-                    pdf ${dir/pages/public}/index.html assets/pdfs/resume.pdf
-
-                    build ${dir}/index.md \
-                          templates/empty.html \
-                          templates/bottom.html \
-                          $(get_styles colors ${name} top bottom)
-                else
-                    build ${dir}/index.md \
-                          templates/top.html \
-                          templates/bottom.html \
-                          $(get_styles colors base ${name} top bottom)
-                fi
-                # build ${dir}/index.md \
-                #       templates/top.html \
-                #       templates/bottom.html \
-                #       $(get_styles colors base top bottom ${name})
                 log "${dir^^} BUILT"
             fi
         fi
