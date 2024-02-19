@@ -7,13 +7,14 @@ description: "More to me"
 # About
 <hr />
 
-American/Brazilian Computer Engineer finishing off a M.Sc. in ECE through an exchange at NYU's Graduate School of Arts and Science. I'm currently living in New York and am searching for full-time roles to further my stay in the city, as well as move into the next chapter of my career in Software/Computer Engineering.
+I'm a Computer and Electrical Engineer from the Technical University of Munich. Currently, finishing an M.Sc. degree
+through an exchange at the [New York University](https://www.nyu.edu/). I'm collaborating with [Dr.Sivaraman](https://anirudhsk.github.io/) and his research team at [Systems@NYU](https://news.cs.nyu.edu/) on 
+a project around high-performance multicasting on the cloud, aimed at aiding the potential transition of 
+High-Frequency Trading's current infrastructure to the public cloud.
 
 I earned my B.Sc. in Electrical and Computer Engineering by the Technical University of Munich, where from I also will soon receive my masters degree from as well.
 
-I was born in the United States, more specifically in Minneapolis. However, I've lived most of my formative years in Brazil, where my family takes up residence. Eventually, my studies brought me to Germany, where I've pursued a B.Sc. and a M.Sc. in Electrical and Computer Engineering at the Technical University of Munich.
-
-What once begun as a general interest for programming languages has evolved to a broader curiosity towards computers, algorithms, digital electronics and cyber-physical systems in their entirety.
+I was born in the United States, more specifically in Minneapolis. However, I've lived most of my formative years in Brazil, where my family takes up residence. Eventually, my studies brought me to Germany, where I've pursued a B.Sc. and a M.Sc. in ECE.
 
 ## Background, Interests and Experience
 
@@ -29,9 +30,8 @@ AI/ML                       | TinyML, Tensorflow, TFLite |
 
 Since my first programming class I had the will to understand programs and the machines that execute them.
 This eventually brought me both to study electronics and then later on the software mechanisms that leverage 
-hardware into a cohesive system. These topics then stretched from operating/distributed systems to
-even embedded processors, systems-on-chip and FPGAs.
-Everything that interfaces with computers from the lowest to the highest abstraction level interest me.
+hardware into a cohesive system. These topics stretched from operating systems, distributed systems, 
+computer networking to even embedded processors, systems-on-chip and FPGAs.
 
 Check out my [__RESUME__](/resume) for more in-depth details.
 
