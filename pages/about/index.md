@@ -45,7 +45,7 @@ extending both of them for my needs.
 
 I use the infamous UNIX clone - _Linux_ - on a daily basis and have done so for a long time. I am quite fond of the experience, the strong freedom within it's ecosystem and user base.
 
-![](/assets/images/dotfiles.png){id="media"}
+![](/assets/images/screen.png){id="media"}
 
 Check out my [__DOTFILES__](https://www.github.com/duclos-cavalcanti/dotfiles)!
 
