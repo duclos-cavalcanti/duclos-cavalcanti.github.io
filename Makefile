@@ -42,11 +42,9 @@ pages:
 resume:
 	@$(MAKE) -C resume
 	@cp ./resume/resume.pdf ./assets/pdfs/resume.pdf
-	@cp ./resume/resume.pdf ~/Downloads/
 
 cover:
 	@$(MAKE) -C cover
-	@cp ./cover/cover.pdf ~/Downloads/
 
 build: resume pages
 
