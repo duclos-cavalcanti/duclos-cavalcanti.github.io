@@ -11,7 +11,7 @@ email: 'me@duclos.dev'
 web: 'https://duclos.dev'
 title: 'Electrical and Computer Engineer'
 opening: 'Dear'
-company: HRT
+company: Vatic Labs
 ---
 
 I'm an American and Brazilian Computer Engineer currently finishing an M.Sc. degree through an exchange at New York University. I earned 
