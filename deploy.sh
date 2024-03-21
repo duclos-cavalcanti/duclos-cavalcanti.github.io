@@ -37,7 +37,7 @@ deploy() {
 
 delete_gh_pages() {
 	git checkout main
-	git branch -D gh-pages
+	# git branch -D gh-pages
 }
 
 main() {
