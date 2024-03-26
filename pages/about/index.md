@@ -7,10 +7,8 @@ description: "More to me"
 # About
 <hr />
 
-I'm a Computer and Electrical Engineer from the Technical University of Munich. Currently, finishing an M.Sc. degree
-through an exchange at the [New York University](https://www.nyu.edu/). I'm collaborating with [Dr.Sivaraman](https://anirudhsk.github.io/) and his research team at [Systems@NYU](https://news.cs.nyu.edu/) on 
-a project around high-performance multicasting on the cloud, aimed at aiding the potential transition of 
-High-Frequency Trading's current infrastructure to the public cloud.
+I'm a Computer and Electrical Engineer from the Technical University of Munich. Currently, finishing a [M.Sc. Degree](https://github.com/duclos-cavalcanti/master-arbeit) through a visiting graduate student program at the [New York University](https://www.nyu.edu/). 
+I'm collaborating with [Dr.Sivaraman](https://anirudhsk.github.io/) and his research team at [Systems@NYU](https://news.cs.nyu.edu/) on a project around a high-performant and scalable multicasting solution for financial exchange's in the cloud.
 
 I earned my B.Sc. in Electrical and Computer Engineering by the Technical University of Munich, where from I also will soon receive my masters degree from as well.
 
