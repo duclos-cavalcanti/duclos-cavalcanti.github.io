@@ -13,11 +13,6 @@ description: "Introduction to myself :)"
 </p>
 
 <p align="center" id="profile-caption">
-  Computer Engineer
+  Computer Engineer: \[[About](/about), [Github](https://github.com/duclos-cavalcanti/), [Linkedin](https://www.linkedin.com/in/daniel-duclos-cavalcanti/)\]
 </p>
-
-<p align="center" id="profile-caption">
-  [About](/about)
-</p>
-
 

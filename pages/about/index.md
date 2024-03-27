@@ -19,7 +19,7 @@ I was born in the United States, more specifically in Minneapolis. However, I've
 Interests | Experience |
 ---|---|
 Operating Systems           | Linux, as well as Real-Time OSes (FreeRTOS) |
-Distributed Systems         | Embedded/FPGA/SoC and System Development |
+Embedded/Distributed Systems         | Embedded/FPGA/SoC and System Development |
 Network Engineering         | Kernel Networking Stack, TCP/DUP, ZeroMQ |
 Tooling                     | Scripting/Toolchains/CI/CD |
 Containerization            | Docker |
