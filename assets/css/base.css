@@ -1,0 +1,141 @@
+/* General */
+html, body {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    min-height: 100%;
+    max-width: 80%;
+
+    overflow: scroll;
+
+    background-color: var(--bg);
+    color: var(--fg);
+}
+
+body {
+    font: 100% monospace,monospace;
+}
+
+blockquote {
+    color: var(--grey);
+    font-style: italic;
+    padding-left: 2em;
+    border-left: 0.2em solid var(--faded);
+}
+
+h1,
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+	text-align:	left;
+	text-decoration: none;
+}
+
+h1 {
+	text-align:	center;
+}
+
+
+/* tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+/* table headers */
+th {
+  background-color: var(--bg);
+  text-align: center;
+  padding: 4px;
+  border: 1px dashed var(--grey);
+}
+
+/* table cells */
+td {
+  text-align: left;
+  padding: 4px;
+  border: 1px dashed var(--black);
+}
+
+/* table rows */
+tr:nth-child(odd),
+tr:nth-child(even) {
+    background-color: var(--bg);
+}
+
+/* Main content and media */
+#main{
+    padding-top: 1.0em;
+    height: 90%;
+    clear: both;
+}
+
+#logo {
+    width: 1.5em;
+}
+
+#profile-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: 0.4;
+    border-radius: 50%;
+}
+
+#profile-caption {
+    font: 85% monospace,monospace;
+    color: var(--grey);
+
+    text-align: center;
+}
+
+#media {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+embed {
+    width: 100%;
+    height: 80vh;
+}
+
+/* Less Wide Screens */
+/* Media query for screens smaller than 800px */
+@media screen and (max-width: 800px) {
+    html, body {
+        margin: 0 auto;
+        padding: 0;
+        min-height: 100%;
+        max-width: 95%;
+    	font-size: 95%;
+        overflow: scroll;
+    }
+
+    h1 {
+    	font-size: 170%;
+    }
+
+    h2 {
+    	font-size: 130%;
+    }
+}
+
+/* Wider Screens */
+/* Media query for screens larger than 800px */
+@media screen and (min-width: 800px) {
+    html, body {
+        margin: 0 auto;
+        padding: 0;
+        min-height: 100%;
+        max-width: 70%;
+    	font-size: 105%;
+        overflow: scroll;
+    }
+}
+
