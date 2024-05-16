@@ -20,8 +20,7 @@ I'm a Computer and Electrical Engineer from the Technical University of Munich, 
 The project in question revolves around _[Jasper](https://arxiv.org/abs/2402.09527): a Scalable and Fair Multicast Solution for Financial Exchanges in the Cloud_. Beyond aiding in the development of Jasper, my thesis aims to construct a performant heuristic to re-configure Jasper's multicast-tree based on present cloud conditions, that vary highly through time.
 
 I was born in the United States, more specifically in Minneapolis. However, I've lived most of my formative years in Brazil, where my family takes up residence. Eventually, my studies brought me to Germany, but today, I am living in New York and 
-am looking for full-time positions in this area within Computer/Software Engineering ideally from September on, but could start earlier depending on 
-the offer.
+am looking for full-time positions in this area within Computer/Software Engineering ideally from September on, but could start earlier given certain circumstances.
 
 ## Background
 
