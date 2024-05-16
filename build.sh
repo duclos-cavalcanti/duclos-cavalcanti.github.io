@@ -95,7 +95,7 @@ step() {
                 build ${dir}/index.md \
                       templates/top.html \
                       templates/bottom.html \
-                      $(get_styles colors base top bottom ${name})
+                      $(get_styles colors base)
 
                 log "${dir^^} BUILT"
             fi

@@ -1,5 +1,4 @@
 SHELL := /bin/bash
-PWD := $(shell pwd)
 
 ifeq (, $(shell which docker))
 $(error Docker not found)
@@ -7,6 +6,8 @@ endif
 
 DOCKER := httpd
 NAME := web-serve-blog
+PWD := $(shell pwd)
+PUBLIC := ${PWD}/public
 
 .PHONY: exit \
 		clean \
@@ -52,11 +53,8 @@ deploy:
 	@./deploy.sh
 
 serve: $(if $(shell docker images --format "{{.Repository}}" | grep ${DOCKER}), , pull)
-	@docker run --rm \
-			   --detach \
-			   --name ${NAME} \
-			   -p 8080:80 \
-			   -v ${PWD}/public:/usr/local/apache2/htdocs \
-			   ${DOCKER}:latest
+	@docker ps -a |  grep -o ${NAME} || \
+	 docker run --rm --detach --name ${NAME} -p 8080:80 -v ${PUBLIC}:/usr/local/apache2/htdocs ${DOCKER}:latest 
+				   
 
 rebuild: stop serve build
