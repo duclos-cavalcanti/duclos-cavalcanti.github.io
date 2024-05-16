@@ -7,6 +7,7 @@ description: "Introduction"
 <div id="sub-header">
 <h1>Daniel Duclos-Cavalcanti</h1>
 <p>Electrical and Computer Engineer</p>
+<p>New York City, NY</p>
 </div>
 
 ## About
@@ -15,12 +16,12 @@ description: "Introduction"
 + [Linkedin](https://www.linkedin.com/in/daniel-duclos-cavalcanti/)
 + [me@duclos.dev](mailto:me@duclos.dev)
 
-I'm a Computer and Electrical Engineer from the Technical University of Munich, now living in New York. Currently, I'm finishing the last credit for a _M.Sc. Degree_ from TUM as well via a collaboration with with [Dr.Sivaraman](https://anirudhsk.github.io/) and his research team at [Systems@NYU](https://news.cs.nyu.edu/).
-
-The project in question revolves around [Jasper](https://arxiv.org/abs/2402.09527): a Scalable and Fair Multicast Solution for Financial Exchanges in the Cloud. Beyond aiding in the development of Jasper, my thesis aims to construct a performant heuristic to re-configure Jasper's multicast-tree based on present cloud conditions, that vary highly throughout time.
+I'm a Computer and Electrical Engineer from the Technical University of Munich, where I'm also soon to receive a M.Sc. Degree from as well. Currently, I'm finishing the very last credit for this program externally via a collaboration with with [Dr.Sivaraman](https://anirudhsk.github.io/) and his research team at [Systems@NYU](https://news.cs.nyu.edu/).
+The project in question revolves around _[Jasper](https://arxiv.org/abs/2402.09527): a Scalable and Fair Multicast Solution for Financial Exchanges in the Cloud_. Beyond aiding in the development of Jasper, my thesis aims to construct a performant heuristic to re-configure Jasper's multicast-tree based on present cloud conditions, that vary highly through time.
 
 I was born in the United States, more specifically in Minneapolis. However, I've lived most of my formative years in Brazil, where my family takes up residence. Eventually, my studies brought me to Germany, but today, I am living in New York and 
-am looking for full-time positions in Computer/Software Engineering from August 2024 on.
+am looking for full-time positions in this area within Computer/Software Engineering ideally from September on, but could start earlier depending on 
+the offer.
 
 ## Background
 
@@ -35,7 +36,7 @@ am looking for full-time positions in Computer/Software Engineering from August 
         <td>Linux, FreeRTOS, ContikiOS</td>
     </tr>
     <tr>
-    <td>Micro-Processors</td>
+    <td>IoT & Micro-Processors</td>
     <td>ARM Cortex MCUs: TM4C123, XMC4500, STM32 </td>
     </tr>
     <tr>
@@ -43,9 +44,9 @@ am looking for full-time positions in Computer/Software Engineering from August 
     <td>Microsemi SmartFusion2 Maker Kit</td>
     </tr>
     <tr>
-    <td>Distributed Systems</td>
+    <td>Cloud Computing</td>
     <td>
-        Cloud Computing, GCP, AWS
+        Terraform, GCP, AWS, Packer
     </td>
     </tr>
     <tr>
