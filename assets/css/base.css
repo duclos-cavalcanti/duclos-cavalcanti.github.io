@@ -47,6 +47,7 @@ html, body {
 #sub-header {
     display: center;
     align-items: center;
+    margin-right: 20px;
 }
 
 #sub-header h1 {
@@ -97,6 +98,20 @@ h6 {
 h1 {
 	text-align:	center;
 }
+
+h2 p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#profile {
+    float: right;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: auto;
+}
+
 
 a {
     color: var(--fg);

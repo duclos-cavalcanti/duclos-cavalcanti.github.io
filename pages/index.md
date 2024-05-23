@@ -13,13 +13,19 @@ description: "Introduction"
 
 ## About
 
-I'm a Computer and Electrical Engineer from the Technical University of Munich, where I'm also soon to receive a M.Sc. Degree from as well. Currently, I'm finishing the very last credit for this program externally in New York via a collaboration with with [Dr.Sivaraman](https://anirudhsk.github.io/) and his research team at [Systems@NYU](https://news.cs.nyu.edu/).
+![](/assets/images/profile.jpg){id="profile"}
+
+
+I'm a Computer and Electrical Engineer from the Technical University of Munich, where I'm also soon to receive a M.Sc. Degree from as well. Currently, I'm completing the very last credit for this program externally in New York, via a collaboration with with [Dr.Sivaraman](https://anirudhsk.github.io/) and his research team at [Systems@NYU](https://news.cs.nyu.edu/).
 
 The project in question revolves around: _[Jasper: a Scalable and Fair Multicast Solution for Financial Exchanges in the Cloud](https://arxiv.org/abs/2402.09527)_. Beyond aiding in it's development, my thesis aims to construct a performant heuristic to re-configure Jasper's multicast-tree based on present cloud conditions, that vary highly through time.
 
-I was born in the United States, more specifically in Minneapolis. However, I've lived most of my formative years in Brazil, where my family takes up residence. Eventually, my studies brought me to Germany, but today, I am living in New York and am looking for full-time positions in the region within Computer Engineering ideally from September on, but could start earlier given the circumstances.
 
 ## Background
+
+I was born in the United States, more specifically in Minneapolis. However, I've lived most of my formative years in Brazil, where my family takes up residence. Eventually, my studies brought me to Germany, but today, I am living in New York and am looking for full-time positions in the region within Computer Engineering ideally from September on, but could start earlier given the circumstances.
+
+## Experience
 
 <div id="experience_table">
 <table>
