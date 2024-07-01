@@ -39,7 +39,7 @@ I was born in the United States, more specifically in Minneapolis. However, I've
     </tr>
     <tr>
     <td>FPGAs</td>
-    <td>Microsemi SmartFusion2 Maker Kit</td>
+    <td>Microsemi SmartFusion2 Maker Kit, Xilinx Vivado, TCL</td>
     </tr>
     <tr>
     <td>Cloud Computing</td>
