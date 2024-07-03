@@ -17,7 +17,7 @@ jobs:
 
       - name: Copy CNAME
         run: |
-          ls -a
+          ls -al
           cp ./CNAME ./public/
 
       - name: Deploy to GitHub Pages
