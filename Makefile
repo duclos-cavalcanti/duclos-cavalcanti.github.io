@@ -17,7 +17,6 @@ PUBLIC := ${PWD}/public
 		pages \
 		cover \
 		resume \
-		deploy \
 		serve \ 
 		rebuild
 
@@ -48,9 +47,6 @@ cover:
 	@$(MAKE) -C cover
 
 build: resume pages
-
-deploy:
-	@./deploy.sh
 
 serve: $(if $(shell docker images --format "{{.Repository}}" | grep ${DOCKER}), , pull)
 	@docker ps -a |  grep -o ${NAME} || \
