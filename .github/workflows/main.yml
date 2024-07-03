@@ -11,7 +11,9 @@ jobs:
 
     steps:
       - name: Copy CNAME
-        run: cp ./CNAME ./public/
+        run: |
+          ls -a
+          cp ./CNAME ./public/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
