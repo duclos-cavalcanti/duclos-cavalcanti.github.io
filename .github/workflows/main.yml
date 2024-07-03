@@ -10,6 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          submodules: false
+
       - name: Copy CNAME
         run: |
           ls -a
