@@ -6,6 +6,9 @@ resume.pdf
 cover/*.pdf
 cover/.cover
 
+themes/
+themes/*
+
 *.out
 *.aux
 *.bcf
