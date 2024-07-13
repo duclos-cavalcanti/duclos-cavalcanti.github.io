@@ -1,0 +1,45 @@
+<div class="footer">
+    <div class="footer-left">
+        Powered by <a href="https://gohugo.io/">Hugo</a> with
+        <a href="https://github.com/mrmierzejewski/hugo-theme-console/">Console Theme</a>. 
+    </div>
+
+    <div id="links">
+        <a href="https://github.com/duclos-cavalcanti/"><img id="links-logo" src="/data/icons/github.svg" alt="github"></a>
+        <a href="https://www.linkedin.com/in/daniel-duclos-cavalcanti/"><img id="links-logo" src="/data/icons/linkedin.svg" alt="linkedin"></a>
+        <a href="mailto:me@duclos.dev"><img id="links-logo" src="/data/icons/gmail.svg" alt="gmail"></a>
+    </div>
+</div>
+
+<style>
+.footer {
+    position: relative;
+    text-align: left; /* Ensures text is left-aligned */
+    padding: 10px; /* Optional: Add padding to the footer */
+}
+
+.footer-left {
+    display: inline-block;
+}
+
+#links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+#links a {
+    text-decoration: none;
+}
+
+#links-logo {
+    width: 1em;
+    transition: opacity 0.1s;
+    margin: 0 5px; /* Optional: Add some space between the icons */
+}
+
+#links-logo:hover {
+    opacity: 0.5;
+}
+</style>

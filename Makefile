@@ -1,43 +1,36 @@
-SHELL := /bin/bash
+SHELL  := /bin/bash
+PWD    := $(shell pwd)
+PUBLIC := ${PWD}/public
+
 
 ifeq (, $(shell which docker))
-$(error Docker not found)
+$(error docker not found)
 endif
 
-DOCKER := httpd
-NAME := web-serve-blog
-PWD := $(shell pwd)
-PUBLIC := ${PWD}/public
+ifeq (, $(shell which hugo))
+$(error hugo not found)
+endif
 
 .PHONY: exit \
 		clean \
-		pull \
-		stop \
 		build \
-		pages \
 		cover \
 		resume \
-		serve \ 
-		rebuild
+		serve
 
 all: build
 
 exit:
 	$(error Exiting Makefile)
 
-clean:
+build:
+	@cd website && hugo
 	@rm -rf public
-	@mkdir public
+	@mv -v website/public ./
 	@touch public/.gitkeep
 
-pull:
-	@docker pull ${DOCKER}
-
-stop: $(if $(shell docker ps --filter "name=${NAME}" --format "{{.ID}}") , ,exit)
-	@docker stop $(shell docker ps --filter "name=${NAME}" --format "{{.ID}}")
-
-pages:
-	@./build.sh 
+serve:
+	@cd website && hugo server
 
 resume:
 	@$(MAKE) -C resume
@@ -46,11 +39,6 @@ resume:
 cover:
 	@$(MAKE) -C cover
 
-build: resume pages
+clean: 
+	echo "CLEAN"
 
-serve: $(if $(shell docker images --format "{{.Repository}}" | grep ${DOCKER}), , pull)
-	@docker ps -a |  grep -o ${NAME} || \
-	 docker run --rm --detach --name ${NAME} -p 8080:80 -v ${PUBLIC}:/usr/local/apache2/htdocs ${DOCKER}:latest 
-				   
-
-rebuild: stop serve build

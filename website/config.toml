@@ -2,81 +2,26 @@
 baseURL = "https://duclos.dev"
 languageCode = "en-us"
 title = "Daniel Duclos-Cavalcanti"
-theme="hugo-theme-shell"
+theme = "hugo-theme-console"
 
-# Code
-pygmentsstyle = "gruvbox"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
+[markup.goldmark.renderer]
+    unsafe= true
 
-disqusShortname = "yourDisqusShortname"
-paginate=3 # articles per page
+[params]
+  # Cutting off the page title to two chars for mobile (console-demo -> co)
+  titleCutting = true
 
-[Params]
-  description = "Daniel Duclos-Cavalcanti's Personal Website!"
-  [Params.Terminal]
-  # Note: color scheme
-  # Note: You can choose between
-  # Note: hugo-theme-shell original: ["shell-powershell", "shell-ubuntu", "shell-retro"]
-  # Note: or
-  # Note: gogh theme: https://mayccoll.github.io/Gogh/
-  scheme = "shell-ubuntu"
+  # Set the animation style -- https://animate.style/
+  animateStyle = "animated zoomIn fast" 
 
-  # Note: in terminal
-  # [userName]@[pcName]:~/$ cd [workDir]
-  # [userName]@[pcName]:~/[workDir]$ cat [profile]
-  #
-  # [description]
-  #
-  # Note: if you set Params.Tree > use = true
-  # [userName]@[pcName]:~/[workDir]$ tree ./[folderName]/
-  # ./[folderName]/
-  # ...
-  # Note: result of the tree command
-  userName  = "duclos"
-  pcName    = "ubuntu-thinkpad"
-  workDir   = "Documents"
-  profile   = "profile.txt"
+  [[params.navlinks]]
+  name = "about/"
+  url = "about/"
 
-  # Note: speed at which text is displayed on the terminal
-  # Note: if set to 0, typing animation will be disabled
-  # Note:
-  # Note: if you want to enable Mathjax, you need to set it to 0
-  # Note: and set "math: true" at front matter in your Markdown file
-  ps1Delay      = 0 # prompt speed : [userName]@[pcName]:~/$ , [userName]@[pcName]:~/[workDir]$
-  stdoutDelay   = 0 # stdout speed : [description] , files in Params.Tree
-  commandDelay  = 50 # command speed : cd [workDir] , cat [profile] , tree ./[folderName]/
+  [[params.navlinks]]
+  name = "posts/"
+  url = "posts/"
 
-  # terminalDelay = 20 : deprecated
-
-  # Note: speed at which text is displayed on the activity pages
-  # Note: if set to 0, typing animation will be disabled
-  # Note: 
-  # Note: if you want to enable Mathjax, you need to set it to 0
-  # Note: and set "math: true" at front matter in your Markdown file
-  titleDelay = 0 # title speed : "title" in front matter
-  contentDelay = 0 # content speed : content in .md file
-
-  # activityDelay = 5 : deprecated
-
-  description = """
-  Hi,
-  Nice to meet you!
-
-  """
-
-  # Note: If you want to use a Markdown file, you can use the following
-  # description = "/description.md"
-  # Note: and put the description.md in /content/description.md
-
-  [Params.Tree]
-  use = true
-  folderName = "Documents"
-  # Note: ["ACTIVITY", "URL or PATH TO YOUR MARKDOWN FILE"]
-  files = [ 
-    ["About",   "/about"],
-    ["Python",  "https://www.example.com/"],
-    ["Go",      "https://golang.org/"],
-    ["Hugo",    "/post/some-activity.md"],
-    ["Docker",  "/post/some-activity.md"],
-  ]
+  [[params.navlinks]]
+  name = "resume/"
+  url = "resume/"
