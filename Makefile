@@ -34,7 +34,7 @@ serve:
 
 resume:
 	@$(MAKE) -C resume
-	@cp ./resume/resume.pdf ./assets/pdfs/resume.pdf
+	@cp ./resume/resume.pdf ./website/content/data/pdfs/resume.pdf
 
 cover:
 	@$(MAKE) -C cover
