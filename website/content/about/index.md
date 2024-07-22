@@ -4,7 +4,7 @@ description: "About Page"
 author: "Daniel Duclos-Cavalcanti"
 ---
 
-I'm a Computer and Electrical Engineer from the Technical University of Munich, where I'm also soon to receive a M.Sc. Degree from as well. I was born in the United States, more specifically in Minneapolis. However, I've lived most of my formative years in Brazil, where my family takes up residence. Eventually, my studies brought me to Germany, but today, I am living in New York and am looking for full-time positions in the region within Computer Engineering ideally from September on, but could start earlier given the circumstances.
+I'm a Computer and Electrical Engineer from the Technical University of Munich. I was born in the United States, more specifically in Minneapolis. However, I've lived most of my formative years in Brazil, where my family takes up residence. Eventually, my studies brought me to Germany, but today, I am living in New York and am looking for full-time positions in the region within my background and interests.
 
 ## Experience
 
