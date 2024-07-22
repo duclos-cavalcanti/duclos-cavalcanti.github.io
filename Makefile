@@ -23,7 +23,7 @@ all: build
 exit:
 	$(error Exiting Makefile)
 
-build:
+build: resume
 	@cd website && hugo
 	@rm -rf public
 	@mv -v website/public ./
