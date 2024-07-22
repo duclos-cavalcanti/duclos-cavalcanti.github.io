@@ -53,11 +53,13 @@ developing a performant heuristic to re-configure Jasper's multicast-tree based 
         }
         .horizontal-list li::after {
             content: "○";
-            position: absolute;
-            right: -10px; /* Adjust position as needed */
+            margin: 0 5px; /* Adjust spacing as needed */
         }
         .horizontal-list li:last-child::after {
             content: ""; /* Remove bullet from the last item */
+        }
+        .horizontal-list li a {
+            text-decoration: none;
         }
     </style>
     <div class="list-container">
