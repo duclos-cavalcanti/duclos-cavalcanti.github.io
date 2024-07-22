@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Daniel Duclos-Cavalcanti</title>
+    <title>Tags on duclos.dev</title>
     <link>https://duclos.dev/tags/</link>
-    <description>Recent content in Tags on Daniel Duclos-Cavalcanti</description>
+    <description>Recent content in Tags on duclos.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Apr 2020 02:01:58 +0530</lastBuildDate><atom:link href="https://duclos.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 Apr 2024 02:01:58 +0530</lastBuildDate><atom:link href="https://duclos.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>cloud</title>
       <link>https://duclos.dev/tags/cloud/</link>
-      <pubDate>Wed, 01 Apr 2020 02:01:58 +0530</pubDate>
+      <pubDate>Wed, 03 Apr 2024 02:01:58 +0530</pubDate>
       
       <guid>https://duclos.dev/tags/cloud/</guid>
       <description></description>
@@ -19,7 +19,7 @@
     <item>
       <title>research</title>
       <link>https://duclos.dev/tags/research/</link>
-      <pubDate>Wed, 01 Apr 2020 02:01:58 +0530</pubDate>
+      <pubDate>Wed, 03 Apr 2024 02:01:58 +0530</pubDate>
       
       <guid>https://duclos.dev/tags/research/</guid>
       <description></description>
