@@ -23,7 +23,8 @@ all: build
 exit:
 	$(error Exiting Makefile)
 
-build: resume
+build:
+	@cp -v ./resume/resume.pdf ./website/content/data/pdfs/resume.pdf
 	@cd website && hugo
 	@rm -rf public
 	@mv -v website/public ./
@@ -34,7 +35,6 @@ serve:
 
 resume:
 	@$(MAKE) -C resume
-	@cp -v ./resume/resume.pdf ./website/content/data/pdfs/resume.pdf
 
 cover:
 	@$(MAKE) -C cover
