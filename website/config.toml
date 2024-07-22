@@ -1,7 +1,7 @@
 # Main
 baseURL = "https://duclos.dev"
 languageCode = "en-us"
-title = "Daniel Duclos-Cavalcanti"
+title = "duclos.dev"
 theme = "hugo-theme-console"
 
 [markup.goldmark.renderer]

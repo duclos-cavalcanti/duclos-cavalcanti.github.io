@@ -37,20 +37,6 @@ sudo apt install hugo texlive-latex-base texlive-xetex
 hugo new site website --format yaml
 cd website/themes && git clone git clone https://github.com/mrmierzejewski/hugo-theme-console
 ```
-3. Add Post 
-- Create a new .md file in the content/posts folder
-```markdown 
----
-title: Title of the post
-description:
-date:
-tldr: (optional)
-draft: true/false (optional)
-tags: [tag names] (optional)
----
-```
-
-## Usage
 
 ## Usage
 
