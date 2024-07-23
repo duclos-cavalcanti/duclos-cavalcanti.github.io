@@ -1,291 +1,283 @@
-\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
-%% AltaCV uses the fontawesome5 and packages.
-%% See http://texdoc.net/pkg/fontawesome5 for full list of symbols.
+%-------------------------
+% Resume in Latex
+% Based on: https://github.com/jakegut/resume (which was itself based on https://github.com/sb2nov/resume)
+% License : MIT
+%------------------------
 
+\documentclass[letterpaper,11pt]{article}
 
-% Change the page layout if you need to
-\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
 
-% The paracol package lets you typeset columns of text in parallel
-\usepackage{paracol}
+\input{glyphtounicode}
 
-% Change the font if you want to, depending on whether
-% you're using pdflatex or xelatex/lualatex
-\ifxetexorluatex
-  % If using xelatex or lualatex:
-  \setmainfont{Roboto Slab}
-  \setsansfont{Lato}
-  \renewcommand{\familydefault}{\sfdefault}
-\else
-  % If using pdflatex:
-  \usepackage[rm]{roboto}
-  \usepackage[defaultsans]{lato}
-  % \usepackage{sourcesanspro}
-  \renewcommand{\familydefault}{\sfdefault}
-\fi
+% -------------------- FONT OPTIONS --------------------
+% sans-serif
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% serif
+% \usepackage{charter}
 
-% Change the colours if you want to
-\definecolor{SlateGrey}{HTML}{2E2E2E}
-\definecolor{LightGrey}{HTML}{666666}
-\definecolor{TealGreen}{HTML}{5BC8AF}
-\colorlet{name}{black}
-\colorlet{tagline}{black}
-\colorlet{heading}{black}
-\colorlet{headingrule}{gray}
-\colorlet{subheading}{blue}
-\colorlet{accent}{black} % TealGreen
-\colorlet{emphasis}{SlateGrey}
-\colorlet{body}{LightGrey}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
 
-% Change some fonts, if necessary
-\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
-\renewcommand{\personalinfofont}{\footnotesize}
-\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
-\renewcommand{\cvsubsectionfont}{\large\bfseries}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in} % Default was -.5in
+\addtolength{\textheight}{1.0in}
 
+\urlstyle{same}
 
-% Change the bullets for itemize and rating marker
-% for \cvskill if you want to
-\renewcommand{\cvItemMarker}{{\small\textbullet}}
-\renewcommand{\cvRatingMarker}{\faCircle}
-% ...and the markers for the date/location for \cvevent
-% \renewcommand{\cvDateMarker}{\faCalendar*[regular]}
-% \renewcommand{\cvLocationMarker}{\faMapMarker*}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
 
-% If your CV/résumé is in a language other than English,
-% then you probably want to change these so that when you
-% copy-paste from the PDF or run pdftotext, the location
-% and date marker icons for \cvevent will paste as correct
-% translations. For example Spanish:
-% \renewcommand{\locationname}{Ubicación}
-% \renewcommand{\datename}{Fecha}
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{4.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
 \begin{document}
-\name{Daniel Duclos-Cavalcanti}
-\tagline{Dual Citizenship: U.S. \& Brazil \hfill Languages: \textcolor{black}{\textit{English, German, Portuguese}} }
 
-\personalinfo{%
-  % Not all of these are required!
-  \homepage{www.duclos.dev}
-  \email{me@duclos.dev}
-  \phone{+1-516-912-7975}
-  \location{New York, NY, USA}
-  \github{duclos-cavalcanti}
-  %\linkedin{daniel-duclos-cavalcanti}
-  %% You can add your own arbitrary detail with
-  %% \printinfo{symbol}{detail}[optional hyperlink prefix]
-  % \printinfo{\faPaw}{Hey ho!}[https://example.com/]
-  %% Or you can declare your own field with
-  %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
-  % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
-  % \gitlab{your_id}
-  %%
-  %% For services and platforms like Mastodon where there isn't a
-  %% straightforward relation between the user ID/nickname and the hyperlink,
-  %% you can use \printinfo directly e.g.
-  % \printinfo{\faMastodon}{@username@instace}[https://instance.url/@username]
-  %% But if you absolutely want to create new dedicated info fields for
-  %% such platforms, then use \NewInfoField* with a star:
-  % \NewInfoField*{mastodon}{\faMastodon}
-  %% then you can use \mastodon, with TWO arguments where the 2nd argument is
-  %% the full hyperlink.
-  % \mastodon{@username@instance}{https://instance.url/@username}
+% -------------------- HEADING--------------------
+\begin{flushright}
+  % \vspace{-4pt}
+\end{flushright}
+
+\vspace{-5pt}
+
+\begin{center}
+    \textbf{\Huge \scshape Daniel Duclos-Cavalcanti} \\ \vspace{8pt}
+    \small 
+    \faIcon{github}
+    \href{https://github.com/duclos-cavalcanti}{\underline{duclos-cavalcanti}} $  $
+    \faIcon{code}
+    \href{https://www.duclos.dev}{\underline{duclos.dev}} $  $
+    \faIcon{envelope}
+    \href{mailto:me@duclos.dev}{\underline{me@duclos.dev}} $ $
+    \faIcon{map-pin} 
+    New York, NY $ $
+    \faIcon{globe} 
+    U.S. Citizen $ $
+    \faIcon{language} 
+    Eng, German \& Portuguese
+\end{center}
+
+\section{Summary}
+\small{
+As a Computer Engineer from the Technical University of Munich, I 
+have cultivated a global perspective, being born in the U.S., raised in Brazil and 
+educated in Germany. My diverse background enriches my technical expertise with 
+exceptional communication and interpersonal skills, enabling me to be an effective 
+team player and collaborator. Currently based in New York, I am 
+completing my master’s program through a research collaboration with Dr. Sivaraman from NYU.
 }
 
-\makecvheader
-%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
-% \AtBeginEnvironment{itemize}{\small}
+\vspace{-8.0pt}
 
-\textcolor{black}{
-I'm a Computer and Electrical Engineer from the Technical University of Munich, 
-where I'm also soon to receive a M.Sc. Degree from. As of now, 
-I'm completing the very last credit for this program externally in New York via 
-a research collaboration with Dr.Sivaraman from Systems@NYU. I'm currently looking 
-for permanent full-time software engineering roles that fit my background and interests 
-within the New York area.
-}
+% -------------------- EDUCATION --------------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {New York University, , Courant Institute of Mathematical Sciences}{New York, USA}
+        {Visiting Non-Degree Seeking Student: Computer Science}{Sept 2023 -- May 2024}
 
-%% Set the left/right column width ratio to 6:4.
-\columnratio{0.6}
+        \resumeItemListStart
+            \resumeItem{Co-Authored: \href{https://arxiv.org/abs/2402.09527}{\underline{Jasper: Fair Multicast for Financial Exchanges in the Cloud}}}
+            \resumeItem{Ongoing Research: \textbf{"VM Selection Heuristic for Financial Exchanges in the Cloud"}}
+            \resumeItemListStart
+                \resumeItem{Co-Advised by \href{https://anirudhsk.github.io/}{Dr.Sivaraman} from \href{https://news.cs.nyu.edu/}{Systems@NYU} and \href{https://www.ce.cit.tum.de/en/lkn/team/staff/kellerer-wolfgang/}{Prof. Dr.-Ing. Kellerer} from \href{https://www.ce.cit.tum.de/en/lkn/home/}{LKN@TUM}}
+                % \resumeItem{\href{https://www.ce.cit.tum.de/en/lkn/team/staff/kellerer-wolfgang/}{Prof. Dr.-Ing. Wolfgang Kellerer} from \href{https://www.ce.cit.tum.de/en/lkn/home/}{LKN@TUM}}
+            \resumeItemListEnd
+            \vspace{4.0pt}
+            \resumeItem{CSCI-GA 2250 - Operating Systems - A}
+            % \resumeItem{CSCI-GA 3033 - Technologies for Finance - Pass}
+        \resumeItemListEnd
+  
+    \resumeSubheading
+        {Technical University of Munich \normalfont{\textit{(Grad. Sept. 2024)}} }{Munich, Germany}
+        {M.Sc. Electrical and Computer Engineering}{Oct 2020 -- Now }
+        \resumeItemListStart
+            \resumeItem{M.Sc. Thesis \textbf{\textit{(Last Credit currently performed externally in NY)}}}
+            \resumeItem{EI70530: Embedded Systems and Security}
+            \resumeItem{EI71104: Embedded System Design for Machine Learning}
+            \resumeItem{EI78039: High Performance Computing for Machine Intelligence}
+        \resumeItemListEnd
+      
+    \resumeSubheading
+        {Technical University of Munich}{Munich, Germany}
+        {B.Sc. Electrical and Computer Engineering}{Oct 2016 -- Sept 2020}
+        \resumeItemListStart
+            \resumeItem{\textbf{{German GPA: }} 2.2 (Top 37\%) -- \href{https://drive.google.com/file/d/1Xesfn8HF9g4oplwqPZMhcFvGFLuyVzIM/view?usp=sharing}{{\underline{See Grade Distribution}}}}
+        \resumeItemListEnd
+        
+  \resumeSubHeadingListEnd
 
-% Start a 2-column paracol. Both the left and right columns will automatically
-% break across pages if things get too long.
-\begin{paracol}{2}
-\cvsection{Education}
+\vspace{-8.0pt}
 
-\cvevent{Visiting Non-Degree Graduate Student}
-        {New York University, Courant Institute of Mathematical Sciences}
-        {Sept 2023 -- May 2024}{New York, USA}
-\begin{itemize}
-\item Collaboration: \href{https://arxiv.org/abs/2402.09527}{{\textcolor{black}{\underline{Jasper: Fair Multicast for Financial Exch. in the Cloud}}}}
-\item Research Work Co-advised by:
-    \begin{itemize}
-        \item \href{https://anirudhsk.github.io/}{{\textcolor{black}{\underline{Dr.Sivaraman}}}} from \href{https://news.cs.nyu.edu/}{{\textcolor{black}{\underline{Systems@NYU}}}}
-        \item \href{https://www.ce.cit.tum.de/en/lkn/team/staff/kellerer-wolfgang/}{{\textcolor{black}{\underline{Prof. Dr.-Ing. Wolfgang Kellerer}}}} from \href{https://www.ce.cit.tum.de/en/lkn/home/}{{\textcolor{black}{\underline{LKN@TUM}}}}
-    \end{itemize}
-\end{itemize}
-The work leverages the current desire to migrate financial exchanges to the public cloud. 
-However, the lack of an available cloud-native multicast mechanism still inhibits said shift.
-\href{https://arxiv.org/abs/2402.09527}{{\textcolor{black}{\underline{Jasper}}}} presents itself as 
-a solution, employing an overlay multicast tree, clock synchronization, and more
-to achieve a fair and performant cloud-tenant multicast prototype. 
-Beyond aiding in its development, the core of my contribution relies on developing a 
-heuristic to better select VMs across Jasper's tree-like network.
-% This project lies at the intersection of finance and computer systems, enabling a future
-% with more accessible and efficient trading markets.
-% Engaging in a project at the intersection of finance and computer systems, aimed at enhancing
-% accessibility and efficiency in trading markets, is profoundly intriguing.
-%
-% Financial exchanges consider a migration to the cloud for scalability, robustness, and cost-efficiency.
-% \href{https://arxiv.org/abs/2402.09527}{{\textcolor{black}{\underline{Jasper}}}} presents a scalable 
-% and fair multicast solution for cloud-based exchanges, addressing the lack of cloud-native mechanisms for such. 
-% To achieve this, Jasper employs an overlay multicast tree, leveraging clock synchronization, kernel-bypass,  
-% and more. My contribution is to develop a heuristic to better select VM's across Jasper's tree network 
-% to improve latency and overall performance.
-% There is value in providing a foundation for said migration to the cloud, 
-% as the barrier of entry to automated or high-frequency trading as a business 
-% could be significantly lowered.
+% -------------------- SKILLS --------------------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Languages}{: C, C++, Python, Golang, Rust, Lua, VHDL, Tcl, JavaScript, HTML/CSS} \\
+    \textbf{Tools}{: Terraform, Docker, Packer, AWS, GCP, Git, Unix Shell, Makefile, CMake, Linux, Jenkins} \\
+    \textbf{Technologies}{: Cloud Computing, Computer Networking, Embedded Systems, IoT, FPGAs, RTOS, TinyML, HPC} \\
+    \textbf{Frameworks/Libraries}{: ZeroMQ, DPDK, Tensorflow, TFLite, Pytest, GTest, OpenMPI, OpenMP, Xilinx Vivado}
+    \textbf{Hardware}{: Raspberry PIs, Embedded Linux, ARM Cortex MCUs, USB, TCP, UDP, IP, UART, GPIO} \\
+    }}
+ \end{itemize}
 
-\begin{itemize}
-\item CSCI-GA 2250 - Operating Systems - \textbf{A}
-\end{itemize}
-\divider
+\vspace{-8.0pt}
 
-\cvevent{M.Sc. Electrical and Computer Engineering}
-        {Technical University of Munich}
-        {Oct '20' -- {\textcolor{black}{\textbf{Graduation: Sept 2024}}}}{Munich, GER}
-\begin{itemize}
-\item M.Sc. Thesis {\textcolor{black}{\textit{(Last Credit performed Externally in NY)}}}
-\item EI70530: Embedded Systems and Security
-\item EI71104: Embedded System Design for Machine Learning
-\item EI78039: High Performance Computing for Machine Intelligence
-\item EI78014: Secure SoCs for IoT
-% \item GPA: 3.0 (American Standards) -- 2.4 (German Standards)
-\end{itemize}
-\divider
+% -------------------- EXPERIENCE --------------------
+\section{Experience}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{EDA Department - TU Munich} $|$ \footnotesize\emph{Research Assistant}\vspace{8pt}}{Jul 22--Oct 22, Oct 20--Mar 21}
+            {\small{Two-Part internship, where I aided in developing a research Design‑Space‑Exploration framework that needed to:}}
+            \vspace{-5pt}
+            \resumeItemListStart
+                \resumeItem{Run optimally the inference of Machine Learning Models across heterogeneous hardware (GPUs, CPUs, TPUs).}
+                \resumeItem{Analyze traffic costs via processing USB traffic between the host and Google's Coral Edge TPU.}
+            \resumeItemListEnd
+            % {\small{
+            %        Two-Part internship, where I was part in developing a Design‑Space‑Exploration framework to optimally 
+            %        run the inference of Machine Learning Models across heterogeneous hardware, including GPUs, CPUs, TPUs and 
+            %        Embedded Systems. One effort consisted of analyzing USB traffic during inference on Google's Coral Edge TPU.
+            %    }
+            % }
 
-\cvevent{B.Sc. Electrical and Computer Engineering}
-        {Technical University of Munich}
-        {Feb '17 -- Sept '20}{Munich, GER}
-\begin{itemize}
-\item \textbf{\textcolor{black}{German GPA: }} 2.2 (Top 37\%) -- \href{https://drive.google.com/file/d/1Xesfn8HF9g4oplwqPZMhcFvGFLuyVzIM/view?usp=sharing}{{\textcolor{black}{\underline{See Grade Distribution}}}}
-\item EI06861: Embedded Systems Programming Lab (Tutor)
-% \item GPA: 3.0 (American Standards) -- 2.4 (German Standards)
-% \item See \href{https://drive.google.com/file/d/1Xesfn8HF9g4oplwqPZMhcFvGFLuyVzIM/view?usp=sharing}{{\textcolor{black}{\underline{Grade Distribution/Explanation}}}}
-% \item GPA: 3.1 (American Standards) -- 2.2 (German Standards)
-% \item Previously Unfinished EE B.Sc. at PUC-RIO, Brazil -- 2013-2016
-\end{itemize}
+        \resumeProjectHeading
+          {\textbf{Molabo GmbH} $|$ \footnotesize\emph{Internship - Embedded Engineer}\vspace{8pt}}{Aug 21 -- Jan 22}
+            {\small{Assisted the \href{https://molabo.com/unternehmen/}{\underline{motor-drive team}} in developing:}
+            \vspace{-5pt}
+            \resumeItemListStart
+                \resumeItem{Streamlined workflows via Jenkinsfiles, CMake and GNU Make}
+                \resumeItem{Features and Unit-Tests for their Embedded and FPGA Devices}
+                \resumeItem{Internal Tooling such as a Linux virtual CAN interface to simulate communication within their systems}
+            \resumeItemListEnd
 
-\cvsection{Certificates \& Misc}
-\begin{itemize}
-    \item \href{https://courses.edx.org/certificates/f9250573933e4a3e87e8b28ea989bf99}{{\textcolor{black}{UCSD: Data Structures Fundamentals}}}
-    \item \href{https://courses.edx.org/certificates/af6115bce0c646aa95f6aaa6c98acb09}{{\textcolor{black}{UT Austin: Embedded Systems - uC I/O}}}
-\end{itemize}
-% \begin{itemize}
-% 	\item \href{https://courses.edx.org/certificates/f9250573933e4a3e87e8b28ea989bf99}{{\textcolor{black}{UCSD: Data Structures Fundamentals}}}
-% 	\item \href{https://courses.edx.org/certificates/af6115bce0c646aa95f6aaa6c98acb09}{{\textcolor{black}{UT Austin: Embedded Systems - uC I/O}}}
-% 	% \item \href{https://drive.google.com/file/d/1o92biySEgdC3Jg6H8UU-0r6dPcCCKwKe/view?usp=sharing}{{\textcolor{black}{Goethe - C1 German}}}
-% \end{itemize}
+            % {
+            %     as a part-time working student. Responsiblities consisted of
+            %     developing streamlined workflows via Jenkinsfiles, CMake and GNU Make, as well as 
+            %     developing/unit-testing features for their Embedded/FPGA devices and for internal tooling. Helped develop 
+            %     a framework to simulate communication scenarios within their systems via Linux's Virtual CAN interface.
+            % }
+            }
+
+        \resumeProjectHeading
+          {\textbf{RCS Department - TU Munich} $|$ \footnotesize\emph{Tutor - Embedded Systems Lab}\vspace{8pt}}{Apr 21 -- Aug 21}
+            {\vspace{-15.0pt}}
+            % {\small{
+            %     Tutor for the Embedded Systems Programming Lab course given at TU Munich.
+            %     Aided students regarding their course work and their final project, which 
+            %     consisted of writing embedded/multi-threaded FreeRTOS applications in C.
+            %    }
+            % }
+
+            \resumeItemListStart
+                \resumeItem{\small{Tutor for the Embedded Systems Programming Lab at TU Munich.}}
+                \resumeItem{\small{Aided students in their embedded/multi-threaded FreeRTOS projects in C.}}
+            \resumeItemListEnd
+
+    \resumeSubHeadingListEnd 
 
 
-\cvsection{Personal Projects}
+\vspace{-8.0pt}
 
-\begin{itemize}
-\item \href{https://github.com/duclos-cavalcanti/FreeRTOS-SpaceInvaders}
-     {\underline{{\textcolor{black}{FreeRTOS Space Invaders}}} \hfill  \textcolor{black}{[C, RTOS, Multi-Threaded]}}
-% \begin{itemize}
-% 	\item The work was written in C and done so as a multi-threaded FreeRTOS application. 
-% \end{itemize}
+% -------------------- PROJECTS --------------------
+\section{Projects}
+    \resumeSubHeadingListStart
+        % \faIcon{github}
+        \resumeProjectHeading
+        { \href{https://github.com/duclos-cavalcanti/microsemi-error-detection}{\underline{\textit{(16,11) Hamming-Code Err. Detection}} } }{\footnotesize\emph{C, FPGA, UART, VHDL, SoC, Microsemi}}
+        % \resumeItemListStart
+        %     \resumeItem{Error detection and correction algorithm implemented on the Microsemi SmartFusion2 SoC}
+        % \resumeItemListEnd
+        \vspace{-9.0pt}
+        \resumeProjectHeading
+        { \href{https://github.com/duclos-cavalcanti/FreeRTOS-SpaceInvaders}{\underline{\textit{FreeRTOS-SpaceInvaders}}} }{\footnotesize\emph{C, FreeRTOS, RTOS, Multi-Threaded, Git, Unix Shell}}
+        % \resumeItemListStart
+        %     \resumeItem{Implemented the famous arcade game in C, as a multi-threaded FreeRTOS application}
+        % \resumeItemListEnd
+        \vspace{-9.0pt}
+        \resumeProjectHeading
+        { \href{https://github.com/duclos-cavalcanti/Open-MPI-ValueIteration}{\underline{\textit{Open-MPI-ValueIteration}}} }{\footnotesize\emph{C++, HPC, OpenMPI, Multi-Threaded, Distributed Workload}}
+        % \resumeItemListStart
+        %     \resumeItem{Implemented an asynchronous value iteration model framed as a dynamic programming problem}
+        % \resumeItemListEnd
+        \vspace{-9.0pt}
+        \resumeProjectHeading
+        { \href{https://github.com/duclos-cavalcanti/serve}{\underline{\textit{Serve CLI}}} }{\footnotesize\emph{Golang, CLI, Tooling, UNIX}}
 
- \item \href{https://github.com/duclos-cavalcanti/microsemi-error-detection}
-     {\underline{{\textcolor{black}{(16,11) Hamming-Code Err. Detection}}} \hfill  \textcolor{black}{[C, VHDL, FPGA]}}
-% \begin{itemize}
-%     \item Error detection and correction algorithm implemented on the Microsemi SmartFusion2 SoC.
-% \end{itemize}
+        \subsection{Certificates}
+         \href{https://courses.edx.org/certificates/f9250573933e4a3e87e8b28ea989bf99}{{UCSD: Data Structures Fundamentals}} \\
+         \href{https://courses.edx.org/certificates/af6115bce0c646aa95f6aaa6c98acb09}{{UT Austin: Embedded Systems - uC I/O}}
 
- \item \href{https://github.com/duclos-cavalcanti/Open-MPI-ValueIteration}
-     {\underline{{\textcolor{black}{OpenMPI Value Iteration}}} \hfill  \textcolor{black}{[C++, HPC, Distributed]}}
-% \begin{itemize}
-% 	\item An asynchronous value iteration model implemented as a dynamic programming problem. Used C++ and OpenMPI.
-% \end{itemize}
-
- \item \href{https://github.com/duclos-cavalcanti/serve}
-     {\underline{{\textcolor{black}{Serve}}} \hfill \textcolor{black}{[Golang, CLI, Tooling]}}
-% \begin{itemize}
-% 	\item Small CLI menu in Golang.
-% \end{itemize}
-\end{itemize}
-
-% \cvsection{Languages}
-%     $\bullet$\ \textbf{\textcolor{black}{German: Fluent}} \hfill $\bullet$\ \textbf{\textcolor{black}{Portuguese: Fluent}} \hfill $\bullet$\ \textbf{\textcolor{black}{Spanish: Beginner}}
-
-% \begin{itemize}
-%     % \item \textbf{\textcolor{black}{English: Fluent}}
-%     \item \textbf{\textcolor{black}{German: Fluent}}
-%     \item \textbf{\textcolor{black}{Portuguese: Fluent}}
-% \end{itemize}
-
-% \cvskill{English}{5}
-% \divider
-%
-% \cvskill{German}{5}
-% \divider
-%
-% \cvskill{Portuguese}{5}
-% \divider
-
-% \cvskill{Spanish}{2.5}
-
-\medskip
-
-\nocite{*}
-
-\switchcolumn
-\cvsection{Experience}
-% Full-time research intern at the Real-Time Computer Systems department within TUM. I worked with Google's Edge Coral TPU and benchmarking it's performance. Benchmarking was done through the analysis of USB traffic during model inference via pyshark. Automation tof training, freezing, inference and hardware deployment of several ML Models through Tensorflow was also required.
-
-\cvevent{Research Assistant}{EDA Department - TU Munich}{Jul'22--Oct'22, Oct'20--Mar'21}{Munich, GER}
-Two-Part internship, where I was part in developing a Design‑Space‑Exploration framework to optimally 
-run the inference of Machine Learning Models across heterogeneous hardware,
-including GPUs, CPUs, TPUs and embedded devices. 
-One effort consisted of analyzing USB traffic during inference on Google's Coral Edge TPU.
-
-\divider
-
-\cvevent{Internship - Embedded Engineer}{Molabo GmbH}{Aug '21 -- Jan '22}{Ottobrunn, GER}
-Assisted the \href{https://molabo.com/unternehmen/}{{\textcolor{gray}{\underline{motor-drive team}}}}
-as a part-time working student. Responsiblities consisted of
-developing streamlined workflows via Jenkinsfiles, CMake and GNU Make, as well as 
-developing and unit-testing features for their Embedded/FPGA devices.
-
-\divider
-
-\cvevent{Tutor - Embedded Systems Lab}{RCS Department - TU Munich}{Apr '21 -- Aug '21}{Munich, GER}
-Tutor for the Embedded Systems Programming Lab course given at TU Munich.
-Aided students regarding their course work and their final project, which 
-consisted of writing embedded FreeRTOS applications in C.
-
-\cvsection{Skills}
-
-\cvtag{C++}\cvtag{Linux}\cvtag{Embedded Systems}\cvtag{Cloud}\\
-\cvtag{Python}\cvtag{FreeRTOS}\cvtag{IoT}\cvtag{VHDL}\cvtag{FPGAs}
-\cvtag{C}\cvtag{TCP/UDP/IP}\cvtag{DPDK}\cvtag{USB}\cvtag{UART}\\
-\cvtag{AWS}\cvtag{GCP}\cvtag{Terraform}\cvtag{Docker}\cvtag{Packer}\\
-\cvtag{Vagrant}\cvtag{Bash}\cvtag{CMake}\cvtag{Unix}\cvtag{Git}\\
-\cvtag{Computer Networking}\cvtag{Operating Systems}\\
-\cvtag{High-Perf. Computing}\cvtag{OpenMP}\cvtag{OpenMPI}
-\cvtag{Tensorflow}\cvtag{TFLite}\cvtag{TinyML}
-\cvtag{CI/CD}\cvtag{Jenkins}\cvtag{Golang}\cvtag{Lua}\cvtag{Rust}\cvtag{JavaScript}
-% \cvtag{Golang}\cvtag{Lua}\cvtag{Rust}\cvtag{JavaScript}\cvtag{Latex}\\
-% \cvtag{Markdown}\cvtag{HTML}\cvtag{CSS}
-
-\medskip
-
-% \cvsection{Strengths}
-%
-% \cvtag{Hard-working}\cvtag{Detail-Oriented}\cvtag{Inquisitive}\\
-% \cvtag{Teamworker}\cvtag{Communication}
-
-\end{paracol}
+    \resumeSubHeadingListEnd
+    
 \end{document}
-
