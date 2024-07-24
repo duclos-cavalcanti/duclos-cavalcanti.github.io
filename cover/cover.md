@@ -11,22 +11,22 @@ email: 'me@duclos.dev'
 web: 'https://duclos.dev'
 title: 'Electrical and Computer Engineer'
 opening: 'Dear'
-company: Siemens Team
+company: Palantir Team
 goodbye: 'Sincerely,'
 ---
 
 I'm an American Computer Engineer currently living in New York and finishing a M.Sc. degree from the Technical University of Munich 
 through a research collaboration with [Dr.Sivaraman](https://anirudhsk.github.io/) and his team at [Systems@NYU](https://news.cs.nyu.edu/). I also earned my B.Sc. Electrical and Computer Engineering from TUM and lived in Germany for almost 7 years.
 
-The project in question revolves around _Jasper: a Scalable and Fair Multicasting on the Cloud for Financial Exchanges_ [[1]](https://arxiv.org/abs/2402.09527). Beyond aiding in it's development, my thesis aims to construct a performant heuristic to re-configure Jasper's multicast-tree based on present cloud conditions, that vary highly through time.
+The project in question revolves around _Jasper: a Scalable and Fair Multicasting Solution on the Cloud for Financial Exchanges_ [[1]](https://arxiv.org/abs/2402.09527). Beyond aiding in it's development, my thesis aims to construct a performant heuristic to re-configure Jasper's multicast-tree based on present cloud conditions, that vary highly through time.
 
-I am confident that I am an excellent fit for Siemens, having admired the company throughout my undergraduate years for its unique position in science and engineering. My background in embedded systems, firmware, IoT, and cloud computing, along with my formative years living in Germany, makes me a strong candidate on both a technical and cultural level. Given my recent move to the United States and my past experiences, I am certain that I can provide immediate value to your team and continuously grow a successful career within Siemens as intended.
-
-Moreover, I've always been a curious individual, and I believe that trait is not only one of my defining qualities but also one that pushed me to experience as much as I could as an engineer and as a person. I've had the privilege and the determination to study and work in different places and across a multitude of interesting domains, from secure embedded and IoT systems to machine learning on edge devices and cloud-based applications. 
-I believe my broad knowledge across these various fields, coupled with my creative and determined work ethic, equips me extremely well for a career in engineering.
-
-<!-- I've always been a curious individual, and I believe that trait is not only one of my defining qualities but also one that pushed me to experience as much as I could as an engineer and as a person. I've had the privilege and the determination to study and work both in Germany and now in the U.S. across a multitude of interesting domains, from digital design to operating systems, embedded systems, IoT, computer networking, cloud computing, machine learning and more. -->
+<!-- I am confident that I am an excellent fit for Siemens, having admired the company throughout my undergraduate years for its unique position in science and engineering. My background in embedded systems, firmware, IoT, and cloud computing, along with my formative years living in Germany, makes me a strong candidate on both a technical and cultural level. Given my recent move to the United States and my past experiences, I am certain that I can provide immediate value to your team and continuously grow a successful career within Siemens as intended. -->
+<!---->
+<!-- Moreover, I've always been a curious individual, and I believe that trait is not only one of my defining qualities but also one that pushed me to experience as much as I could as an engineer and as a person. I've had the privilege and the determination to study and work in different places and across a multitude of interesting domains, from secure embedded and IoT systems to machine learning on edge devices and cloud-based applications.  -->
 <!-- I believe my broad knowledge across these various fields, coupled with my creative and determined work ethic, equips me extremely well for a career in engineering. -->
+
+I've always been a curious individual, and I believe that trait is not only one of my defining qualities but also one that pushed me to experience as much as I could as an engineer and as a person. I've had the privilege and the determination to study and work both in Germany and now in the U.S. across a multitude of interesting domains, from digital design to operating systems, embedded systems, IoT, computer networking, cloud computing, machine learning and more.
+I believe my broad knowledge across these various fields, coupled with my creative and determined work ethic, equips me extremely well for a career in engineering.
 
 <!-- The strong learning culture, global presence and seemingly eclectic workforce makes for a perfect fit. Moreover, Datadog's position as a SaaS provider in the cloud computing space matches very well with my background in servers, computer networking and kernel engineering. Finally, I personally love the task of developing tooling from engineers to other engineers. Throughout my time as a student and engineer, I always held the belief that many times great tools can be the difference needed for breakthrough and innovation both in science as well as in the industry. I admire Datadog's attempt to provide value in that regard. -->
 
