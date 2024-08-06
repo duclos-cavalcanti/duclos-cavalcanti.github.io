@@ -12,8 +12,9 @@ I'm a Computer and Electrical Engineer from the Technical University of Munich, 
 The project in question revolves around __Jasper: a Scalable and Fair Multicast Solution for Financial Exchanges in the Cloud__. Jasper leverages the current desire to migrate financial exchanges to the public cloud and given the lack of a cloud-native multicast mechanism for such, it presents itself as a modern solution. My collaboration revolves around
 developing a performant heuristic to re-configure Jasper's multicast-tree based on present cloud conditions both at runtime and startup. The _repository_ for this work is on my Github profile but currently still is private since it hasn't been finalized yet.
 
-- [Jasper: a Scalable and Fair Multicast Solution for Financial Exchanges in the Cloud@NYU](https://arxiv.org/abs/2402.09527)
+- [Jasper: a Scalable and Fair Multicast Solution for Financial Exchanges in the Cloud@NYU](https://dl.acm.org/doi/10.1145/3672202.3673728)
 - [SIGCOMM24 POSTER - Jasper, A Scalable and Fair Multicast for Fin. Exch. in the Cloud](https://sigcomm24posterdemo.hotcrp.com/paper/47?cap=hcav47KhCcppMuxCoAApCEhcdjiFGC)
+
 
 Beyond my recent collaboration around cloud-based distributed systems research, I also have a background in 
 Embedded Systems and FPGA Engineering, as well as developing on and for Linux/UNIX systems. Feel 
