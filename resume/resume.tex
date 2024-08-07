@@ -122,10 +122,13 @@
 \small{
 Finding a thesis topic at the intersection of finance and computer science 
 naturally complemented my rigorous German education in electrical engineering, 
-leading me to the mentorship of Dr. Sivaraman at NYU. Envisioning a future 
-financial exchange on the cloud is an exciting and 
-complex project that allows me to draw from the various fields I have explored.
-Today, I am living in New York, completing a masters degree via this exciting research collaboration.
+leading me to the mentorship of Dr. Sivaraman at NYU. Today I am living in New York, 
+completing a master's degree via an exciting research collaboration that envisions 
+a future financial exchange on the cloud.
+% Envisioning a future 
+% financial exchange on the cloud is an exciting and 
+% complex project that allows me to draw from the various fields I have explored.
+% Today, I am living in New York, completing a masters degree via this exciting multifaceted research collaboration.
 }
 
 \vspace{-8.0pt}
@@ -167,18 +170,19 @@ Today, I am living in New York, completing a masters degree via this exciting re
             {Research Assistant}{Jul 22--Oct 22, Oct 20--Mar 21}
             {EDA Department - TU Munich}{Munich, Germany}
             \resumeItemListStart
-                \resumeItem{Supported the development of a research Design‑Space‑Exploration(DSE) framework.}
-                \resumeItem{Benchmarked inference of various Machine Learning Models across GPUs, CPUs, and TPUs.}
-                \resumeItem{Analyzed USB traffic through (Py)Wireshark between the host machine and Google's Coral Edge TPU.}
+                \resumeItem{Evaluated and compared the performance of various Machine Learning models across GPUs, CPUs and TPUs.}
+                \resumeItem{Analyzed USB traffic through PyShark between the host and externally added TPUs.}
+                \resumeItem{Generated reports to establish a Design-Space Exploration framework to guide future model deployment decisions.}
             \resumeItemListEnd
 
         \resumeSubheading
             {Embedded Engineer Intern}{Aug 2021 -- Jan 2022}
             {Molabo GmbH}{Ottobrunn, Germany}
             \resumeItemListStart
-                \resumeItem{Streamlined build, testing and deployment workflows via Jenkinsfiles, CMake and GNU Make.}
-                \resumeItem{Added Unit-Tests to safety critical features of their embedded controller.}
-                \resumeItem{Developed internal tooling leveraging Linux's virtual CAN interface for functional tests/simulations.}
+                \resumeItem{Developed internal tooling for state simulations through Linux's virtual CAN interface and mock APIs.}
+                \resumeItem{Added unit-tests and code coverage to safety critical features of their motor drive embedded controller.}
+                \resumeItem{Extended an automatic firmware update functionality used by over 20 clients. }
+                \resumeItem{Automated build and testing workflows via Jenkins and CMake utilized by over 10 engineers.}
             \resumeItemListEnd
 
         \resumeSubheading
@@ -186,7 +190,7 @@ Today, I am living in New York, completing a masters degree via this exciting re
             {RCS Department - TU Munich}{Munich, Germany}
             \resumeItemListStart
                 % \resumeItem{\small{Tutor for the Embedded Systems Programming Lab at TU Munich.}}
-                \resumeItem{\small{Aided students in their multi-threaded embedded FreeRTOS projects in C.}}
+                \resumeItem{\small{Supervised and aided 20+ students on their final embedded FreeRTOS labroratory projects in C.}}
             \resumeItemListEnd
     \resumeSubHeadingListEnd 
 
@@ -196,11 +200,13 @@ Today, I am living in New York, completing a masters degree via this exciting re
         \resumeProjectHeading
           {\textbf{Jasper: Fair Multicast for Financial Exchanges in the Cloud} $|$ \emph{\href{https://dl.acm.org/doi/10.1145/3672202.3673728}{\underline{(Paper)}}}}{Jan 2024 -- Present}
           \resumeItemListStart
-                \resumeItem{Novel cloud hosted financial exchange achieving low latency multicast service.}
-                \resumeItem{Achieves 50\% lower latency than the multicast service provided by AWS. }
-                \resumeItem{Leverages DPDK, overlay trees, VM-Hedging and dynamic relationships to overcome the variancy in the cloud.}
+                \resumeItem{Novel cloud hosted financial exchange achieving low latency multicast service for up to 1000 market participants.}
+                \resumeItem{Achieves better scalability and around 50\% lower latency than the multicast service provided by AWS. }
+                \resumeItem{Utilizes DPDK, overlay trees, VM hedging and more to achieve a fair delivery of up to a 35K multicast packet rate.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
+
+\vspace{-20.0pt}
 
 % -------------------- SKILLS --------------------
 \section{Technical Skills}
@@ -221,17 +227,17 @@ Today, I am living in New York, completing a masters degree via this exciting re
 \section{Projects}
     \resumeSubHeadingListStart
         \resumeProjectHeading
-            {\textbf{Open-MPI Value Iteration} $|$ \emph{C++, Multi-Threaded, HPC}}{\href{https://github.com/duclos-cavalcanti/Open-MPI-ValueIteration}{\underline{Github}}}
+            {\textbf{Open-MPI Value Iteration} $|$ \emph{C++, Multi-Threaded, HPC}}{\href{https://github.com/duclos-cavalcanti/Open-MPI-ValueIteration}{\underline{Github}} $|$ 2022}
             \resumeItemListStart
               \resumeItem{Asynchronous value iteration model to distribute workload on an HPC cluster.}
             \resumeItemListEnd
         \resumeProjectHeading
-            {\textbf{Hamming Code Error Detection} $|$ \emph{C, VHDL, FPGA, SoC}}{\href{https://github.com/duclos-cavalcanti/microsemi-error-detection}{\underline{Github}}}
+            {\textbf{Hamming Code Error Detection} $|$ \emph{C, VHDL, FPGA, SoC}}{\href{https://github.com/duclos-cavalcanti/microsemi-error-detection}{\underline{Github}} $|$ 2022}
             \resumeItemListStart
-              \resumeItem{Error detection/correction algorithm for packet transmission on Microsemi's SmartFusion2 FPGA/SoC.}
+              \resumeItem{Error detection/correction algorithm for packet transmission on Microsemi's SF2 FPGA/SoC.}
             \resumeItemListEnd
         \resumeProjectHeading
-            {\textbf{FreeRTOS-SpaceInvaders} $|$ \emph{C, RTOS, Multi-Threaded}}{\href{https://github.com/duclos-cavalcanti/FreeRTOS-SpaceInvaders}{\underline{Github}}}
+            {\textbf{FreeRTOS-SpaceInvaders} $|$ \emph{C, RTOS, Multi-Threaded}}{\href{https://github.com/duclos-cavalcanti/FreeRTOS-SpaceInvaders}{\underline{Github}} $|$ 2021}
             \resumeItemListStart
               \resumeItem{Implemented the famous arcade game as a multi-threaded FreeRTOS application in C.}
             \resumeItemListEnd
