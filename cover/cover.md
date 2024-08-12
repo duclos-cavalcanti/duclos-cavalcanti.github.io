@@ -48,3 +48,15 @@ Recently, I have developed a keen interest in High-Frequency Trading (HFT) and t
 
 I'm genuinely looking forward and excited to be hearing from you.
 
+Dear Hiring Manager, 
+
+I've always been a curious individual and it was that quality that held me through my German B.Sc and M.Sc. degrees in Electrical and Computer Engineering from TUM in Munich. Now NYC is my home and a new place of collaboration. I am immersed in NYU's stimulating research at the intersection of Finance and Computer Science, under the mentorship of Prof. Sivaraman from the Courant Institute of Mathematical Sciences. Our collaboration focuses on financial exchanges on the cloud and developing a VM selection heuristic to optimize multicast latency. 
+
+I have explored a wide range of topics in both industry and research, from embedded systems and machine learning on edge devices to my current work on cloud-based distributed systems. My path showcases my ability to learn concepts quickly, as well as being able to communicate them openly and clearly. 
+
+As a dual American and Brazilian citizen, my well-rounded cultural background and versatile experiences uniquely equip me for a career in engineering and beyond. Qualities that I believe will make me an invaluable asset to your organization. 
+
+Sincerely, 
+
+Daniel
+
