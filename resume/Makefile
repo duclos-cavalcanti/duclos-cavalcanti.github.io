@@ -39,4 +39,4 @@ resume: .resume
 			   pdflatex resume.tex
 	@$(MAKE) clean
 	@touch .resume
-	@cp resume.pdf ~/Downloads/
+	@cp resume.pdf ~/Downloads/DanielCavalcanti.pdf
