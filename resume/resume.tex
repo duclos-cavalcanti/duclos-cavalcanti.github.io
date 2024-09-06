@@ -109,17 +109,19 @@
   % \vspace{-4pt}
 \end{flushright}
 
-\vspace{-5pt}
+\vspace{-5.0pt}
 
 \begin{center}
     \textbf{\Huge \scshape Daniel Duclos-Cavalcanti} \\ \vspace{1pt}
-    \textbf{\large{\scshape Computer Engineer}} \\ \vspace{1pt}
+    \textbf{\large{\scshape Computer Engineer -- English, German, \& Portuguese}} \\ \vspace{1pt}
     \small 516-912-7975 $|$ New York, NY $|$ U.S. Citizen $|$
     \href{mailto:me@duclos.dev}{\underline{me@duclos.dev}} $|$ 
     \href{https://www.duclos.dev}{\underline{www.duclos.dev}} $|$
     \href{https://www.linkedin.com/in/duclos-cavalcanti/}{\underline{linkedin}} $|$
     \href{https://github.com/duclos-cavalcanti}{\underline{github}}
 \end{center}
+
+\vspace{-8.0pt}
 
 \section{Summary}
 \small{
@@ -137,8 +139,8 @@ envisions a financial exchange on the cloud.
     \small{\item{
     \textbf{Languages}{: C, C++, Python, Golang, Rust, Bash, Lua, VHDL, Tcl, JavaScript, HTML/CSS} \\
     \textbf{Tools}{: Terraform, Docker, Packer, AWS, Google Cloud (GCP), Git, Unix Shell, Makefile, CMake, Linux, Jenkins, Vim} \\
-    \textbf{Technologies}{: Cloud Computing, Computer Networking, Machine Learning, Concurrency, FPGA, RTOS, IoT, HPC} \\
-    \textbf{Frameworks}{: ZeroMQ, DPDK, TCP/UDP/IP, Tensorflow, TFLite, Numpy, Pandas, OpenMPI, OpenMP} \\
+    \textbf{Technologies}{: Cloud Computing, Computer Networking, Machine Learning, TCP, UDP, IP, FPGA, RTOS, IoT, HPC} \\
+    \textbf{Frameworks}{: ZeroMQ, DPDK, Tensorflow, TFLite, Numpy, Pandas, OpenMPI, OpenMP} \\
     % \textbf{Protocols}{: TCP, UDP, IP, ETHERNET, USB, UART} \\
     \textbf{Certificates}{: UCSD: Data Structures Fundamentals, UT Austin: Embedded Systems - uC I/O} \\
     % \textbf{Hardware}{: Raspberry PIs, Embedded Linux, ARM Cortex MCUs, USB, TCP, UDP, IP, UART, GPIO} \\
@@ -166,8 +168,7 @@ envisions a financial exchange on the cloud.
             \resumeItemListStart
                 \resumeItem{Developed tooling for state simulations of their electric motor via Linux's virtual CAN interface and mock APIs.}
                 \resumeItem{Added unit-tests and code coverage to safety critical features of their motor drive embedded controller.}
-                \resumeItem{Extended an automatic firmware update functionality used by over 20 clients.}
-                \resumeItem{Streamlined build and testing workflows via Jenkins and CMake for a team of over 10 engineers.}
+                \resumeItem{Automated build and testing workflows via Jenkins and CMake for a team of over 10 engineers.}
             \resumeItemListEnd
             \vspace{2.0pt}
 
@@ -181,6 +182,35 @@ envisions a financial exchange on the cloud.
     \resumeSubHeadingListEnd 
 
 \vspace{-8.0pt}
+
+% -------------------- PROJECTS --------------------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{Cloud TreeFinder} $|$ \emph{GCP, Terraform, Python, C++, Distributed Systems, ZMQ, Protobufs}}{\small{March 2024 -- Present}}
+            \resumeItemListStart
+              \resumeItem{Launches a cloud cluster and forms from it's pool of \textbf{N} VMs an optimal multicast tree of depth \textbf{D} and fanout \textbf{F}.}
+              \resumeItem{Deploys probe jobs on randomly selected node subsets, collecting and processing resulting reports (JSON). }
+              \resumeItem{Applies a developed heuristic from the collected data to select nodes in the tree layer by layer. }
+              \resumeItem{Uses terraform to manage cloud state, ZMQ for node communication and Protobufs for data (de)-serialization.}
+            \resumeItemListEnd
+        \resumeProjectHeading
+            {\href{https://github.com/duclos-cavalcanti/Open-MPI-ValueIteration}{\textbf{Open-MPI Value Iteration}} $|$ \emph{C++, Multi-Threaded, HPC}}{\small{Sept 2021 -- Feb 2022}}
+            \resumeItemListStart
+              \resumeItem{Asynchronous value iteration model to distribute workload on an HPC cluster.}
+            \resumeItemListEnd
+        % \resumeProjectHeading
+        %     {\href{https://github.com/duclos-cavalcanti/microsemi-error-detection}{\textbf{Hamming Code Error Detection}} $|$ \emph{C, VHDL, FPGA, SoC}}{\small{Oct 2022 -- March 2023}}
+        %     \resumeItemListStart
+        %       \resumeItem{Error detection/correction algorithm for packet transmission on Microsemi's SF2 FPGA/SoC.}
+        %     \resumeItemListEnd
+        % \resumeProjectHeading
+        %     {\href{https://github.com/duclos-cavalcanti/FreeRTOS-SpaceInvaders}{\textbf{FreeRTOS-SpaceInvaders}} $|$ \emph{C, RTOS, Multi-Threaded}}{\small{Aug 2020 -- March 2021}}
+        %     \resumeItemListStart
+        %       \resumeItem{Implemented the famous arcade game as a multi-threaded FreeRTOS application in C.}
+        %     \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
 
 \section{Publications}
     \resumeSubHeadingListStart
@@ -196,26 +226,6 @@ envisions a financial exchange on the cloud.
 % \vspace{-20.0pt}
 \vspace{-8.0pt}
 
-% -------------------- PROJECTS --------------------
-\section{Projects}
-    \resumeSubHeadingListStart
-        \resumeProjectHeading
-            {\href{https://github.com/duclos-cavalcanti/Open-MPI-ValueIteration}{\textbf{Open-MPI Value Iteration}} $|$ \emph{C++, Multi-Threaded, HPC}}{\small{Sept 2021 -- Feb 2022}}
-            \resumeItemListStart
-              \resumeItem{Asynchronous value iteration model to distribute workload on an HPC cluster.}
-            \resumeItemListEnd
-        \resumeProjectHeading
-            {\href{https://github.com/duclos-cavalcanti/microsemi-error-detection}{\textbf{Hamming Code Error Detection}} $|$ \emph{C, VHDL, FPGA, SoC}}{\small{Oct 2022 -- March 2023}}
-            \resumeItemListStart
-              \resumeItem{Error detection/correction algorithm for packet transmission on Microsemi's SF2 FPGA/SoC.}
-            \resumeItemListEnd
-        \resumeProjectHeading
-            {\href{https://github.com/duclos-cavalcanti/FreeRTOS-SpaceInvaders}{\textbf{FreeRTOS-SpaceInvaders}} $|$ \emph{C, RTOS, Multi-Threaded}}{\small{Aug 2020 -- March 2021}}
-            \resumeItemListStart
-              \resumeItem{Implemented the famous arcade game as a multi-threaded FreeRTOS application in C.}
-            \resumeItemListEnd
-
-    \resumeSubHeadingListEnd
     
 % -------------------- EDUCATION --------------------
 \section{Education}
