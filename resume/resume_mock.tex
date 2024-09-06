@@ -19,6 +19,7 @@
 \usepackage{tabularx}
 \usepackage{xcolor}
 \usepackage{fontawesome5}
+\usepackage{multicol}
 
 \input{glyphtounicode}
 
@@ -112,6 +113,7 @@
 
 \begin{center}
     \textbf{\Huge \scshape Daniel Duclos-Cavalcanti} \\ \vspace{1pt}
+    \textbf{\large{\scshape Computer Engineer}} \\ \vspace{1pt}
     \small 516-912-7975 $|$ New York, NY $|$ U.S. Citizen $|$
     \href{mailto:me@duclos.dev}{\underline{me@duclos.dev}} $|$ 
     \href{https://www.duclos.dev}{\underline{www.duclos.dev}} $|$
@@ -121,48 +123,29 @@
 
 \section{Summary}
 \small{
-Finding a thesis topic at the intersection of finance and computer science 
-naturally complemented my rigorous German education in electrical engineering, 
-leading me to the mentorship of Dr. Sivaraman at NYU. Today I am living in New York, 
-completing a master's degree via an exciting research collaboration that envisions 
-a future financial exchange on the cloud.
-% Envisioning a future 
-% financial exchange on the cloud is an exciting and 
-% complex project that allows me to draw from the various fields I have explored.
-% Today, I am living in New York, completing a masters degree via this exciting multifaceted research collaboration.
+Creative thinker and problem-solver with a masters and bachelors in 
+traditional german electrical engineering. Today, I am in New York, 
+collaborating on exciting research with Dr.Sivaraman from NYU that 
+envisions a distributed financial exchange on the public cloud.
 }
 
 \vspace{-8.0pt}
 
-% -------------------- EDUCATION --------------------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-        {Technical University of Munich}{Munich, Germany \& New York, USA}
-        {M.Sc. Electrical and Computer Engineering}{Oct 2020 -- \textbf{Sept 2024}}
-        \resumeItemListStart
-            \resumeItem{External M.Sc. Thesis: \textbf{VM Selection Heuristic for Multicast Overlay Trees in the Cloud}}
-            \resumeItem{\textbf{Coursework}: Embedded Design for Machine Learning, Embedded Systems and Security, Secure SoCs for IoT, \\High Performance Computing for Machine Intelligence}
-        \resumeItemListEnd
+% -------------------- SKILLS --------------------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Languages}{: C, C++, Python, Golang, Rust, Bash, Lua, VHDL, Tcl, JavaScript, HTML/CSS} \\
+    \textbf{Tools}{: Terraform, Docker, Packer, AWS, Google Cloud (GCP), Git, Unix Shell, Makefile, CMake, Linux, Jenkins, Vim} \\
+    \textbf{Technologies}{: Cloud Computing, Computer Networking, Embedded Systems, FPGA, RTOS, Machine Learning, HPC} \\
+    \textbf{Frameworks}{: ZeroMQ, DPDK, Tensorflow, TFLite, Numpy, Pandas, OpenMPI, OpenMP, Xilinx Vivado} \\
+    % \textbf{Protocols}{: TCP, UDP, IP, ETHERNET, USB, UART} \\
+    \textbf{Certificates}{: UCSD: Data Structures Fundamentals, UT Austin: Embedded Systems - uC I/O} \\
+    % \textbf{Hardware}{: Raspberry PIs, Embedded Linux, ARM Cortex MCUs, USB, TCP, UDP, IP, UART, GPIO} \\
+    }}
+ \end{itemize}
 
-    \resumeSubheading
-        {New York University}{New York, USA}
-        {Computer Science - Visiting Non-Degree Graduate Student}{Sept 2023 -- May 2024}
-        \resumeItemListStart
-            \resumeItem{Co-Authored Publication: \href{https://dl.acm.org/doi/10.1145/3672202.3673728}{\underline{Jasper: Fair Multicast for Financial Exchanges in the Cloud}}}
-            \resumeItem{CSCI-GA 2250 - Operating Systems - A}
-        \resumeItemListEnd
-
-    \vspace{5.0pt}
-    \resumeSubheading
-        {Technical University of Munich}{Munich, Germany}
-        {B.Sc. Electrical and Computer Engineering}{Oct 2016 -- Sept 2020}
-        % \resumeItemListStart
-            % \resumeItem{\textbf{{German GPA: }} 2.2 (Top 37\%) -- \href{https://drive.google.com/file/d/1Xesfn8HF9g4oplwqPZMhcFvGFLuyVzIM/view?usp=sharing}{{\underline{See Grade Distribution}}}}
-            % \resumeItem{\textbf{Coursework}: Embedded Systems Programming Lab, Computer Networks, Data Structures}
-        % \resumeItemListEnd
-        
-  \resumeSubHeadingListEnd
+\vspace{-8.0pt}
 
 % -------------------- EXPERIENCE --------------------
 \section{Experience}
@@ -180,9 +163,9 @@ a future financial exchange on the cloud.
             {Embedded Engineer Intern}{Aug 2021 -- Jan 2022}
             {Molabo GmbH}{Ottobrunn, Germany}
             \resumeItemListStart
-                \resumeItem{Developed internal tooling for state simulations through Linux's virtual CAN interface and mock APIs.}
+                \resumeItem{Developed tooling for state simulations of their electric motor via Linux's virtual CAN interface and mock APIs.}
                 \resumeItem{Added unit-tests and code coverage to safety critical features of their motor drive embedded controller.}
-                \resumeItem{Extended an automatic firmware update functionality used by over 20 clients. }
+                % \resumeItem{Extended an automatic firmware update functionality used by over 20 clients. }
                 \resumeItem{Streamlined build and testing workflows via Jenkins and CMake for a team of over 10 engineers.}
             \resumeItemListEnd
 
@@ -209,41 +192,57 @@ a future financial exchange on the cloud.
 
 % \vspace{-20.0pt}
 
-% -------------------- SKILLS --------------------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-    \textbf{Languages}{: C, C++, Python, Golang, Rust, Bash, Lua, VHDL, Tcl, JavaScript, HTML/CSS} \\
-    \textbf{Tools}{: Terraform, Docker, Packer, AWS, GCP, Git, Unix Shell, Makefile, CMake, Linux, Jenkins, Vim} \\
-    \textbf{Technologies}{: Cloud Computing, Computer Networking, Embedded Systems, FPGA, RTOS, Machine Learning, HPC} \\
-    \textbf{Frameworks}{: ZeroMQ, DPDK, Tensorflow, TFLite, Numpy, Pandas, OpenMPI, OpenMP, Xilinx Vivado} \\
-    \textbf{Protocols}{: TCP, UDP, IP, ETHERNET, USB, UART} \\
-    \textbf{Certificates}{: UCSD: Data Structures Fundamentals, UT Austin: Embedded Systems - uC I/O} \\
-    % \textbf{Hardware}{: Raspberry PIs, Embedded Linux, ARM Cortex MCUs, USB, TCP, UDP, IP, UART, GPIO} \\
-    }}
- \end{itemize}
-
-\vspace{-8.0pt}
-
 % -------------------- PROJECTS --------------------
 \section{Projects}
     \resumeSubHeadingListStart
         \resumeProjectHeading
-            {\textbf{Open-MPI Value Iteration} $|$ \emph{C++, Multi-Threaded, HPC}}{\href{https://github.com/duclos-cavalcanti/Open-MPI-ValueIteration}{\underline{Github}}}
+            {\href{https://github.com/duclos-cavalcanti/Open-MPI-ValueIteration}{\textbf{Open-MPI Value Iteration}} $|$ \emph{C++, Multi-Threaded, HPC}}{Sept 21 -- Feb 22}
             \resumeItemListStart
               \resumeItem{Asynchronous value iteration model to distribute workload on an HPC cluster.}
             \resumeItemListEnd
         \resumeProjectHeading
-            {\textbf{Hamming Code Error Detection} $|$ \emph{C, VHDL, FPGA, SoC}}{\href{https://github.com/duclos-cavalcanti/microsemi-error-detection}{\underline{Github}}}
+            {\href{https://github.com/duclos-cavalcanti/microsemi-error-detection}{\textbf{Hamming Code Error Detection}} $|$ \emph{C, VHDL, FPGA, SoC}}{Oct 22 -- March 23}
             \resumeItemListStart
               \resumeItem{Error detection/correction algorithm for packet transmission on Microsemi's SF2 FPGA/SoC.}
             \resumeItemListEnd
         \resumeProjectHeading
-            {\textbf{FreeRTOS-SpaceInvaders} $|$ \emph{C, RTOS, Multi-Threaded}}{\href{https://github.com/duclos-cavalcanti/FreeRTOS-SpaceInvaders}{\underline{Github}}}
+            {\href{https://github.com/duclos-cavalcanti/FreeRTOS-SpaceInvaders}{\textbf{FreeRTOS-SpaceInvaders}} $|$ \emph{C, RTOS, Multi-Threaded}}{Aug 20 -- March 21}
             \resumeItemListStart
               \resumeItem{Implemented the famous arcade game as a multi-threaded FreeRTOS application in C.}
             \resumeItemListEnd
 
     \resumeSubHeadingListEnd
     
+% -------------------- EDUCATION --------------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {New York University: Courant Institute of Mathematical Sciences}{New York, USA}
+        {Computer Science - Visiting Non-Degree Graduate Student: \textbf{(GPA 4.0)}}{Sept 2023 -- May 2024}
+        \resumeItemListStart
+            \resumeItem{Co-Authored Publication: \href{https://dl.acm.org/doi/10.1145/3672202.3673728}{Jasper: Fair Multicast for Financial Exchanges in the Cloud}}
+            \resumeItem{\textbf{Related Coursework}: Operating Systems, Technologies in Finance}
+        \resumeItemListEnd
+
+    \vspace{3.0pt}
+    \resumeSubheading
+        {Technical University of Munich}{Munich, Germany \& New York, USA}
+        {M.Sc. Electrical and Computer Engineering}{Oct 2020 -- \textbf{Sept 2024}}
+
+        \resumeItemListStart
+            \resumeItem{M.Sc. Thesis: \textbf{VM Selection Heuristic for Multicast Overlay Trees in the Cloud}}
+            \resumeItem{\textbf{Related Coursework}: Machine Learning Methods and Tools, Embedded Design for Machine Learning, \\Chips Multicore Processors, Secure SoCs for IoT, High Performance Computing for Machine Intelligence}
+        \resumeItemListEnd
+
+    \vspace{3.0pt}
+    \resumeSubheading
+        {Technical University of Munich}{Munich, Germany}
+        {B.Sc. Electrical and Computer Engineering}{Oct 2016 -- Sept 2020}
+        % \resumeItemListStart
+            % \resumeItem{\textbf{{German GPA: }} 2.2 (Top 37\%) -- \href{https://drive.google.com/file/d/1Xesfn8HF9g4oplwqPZMhcFvGFLuyVzIM/view?usp=sharing}{{\underline{See Grade Distribution}}}}
+            % \resumeItem{\textbf{Coursework}: Embedded Systems Programming Lab, Computer Networks, Data Structures}
+        % \resumeItemListEnd
+        
+  \resumeSubHeadingListEnd
+
 \end{document}
