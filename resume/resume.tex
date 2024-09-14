@@ -126,7 +126,7 @@
 \section{Summary}
 \small{
 Creative thinker and problem-solver with a masters and bachelors in 
-traditional german electrical engineering. Today, I am in New York, 
+computer engineering from Germany. Today, I am in New York, 
 collaborating on research with Dr.Sivaraman (NYU) on distributed 
 low-latency networking on the cloud.
 }
@@ -137,10 +137,10 @@ low-latency networking on the cloud.
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-    \textbf{Languages}{: C, C++, Python, Golang, Rust, Bash, JavaScript, HTML/CSS, Lua, VHDL, Tcl} \\
-    \textbf{Tools}{: Terraform, Docker, Packer, AWS, Google Cloud (GCP), Git, Unix Shell, Makefile, CMake, Linux, Jenkins, Vim} \\
-    \textbf{Technologies}{: Cloud Computing, Computer Networking, Machine Learning, TCP, UDP, IP, FPGA, RTOS, IoT, HPC} \\
-    \textbf{Frameworks}{: ZeroMQ, DPDK, Tensorflow, TFLite, Numpy, Pandas, OpenMPI, OpenMP} \\
+    \textbf{Languages}{: C++, Python, Golang, Rust, C, Bash, JavaScript, HTML, CSS, Lua, VHDL} \\
+    \textbf{Tools}{: Linux, Terraform, Google Cloud (GCP), AWS, Docker, Packer, Git, Unix Shell, Makefile, CMake, Vim, VSCode} \\
+    \textbf{Frameworks}{: ZeroMQ, DPDK, MPI, Protobufs, Pydantic, Tensorflow, Numpy, Pandas, Jenkins, Travis CI, GoogleTest} \\
+    \textbf{Technologies}{: Cloud Computing, Computer Networking, Operating Systems, Machine Learning, HPC, FPGAs} \\
     % \textbf{Protocols}{: TCP, UDP, IP, ETHERNET, USB, UART} \\
     \textbf{Certificates}{: UCSD: Data Structures Fundamentals, UT Austin: Embedded Systems - uC I/O} \\
     % \textbf{Hardware}{: Raspberry PIs, Embedded Linux, ARM Cortex MCUs, USB, TCP, UDP, IP, UART, GPIO} \\
@@ -157,9 +157,10 @@ low-latency networking on the cloud.
             {Research Assistant}{Jul 2022 -- Oct 2022}
             {TU Munich}{Munich, Germany}
             \resumeItemListStart
-                \resumeItem{Generated reports to establish a Design-Space Exploration framework to guide ML model deployments.}
-                \resumeItem{Evaluated and compared the performance of various Machine Learning models across GPUs, CPUs and TPUs.}
-                \resumeItem{Analyzed USB traffic through PyShark between the host and externally added TPUs.}
+                \resumeItem{Worked on \href{https://github.com/alxhoff/TensorDSE}{\underline{TensorDSE}}, a Design-Space Exploration framework to guide machine learning model deployments.}
+                \resumeItem{Evaluated the performance of various ML models across GPUs, CPUs and TPUs with TensorFlow Lite.}
+                \resumeItem{Generated cost analysis reports for Google's Coral Edge TPU via USB traffic analysis (PyShark) during inference.}
+                \resumeItem{TensorDSE used reports to distribute a model's inference/deployment onto a set of available hardware devices.}
             \resumeItemListEnd
             \vspace{2.0pt}
 
@@ -167,19 +168,19 @@ low-latency networking on the cloud.
             {Embedded Engineer Intern}{Aug 2021 -- Jan 2022}
             {Molabo GmbH}{Ottobrunn, Germany}
             \resumeItemListStart
-                \resumeItem{Developed tooling for state simulations of their electric motor via Linux's virtual CAN interface and mock APIs.}
                 \resumeItem{Added unit-tests and code coverage to safety critical features of their motor drive embedded controller.}
-                \resumeItem{Automated build and testing workflows via Jenkins and CMake for a team of over 10 engineers.}
+                \resumeItem{Developed tooling for state simulations of their electric motor via Linux's virtual CAN interface and mock APIs.}
+                \resumeItem{Extended their firmware update system used by 20+ clients, consisting of partial updates via CAN bus.}
+                \resumeItem{Automated build and testing workflows via Jenkinsfiles, Make and CMake for a team of over 10 engineers.}
             \resumeItemListEnd
-            \vspace{2.0pt}
 
-        \resumeSubheading
-            {Tutor - Embedded Systems Programming Lab}{Apr 2021 -- Aug 2021}
-            {TU Munich}{Munich, Germany}
-            \resumeItemListStart
-                % \resumeItem{\small{Tutor for the Embedded Systems Programming Lab at TU Munich.}}
-                \resumeItem{\small{Supervised and aided 20+ students on their final embedded FreeRTOS labroratory projects in C.}}
-            \resumeItemListEnd
+        % \resumeSubheading
+        %     {Tutor - Embedded Systems Programming Lab}{Apr 2021 -- Aug 2021}
+        %     {TU Munich}{Munich, Germany}
+        %     \resumeItemListStart
+        %         % \resumeItem{\small{Tutor for the Embedded Systems Programming Lab at TU Munich.}}
+        %         \resumeItem{\small{Supervised and aided 20+ students on their final embedded FreeRTOS labroratory projects in C.}}
+        %     \resumeItemListEnd
     \resumeSubHeadingListEnd 
 
 \vspace{-8.0pt}
@@ -190,13 +191,14 @@ low-latency networking on the cloud.
         \resumeProjectHeading
             {\href{https://github.com/duclos-cavalcanti/master-arbeit}{\textbf{Cloud TreeFinder}} $|$ \emph{GCP, Terraform, Python, C++, Distributed Systems, ZMQ, Protobufs}}{\small{March 2024 -- Present}}
             \resumeItemListStart
-              \resumeItem{Launches a cloud cluster and from it's pool of \textbf{N} VMs \textbf{forms} an optimal multicast tree of depth \textbf{D} and fanout \textbf{F}.}
+              \resumeItem{Launches a cloud cluster and from a pool of N VMs, creates an optimal multicast tree of depth D and fanout F.}
               \resumeItem{Deploys probe jobs on randomly selected node subsets, collecting and processing resulting reports (JSON). }
               \resumeItem{Applies a developed heuristic from the collected data to select nodes in the tree layer by layer. }
               \resumeItem{Uses terraform to manage cloud state, ZMQ for node communication and Protobufs for data (de)-serialization.}
+              % \resumeItem{Uses \href{https://www.clockwork.io/clock-sync/}{clockwork's high-precision software clock synchronization daemon} to provide a global common clock.}
             \resumeItemListEnd
         \resumeProjectHeading
-            {\href{https://github.com/duclos-cavalcanti/Open-MPI-ValueIteration}{\textbf{Open-MPI Value Iteration}} $|$ \emph{C++, Multi-Threaded, HPC}}{\small{Sept 2021 -- Feb 2022}}
+            {\href{https://github.com/duclos-cavalcanti/Open-MPI-ValueIteration}{\textbf{Open-MPI Value Iteration}} $|$ \emph{C++, Multi-Threaded, HPC, MPI}}{\small{Sept 2021 -- Feb 2022}}
             \resumeItemListStart
               \resumeItem{Asynchronous value iteration model to distribute workload on an HPC cluster.}
             \resumeItemListEnd
@@ -216,11 +218,11 @@ low-latency networking on the cloud.
 \section{Publications}
     \resumeSubHeadingListStart
         \resumeProjectHeading
-          {\textbf{Jasper: Fair Multicast for Financial Exchanges in the Cloud} $|$ \emph{\href{https://dl.acm.org/doi/10.1145/3672202.3673728}{\underline{(Paper)}}}}{Jan 24 -- Present}
+          {\textbf{Design and Implementation of A Scalable Financial Exchange in the Cloud} $|$ \emph{\href{https://arxiv.org/abs/2402.09527}{\underline{(Paper)}}}}{Jan 24 -- Present}
           \resumeItemListStart
-                \resumeItem{Novel cloud hosted financial exchange achieving low latency multicast service for up to 1000 market participants.}
+                \resumeItem{Cloud financial exchange achieving low latency of $<=$ 250 µs and a latency difference $<$ 1 µs, for 1K receivers.}
                 \resumeItem{Achieves better scalability and around 50\% lower latency than the multicast service provided by AWS. }
-                \resumeItem{Used kernel-bypass techniques (DPDK) to achieve ultra-low latency at up to 35K multicast packet rate.}
+                \resumeItem{Used kernel-bypass techniques (DPDK) to scale performance up to a 35K multicast packet rate.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -235,7 +237,7 @@ low-latency networking on the cloud.
         {New York University: Courant Institute of Mathematical Sciences}{Sept 2023 -- May 2024}
         {Computer Science - Visiting Non-Degree Graduate Student}{GPA 4.0}
         \resumeItemListStart
-            \resumeItem{Co-Authored Publication: \href{https://dl.acm.org/doi/10.1145/3672202.3673728}{Jasper: Fair Multicast for Financial Exchanges in the Cloud}}
+            \resumeItem{Co-Authored Publication: \href{https://arxiv.org/abs/2402.09527}{Design and Implementation of A Scalable Financial Exchange in the Cloud}}
             \resumeItem{\textbf{Related Coursework}: Operating Systems, Technologies in Finance}
         \resumeItemListEnd
 
@@ -264,5 +266,21 @@ low-latency networking on the cloud.
     %     {B.Sc. Electrical Engineering}{Rio de Janeiro, Brazil}
         
   \resumeSubHeadingListEnd
+
+\vspace{-8.0pt}
+
+    
+% \section{Certificates}
+% \begin{minipage}{0.45\textwidth}
+% \begin{itemize}
+%     \item UCSD: Data Structures Fundamentals
+% \end{itemize}
+% \end{minipage}
+% \hfill
+% \begin{minipage}{0.45\textwidth}
+% \begin{itemize}
+%     \item UT Austin: Embedded Systems - uC I/O
+% \end{itemize}
+% \end{minipage}
 
 \end{document}
