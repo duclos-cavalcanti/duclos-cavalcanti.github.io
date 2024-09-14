@@ -6,21 +6,20 @@ author: "Daniel Duclos-Cavalcanti"
 
 # Daniel Duclos-Cavalcanti
 
-I'm a Computer and Electrical Engineer from the Technical University of Munich, where I'm also soon to receive a M.Sc. Degree from. Currently, I'm completing the last credit for this program externally in New York, via a research collaboration with [Dr. Sivaraman](https://anirudhsk.github.io/) and [PhD. Haseeb Ashfaq](https://haseeblums.github.io/) from [Systems@NYU](https://news.cs.nyu.edu/).
+I'm a Computer Engineer living in New York with a bachelors and masters from the Technical University of Munich, in Germany. 
+Currently, collaborating on research with [Dr.Sivaraman](https://anirudhsk.github.io/) and [PhD. Haseeb Ashfaq](https://haseeblums.github.io/) from [Systems@NYU](https://news.cs.nyu.edu/).
 
 
-The project in question revolves around __Jasper: a Scalable and Fair Multicast Solution for Financial Exchanges in the Cloud__. Jasper leverages the current desire to migrate financial exchanges to the public cloud and given the lack of a cloud-native multicast mechanism for such, it presents itself as a modern solution. My collaboration revolves around
-developing a performant heuristic to re-configure Jasper's multicast-tree based on present cloud conditions both at runtime and startup. The _repository_ for this work is on my Github profile but currently still is private since it hasn't been finalized yet.
+The project revolves around [Jasper](https://arxiv.org/abs/2402.09527): A Scalable Design and Implementation of a Financial Exchange in the Cloud. Beyond co-authoring and aiding in the development of Jasper, my thesis constructed a performant heuristic to 
+select VMs based on present cloud conditions to improve Jasper's overall performance, both before and during runtime.
 
-- [Jasper: a Scalable and Fair Multicast Solution for Financial Exchanges in the Cloud@NYU](https://dl.acm.org/doi/10.1145/3672202.3673728)
+- [Jasper: Design And Implementation of A Scalable Financial Exchange in the Cloud](https://arxiv.org/abs/2402.09527)
 - [SIGCOMM24 POSTER - Jasper, A Scalable and Fair Multicast for Fin. Exch. in the Cloud](https://sigcomm24posterdemo.hotcrp.com/paper/47?cap=hcav47KhCcppMuxCoAApCEhcdjiFGC)
-
+- [Cloud TreeFinder](https://github.com/duclos-cavalcanti/master-arbeit): _Private until October 3rd_
 
 Beyond my recent collaboration around cloud-based distributed systems research, I also have a background in 
 Embedded Systems and FPGA Engineering, as well as developing on and for Linux/UNIX systems. Feel 
-free to contact me via any of the links below:
-
-
+free to contact me or take a look at my resume.
 
 <div id="link-horizontal">
     <style>
@@ -53,6 +52,7 @@ free to contact me via any of the links below:
     </style>
     <div class="list-container">
         <ul class="horizontal-list">
+            <li><a href="/resume">Resume</a></li>
             <li><a href="https://github.com/duclos-cavalcanti">Github</a></li>
             <li><a href="https://www.linkedin.com/in/duclos-cavalcanti/">Linkedin</a></li>
             <li><a href="mailto:me@duclos.dev">Email</a></li>
@@ -60,3 +60,24 @@ free to contact me via any of the links below:
         </ul>
     </div>
 </div>
+
+\\
+
+<div class="centered-image">
+    <style>
+        .centered-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20;
+        }
+        .centered-image img {
+            max-width: 20%;
+            height: auto;
+        }
+    </style>
+    <img src="/data/images/photo.jpg" alt="Centralized Image">
+</div>
+
+\\
+
