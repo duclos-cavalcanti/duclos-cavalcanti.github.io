@@ -138,8 +138,9 @@ low-latency networking on the cloud.
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
     \textbf{Languages}{: C++, Python, Golang, Rust, C, Bash, JavaScript, HTML, CSS, Lua, VHDL} \\
-    \textbf{Tools}{: Linux, Terraform, Google Cloud (GCP), AWS, Docker, Packer, Git, Unix Shell, Bazel, CMake, Vim, VSCode} \\
-    \textbf{Frameworks}{: ZeroMQ, DPDK, MPI, OpenMP, Tensorflow, Scipy, Numpy, Pandas, Jenkins, Github Workflows, Ansible} \\
+    \textbf{Cloud Services}{: Terraform, Google Cloud Platform (GCP), Amazon EC2 (AWS)} \\
+    \textbf{Tools}{: Linux, Docker, Packer, Vagrant, Git, Github CI/CD, Jenkins, Unix Shell, CMake, Vim, VSCode} \\
+    \textbf{Frameworks}{: ZeroMQ, DPDK, Tensorflow, Scipy, NumPy, Pandas, MPI, OpenMP} \\
     % \textbf{Technologies}{: Cloud Computing, Computer Networking, Operating Systems, Machine Learning, HPC, FPGAs} \\
     % \textbf{Protocols}{: TCP, UDP, IP, ETHERNET, USB, UART} \\
     % \textbf{Certificates}{: UCSD: Data Structures Fundamentals, UT Austin: Embedded Systems - uC I/O} \\
@@ -160,7 +161,7 @@ low-latency networking on the cloud.
                 \resumeItem{Worked on \href{https://github.com/alxhoff/TensorDSE}{\underline{TensorDSE}}, a Design-Space Exploration framework to guide machine learning model deployments.}
                 \resumeItem{Evaluated the performance of various ML models across GPUs, CPUs and TPUs with TensorFlow Lite.}
                 \resumeItem{Generated cost analysis reports for Google's Coral Edge TPU via USB traffic analysis (PyShark) during inference.}
-                \resumeItem{TensorDSE used reports to distribute a model's inference/deployment onto a set of available hardware devices.}
+                \resumeItem{TensorDSE used reports to distribute a model's inference/deployment optimally onto available hardware devices.}
             \resumeItemListEnd
             \vspace{2.0pt}
 
@@ -172,9 +173,10 @@ low-latency networking on the cloud.
                 \resumeItem{Developed tooling for state simulations of their electric motor via Linux's virtual CAN interface and mock APIs.}
                 \resumeItem{Extended their firmware update system used by 20+ clients, consisting of partial updates via CAN bus.}
                 \resumeItem{Automated build and testing workflows via Jenkinsfiles, Makefiles and CMake for a team of over 10 engineers.}
-                \resumeItem{Implemented helper modules in VHDL for their Xilinx Zynq's FPGA components.}
+                % \resumeItem{Implemented helper modules in VHDL for their Xilinx Zynq's FPGA components.}
             \resumeItemListEnd
 
+            \vspace{1.0pt}
         % \resumeSubheading
         %     {Tutor - Embedded Systems Programming Lab}{Apr 2021 -- Aug 2021}
         %     {TU Munich}{Munich, Germany}
@@ -189,7 +191,7 @@ low-latency networking on the cloud.
 \section{Projects}
     \resumeSubHeadingListStart
         \resumeProjectHeading
-            {\href{https://github.com/duclos-cavalcanti/master-arbeit}{\textbf{Cloud TreeFinder}} $|$ \emph{GCP, Terraform, Python, C++, Distributed Systems}}{\small{March 2024 -- Present}}
+            {\href{https://github.com/duclos-cavalcanti/master-arbeit}{\textbf{Cloud-TreeFinder}} $|$ \emph{GCP, Terraform, Python, C++, Distributed Systems}}{\small{Mar 2024 -- Present}}
             \resumeItemListStart
               \resumeItem{Launches a cloud cluster and from a pool of N VMs, creates an optimal multicast tree of depth D and fanout F.}
               \resumeItem{Deploys probe jobs on randomly selected node subsets, collecting and processing resulting reports (JSON). }
@@ -198,12 +200,12 @@ low-latency networking on the cloud.
               % \resumeItem{Uses \href{https://www.clockwork.io/clock-sync/}{clockwork's high-precision software clock synchronization daemon} to provide a global common clock.}
             \resumeItemListEnd
         \resumeProjectHeading
-            {\href{https://github.com/duclos-cavalcanti/Open-MPI-ValueIteration}{\textbf{Open-MPI Value Iteration}} $|$ \emph{C++, Parallel-Computing, MPI, HPC}}{\small{Sept 2021 -- Feb 2022}}
+            {\href{https://github.com/duclos-cavalcanti/Open-MPI-ValueIteration}{\textbf{Open-MPI Value Iteration}} $|$ \emph{C++, Parallel-Computing, MPI, HPC}}{\small{2021 -- 2022}}
             \resumeItemListStart
               % \resumeItem{Asynchronous value iteration model to distribute workload on an HPC cluster.}
               % \resumeItem{Asynchronous pipeline using OpenMPI to scatter workloads across an HPC cluster and gather results.}
               \resumeItem{Implemented a prototype that solves a Stochastic Navigation Problem using Asynchronous Value Iteration (AVI).}
-              \resumeItem{Leveraged different OpenMPI techniques to distribute workloads across an HPC cluster and gather results.}
+              \resumeItem{Leveraged different OpenMPI techniques to distribute its workload across an HPC cluster and gather results.}
             \resumeItemListEnd
         % \resumeProjectHeading
         %     {\href{https://github.com/duclos-cavalcanti/microsemi-error-detection}{\textbf{Hamming Code Error Detection}} $|$ \emph{C, VHDL, FPGA, SoC}}{\small{Oct 2022 -- March 2023}}
@@ -221,9 +223,9 @@ low-latency networking on the cloud.
 \section{Publications}
     \resumeSubHeadingListStart
         \resumeProjectHeading
-          {\textbf{Design and Implementation of A Scalable Financial Exchange in the Cloud} $|$ \emph{\href{https://arxiv.org/abs/2402.09527}{\underline{(Paper)}}}}{Jan 24 -- Present}
+          {\textbf{Design and Implementation of A Scalable Financial Exchange in the Cloud} $|$ \emph{\href{https://arxiv.org/abs/2402.09527}{\underline{(Paper)}}}}{Jan 2024 -- Present}
           \resumeItemListStart
-                \resumeItem{Cloud financial exchange achieving low latency of $<=$ 250 µs and a latency difference $<$ 1 µs, for 1K receivers.}
+                \resumeItem{Novel Cloud financial exchange achieving low latency of $<=$ 250 µs, with a difference $<$ 1 µs for 1K receivers.}
                 \resumeItem{Achieves better scalability and around 50\% lower latency than the multicast service provided by AWS. }
                 \resumeItem{Used kernel-bypass techniques (DPDK) to scale performance up to a 35K multicast packet rate.}
           \resumeItemListEnd
@@ -238,21 +240,22 @@ low-latency networking on the cloud.
   \resumeSubHeadingListStart
     \resumeSubheading
         {New York University: Courant Institute of Mathematical Sciences}{Sept 2023 -- May 2024}
-        {Computer Science - Visiting Non-Degree Graduate Student}{GPA 4.0}
+        {Computer Science - Visiting Non-Degree Graduate Student}{\textbf{GPA 4.0}}
         \resumeItemListStart
             \resumeItem{Co-Authored Publication: \href{https://arxiv.org/abs/2402.09527}{Design and Implementation of A Scalable Financial Exchange in the Cloud}}
             \resumeItem{\textbf{Related Coursework}: Operating Systems, Technologies in Finance}
         \resumeItemListEnd
 
-    % \vspace{3.0pt}
+    \vspace{3.0pt}
     % \resumeSubheading
     %     {Technical University of Munich}{Oct 2020 -- Oct 2024}
     %     {M.Sc. Electrical and Computer Engineering}{Munich, Germany}
 
     %     \resumeItemListStart
-    %         \resumeItem{M.Sc. Thesis: \textbf{VM Selection Heuristic for Multicast Overlay Trees in the Cloud}}
-    %         \resumeItem{\textbf{New York University:} Visiting Graduate Computer Science Student \hfill \textbf{GPA: 4.0}}
-    %         \resumeItem{\textbf{Related Coursework}: Machine Learning Methods and Tools, Embedded Design for Machine Learning, \\Chips Multicore Processors, Computer Networking, High Performance Computing for Machine Intelligence}
+    %         \resumeItem{\textbf{New York University:} Visiting Graduate Computer Science Student -- \textbf{GPA: 4.0}\hfill 2023 - 2024}
+    %         \resumeItem{\textbf{M.Sc. Thesis}: "VM Selection Heuristic for Financial Exchanges in the Cloud"}
+    %         \resumeItem{Co-Authored Publication: \href{https://arxiv.org/abs/2402.09527}{Design and Implementation of A Scalable Financial Exchange in the Cloud}}
+    %         \resumeItem{\textbf{Related Coursework}: Machine Learning Methods and Tools, Operating Systems, Chips Multicore Processors\\Technologies in Finance, Computer Networks, High Performance Computing for Machine Intelligence}
     %     \resumeItemListEnd
 
     \vspace{3.0pt}
@@ -262,7 +265,7 @@ low-latency networking on the cloud.
 
         \resumeItemListStart
             \resumeItem{M.Sc. Thesis: \textbf{VM Selection Heuristic for Multicast Overlay Trees in the Cloud}}
-            \resumeItem{\textbf{Related Coursework}: Machine Learning Methods and Tools, Embedded Design for Machine Learning, \\Chips Multicore Processors, Computer Networking, High Performance Computing for Machine Intelligence}
+            \resumeItem{\textbf{Related Coursework}: Machine Learning Methods and Tools, Computer Networks, Chips Multicore Processors\\Embedded Design for Machine Learning, High Performance Computing for Machine Intelligence}
         \resumeItemListEnd
 
     \vspace{3.0pt}
