@@ -138,11 +138,11 @@ low-latency networking on the cloud.
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
     \textbf{Languages}{: C++, Python, Golang, Rust, C, Bash, JavaScript, HTML, CSS, Lua, VHDL} \\
-    \textbf{Tools}{: Linux, Terraform, Google Cloud (GCP), AWS, Docker, Packer, Git, Unix Shell, Makefile, CMake, Vim, VSCode} \\
-    \textbf{Frameworks}{: ZeroMQ, DPDK, MPI, Protobufs, Pydantic, Tensorflow, Scipy, Numpy, Pandas, Jenkins, Travis CI} \\
-    \textbf{Technologies}{: Cloud Computing, Computer Networking, Operating Systems, Machine Learning, HPC, FPGAs} \\
+    \textbf{Tools}{: Linux, Terraform, Google Cloud (GCP), AWS, Docker, Packer, Git, Unix Shell, Bazel, CMake, Vim, VSCode} \\
+    \textbf{Frameworks}{: ZeroMQ, DPDK, MPI, Tensorflow, Scipy, Numpy, Pandas, Jenkins, Github Workflows, PyTest, GTest} \\
+    % \textbf{Technologies}{: Cloud Computing, Computer Networking, Operating Systems, Machine Learning, HPC, FPGAs} \\
     % \textbf{Protocols}{: TCP, UDP, IP, ETHERNET, USB, UART} \\
-    \textbf{Certificates}{: UCSD: Data Structures Fundamentals, UT Austin: Embedded Systems - uC I/O} \\
+    % \textbf{Certificates}{: UCSD: Data Structures Fundamentals, UT Austin: Embedded Systems - uC I/O} \\
     % \textbf{Hardware}{: Raspberry PIs, Embedded Linux, ARM Cortex MCUs, USB, TCP, UDP, IP, UART, GPIO} \\
     \textbf{Verbal/Written}{: German -- Fluent, Portuguese -- Fluent}
     }}
@@ -165,20 +165,20 @@ low-latency networking on the cloud.
             \vspace{2.0pt}
 
         \resumeSubheading
-            {Embedded Software Engineer}{Aug 2021 -- Jan 2022}
+            {Embedded Software Engineer -- Internship}{Aug 2021 -- Jan 2022}
             {Molabo GmbH}{Ottobrunn, Germany}
             \resumeItemListStart
                 \resumeItem{Added unit-tests (GTest) and code coverage (lcov) to safety critical features of their motor's embedded controller.}
                 \resumeItem{Developed tooling for state simulations of their electric motor via Linux's virtual CAN interface and mock APIs.}
                 \resumeItem{Extended their firmware update system used by 20+ clients, consisting of partial updates via CAN bus.}
-                \resumeItem{Automated build and testing workflows via Jenkinsfiles, Make and CMake for a team of over 10 engineers.}
+                \resumeItem{Automated build and testing workflows via Jenkinsfiles, Makefiles and CMake for a team of over 10 engineers.}
+                \resumeItem{Implemented helper modules in VHDL for their Xilinx Zynq's FPGA components.}
             \resumeItemListEnd
 
         % \resumeSubheading
         %     {Tutor - Embedded Systems Programming Lab}{Apr 2021 -- Aug 2021}
         %     {TU Munich}{Munich, Germany}
         %     \resumeItemListStart
-        %         % \resumeItem{\small{Tutor for the Embedded Systems Programming Lab at TU Munich.}}
         %         \resumeItem{\small{Supervised and aided 20+ students on their final embedded FreeRTOS labroratory projects in C.}}
         %     \resumeItemListEnd
     \resumeSubHeadingListEnd 
@@ -189,19 +189,21 @@ low-latency networking on the cloud.
 \section{Projects}
     \resumeSubHeadingListStart
         \resumeProjectHeading
-            {\href{https://github.com/duclos-cavalcanti/master-arbeit}{\textbf{Cloud TreeFinder}} $|$ \emph{GCP, Terraform, Python, C++, Distributed Systems, ZMQ, Protobufs}}{\small{March 2024 -- Present}}
+            {\href{https://github.com/duclos-cavalcanti/master-arbeit}{\textbf{Cloud TreeFinder}} $|$ \emph{GCP, Terraform, Python, C++, Distributed Systems}}{\small{March 2024 -- Present}}
             \resumeItemListStart
               \resumeItem{Launches a cloud cluster and from a pool of N VMs, creates an optimal multicast tree of depth D and fanout F.}
               \resumeItem{Deploys probe jobs on randomly selected node subsets, collecting and processing resulting reports (JSON). }
-              \resumeItem{Applies a developed heuristic from the collected data to select nodes in the tree layer by layer. }
+              \resumeItem{Applies a developed heuristic from the collected data to select nodes for the tree layer by layer. }
               \resumeItem{Uses terraform to manage cloud state, ZMQ for node communication and Protobufs for data (de)-serialization.}
               % \resumeItem{Uses \href{https://www.clockwork.io/clock-sync/}{clockwork's high-precision software clock synchronization daemon} to provide a global common clock.}
             \resumeItemListEnd
         \resumeProjectHeading
-            {\href{https://github.com/duclos-cavalcanti/Open-MPI-ValueIteration}{\textbf{Open-MPI Value Iteration}} $|$ \emph{C++, Parallel-Computing, MPI}}{\small{Sept 2021 -- Feb 2022}}
+            {\href{https://github.com/duclos-cavalcanti/Open-MPI-ValueIteration}{\textbf{Open-MPI Value Iteration}} $|$ \emph{C++, Parallel-Computing, MPI, HPC}}{\small{Sept 2021 -- Feb 2022}}
             \resumeItemListStart
               % \resumeItem{Asynchronous value iteration model to distribute workload on an HPC cluster.}
-              \resumeItem{Asynchronous pipeline using OpenMPI to scatter workloads across an HPC cluster and gather results.}
+              % \resumeItem{Asynchronous pipeline using OpenMPI to scatter workloads across an HPC cluster and gather results.}
+              \resumeItem{Implemented a prototype that solves a Stochastic Navigation Problem using Asynchronous Value Iteration (AVI).}
+              \resumeItem{Leveraged different OpenMPI techniques to distribute workloads across an HPC cluster and gather results.}
             \resumeItemListEnd
         % \resumeProjectHeading
         %     {\href{https://github.com/duclos-cavalcanti/microsemi-error-detection}{\textbf{Hamming Code Error Detection}} $|$ \emph{C, VHDL, FPGA, SoC}}{\small{Oct 2022 -- March 2023}}
@@ -242,20 +244,31 @@ low-latency networking on the cloud.
             \resumeItem{\textbf{Related Coursework}: Operating Systems, Technologies in Finance}
         \resumeItemListEnd
 
+    % \vspace{3.0pt}
+    % \resumeSubheading
+    %     {Technical University of Munich}{Oct 2020 -- Oct 2024}
+    %     {M.Sc. Electrical and Computer Engineering}{Munich, Germany}
+
+    %     \resumeItemListStart
+    %         \resumeItem{M.Sc. Thesis: \textbf{VM Selection Heuristic for Multicast Overlay Trees in the Cloud}}
+    %         \resumeItem{\textbf{New York University:} Visiting Graduate Computer Science Student \hfill \textbf{GPA: 4.0}}
+    %         \resumeItem{\textbf{Related Coursework}: Machine Learning Methods and Tools, Embedded Design for Machine Learning, \\Chips Multicore Processors, Computer Networking, High Performance Computing for Machine Intelligence}
+    %     \resumeItemListEnd
+
     \vspace{3.0pt}
     \resumeSubheading
-        {Technical University of Munich}{Oct 2020 -- \textbf{Oct 2024}}
-        {M.Sc. Electrical and Computer Engineering}{}
+        {Technical University of Munich}{Oct 2020 -- Oct 2024}
+        {M.Sc. Electrical and Computer Engineering}{Munich, Germany}
 
         \resumeItemListStart
             \resumeItem{M.Sc. Thesis: \textbf{VM Selection Heuristic for Multicast Overlay Trees in the Cloud}}
-            \resumeItem{\textbf{Related Coursework}: Machine Learning Methods and Tools, Embedded Design for Machine Learning, \\Chips Multicore Processors, Secure SoCs for IoT, High Performance Computing for Machine Intelligence}
+            \resumeItem{\textbf{Related Coursework}: Machine Learning Methods and Tools, Embedded Design for Machine Learning, \\Chips Multicore Processors, Computer Networking, High Performance Computing for Machine Intelligence}
         \resumeItemListEnd
 
     \vspace{3.0pt}
     \resumeSubheading
         {Technical University of Munich}{Oct 2016 -- Sept 2020}
-        {B.Sc. Electrical and Computer Engineering}{}
+        {B.Sc. Electrical and Computer Engineering}{Munich, Germany}
         % \resumeItemListStart
             % \resumeItem{\textbf{{German GPA: }} 2.2 (Top 37\%) -- \href{https://drive.google.com/file/d/1Xesfn8HF9g4oplwqPZMhcFvGFLuyVzIM/view?usp=sharing}{{\underline{See Grade Distribution}}}}
             % \resumeItem{\textbf{Coursework}: Embedded Systems Programming Lab, Computer Networks, Data Structures}
