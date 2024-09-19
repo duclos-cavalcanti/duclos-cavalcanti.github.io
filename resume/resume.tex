@@ -138,9 +138,9 @@ low-latency networking on the cloud.
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
     \textbf{Languages}{: C++, Python, Golang, Rust, C, Bash, JavaScript, HTML, CSS, Lua, VHDL} \\
-    \textbf{Cloud Services}{: Google Cloud Platform (GCP), Amazon EC2 (AWS), Terraform, Packer} \\
-    \textbf{Tools}{: Linux, Git, Github CI/CD, Jenkins, Unix Shell, CMake, GNU Make, Bazel, Vim, VSCode} \\
-    \textbf{Technologies}{: Docker, ZeroMQ, TCP, UDP, DPDK, Tensorflow, Scipy, NumPy, Pandas, MPI, FPGA} \\
+    \textbf{Cloud Services}{: Google Cloud Platform (GCP), Amazon EC2 (AWS), Terraform, Packer, Vagrant} \\
+    \textbf{Tools}{: Linux, Unix Shell, Git, Github CI/CD, Jenkins, CMake, GNU Make, Bazel, Vim, VSCode} \\
+    \textbf{Technologies}{: Docker, ZeroMQ, DPDK, MPI, FPGA, IoT, TensorFlow, Scipy, NumPy, Pandas} \\
     % \textbf{Technologies}{: Cloud Computing, Computer Networking, Operating Systems, Machine Learning, HPC, FPGAs} \\
     % \textbf{Protocols}{: TCP, UDP, IP, ETHERNET, USB, UART} \\
     % \textbf{Certificates}{: UCSD: Data Structures Fundamentals, UT Austin: Embedded Systems - uC I/O} \\
@@ -194,7 +194,7 @@ low-latency networking on the cloud.
             {\href{https://github.com/duclos-cavalcanti/master-arbeit}{\textbf{Cloud-TreeFinder}} $|$ \emph{GCP, Terraform, Python, C++, Distributed Systems}}{\small{Mar 2024 -- Present}}
             \resumeItemListStart
               \resumeItem{Launches a cloud cluster and from a pool of N VMs, creates an optimal multicast tree of depth D and fanout F.}
-              \resumeItem{Deploys probe jobs on randomly selected node subsets, collecting and processing resulting reports (JSON). }
+              \resumeItem{Deploys UDP based probe jobs on randomly selected node subsets, collecting and processing results (JSON). }
               \resumeItem{Applies a developed heuristic from the collected data to select nodes for the tree layer by layer. }
               \resumeItem{Uses terraform to manage cloud state, ZMQ for node communication and Protobufs for data (de)-serialization.}
               % \resumeItem{Uses \href{https://www.clockwork.io/clock-sync/}{clockwork's high-precision software clock synchronization daemon} to provide a global common clock.}
