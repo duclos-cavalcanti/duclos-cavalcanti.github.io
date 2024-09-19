@@ -6,7 +6,7 @@ author: "Daniel Duclos-Cavalcanti"
 
 # Daniel Duclos-Cavalcanti
 
-I'm a Computer Engineer living in New York with a bachelors and masters from the Technical University of Munich, in Germany. 
+I'm a Computer Engineer living in New York with a bachelors and masters from the Technical University of Munich. 
 Currently, collaborating on research with [Dr.Sivaraman](https://anirudhsk.github.io/) and [PhD. Haseeb Ashfaq](https://haseeblums.github.io/) from [Systems@NYU](https://news.cs.nyu.edu/).
 
 
@@ -61,7 +61,7 @@ free to contact me or take a look at my resume.
     </div>
 </div>
 
-\\
+</br>
 
 <div class="centered-image">
     <style>
@@ -79,5 +79,5 @@ free to contact me or take a look at my resume.
     <img src="/data/images/photo.jpg" alt="Centralized Image">
 </div>
 
-\\
+</br>
 
