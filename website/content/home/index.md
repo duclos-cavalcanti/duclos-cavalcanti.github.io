@@ -7,19 +7,18 @@ author: "Daniel Duclos-Cavalcanti"
 # Daniel Duclos-Cavalcanti
 
 I'm a Computer Engineer living in New York with a bachelors and masters from the Technical University of Munich. 
-Currently, collaborating on research with [Dr.Sivaraman](https://anirudhsk.github.io/) and [PhD. Haseeb Ashfaq](https://haseeblums.github.io/) from [Systems@NYU](https://news.cs.nyu.edu/).
+Currently, collaborating on independent research with [Dr.Sivaraman](https://anirudhsk.github.io/) and [PhD. Haseeb Ashfaq](https://haseeblums.github.io/) from [Systems@NYU](https://news.cs.nyu.edu/) on distributed low-latency networking on the cloud.
 
 
-The project revolves around [Jasper](https://arxiv.org/abs/2402.09527): A Scalable Design and Implementation of a Financial Exchange in the Cloud. Beyond co-authoring and aiding in the development of Jasper, my thesis constructed a performant heuristic to 
+The project revolves around [Jasper: A Scalable Design and Implementation of a Financial Exchange in the Cloud](https://arxiv.org/abs/2402.09527). Beyond co-authoring and aiding in the development of Jasper, my [master thesis](https://github.com/duclos-cavalcanti/TreeBuilder) constructed a performant heuristic to 
 select VMs based on present cloud conditions to improve Jasper's overall performance, both before and during runtime.
 
+- [TreeBuilder: VM Selection Heuristic/Framework for Multicast Trees in the Cloud](https://github.com/duclos-cavalcanti/TreeBuilder)
 - [Jasper: Design And Implementation of A Scalable Financial Exchange in the Cloud](https://arxiv.org/abs/2402.09527)
 - [SIGCOMM24 POSTER - Jasper, A Scalable and Fair Multicast for Fin. Exch. in the Cloud](https://sigcomm24posterdemo.hotcrp.com/paper/47?cap=hcav47KhCcppMuxCoAApCEhcdjiFGC)
-- [Cloud TreeFinder](https://github.com/duclos-cavalcanti/master-arbeit): _Private until October 3rd_
 
-Beyond my recent collaboration around cloud-based distributed systems research, I also have a background in 
-Embedded Systems and FPGA Engineering, as well as developing on and for Linux/UNIX systems. Feel 
-free to contact me or take a look at my resume.
+In addition to my recent work on cloud-based distributed systems research, I have a strong background in Embedded Systems, FPGA Engineering, High-Performance Computing, and development for Linux/UNIX environments. Feel free to reach out or take a look at 
+my [resume/CV](/resume).
 
 <div id="link-horizontal">
     <style>
@@ -52,7 +51,7 @@ free to contact me or take a look at my resume.
     </style>
     <div class="list-container">
         <ul class="horizontal-list">
-            <li><a href="/resume">Resume</a></li>
+            <!-- <li><a href="/resume">Resume</a></li> -->
             <li><a href="https://github.com/duclos-cavalcanti">Github</a></li>
             <li><a href="https://www.linkedin.com/in/duclos-cavalcanti/">Linkedin</a></li>
             <li><a href="mailto:me@duclos.dev">Email</a></li>
