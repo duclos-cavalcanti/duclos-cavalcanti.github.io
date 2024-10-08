@@ -140,7 +140,7 @@ low-latency networking on the cloud.
     \textbf{Languages}{: C++, Python, Golang, Rust, C, Bash, JavaScript, HTML, CSS, Lua, VHDL} \\
     \textbf{Cloud Services}{: Google Cloud Platform (GCP), Amazon EC2 (AWS), Terraform, Packer, Vagrant} \\
     \textbf{Tools}{: Linux, Unix Shell, Git, Github CI/CD, Jenkins, CMake, GNU Make, Bazel, Vim, VSCode} \\
-    \textbf{Technologies}{: Docker, ZeroMQ, DPDK, MPI, FPGA, IoT, TensorFlow, Scipy, NumPy, Pandas, OpenMP} \\
+    \textbf{Technologies}{: Docker, ZeroMQ, DPDK, MPI, FreeRTOS, FPGA, IoT, TensorFlow, Scipy, NumPy, Pandas, OpenMP} \\
     % \textbf{Technologies}{: Cloud Computing, Computer Networking, Operating Systems, Machine Learning, HPC, FPGAs} \\
     % \textbf{Protocols}{: TCP, UDP, IP, ETHERNET, USB, UART} \\
     % \textbf{Certificates}{: UCSD: Data Structures Fundamentals, UT Austin: Embedded Systems - uC I/O} \\
@@ -163,8 +163,8 @@ low-latency networking on the cloud.
                 \resumeItem{Generated cost analysis reports for Google's Coral Edge TPU via USB traffic analysis (PyShark) during inference.}
                 \resumeItem{TensorDSE used reports to distribute a model's inference/deployment optimally onto available hardware devices.}
             \resumeItemListEnd
-            \vspace{2.0pt}
 
+        \vspace{1.0pt}
         \resumeSubheading
             {Embedded Software Engineer -- Internship}{Aug 2021 -- Jan 2022}
             {Molabo GmbH}{Ottobrunn, Germany}
@@ -176,7 +176,7 @@ low-latency networking on the cloud.
                 % \resumeItem{Implemented helper modules in VHDL for their Xilinx Zynq's FPGA components.}
             \resumeItemListEnd
 
-            \vspace{1.0pt}
+        % \vspace{1.0pt}
         % \resumeSubheading
         %     {Tutor - Embedded Systems Programming Lab}{Apr 2021 -- Aug 2021}
         %     {TU Munich}{Munich, Germany}
@@ -193,27 +193,28 @@ low-latency networking on the cloud.
         \resumeProjectHeading
             {\href{https://github.com/duclos-cavalcanti/TreeBuilder}{\textbf{Cloud-TreeBuilder}} $|$ \emph{GCP, Terraform, Python, C++, Distributed Systems, Heuristic}}{\small{Mar 2024 -- Present}}
             \resumeItemListStart
-              \resumeItem{Launches and selects VMs out of a pool cluster (N) to create an optimal multicast tree of depth D and fan-out F.}
-              \resumeItem{Deploys UDP based probe jobs on VM subsets, collecting data regarding their network performance (JSON). }
-              \resumeItem{Applies a developed heuristic to examine collected data and select VMs for a tree layer by layer. }
+              \resumeItem{Launches and selects K out of N VMs in a cluster to create an optimal multicast tree of depth D and fan-out F.}
+              % \resumeItem{Deploys UDP based probe jobs on VM subsets, collecting data regarding their network performance (JSON). }
+              % \resumeItem{Applies a developed heuristic to examine collected data and select VMs for a tree layer by layer. }
+              \resumeItem{Uses UDP probe jobs to examine VMs network performance, selecting instances for a tree layer by layer. }
               \resumeItem{Uses terraform to manage cloud state, ZMQ for node communication and Protobufs for data serialization.}
               % \resumeItem{Uses \href{https://www.clockwork.io/clock-sync/}{clockwork's high-precision software clock synchronization daemon} to provide a global common clock.}
             \resumeItemListEnd
         \resumeProjectHeading
+            {\href{https://github.com/duclos-cavalcanti/microsemi-error-detection}{\textbf{Hamming Code Error Detection}} $|$ \emph{C, VHDL, FPGA, SoC}}{\small{2022 -- 2023}}
+            \resumeItemListStart
+              \resumeItem{Error detection/correction algorithm for packet transmission on Microsemi's SF2 FPGA/SoC.}
+              %\resumeItem{Packets sent between host and SoC via UART are cross-referenced against erroneous bit flips.}
+              \resumeItem{Microprocessor offloads error-injected data onto the FPGA fabric for correction via an APB3 Bus Matrix.}
+            \resumeItemListEnd
+        \resumeProjectHeading
             {\href{https://github.com/duclos-cavalcanti/Open-MPI-ValueIteration}{\textbf{Open-MPI Value Iteration}} $|$ \emph{C++, Parallel-Computing, MPI, HPC}}{\small{2021 -- 2022}}
             \resumeItemListStart
-              % \resumeItem{Asynchronous value iteration model to distribute workload on an HPC cluster.}
-              % \resumeItem{Asynchronous pipeline using OpenMPI to scatter workloads across an HPC cluster and gather results.}
-              \resumeItem{Implemented a prototype that solves a Stochastic Navigation Problem using Asynchronous Value Iteration (AVI).}
-              \resumeItem{Leveraged different OpenMPI techniques to distribute its workload across an HPC cluster and gather results.}
+              \resumeItem{An HPC prototype that solves a stochastic navigation problem through Asynchronous Value Iteration (AVI).}
+              \resumeItem{Used different OpenMPI techniques to iteratively distribute workload across an HPC cluster and gather results.}
             \resumeItemListEnd
         % \resumeProjectHeading
-        %     {\href{https://github.com/duclos-cavalcanti/microsemi-error-detection}{\textbf{Hamming Code Error Detection}} $|$ \emph{C, VHDL, FPGA, SoC}}{\small{Oct 2022 -- March 2023}}
-        %     \resumeItemListStart
-        %       \resumeItem{Error detection/correction algorithm for packet transmission on Microsemi's SF2 FPGA/SoC.}
-        %     \resumeItemListEnd
-        % \resumeProjectHeading
-        %     {\href{https://github.com/duclos-cavalcanti/FreeRTOS-SpaceInvaders}{\textbf{FreeRTOS-SpaceInvaders}} $|$ \emph{C, RTOS, Multi-Threaded}}{\small{Aug 2020 -- March 2021}}
+        %     {\href{https://github.com/duclos-cavalcanti/FreeRTOS-SpaceInvaders}{\textbf{FreeRTOS-SpaceInvaders}} $|$ \emph{C, RTOS, Multi-Threaded}}{\small{2020 -- 2021}}
         %     \resumeItemListStart
         %       \resumeItem{Implemented the famous arcade game as a multi-threaded FreeRTOS application in C.}
         %     \resumeItemListEnd
@@ -226,8 +227,9 @@ low-latency networking on the cloud.
           {\textbf{Design and Implementation of A Scalable Financial Exchange in the Cloud} $|$ \emph{\href{https://arxiv.org/abs/2402.09527}{\underline{(Paper)}}}}{Jan 2024 -- Present}
           \resumeItemListStart
                 \resumeItem{Novel Cloud financial exchange achieving low latency of $<=$ 250 µs, with a difference $<$ 1 µs for 1K receivers.}
-                \resumeItem{Achieves better scalability and around 50\% lower latency than the multicast service provided by AWS. }
-                \resumeItem{Used kernel-bypass techniques (DPDK) to scale performance up to a 35K multicast packet rate.}
+                %\resumeItem{Achieves better scalability and around 50\% lower latency than the multicast service provided by AWS. }
+                %\resumeItem{Used kernel-bypass techniques (DPDK) to scale performance up to a 35K multicast packet rate.}
+                \resumeItem{Used kernel-bypass techniques (DPDK) to scale and achieve $\sim$\% lower latency than AWS's multicast service.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -245,17 +247,16 @@ low-latency networking on the cloud.
             \resumeItem{Co-Authored Publication: \href{https://arxiv.org/abs/2402.09527}{Design and Implementation of A Scalable Financial Exchange in the Cloud}}
             \resumeItem{\textbf{Related Coursework}: Operating Systems, Technologies in Finance}
         \resumeItemListEnd
-
-    \vspace{3.0pt}
+    %
+    % \vspace{3.0pt}
     % \resumeSubheading
     %     {Technical University of Munich}{Oct 2020 -- Oct 2024}
     %     {M.Sc. Electrical and Computer Engineering}{Munich, Germany}
-
+    %
     %     \resumeItemListStart
-    %         \resumeItem{\textbf{New York University:} Visiting Graduate Computer Science Student -- \textbf{GPA: 4.0}\hfill 2023 - 2024}
-    %         \resumeItem{\textbf{M.Sc. Thesis}: "VM Selection Heuristic for Financial Exchanges in the Cloud"}
-    %         \resumeItem{Co-Authored Publication: \href{https://arxiv.org/abs/2402.09527}{Design and Implementation of A Scalable Financial Exchange in the Cloud}}
-    %         \resumeItem{\textbf{Related Coursework}: Machine Learning Methods and Tools, Operating Systems, Chips Multicore Processors\\Technologies in Finance, Computer Networks, High Performance Computing for Machine Intelligence}
+    %         \resumeItem{\textbf{M.Sc. Thesis}: VM Selection Heuristic for Multicast Overlay Trees in the Cloud}
+    %         \resumeItem{\textbf{New York University}: Computer Science Non-Degree Visiting Graduate Student -- \textbf{GPA: 4.0}}
+    %         \resumeItem{\textbf{Related Coursework}: Machine Learning Methods and Tools, Operating Systems, Secure SoC for IoT,\\Embedded Design for Machine Learning, High Performance Computing Lab, Computer Networks}
     %     \resumeItemListEnd
 
     \vspace{3.0pt}
@@ -265,7 +266,9 @@ low-latency networking on the cloud.
 
         \resumeItemListStart
             \resumeItem{M.Sc. Thesis: \textbf{VM Selection Heuristic for Multicast Overlay Trees in the Cloud}}
-            \resumeItem{\textbf{Related Coursework}: Machine Learning Methods and Tools, Computer Networks, Secure SoC for IoT,\\Embedded Design for Machine Learning, High Performance Computing for Machine Intelligence}
+            %\resumeItem{\textbf{Related Coursework}: Machine Learning Methods and Tools, Computer Networks, Secure SoC for IoT,\\Embedded Design for Machine Learning, High Performance Computing Lab}
+            \resumeItem{\textbf{Related Coursework}: Machine Learning Methods, Computer Networks, High Performance Computing Lab \\
+                                                     Embedded Design for Machine Learning, Embedded Systems Programming Lab, Secure SoC for IoT}
         \resumeItemListEnd
 
     \vspace{3.0pt}

@@ -17,7 +17,7 @@ select VMs based on present cloud conditions to improve Jasper's overall perform
 - [Jasper: Design And Implementation of A Scalable Financial Exchange in the Cloud](https://arxiv.org/abs/2402.09527)
 - [SIGCOMM24 POSTER - Jasper, A Scalable and Fair Multicast for Fin. Exch. in the Cloud](https://sigcomm24posterdemo.hotcrp.com/paper/47?cap=hcav47KhCcppMuxCoAApCEhcdjiFGC)
 
-In addition to my recent work on cloud-based distributed systems research, I have a strong background in Embedded Systems, FPGA Engineering, High-Performance Computing, and development for Linux/UNIX environments. Feel free to reach out or take a look at 
+In addition to my recent research on cloud-based distributed systems, I have a strong background in Embedded Systems, FPGA Engineering, High-Performance Computing, and development for Linux/UNIX environments. Feel free to reach out or take a look at 
 my [resume/CV](/resume).
 
 <div id="link-horizontal">
