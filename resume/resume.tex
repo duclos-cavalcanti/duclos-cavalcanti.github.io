@@ -191,12 +191,12 @@ low-latency networking on the cloud.
 \section{Projects}
     \resumeSubHeadingListStart
         \resumeProjectHeading
-            {\href{https://github.com/duclos-cavalcanti/TreeBuilder}{\textbf{Cloud-TreeBuilder}} $|$ \emph{GCP, Terraform, Python, C++, Distributed Systems, Heuristic}}{\small{Mar 2024 -- Present}}
+            {\href{https://github.com/duclos-cavalcanti/TreeBuilder}{\textbf{Cloud-TreeBuilder}} $|$ \emph{GCP, ZMQ, Terraform, Python, C++, Distributed Systems, Heuristic}}{\small{Mar 2024 -- Present}}
             \resumeItemListStart
               \resumeItem{Launches and selects K out of N VMs in a cluster to create an optimal multicast tree of depth D and fan-out F.}
-              % \resumeItem{Deploys UDP based probe jobs on VM subsets, collecting data regarding their network performance (JSON). }
-              % \resumeItem{Applies a developed heuristic to examine collected data and select VMs for a tree layer by layer. }
-              \resumeItem{Uses UDP probe jobs to examine VMs network performance, selecting instances for a tree layer by layer. }
+              \resumeItem{Deploys UDP based probe jobs on VM subsets, collecting data regarding their network performance (JSON). }
+              \resumeItem{Applies a developed heuristic to examine collected data and select VMs for a tree layer by layer. }
+              %\resumeItem{Uses UDP probe jobs to examine VMs network performance, selecting instances for a tree layer by layer. }
               \resumeItem{Uses terraform to manage cloud state, ZMQ for node communication and Protobufs for data serialization.}
               % \resumeItem{Uses \href{https://www.clockwork.io/clock-sync/}{clockwork's high-precision software clock synchronization daemon} to provide a global common clock.}
             \resumeItemListEnd
@@ -210,8 +210,9 @@ low-latency networking on the cloud.
         \resumeProjectHeading
             {\href{https://github.com/duclos-cavalcanti/Open-MPI-ValueIteration}{\textbf{Open-MPI Value Iteration}} $|$ \emph{C++, Parallel-Computing, MPI, HPC}}{\small{2021 -- 2022}}
             \resumeItemListStart
-              \resumeItem{An HPC prototype that solves a stochastic navigation problem through Asynchronous Value Iteration (AVI).}
-              \resumeItem{Used different OpenMPI techniques to iteratively distribute workload across an HPC cluster and gather results.}
+              %\resumeItem{An HPC prototype that solves a stochastic navigation problem through Asynchronous Value Iteration (AVI).}
+              %\resumeItem{Used different OpenMPI techniques to iteratively distribute workload across an HPC cluster and gather results.}
+              \resumeItem{Prototype that uses MPI techniques to iteratively distribute workload across an HPC cluster and gather results.}
             \resumeItemListEnd
         % \resumeProjectHeading
         %     {\href{https://github.com/duclos-cavalcanti/FreeRTOS-SpaceInvaders}{\textbf{FreeRTOS-SpaceInvaders}} $|$ \emph{C, RTOS, Multi-Threaded}}{\small{2020 -- 2021}}
@@ -227,9 +228,9 @@ low-latency networking on the cloud.
           {\textbf{Design and Implementation of A Scalable Financial Exchange in the Cloud} $|$ \emph{\href{https://arxiv.org/abs/2402.09527}{\underline{(Paper)}}}}{Jan 2024 -- Present}
           \resumeItemListStart
                 \resumeItem{Novel Cloud financial exchange achieving low latency of $<=$ 250 µs, with a difference $<$ 1 µs for 1K receivers.}
-                %\resumeItem{Achieves better scalability and around 50\% lower latency than the multicast service provided by AWS. }
-                %\resumeItem{Used kernel-bypass techniques (DPDK) to scale performance up to a 35K multicast packet rate.}
-                \resumeItem{Used kernel-bypass techniques (DPDK) to scale and achieve $\sim$\% lower latency than AWS's multicast service.}
+                \resumeItem{Achieves better scalability and around 50\% lower latency than the multicast service provided by AWS. }
+                \resumeItem{Used kernel-bypass techniques (DPDK) to scale performance up to a 35K multicast packet rate.}
+                %\resumeItem{Used kernel-bypass techniques (DPDK) to scale and achieve $\sim$50\% lower latency than AWS's multicast service.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -267,8 +268,9 @@ low-latency networking on the cloud.
         \resumeItemListStart
             \resumeItem{M.Sc. Thesis: \textbf{VM Selection Heuristic for Multicast Overlay Trees in the Cloud}}
             %\resumeItem{\textbf{Related Coursework}: Machine Learning Methods and Tools, Computer Networks, Secure SoC for IoT,\\Embedded Design for Machine Learning, High Performance Computing Lab}
-            \resumeItem{\textbf{Related Coursework}: Machine Learning Methods, Computer Networks, High Performance Computing Lab \\
-                                                     Embedded Design for Machine Learning, Embedded Systems Programming Lab, Secure SoC for IoT}
+            \resumeItem{\textbf{Related Coursework}: Machine Learning Methods, Embedded Design for Machine Learning, Secure SoC for IoT}
+            %\resumeItem{\textbf{Related Coursework}: Machine Learning Methods, Computer Networks, High Performance Computing Lab \\
+            %                                         Embedded Design for Machine Learning, Embedded Systems Programming Lab, Secure SoC for IoT}
         \resumeItemListEnd
 
     \vspace{3.0pt}
