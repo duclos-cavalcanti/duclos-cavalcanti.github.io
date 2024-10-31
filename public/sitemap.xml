@@ -11,6 +11,13 @@
     
         
         <url>
+            <loc>https://duclos.dev/tags/data/</loc>
+            <lastmod>2024-04-03T02:01:58+05:30</lastmod>
+        </url>
+        
+    
+        
+        <url>
             <loc>https://duclos.dev/</loc>
             <lastmod>2024-04-03T02:01:58+05:30</lastmod>
         </url>
@@ -19,6 +26,20 @@
         
         <url>
             <loc>https://duclos.dev/posts/ma/</loc>
+            <lastmod>2024-04-03T02:01:58+05:30</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>https://duclos.dev/tags/ml/</loc>
+            <lastmod>2024-04-03T02:01:58+05:30</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>https://duclos.dev/posts/ml/</loc>
             <lastmod>2024-04-03T02:01:58+05:30</lastmod>
         </url>
         
