@@ -28,6 +28,19 @@ clean:
 pull:
 	@docker pull ${DOCKER}
 
+example: .example
+
+.example: example.tex
+	docker run --rm \
+			   --name ${NAME} \
+			   -v ${PWD}:/data \
+			   -w /data \
+			   ${DOCKER}:latest \
+			   pdflatex example.tex
+	@$(MAKE) clean
+	@touch .example
+	@cp example.pdf ~/Downloads/DanielCavalcantiExample.pdf
+
 resume: .resume
 
 .resume: resume.tex

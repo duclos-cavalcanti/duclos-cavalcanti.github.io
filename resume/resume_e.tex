@@ -1,0 +1,311 @@
+%-------------------------
+% Resume in Latex
+% Based on: https://github.com/jakegut/resume (which was itself based on https://github.com/sb2nov/resume)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+
+\input{glyphtounicode}
+
+% -------------------- FONT OPTIONS --------------------
+% sans-serif
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% serif
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in} % Default was -.5in
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{4.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING--------------------
+\begin{flushright}
+  % \vspace{-4pt}
+\end{flushright}
+
+\vspace{-5.0pt}
+
+\begin{center}
+    \textbf{\Huge \scshape Daniel Duclos-Cavalcanti} \\ \vspace{1pt}
+    \textbf{\large{\scshape Computer Engineer}} \\ \vspace{1pt}
+    \small 516-912-7975 $|$ New York, NY $|$ U.S. Citizen $|$
+    \href{mailto:me@duclos.dev}{\underline{me@duclos.dev}} $|$ 
+    \href{https://www.duclos.dev}{\underline{www.duclos.dev}} $|$
+    \href{https://www.linkedin.com/in/duclos-cavalcanti/}{\underline{linkedin}} $|$
+    \href{https://github.com/duclos-cavalcanti}{\underline{github}} 
+\end{center}
+
+\vspace{-8.0pt}
+
+\section{Summary}
+\small{
+Creative thinker and problem-solver with a masters and bachelors in 
+computer engineering from Germany. Today, I am in New York, 
+collaborating on research with Dr.Sivaraman (NYU) on distributed 
+low-latency networking on the cloud.
+}
+
+\vspace{-8.0pt}
+
+% -------------------- SKILLS --------------------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Languages}{: C++, Python, Golang, Rust, C, Bash, JavaScript, HTML, CSS, Lua, VHDL} \\
+    \textbf{Cloud Services}{: Google Cloud Platform (GCP), Amazon EC2 (AWS), Terraform, Packer, Vagrant} \\
+    \textbf{Tools}{: Linux, Unix Shell, Git, Github CI/CD, Jenkins, CMake, GNU Make, Bazel, Vim, VSCode} \\
+    \textbf{Technologies}{: Docker, ZeroMQ, DPDK, MPI, FreeRTOS, FPGA, IoT, TensorFlow, Scipy, NumPy, Pandas, OpenMP} \\
+    % \textbf{Technologies}{: Cloud Computing, Computer Networking, Operating Systems, Machine Learning, HPC, FPGAs} \\
+    % \textbf{Protocols}{: TCP, UDP, IP, ETHERNET, USB, UART} \\
+    % \textbf{Certificates}{: UCSD: Data Structures Fundamentals, UT Austin: Embedded Systems - uC I/O} \\
+    % \textbf{Hardware}{: Raspberry PIs, Embedded Linux, ARM Cortex MCUs, USB, TCP, UDP, IP, UART, GPIO} \\
+    \textbf{Verbal/Written}{: German -- Fluent, Portuguese -- Fluent}
+    }}
+ \end{itemize}
+
+\vspace{-16.0pt}
+
+% -------------------- EXPERIENCE --------------------
+\section{Experience}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {Research Assistant}{Jul 2022 -- Oct 2022}
+            {TU Munich}{Munich, Germany}
+            \resumeItemListStart
+                \resumeItem{Worked on \href{https://github.com/alxhoff/TensorDSE}{\underline{TensorDSE}}, a Design-Space Exploration framework to guide machine learning model deployments.}
+                \resumeItem{Evaluated the performance of various ML models across GPUs, CPUs and TPUs with TensorFlow Lite.}
+                \resumeItem{Generated cost analysis reports for Google's Coral Edge TPU via USB traffic analysis (PyShark) during inference.}
+                \resumeItem{TensorDSE used reports to accelerate a model's inference/deployment optimally onto available hardware devices.}
+            \resumeItemListEnd
+
+        \vspace{1.0pt}
+        \resumeSubheading
+            {Embedded Software Engineer -- Internship}{Aug 2021 -- Jan 2022}
+            {Molabo GmbH}{Ottobrunn, Germany}
+            \resumeItemListStart
+                \resumeItem{Added unit-tests (GTest) and test coverage (lcov) to safety critical features of their motor's embedded controller.}
+                \resumeItem{Developed tooling for state simulations of their electric motor via Linux's virtual CAN interface and mock APIs.}
+                \resumeItem{Extended their firmware update system used by 18+ clients, consisting of partial updates via CAN bus.}
+                \resumeItem{Automated build and testing workflows via Jenkinsfiles, Makefiles and CMake for a team of over 10 engineers.}
+                % \resumeItem{Implemented helper modules in VHDL for their Xilinx Zynq's FPGA components.}
+            \resumeItemListEnd
+
+        \vspace{1.0pt}
+        \resumeSubheading
+            {Tutor - Embedded Systems Programming Lab}{Apr 2021 -- Aug 2021}
+            {TU Munich}{Munich, Germany}
+            \resumeItemListStart
+                \resumeItem{Guided 20+ students in developing performant low-level FreeRTOS applications in C. }
+                \resumeItem{Taught software engineering best practices on concurrency, real-time scheduling, and performance.}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd 
+
+\vspace{-12.0pt}
+
+% -------------------- PROJECTS --------------------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\href{https://github.com/duclos-cavalcanti/TreeBuilder}{\textbf{Cloud-TreeBuilder}} $|$ \emph{GCP, ZMQ, Terraform, Python, C++, Distributed Systems, Heuristic}}{\small{Mar 2024 -- Present}}
+            \resumeItemListStart
+              \resumeItem{Launches and selects K out of N VMs in a cluster to create an optimal multicast tree of depth D and fan-out F.}
+              \resumeItem{Deploys UDP based probe jobs on VM subsets, collecting data regarding their network performance (JSON). }
+              \resumeItem{Applies a developed heuristic on collected data to select VMs for a tree layer by layer. }
+              %\resumeItem{Uses UDP probe jobs to examine VMs network performance, selecting instances for a tree layer by layer. }
+              %\resumeItem{Uses terraform to manage cloud state, ZMQ for node communication and Protobufs for data serialization.}
+              % \resumeItem{Uses \href{https://www.clockwork.io/clock-sync/}{clockwork's high-precision software clock synchronization daemon} to provide a global common clock.}
+            \resumeItemListEnd
+        \resumeProjectHeading
+            {\href{https://github.com/duclos-cavalcanti/Open-MPI-ValueIteration}{\textbf{Open-MPI Value Iteration}} $|$ \emph{C++, Parallel-Computing, MPI, HPC}}{}
+            \resumeItemListStart
+              %\resumeItem{An HPC prototype that solves a stochastic navigation problem through Asynchronous Value Iteration (AVI).}
+              %\resumeItem{Used different OpenMPI techniques to iteratively distribute workload across an HPC cluster and gather results.}
+              %\resumeItem{Uses MPI techniques to iteratively distribute workload across an HPC cluster and gather results.}
+              \resumeItem{Uses MPI techniques to distribute workload across an HPC cluster to solve a stochastic navigation problem.}
+            \resumeItemListEnd
+        %\resumeProjectHeading
+        %    {\href{https://github.com/duclos-cavalcanti/microsemi-error-detection}{\textbf{Hamming Code Error Detection (16,11)}} $|$ \emph{C, VHDL, FPGA, SoC, UART}}{}
+        %    \resumeItemListStart
+        %      \resumeItem{Implemented an error detection/correction algorithm for packet transmission on Microsemi's SF2 FPGA/SoC.}
+        %      %\resumeItem{Packets sent between host and SoC via UART are cross-referenced against erroneous bit flips.}
+        %      %\resumeItem{Microprocessor offloads error-injected data onto the FPGA for detection/correction via an APB3 Bus Matrix.}
+        %    \resumeItemListEnd
+        % \resumeProjectHeading
+        %     {\href{https://github.com/duclos-cavalcanti/FreeRTOS-SpaceInvaders}{\textbf{FreeRTOS-SpaceInvaders}} $|$ \emph{C, RTOS, Multi-Threaded}}{\small{2020 -- 2021}}
+        %     \resumeItemListStart
+        %       \resumeItem{Implemented the famous arcade game as a multi-threaded FreeRTOS application in C.}
+        %     \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\vspace{-12.0pt}
+\section{Publications}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{Design and Implementation of A Scalable Financial Exchange in the Cloud} $|$ \emph{\href{https://arxiv.org/abs/2402.09527}{\underline{(Paper)}}}}{Jan 2024 -- Present}
+          \resumeItemListStart
+                \resumeItem{Novel Cloud financial exchange achieving low latency of $<=$ 250 µs, with a difference $<$ 1 µs for 1K receivers.}
+                \resumeItem{Achieves better scalability and around 50\% lower latency than the multicast service provided by AWS. }
+                \resumeItem{Used kernel-bypass techniques (DPDK) to scale performance up to a 35K multicast packet rate.}
+                %\resumeItem{Used kernel-bypass techniques (DPDK) to scale and achieve $\sim$50\% lower latency than AWS's multicast service.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\vspace{-12.0pt}
+    
+% -------------------- EDUCATION --------------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {New York University: Courant Institute of Mathematical Sciences}{Sept 2023 -- May 2024}
+        {Computer Science - Visiting Non-Degree Graduate Student}{\textbf{GPA 4.0}}
+        \resumeItemListStart
+            \resumeItem{Co-Authored Publication: \href{https://arxiv.org/abs/2402.09527}{Design and Implementation of A Scalable Financial Exchange in the Cloud}}
+            \resumeItem{\small{\textbf{Related Coursework}: Operating Systems, Technologies in Finance}}
+        \resumeItemListEnd
+    %
+    % \vspace{3.0pt}
+    % \resumeSubheading
+    %     {Technical University of Munich}{Oct 2020 -- Oct 2024}
+    %     {M.Sc. Electrical and Computer Engineering}{Munich, Germany}
+    %
+    %     \resumeItemListStart
+    %         \resumeItem{\textbf{M.Sc. Thesis}: VM Selection Heuristic for Multicast Overlay Trees in the Cloud}
+    %         \resumeItem{\textbf{New York University}: Computer Science Non-Degree Visiting Graduate Student -- \textbf{GPA: 4.0}}
+    %         \resumeItem{\textbf{Related Coursework}: Machine Learning Methods and Tools, Operating Systems, Secure SoC for IoT,\\Embedded Design for Machine Learning, High Performance Computing Lab, Computer Networks}
+    %     \resumeItemListEnd
+
+    \vspace{2.0pt}
+    \resumeSubheading
+        {Technical University of Munich}{Oct 2020 -- Oct 2024}
+        {M.Sc. Electrical and Computer Engineering}{Munich, Germany}
+
+        \resumeItemListStart
+            \resumeItem{M.Sc. Thesis: \textbf{VM Selection Heuristic for Multicast Overlay Trees in the Cloud}}
+            %\resumeItem{\textbf{Related Coursework}: Machine Learning Methods, Embedded Design for Machine Learning, Secure SoC for IoT}
+            %\resumeItem{\textbf{Related Coursework}: Machine Learning Methods and Tools, Computer Networks, Secure SoC for IoT,\\Embedded Design for Machine Learning, High Performance Computing Lab}
+            %\resumeItem{\textbf{Related Coursework}: Machine Learning Methods, Computer Networks, High Performance Computing Lab \\
+            %                                         Embedded Design for Machine Learning, Embedded Systems Programming Lab, Secure SoC for IoT}
+            \resumeItem{\small{\textbf{Related Coursework}: Machine Learning Methods, Computer Networks, High Performance Computing Lab}}
+            %\resumeItem{\small{\textbf{Related Coursework}: Machine Learning Methods, Embedded Design for ML, High Performance Computing Lab}}
+        \resumeItemListEnd
+
+    \vspace{2.0pt}
+    \resumeSubheading
+        {Technical University of Munich}{Oct 2016 -- Sept 2020}
+        {B.Sc. Electrical and Computer Engineering}{Munich, Germany}
+        % \resumeItemListStart
+            % \resumeItem{\textbf{{German GPA: }} 2.2 (Top 37\%) -- \href{https://drive.google.com/file/d/1Xesfn8HF9g4oplwqPZMhcFvGFLuyVzIM/view?usp=sharing}{{\underline{See Grade Distribution}}}}
+            % \resumeItem{\textbf{Coursework}: Embedded Systems Programming Lab, Computer Networks, Data Structures}
+        % \resumeItemListEnd
+
+    % \vspace{3.0pt}
+    % \resumeSubheading
+    %     {PUC-Rio}{Jan 2013 -- Sept 2016}
+    %     {B.Sc. Electrical Engineering}{Rio de Janeiro, Brazil}
+        
+  \resumeSubHeadingListEnd
+
+\vspace{-8.0pt}
+
+    
+% \section{Certificates}
+% \begin{minipage}{0.45\textwidth}
+% \begin{itemize}
+%     \item UCSD: Data Structures Fundamentals
+% \end{itemize}
+% \end{minipage}
+% \hfill
+% \begin{minipage}{0.45\textwidth}
+% \begin{itemize}
+%     \item UT Austin: Embedded Systems - uC I/O
+% \end{itemize}
+% \end{minipage}
+
+\end{document}
