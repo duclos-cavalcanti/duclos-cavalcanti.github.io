@@ -6,14 +6,14 @@
     <description>Recent content in research on duclos.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Apr 2024 02:01:58 +0530</lastBuildDate><atom:link href="https://duclos.dev/tags/research/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Oct 2024 02:01:58 +0530</lastBuildDate><atom:link href="https://duclos.dev/tags/research/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Master-Thesis</title>
       <link>https://duclos.dev/posts/ma/</link>
-      <pubDate>Wed, 03 Apr 2024 02:01:58 +0530</pubDate>
+      <pubDate>Tue, 22 Oct 2024 02:01:58 +0530</pubDate>
       
       <guid>https://duclos.dev/posts/ma/</guid>
-      <description></description>
+      <description>After a challenging year I finally defended my master thesis on &amp;ldquo;VM Selection for Financial Exchanges in the Cloud&amp;rdquo;. This collaborative effort was done as my master&amp;rsquo;s degree final credit at my alma mater the Technical University of Munich. Throughout this work I was by co-advised by PhD. Muhammad Haseeeb and Dr.Anirudh Sivaraman from Systems@NYU, as well as PhD. Navidreza Asadi and Prof. Dr.-Ing. Wolfgang Kellerer from LKN at TUM. The entirety of the code and relevant documentation can be found on github.</description>
     </item>
     
   </channel>

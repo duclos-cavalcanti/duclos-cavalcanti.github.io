@@ -19,7 +19,7 @@
        <meta property="og:title" content="Master-Thesis" />
 <meta property="og:description" content="Master Thesis" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://duclos.dev/posts/ma/" /><meta property="article:published_time" content="2024-04-03T02:01:58+05:30" />
+<meta property="og:url" content="https://duclos.dev/posts/ma/" /><meta property="article:published_time" content="2024-10-22T02:01:58+05:30" />
 
 
 
@@ -54,10 +54,48 @@
         
 <h1>Master-Thesis</h1>
 
-Apr. 3, 2024
+Oct. 22, 2024
 
 
 <br/><br/>
+<p>After a challenging year I finally defended my master thesis on <strong>&ldquo;VM Selection for Financial Exchanges in the Cloud&rdquo;</strong>.
+This collaborative effort was done as my master&rsquo;s degree final credit at my alma mater the <a href="https://www.tum.de/">Technical University of Munich</a>. Throughout this work I was by
+co-advised by
+<a href="https://haseeblums.github.io/">PhD. Muhammad Haseeeb</a> and <a href="https://anirudhsk.github.io/">Dr.Anirudh Sivaraman</a> from <a href="https://news.cs.nyu.edu/">Systems@NYU</a>, as well as
+<a href="https://nrasadi.github.io/">PhD. Navidreza Asadi</a> and <a href="https://www.ce.cit.tum.de/en/lkn/team/staff/kellerer-wolfgang/">Prof. Dr.-Ing. Wolfgang Kellerer</a> from  <a href="https://www.ce.cit.tum.de/en/lkn/home/">LKN</a> at TUM.
+The entirety of the code and relevant documentation can be found on <a href="https://github.com/duclos-cavalcanti/TreeBuilder">github</a>.</p>
+<p><img src="/data/images/MA_Design.png" alt="title"></p>
+<h3 id="abstract">Abstract</h3>
+<p>Cloud computing has revolutionized the deployment of software services by providing vir-
+tualized computational resources rented on-demand. Financial exchanges are exploring the
+potential of migrating to the cloud for improved scalability and reduced costs. However,
+the cloud’s inherent variance in network performance and lack of native multicast solutions
+present challenges to achieving fair and low-latency data dissemination, which are essential
+for modern exchanges.</p>
+<p>Jasper is a pioneering project that implements a multicast solution for cloud-based financial
+exchanges. It achieves ultra-low latency through an overlay proxy tree structure, kernel
+bypassing, clock synchronization, and more. However, Jasper does not fully address the
+issue of ”stragglers” – underperforming virtual machines (VMs) within a cluster – which
+can significantly degrade system performance.</p>
+<p>This work introduces TreeBuilder, a tool designed to enhance Jasper’s approach by
+intelligently selecting nodes in a pool to form a multicast tree, specifically addressing the
+presence of straggler VMs. TreeBuilder employs straightforward heuristics to improve la-
+tency performance while maintaining a flexible and modular architecture that allows for
+incremental updates and easy adaptation to other network topologies. We implement sev-
+eral selection strategies, including WEIGHTED, P90, and P50, to evaluate their impact on a
+multicast tree’s performance.</p>
+<p>Through extensive experiments, we demonstrate that TreeBuilder performs comparably
+to LemonDrop, a recent and sophisticated VM selection and scheduling heuristic, while
+maintaining a lightweight, effective technique with considerable scalability. An instance
+of TreeBuilder’s BEST-WEIGHTED tree exhibited the lowest 90th percentile latency for its
+worst receiver at 312 μs, approximately 7.7% lower than the worst receiver of LemonDrop’s
+tree (LEMON), which had a latency of 338 μs. Similarly, the BEST-WEIGHTED tree’s worst
+receiver’s mean latency was 223.1 μs, around 10.6% lower than that of LEMON at 249.5
+μs. However, LemonDrop’s tree exhibited lower standard deviation values throughout
+the experiment, indicating a more stable system due to its median-based optimization
+approach. In conclusion, TreeBuilder offers an accessible, extensible solution for multicast
+dissemination in cloud environments, with significant potential for further optimization
+and application to broader distributed architectures.</p>
 
 
 
