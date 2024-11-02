@@ -6,14 +6,14 @@
     <description>Recent content on duclos.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Apr 2024 02:01:58 +0530</lastBuildDate><atom:link href="https://duclos.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Oct 2024 02:01:58 +0530</lastBuildDate><atom:link href="https://duclos.dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Master-Thesis</title>
       <link>https://duclos.dev/posts/ma/</link>
-      <pubDate>Wed, 03 Apr 2024 02:01:58 +0530</pubDate>
+      <pubDate>Tue, 22 Oct 2024 02:01:58 +0530</pubDate>
       
       <guid>https://duclos.dev/posts/ma/</guid>
-      <description></description>
+      <description>After a challenging year I finally defended my master thesis on &amp;ldquo;VM Selection for Financial Exchanges in the Cloud&amp;rdquo;. This collaborative effort was done as my master&amp;rsquo;s degree final credit at my alma mater the Technical University of Munich. Throughout this work I was by co-advised by PhD. Muhammad Haseeeb and Dr.Anirudh Sivaraman from Systems@NYU, as well as PhD. Navidreza Asadi and Prof. Dr.-Ing. Wolfgang Kellerer from LKN at TUM. The entirety of the code and relevant documentation can be found on github.</description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://duclos.dev/about/</guid>
-      <description>I&amp;rsquo;m a Computer and Electrical Engineer from the Technical University of Munich. I was born in the United States, more specifically in Minneapolis. However, I&amp;rsquo;ve lived most of my formative years in Brazil, where my family takes up residence. Eventually, my studies brought me to Germany, but today, I am living in New York and am looking for full-time positions in the region within my background and interests.
+      <description>I was born in the United States, more specifically in Minneapolis. However, I&amp;rsquo;ve lived most of my formative years in Brazil, where my family takes up residence. Eventually, my studies brought me to Germany, but today, I am living in New York and am looking for full-time positions in the region within my background and interests.
 Experience   Interests Experience   Operating Systems Linux, FreeRTOS, RTOS   Embedded Systems ARM Cortex MCUs: TM4C123, XMC4500, STM32    FPGAs Microsemi SmartFusion2 Maker Kit, Xilinx Vivado, TCL   Cloud Computing  Terraform, GCP, AWS, Packer    Computer Networking  Unix Sockets, IP/TCP/UDP, DPDK, ZeroMQ    Machine Learning  TensorFlow, TensorFlowLite, TPUs     I&amp;rsquo;ve always been a curious individual, and I believe that trait is not only one of my defining qualities but also one that pushed me to experience as much as I could as an engineer and as a person.</description>
     </item>
     
@@ -32,7 +32,7 @@ Experience   Interests Experience   Operating Systems Linux, FreeRTOS, RTOS   Em
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://duclos.dev/home/</guid>
-      <description>Daniel Duclos-Cavalcanti I&amp;rsquo;m a Computer Engineer living in New York with a bachelors and masters from the Technical University of Munich. Currently, collaborating on independent research with Dr.Sivaraman and PhD. Haseeb Ashfaq from Systems@NYU on distributed low-latency networking on the cloud.
+      <description>Daniel Duclos-Cavalcanti I&amp;rsquo;m a computer engineer living in New York with a bachelors and masters from the Technical University of Munich. Currently, collaborating on independent research with Dr.Sivaraman and PhD. Haseeb Ashfaq from Systems@NYU on distributed low-latency networking on the cloud.
 The project revolves around Jasper: A Scalable Design and Implementation of a Financial Exchange in the Cloud. Beyond co-authoring and aiding in the development of Jasper, my master thesis constructed a performant heuristic to select VMs based on present cloud conditions to improve Jasper&amp;rsquo;s overall performance, both before and during runtime.</description>
     </item>
     
