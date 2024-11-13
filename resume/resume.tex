@@ -127,7 +127,7 @@
     \textbf{\large{\scshape Computer Engineer}} \\ \vspace{1pt}
     55th Street New York, New York 10019 \\ \vspace{1pt}
     \small 516-912-7975 $|$ U.S. Citizen $|$
-    \href{mailto:me@duclos.dev}{\underline{me@duclos.dev}} $|$ 
+    \href{mailto:daniel@duclos.dev}{\underline{daniel@duclos.dev}} $|$ 
     \href{https://www.duclos.dev}{\underline{www.duclos.dev}} $|$
     \href{https://www.linkedin.com/in/duclos-cavalcanti/}{\underline{linkedin/duclos-cavalcanti}} $|$
     \href{https://github.com/duclos-cavalcanti}{\underline{github/duclos-cavalcanti}} 
@@ -160,9 +160,9 @@
         {M.Sc. Electrical and Computer Engineering}{Munich, Germany}
         \resumeItemListStart
             %\resumeItem{M.Sc. Thesis: \textbf{VM Selection Heuristic for Multicast Overlay Trees in the Cloud}}
-            \resumeItem{Visiting Non-Degree Graduate Student: \textbf{New York University} -- \textbf{GPA 4.0  (2023 -- 2024)}}
+            \resumeItem{Visiting Non-Degree Graduate Student: \textbf{New York University} -- \textbf{GPA 4.0} (2023 -- 2024)}
             %\resumeItem{Co-Authored Publication: \href{https://arxiv.org/abs/2402.09527}{Design and Implementation of A Scalable Financial Exchange in the Cloud}}
-            \resumeItem{Master Thesis: \textbf{VM Selection Heuristic for Financial Exchanges in the Cloud}}
+            \resumeItem{Master Thesis: \textbf{"VM Selection Heuristic for Financial Exchanges in the Cloud"} -- (\href{https://github.com/duclos-cavalcanti/TreeBuilder}{\textit{TreeBuilder}})}
             \resumeItem{\textbf{Related Coursework}: Operating Systems, Machine Learning Methods, High Performance Computing Lab}
             %\resumeItem{\textbf{Related Coursework}: Machine Learning Methods, HW-SW Co-Design, High Performance Computing Lab}
         \resumeItemListEnd
@@ -206,8 +206,9 @@
           \resumeItemListStart
                 \resumeItem{Novel Cloud financial exchange achieving low latency of $<=$ 250 µs, with a difference $<$ 1 µs for 1K receivers.}
                 \resumeItem{Achieves better scalability and around 50\% lower latency than the multicast service provided by AWS. }
-                \resumeItem{Used kernel-bypass techniques (DPDK) to scale performance up to a 35K multicast packet rate.}
+                %\resumeItem{Implemented kernel-bypass techniques (DPDK) to scale performance up to a 35K multicast packet rate.}
                 %\resumeItem{Used kernel-bypass techniques (DPDK) to scale and achieve $\sim$50\% lower latency than AWS's multicast service.}
+                \resumeItem{Enhanced performance using kernel-bypass (DPDK) to reach up to a 35K multicast packet rate per second.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -219,34 +220,37 @@
             {Research Assistant}{Jul 2022 -- Oct 2022}
             {TU Munich}{Munich, Germany}
             \resumeItemListStart
-                \resumeItem{Worked on \href{https://github.com/alxhoff/TensorDSE}{\underline{TensorDSE}}, a Design-Space Exploration framework to guide machine learning model deployments.}
-                \resumeItem{Evaluated the performance of multiple ML models across GPUs, CPUs and TPUs with TensorFlow Lite.}
-                \resumeItem{Generated cost analysis reports for Google's Coral Edge TPU via USB traffic analysis (PyShark) during inference.}
-                \resumeItem{TensorDSE used reports to accelerate a model's inference/deployment optimally onto available hardware devices.}
+                \resumeItem{Collaborated on \href{https://github.com/alxhoff/TensorDSE}{\underline{TensorDSE}}, a Design-Space Exploration framework to accelerate machine learning model deployments.}
+                \resumeItem{Assessed the performance metrics of multiple ML models across GPUs, CPUs and TPUs with TensorFlow Lite.}
+                \resumeItem{Generated cost analysis reports on Google's Coral Edge TPU via USB traffic analysis (PyShark) during inference.}
+                \resumeItem{Established that over 60\% of total inference time consists of data transmission with the external TPU.}
+                %\resumeItem{Generated cost analysis reports on Google's Coral Edge TPU via USB traffic analysis (PyShark) during transmission.}
+                %\resumeItem{Discovered that over 60\% of total inference time was attributed to data transmission with the external TPU.}
+                \resumeItem{TensorDSE consumed reports to map a model's deployment optimally onto an available set of hardware devices.}
             \resumeItemListEnd
 
         \resumeSubheading
             {Embedded Software Engineer Intern}{Aug 2021 -- Jan 2022}
             {Molabo GmbH}{Ottobrunn, Germany}
             \resumeItemListStart
-                \resumeItem{Added unit-tests (GTest) and test coverage (lcov) to safety critical features of the team's motor embedded controller.}
-                \resumeItem{Developed tooling for state simulations of the team's electric motor via Linux's virtual CAN interface and mock APIs.}
-                \resumeItem{Extended the firmware update system used by 18+ clients, consisting of partial updates via CAN bus.}
-                \resumeItem{Automated build and testing workflows via Jenkinsfiles, Makefiles and CMake for a team of over 10 engineers.}
-                % \resumeItem{Implemented helper modules in VHDL for their Xilinx Zynq's FPGA components.}
+                %\resumeItem{Added unit tests (GTest), achieving over 25\% test coverage for the team's motor embedded controller critical features.}
+                \resumeItem{Increased test coverage (GTest) up to 25\% on safety-critical motor controller features, identifying and resolving bugs.}
+                \resumeItem{Developed state simulation tooling with Linux’s virtual CAN interface to validate motor functionality in real-time.}
+                \resumeItem{Extended the firmware update system for over 18 clients, enhancing reliability of partial updates via CAN bus.}
+                \resumeItem{Automated build and testing workflows via Jenkinsfiles, Makefiles, and CMake, supporting a team of over 10 engineers.}
             \resumeItemListEnd
 
         \resumeSubheading
             {Tutor (Embedded Systems Programming Lab)}{Apr 2021 -- Aug 2021}
             {TU Munich}{Munich, Germany}
             \resumeItemListStart
-                \resumeItem{Mentored over 10 students in developing low-level FreeRTOS applications in C for embedded systems.}
-                \resumeItem{Taught software engineering best practices, focusing on concurrency, real-time scheduling, and performance optimization.}
+                \resumeItem{Mentored over 12 students on designing and developing low-level embedded FreeRTOS applications in C.}
+                \resumeItem{Conducted 30+ sessions on best practices in software engineering, concurrency, performance, and real-time scheduling.}
             \resumeItemListEnd
     \resumeSubHeadingListEnd 
 
 % -------------------- SKILLS --------------------
-\vspace{-16pt}
+\vspace{-8.0pt}
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
@@ -269,21 +273,26 @@
         \resumeProjectHeading
             {\href{https://github.com/duclos-cavalcanti/TreeBuilder}{\textbf{Cloud-TreeBuilder}} $|$ \emph{GCP, ZMQ, Terraform, Python, C++, Distributed Systems, Heuristic}}{\small{Mar 2024 -- Present}}
             \resumeItemListStart
-              \resumeItem{Launches and selects K out of N VMs in a cluster to create an optimal multicast tree of depth D and fan-out F.}
-              \resumeItem{Deploys UDP based probe jobs on VM subsets, collecting data regarding individual network performance (JSON).}
-              \resumeItem{Applies a developed heuristic on collected data to select VMs for a tree layer by layer. }
+              %\resumeItem{Launches and selects K out of N VMs in a cluster to create an optimal multicast tree of depth D and fan-out F.}
+              %\resumeItem{Deploys UDP based probe jobs on VM subsets, collecting data regarding individual network performance (JSON).}
+              %\resumeItem{Applies a developed heuristic on collected data to select VMs for a tree layer by layer. }
               %\resumeItem{Uses UDP probe jobs to examine VMs network performance, selecting instances for a tree layer by layer. }
-              \resumeItem{Uses terraform to manage cloud state, ZMQ for node communication and Protobufs for data serialization.}
+              %\resumeItem{Uses terraform to manage cloud state, ZMQ for node communication and Protobufs for data serialization.}
               %\resumeItem{Leverages \href{https://www.clockwork.io/clock-sync/}{clockwork's high-precision software clock synchronization daemon} to provide a global common clock.}
+
+            \resumeItem{Optimally selects K out of N VMs in a cluster to form a multicast tree of depth D and fan-out F, minimizing latency.}
+            \resumeItem{Deployed UDP-based probe jobs on VMs, gathering network performance data for informed heuristic selection (JSON).}
+            \resumeItem{Integrated Terraform for cloud state management, ZMQ for node communication, and Protobufs for data serialization.}
+            \resumeItem{Improved multicast latency up to 24\% for a cluster of 25 VMs and multicast tree of depth 3 and fan-out 2.}
             \resumeItemListEnd
         \vspace{-16pt}
         \resumeProjectHeading
             {\href{https://github.com/duclos-cavalcanti/Open-MPI-ValueIteration}{\textbf{Open-MPI Value Iteration}} $|$ \emph{C++, Parallel-Computing, MPI, HPC}}{\small{Mar 2022}}
             \resumeItemListStart
-              \resumeItem{An HPC prototype that solves a stochastic navigation problem through Asynchronous Value Iteration (AVI).}
-              \resumeItem{Used different MPI techniques to iteratively distribute workload across an HPC cluster and gather results.}
               %\resumeItem{Uses MPI techniques to iteratively distribute workload across an HPC cluster and gather results.}
               %\resumeItem{Uses MPI techniques to distribute workload across an HPC cluster to solve a stochastic navigation problem.}
+              \resumeItem{An HPC prototype that solves a stochastic navigation problem through Asynchronous Value Iteration (AVI).}
+              \resumeItem{Leveraged MPI to iteratively distribute workload across an HPC cluster, executing 52\% faster than in single-threaded.}
             \resumeItemListEnd
         \vspace{-16pt}
         \resumeProjectHeading

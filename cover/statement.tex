@@ -1,0 +1,61 @@
+\documentclass[$size$]{article}
+
+\usepackage[margin=1in]{geometry}   % geo and margins
+\usepackage{ragged2e}               % justify text
+\usepackage{xcolor}                 % for text color
+\usepackage{hyperref}               % for hyperlinks
+\usepackage{graphicx}               % for graphics
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    urlbordercolor=blue,
+    pdfborderstyle={/S/U/W 1}
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+
+\begin{document}
+
+\begin{center}
+    {Statement of Purpose}
+\end{center}
+
+%\bigskip
+%
+%\noindent
+%\begin{flushright}
+%\textcolor{gray}
+%{
+%\href{$web$}{$web$} \\
+%$email$ \\
+%% \href{$linkedin$}{linkedin} \\
+%% \href{$github$}{github} \\
+%$city$, $state$, $zip$
+%}
+%\end{flushright}
+
+\bigskip
+
+\noindent
+\begin{tabular}{@{}p{\textwidth}}
+\textbf{$opening$ $company$,} \hfill \textbf{\today}
+\end{tabular}
+
+\bigskip
+
+$body$
+
+\noindent
+$goodbye$
+
+$firstname$ $lastname$
+
+\bigskip
+
+\noindent
+%\includegraphics[width=2in]{../assets/images/signature.png} % Ad
+
+\end{document}
