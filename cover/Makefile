@@ -22,4 +22,4 @@ cover: .cover
 .cover: cover.md
 	@pandoc cover.md -o cover.pdf --pdf-engine=xelatex --template=template.tex
 	@touch .cover
-	@cp cover.pdf ~/Downloads
+	@cp cover.pdf ~/Downloads/DanielDuclos-Cavalcanti_COVER.pdf

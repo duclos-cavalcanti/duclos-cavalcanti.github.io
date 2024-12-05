@@ -11,26 +11,37 @@ email: 'me@duclos.dev'
 web: 'https://duclos.dev'
 title: 'Electrical and Computer Engineer'
 opening: 'Dear'
-company: Joby Team
+company: Blocks Team
 goodbye: 'Sincerely,'
 ---
 
-I believe curiosity has been my strongest and most defining trait throughout life. It was because of it 
-that I pursued an education abroad, graduating in computer and electrical engineering from 
-the Technical University of Munich. Today I find myself in New York, collaborating on research with Dr.Sivaraman 
-from NYU on distributed low-latency networking on the cloud.
+Growing up as the son of two immigrant economists with a deep appreciation for technology, I developed a natural 
+fascination with the intersection of finance and computing.
+This dual influence shaped my academic and professional pursuits, driving me to explore ways to bridge them.
+
+My academic journey took me from earning a degree in Computer and Electrical Engineering at the Technical University of Munich to conducting graduate research at NYU under Professor Sivaraman at the Courant Institute of Mathematical Sciences. Our collaboration involves designing a scalable and performant cloud-based financial exchange, blending computer science with real-world financial applications. 
+My contribution was in developing a VM selection heuristic to optimize multicast latency and ensure stable network performance
+during market data dissemination.
+Applying engineering principles to finance has been the most fulfilling endeavor of my career and one I definitely plan on further exploring.
+<!-- This research, combined with my exploration of embedded systems and machine learning on edge devices, reflects my ability to adapt and excel across diverse technical challenges. -->
+<!---->
 
 <!-- My curiosity has been the defining quality throughout my academic and professional journey. This trait led me to pursue both a Bachelor’s and Master’s degree in Electrical and Computer Engineering from the esteemed Technical University of Munich in Germany. Currently, I am in New York, collaborating on research with Dr. Sivaraman from NYU on VM selection heuristics for Financial Exchanges in the cloud. -->
 
 <!-- I've always been a curious individual and it was that quality that held me through my German B.Sc and M.Sc. degrees in Electrical and Computer Engineering from TUM in Munich. Now NYC is my home and a new place of collaboration. I am immersed in NYU's stimulating research at the intersection of Finance and Computer Science, under the mentorship of Prof. Sivaraman from the Courant Institute of Mathematical Sciences. Our collaboration focuses on financial exchanges on the cloud and developing a VM selection heuristic to optimize multicast latency.  -->
+<!---->
+<!-- I have explored a wide range of topics in both industry and academia, including embedded systems, machine learning on edge devices, and my current research around cloud-based financial exchanges. By far, blending the principles of computer engineering with  -->
+<!-- real-world financial applications has been my most fulfilling endeavour. -->
 
-I have explored a wide range of topics in both industry and academia, including embedded systems, FPGAs, and machine learning on edge devices, as well as cloud-based distributed systems. 
-My strong work ethic and passion for learning have been essential to my growth as an engineer, allowing me to navigate diverse fields and gain a comprehensive understanding of various engineering challenges. 
 My journey demonstrates my ability to adapt to new environments and equips me with the tools needed to tackle any problem that comes my way.
-Therefore, given my broad technical expertise and multicultural background, I am confident 
-I'll bring a unique perspective to your organization, making me an invaluable asset to your team.
+Given my technical expertise, multicultural background and unique profile, I am confident I’ll be
+an invaluable asset to your team.
 
-I'm genuinely looking forward and excited to be hearing from you.
+<!-- My strong work ethic and passion for learning have been essential to my growth as an engineer, allowing me to navigate diverse fields and gain a comprehensive understanding of various engineering challenges.  -->
+
+
+
+<!-- I'm genuinely looking forward and excited to be hearing from you. -->
 
 <!-- In addition, my multicultural background and broad technical expertise would allow me to bring a unique  -->
 <!-- perspective to your organization, making me a valuable asset to your team. -->
