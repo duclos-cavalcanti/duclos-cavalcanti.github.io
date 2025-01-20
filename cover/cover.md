@@ -11,18 +11,36 @@ email: 'me@duclos.dev'
 web: 'https://duclos.dev'
 title: 'Electrical and Computer Engineer'
 opening: 'Dear'
-company: Blocks Team
+company: Hiring Manager
 goodbye: 'Sincerely,'
 ---
 
-Growing up as the son of two immigrant economists with a deep appreciation for technology, I developed a natural 
-fascination with the intersection of finance and computing.
-This dual influence shaped my academic and professional pursuits, driving me to explore ways to bridge them.
+Curiosity has been the defining quality of my academic and professional journey, shaping my path through my bachelor’s and master’s degrees in Electrical and Computer Engineering at the Technical University of Munich in Germany.
+Now, as I call NYC home, I am immersed in exciting research at the intersection of Finance and Computer Science under the mentorship of Prof. Sivaraman at NYU. Our work focuses on distributed low-latency networking in the context 
+of a cloud-based financial exchange, where we are developing heuristics to optimize VM selection for enhanced network performance.
 
-My academic journey took me from earning a degree in Computer and Electrical Engineering at the Technical University of Munich to conducting graduate research at NYU under Professor Sivaraman at the Courant Institute of Mathematical Sciences. Our collaboration involves designing a scalable and performant cloud-based financial exchange, blending computer science with real-world financial applications. 
-My contribution was in developing a VM selection heuristic to optimize multicast latency and ensure stable network performance
-during market data dissemination.
-Applying engineering principles to finance has been the most fulfilling endeavor of my career and one I definitely plan on further exploring.
+Throughout my career, I have explored a diverse range of topics in both industry and academia, from embedded systems and machine learning on edge devices to my current work on cloud-based distributed systems. This breadth of experience reflects my adaptability and eagerness to embrace new challenges. Along the way, I have honed my ability to distill complex technical problems into their fundamental components, and incrementally build solutions that drive towards the intended goals.
+Whether it was developing FPGA and SoC systems, optimizing distributed machine learning models, or designing efficient network communication across cloud clusters, I have consistently recognized common patterns underlying engineering challenges. These experiences have taught me to approach problems with a methodical and analytical mindset, enabling me to navigate technical complexity and deliver impactful solutions.
+
+I am also confident in my ability to communicate effectively, bridging technical details and big-picture insights to enable collaboration across teams. 
+Furthermore, as a dual American and Brazilian citizen, my multicultural background and versatile experiences further equip me to thrive in diverse environments. 
+My passion for learning and growth drives me, and I am eager to contribute to your organization with the same dedication and curiosity that have defined my journey so far.
+
+<!-- My journey demonstrates my ability to adapt to new environments and equips me with the tools needed to tackle any problem that comes my way. -->
+<!-- Given my technical expertise, multicultural background and unique profile, I am confident I’ll be -->
+<!-- an invaluable asset to your team. -->
+
+<!-- Sincerely,  -->
+<!---->
+<!-- Daniel -->
+<!-- Growing up as the son of two immigrant economists with a deep appreciation for technology, I developed a natural  -->
+<!-- fascination with the intersection of finance and computing. -->
+<!-- This dual influence shaped my academic and professional pursuits, driving me to explore ways to bridge them. -->
+
+<!-- My academic journey took me from earning a degree in Computer and Electrical Engineering at the Technical University of Munich to conducting graduate research at NYU under Professor Sivaraman at the Courant Institute of Mathematical Sciences. Our collaboration involves designing a scalable and performant cloud-based financial exchange, blending computer science with real-world financial applications.  -->
+<!-- My contribution was in developing a VM selection heuristic to optimize multicast latency and ensure stable network performance -->
+<!-- during market data dissemination. -->
+<!-- Applying engineering principles to finance has been the most fulfilling endeavor of my career and one I definitely plan on further exploring. -->
 <!-- This research, combined with my exploration of embedded systems and machine learning on edge devices, reflects my ability to adapt and excel across diverse technical challenges. -->
 <!---->
 
@@ -32,10 +50,6 @@ Applying engineering principles to finance has been the most fulfilling endeavor
 <!---->
 <!-- I have explored a wide range of topics in both industry and academia, including embedded systems, machine learning on edge devices, and my current research around cloud-based financial exchanges. By far, blending the principles of computer engineering with  -->
 <!-- real-world financial applications has been my most fulfilling endeavour. -->
-
-My journey demonstrates my ability to adapt to new environments and equips me with the tools needed to tackle any problem that comes my way.
-Given my technical expertise, multicultural background and unique profile, I am confident I’ll be
-an invaluable asset to your team.
 
 <!-- My strong work ethic and passion for learning have been essential to my growth as an engineer, allowing me to navigate diverse fields and gain a comprehensive understanding of various engineering challenges.  -->
 
