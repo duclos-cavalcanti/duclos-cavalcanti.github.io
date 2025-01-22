@@ -15,7 +15,7 @@ company: Hiring Manager
 goodbye: 'Sincerely,'
 ---
 
-Curiosity has been the defining quality of my academic and professional journey, shaping my path through my bachelor’s and master’s degrees in Electrical and Computer Engineering at the Technical University of Munich in Germany.
+Curiosity has been the defining quality of my academic and professional journey, shaping my path through my bachelor’s and master’s degrees in Electrical and Computer Engineering at the Technical University of Munich (Germany).
 Now, as I call NYC home, I am immersed in exciting research at the intersection of Finance and Computer Science under the mentorship of Prof. Sivaraman at NYU. Our work focuses on distributed low-latency networking in the context 
 of a cloud-based financial exchange, where we are developing heuristics to optimize VM selection for enhanced network performance.
 
