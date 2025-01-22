@@ -288,22 +288,34 @@
             \resumeItem{Improved \textbf{multicast latency by 24\%} within the \textbf{microsecond} range of delivery for a cluster of 25 VMs.}
             \resumeItem{Integrated Terraform for cloud state management, ZMQ for node communication, and Protobufs for serialization.}
             \resumeItemListEnd
+
+        \vspace{-16pt}
+        \resumeProjectHeading
+            {\href{https://github.com/duclos-cavalcanti/rust-pkcs11}{\textbf{Rust PKCS11 Client/Server}} $|$ \emph{Rust, Multi-threading, HSM, Cryptography, Protobufs}}{\small{Feb 2021}}
+            \resumeItemListStart
+              \resumeItem{Implemented a \textbf{PKCS11 server} that accepts concurrent requests (\textbf{clients}) for typical cryptographic operations.}
+              \resumeItem{Server holds \textbf{thread-safe} access to a SoftHSMv2 core, allowing for data \textbf{encryption, decryption, and signatures}.}
+              \resumeItem{Multiple clients send parallel message requests (protobufs) associated to different slots/tokens protected by the server.}
+            \resumeItemListEnd
+
         \vspace{-16pt}
         \resumeProjectHeading
             {\href{https://github.com/duclos-cavalcanti/Open-MPI-ValueIteration}{\textbf{Open-MPI Value Iteration}} $|$ \emph{C++, Parallel-Computing, MPI, HPC}}{\small{Mar 2022}}
             \resumeItemListStart
               %\resumeItem{Uses MPI techniques to iteratively distribute workload across an HPC cluster and gather results.}
               %\resumeItem{Uses MPI techniques to distribute workload across an HPC cluster to solve a stochastic navigation problem.}
-              \resumeItem{An HPC prototype that solves a stochastic navigation problem through Asynchronous Value Iteration (AVI).}
-              \resumeItem{Leveraged MPI to iteratively distribute workload across an HPC cluster, executing 52\% faster than in single-threaded.}
+              \resumeItem{An HPC prototype that solves a stochastic navigation problem by distributing workload across an HPC cluster.}
+              %\resumeItem{Leveraged MPI to iteratively distribute workload across an HPC cluster, executing 52\% faster than in single-threaded.}
+              %\resumeItem{An HPC prototype that solves a stochastic navigation problem through Asynchronous Value Iteration (AVI).}
+              %\resumeItem{Leveraged MPI to iteratively distribute workload across an HPC cluster, executing 52\% faster than in single-threaded.}
             \resumeItemListEnd
-        \vspace{-16pt}
-        \resumeProjectHeading
-            {\href{https://github.com/duclos-cavalcanti/microsemi-error-detection}{\textbf{Hamming Code Error Detection (16,11)}} $|$ \emph{C, VHDL, FPGA, SoC, UART}}{\small{Feb 2021}}
-            \resumeItemListStart
-              \resumeItem{Implemented an error detection/correction algorithm for packet transmission on Microsemi's SF2 FPGA/SoC.}
-              \resumeItem{Error-injected packets sent between host and SoC via UART and offloaded to the FPGA for detection/correction.}
-            \resumeItemListEnd
+
+        % \resumeProjectHeading
+        %     {\href{https://github.com/duclos-cavalcanti/microsemi-error-detection}{\textbf{Hamming Code Error Detection (16,11)}} $|$ \emph{C, VHDL, FPGA, SoC, UART}}{\small{Feb 2021}}
+        %     \resumeItemListStart
+        %       \resumeItem{Implemented an error detection/correction algorithm for packet transmission on Microsemi's SF2 FPGA/SoC.}
+        %       \resumeItem{Error-injected packets sent between host and SoC via UART and offloaded to the FPGA for detection/correction.}
+        %     \resumeItemListEnd
         %\vspace{-16pt}
         %\resumeProjectHeading
         %{\href{https://github.com/duclos-cavalcanti/FreeRTOS-SpaceInvaders}{\textbf{FreeRTOS-SpaceInvaders}} $|$ \emph{C, RTOS, Multi-Threaded}}{\small{Sept 2020}}
