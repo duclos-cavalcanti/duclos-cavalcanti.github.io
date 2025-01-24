@@ -126,7 +126,6 @@
     {\Huge \scshape Daniel Duclos-Cavalcanti} \\ \vspace{1pt}
     \textbf{\large{\scshape Computer Engineer}} \\ \vspace{1pt}
     New York, New York \\ \vspace{1pt}
-    % 55th Street New York, New York 10019 \\ \vspace{1pt}
     \small 
     XXX-XXX-XXXX 
      % 516-912-7975 
@@ -225,6 +224,7 @@
             {TU Munich}{Munich, Germany}
             \resumeItemListStart
                 \resumeItem{Collaborated on \href{https://github.com/alxhoff/TensorDSE}{\underline{TensorDSE}}, a Design-Space Exploration framework to accelerate machine learning model deployments.}
+                % \resumeItem{Assessed the performance metrics of multiple ML models across GPUs, CPUs and TPUs with TensorFlow Lite.}
                 \resumeItem{Assessed the performance metrics of multiple ML models across GPUs, CPUs and TPUs with TensorFlow Lite.}
                 \resumeItem{Generated cost analysis reports on Google's Coral Edge TPU via USB traffic analysis (PyShark) during inference.}
                 \resumeItem{Established that on average up to 57\% of total inference time consists of data transmission with the external TPU.}
@@ -240,8 +240,11 @@
                 %\resumeItem{Added unit tests (GTest), achieving over 25\% test coverage for the team's motor embedded controller critical features.}
                 \resumeItem{Increased test coverage (GTest) up to 25\% on safety-critical motor controller features, identifying and resolving bugs.}
                 \resumeItem{Developed state simulation tooling with Linux’s virtual CAN interface to validate motor functionality in real-time.}
-                \resumeItem{Extended the firmware update system for over 18 clients, enhancing reliability of partial updates via CAN bus.}
-                \resumeItem{Actively developed the team's CI/CD build pipeline via Jenkins, Makefiles, and CMake, supporting over 10+ engineers.}
+
+                % \resumeItem{Extended the firmware update system for over 18 clients, enhancing reliability of partial updates via CAN bus.}
+                \resumeItem{Developed robust firmware update systems, ensuring reliability for partial updates (CAN bus) across 18+ clients.}
+
+                \resumeItem{Actively developed the team's CI/CD build pipeline via Jenkins, Docker, and CMake, supporting over 10+ engineers.}
             \resumeItemListEnd
 
         \resumeSubheading
@@ -259,9 +262,9 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
     \textbf{Languages}{: C++, Rust, Python, Golang, Java, C, Bash, JavaScript, HTML, CSS, Lua, VHDL} \\
-    \textbf{Cloud Services}{: Google Cloud Platform (GCP), Amazon EC2 (AWS), Terraform, Packer, Vagrant} \\
+    \textbf{Cloud Services}{: Google Cloud Platform (GCP), Amazon EC2 (AWS), Terraform, Docker, Packer, Vagrant} \\
     \textbf{Tools}{: Linux, Unix Shell, Git, Github CI/CD, Jenkins, CMake, GNU Make, Bazel, Vim, VSCode, GDB, LLDB} \\
-    \textbf{Technologies}{: Docker, ZeroMQ, DPDK, MPI, FreeRTOS, FPGA, IoT, TensorFlow, Scipy, NumPy, Pandas, OpenMP} \\
+    \textbf{Technologies}{: Docker, ZeroMQ, gRPC, Protobufs, MPI, TensorFlow, Scipy, NumPy, Pandas, DPDK} \\
     % \textbf{Technologies}{: Cloud Computing, Computer Networking, Operating Systems, Machine Learning, HPC, FPGAs} \\
     % \textbf{Protocols}{: TCP, UDP, IP, ETHERNET, USB, UART} \\
     % \textbf{Certificates}{: UCSD: Data Structures Fundamentals, UT Austin: Embedded Systems - uC I/O} \\
@@ -275,7 +278,7 @@
     \vspace{-5.0pt}
     \resumeSubHeadingListStart
         \resumeProjectHeading
-            {\href{https://github.com/duclos-cavalcanti/TreeBuilder}{\textbf{Cloud-TreeBuilder}} $|$ \emph{GCP, ZMQ, Terraform, Python, C++, I/O, Distributed Systems, Heuristic}}{\small{Mar 2024 -- Present}}
+            {\href{https://github.com/duclos-cavalcanti/TreeBuilder}{\textbf{Cloud-TreeBuilder}} $|$ \emph{GCP, AWS, ZMQ, Terraform, Python, C++, Distributed Systems, Heuristic}}{\small{Mar 2024 -- Present}}
             \resumeItemListStart
               %\resumeItem{Launches and selects K out of N VMs in a cluster to create an optimal multicast tree of depth D and fan-out F.}
               %\resumeItem{Deploys UDP based probe jobs on VM subsets, collecting data regarding individual network performance (JSON).}
@@ -285,18 +288,19 @@
               %\resumeItem{Leverages \href{https://www.clockwork.io/clock-sync/}{clockwork's high-precision software clock synchronization daemon} to provide a global common clock.}
 
             \resumeItem{Optimally selects VMs in a cluster to form a multicast tree of depth D and fan-out F, to \textbf{minimize network latency}.}
-            \resumeItem{Deployed \textbf{UDP} probe jobs on VMs, gathering network performance data for informed heuristic selection (JSON).}
+
+            % \resumeItem{Deployed \textbf{UDP} probe jobs on VMs, gathering network performance data for informed heuristic selection (JSON).}
+            \resumeItem{Employs efficient \textbf{data pipelines} to gather VM network performance analytics (\textbf{UDP}) for informed heuristic selection.}
             \resumeItem{Improved \textbf{multicast latency by 24\%} within the \textbf{microsecond} range of delivery for a cluster of 25 VMs.}
-            \resumeItem{Integrated Terraform for cloud state management, ZMQ for node communication, and Protobufs for serialization.}
+            \resumeItem{Integrated Terraform for cloud state management, ZMQ for node communication, and Scipy/Numpy for data analysis.}
             \resumeItemListEnd
 
         \vspace{-16pt}
         \resumeProjectHeading
             {\href{https://github.com/duclos-cavalcanti/rust-pkcs11}{\textbf{Rust PKCS11 Client/Server}} $|$ \emph{Rust, Multithreading, HSM, Cryptography, Protobufs}}{\small{Dec 2024 -- Present}}
             \resumeItemListStart
-              \resumeItem{Implemented a \textbf{PKCS11 server} that accepts concurrent requests (\textbf{clients}) for typical cryptographic operations.}
-              \resumeItem{Server holds \textbf{thread-safe} access to a SoftHSMv2 core, allowing for data \textbf{encryption, decryption, and signatures}.}
-              \resumeItem{Multiple clients send parallel message requests (protobufs) associated to different slots/tokens protected by the server.}
+              \resumeItem{Implemented a PKCS11 \textbf{server} that accepts concurrent requests (\textbf{clients}) for typical cryptographic operations.}
+              \resumeItem{Designed performant server backend with thread-safe access to SoftHSM for secure encryption, decryption and signing.}
             \resumeItemListEnd
 
         \vspace{-16pt}
@@ -306,7 +310,8 @@
               %\resumeItem{Uses MPI techniques to iteratively distribute workload across an HPC cluster and gather results.}
               %\resumeItem{Uses MPI techniques to distribute workload across an HPC cluster to solve a stochastic navigation problem.}
               \resumeItem{An HPC prototype that solves a stochastic navigation problem by distributing workload across an HPC cluster.}
-              %\resumeItem{Leveraged MPI to iteratively distribute workload across an HPC cluster, executing 52\% faster than in single-threaded.}
+              \resumeItem{Leveraged MPI to scale data distribution, achieving a 52\% performance improvement over single-threaded execution.}
+
               %\resumeItem{An HPC prototype that solves a stochastic navigation problem through Asynchronous Value Iteration (AVI).}
               %\resumeItem{Leveraged MPI to iteratively distribute workload across an HPC cluster, executing 52\% faster than in single-threaded.}
             \resumeItemListEnd
