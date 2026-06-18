@@ -1,0 +1,60 @@
+<!doctype html><html lang=en>
+<title>duclos.dev - master-thesis</title>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=Description content="Daniel Duclos-Cavalcanti — computer engineer. Distributed low-latency systems, embedded, FPGAs, Linux/UNIX.">
+<style>
+body{overflow-y:scroll;font:16px monospace,monospace}
+pre{margin:0;overflow-x:hidden}
+.t{text-decoration:none}
+a#l{color:#a00}
+@media(max-width:999px){body{font-size:1.94vw}}
+@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}#l{color:#F33}}
+img,#b{max-width:80ch}
+span{display:inline-block}
+</style>
+<div style="display:table;margin:16px auto" id=a><div id=b><pre>
+<span><a href=/ class=t id=l>duclos.dev</a>     <a href=/about/>about</a>  <a href=/posts/>posts</a>  <a href=/resume/>resume</a>  <a href=/contact/>contact</a></span>
+
+
+Master Thesis — VM Selection for Financial Exchanges
+________________________________________________________________________________
+
+2024-10-22 · tags: research, cloud
+
+After a challenging year I finally defended my master thesis on "VM Selection
+for Financial Exchanges in the Cloud", my final credit at the Technical
+University of Munich. Co-advised by <a href=https://haseeblums.github.io/>PhD. Muhammad Haseeb</a> and
+<a href=https://anirudhsk.github.io/>Dr. Anirudh Sivaraman</a> (Systems@NYU), and <a href=https://nrasadi.github.io/>PhD. Navidreza Asadi</a> and
+Prof. Dr.-Ing. Wolfgang Kellerer (LKN, TUM). Code and docs:
+<a href=https://github.com/duclos-cavalcanti/TreeBuilder>https://github.com/duclos-cavalcanti/TreeBuilder</a>
+
+<img src=/img/MA_Design.png alt="TreeBuilder design">
+
+<span id=001>[001]</span> Abstract
+________________________________________________________________________________
+
+Cloud computing has revolutionized the deployment of software services by
+providing virtualized resources rented on-demand. Financial exchanges are
+exploring migrating to the cloud for scalability and reduced cost. But the
+cloud's inherent network variance and lack of native multicast challenge the
+fair, low-latency dissemination modern exchanges require.
+
+Jasper implements a multicast solution for cloud-based exchanges, reaching
+ultra-low latency via an overlay proxy tree, kernel bypass, and clock
+synchronization. It does not fully address "stragglers" — underperforming VMs
+that degrade system performance.
+
+TreeBuilder enhances Jasper by intelligently selecting nodes from a pool to form
+a multicast tree, specifically targeting straggler VMs. Using straightforward
+heuristics (WEIGHTED, P90, P50) it improves latency while staying lightweight
+and modular. An instance of TreeBuilder's BEST-WEIGHTED tree showed the lowest
+90th-percentile latency for its worst receiver at 312 us — ~7.7% below
+LemonDrop's 338 us — while remaining an accessible, extensible technique with
+considerable scalability.
+
+________________________________________________________________________________
+
+Daniel Duclos-Cavalcanti (C) 2026 · built with make + sed · no JavaScript
+
+</pre></div></div>
