@@ -61,8 +61,8 @@ find site -name '*.txt' | while read -r f; do
     render "$f" "$title" > "$out"
 done
 
-# Static assets copied verbatim (assets/img/x.png -> public/img/x.png).
-[ -d assets ] && cp -R assets/. "$OUT"/
+# Static assets copied verbatim (site/assets/img/x.png -> public/img/x.png).
+[ -d site/assets ] && cp -R site/assets/. "$OUT"/
 
 # Built resume PDF (optional: run `make resume` first to produce it).
 if [ -f resume/resume.pdf ]; then

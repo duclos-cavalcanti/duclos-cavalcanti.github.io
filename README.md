@@ -12,18 +12,18 @@ reads almost exactly like the rendered page.
 ## Layout
 
 ```
-site/            sources you edit (plain text, 80-column terminal style)
+site/            everything that becomes the published site
   index.txt      home: $ whoami hero + table of contents + sections
   about.txt
   posts.txt      post index
   posts/*.txt    individual posts
   resume.txt     embeds the built PDF
   contact.txt
-template.html    the <pre> wrapper: CSS + nav + %%TITLE%% / %%CONTENT%% slots
-build.sh         the generator (POSIX sh + sed)
-Makefile         entrypoint: build / serve / resume / clean
-assets/          images etc. copied verbatim into the output (assets/img -> /img)
-public/          BUILD OUTPUT — committed; GitHub Pages publishes this dir
+  assets/        images etc. copied verbatim into output (assets/img -> /img)
+build.sh         the generator (POSIX sh + sed)         ┐ the build system:
+template.html    <pre> wrapper: CSS + nav + %%TITLE%% / %%CONTENT%% slots │ script + the
+Makefile         entrypoint: build / serve / resume / clean               ┘ layout it drives
+public/          BUILD OUTPUT — git-ignored; CI builds it and publishes to gh-pages
 resume/          LaTeX -> resume/resume.pdf  (altacv)
 cover/           LaTeX cover letter / statement
 ```
@@ -54,14 +54,14 @@ make clean     # remove public/
 
 ## Deploy
 
-GitHub Actions ([.github/workflows/main.yml](.github/workflows/main.yml)) publishes
-the committed `public/` directory to Pages on every push to `main`, copying `CNAME`
-for the custom domain. So the workflow is: edit `site/`, `make build`, commit
-`public/`, push.
+On every push to `main`, GitHub Actions ([.github/workflows/main.yml](.github/workflows/main.yml))
+runs `sh build.sh` and publishes the resulting `public/` to the `gh-pages` branch
+(which Pages serves). So `public/` is never committed — the workflow is simply:
+edit `site/`, push. Run `make serve` locally to preview before pushing.
 
-> Note: `resume/resume.pdf` is git-ignored and built from LaTeX. Run `make resume`
-> before `make build` if you want the resume page populated; the build warns and
-> continues if the PDF is absent.
+> Note: `resume/resume.pdf` is built from LaTeX (`make resume`, needs Docker) and
+> **is committed**, since CI does not run LaTeX — it copies the committed PDF into
+> the output. The build warns and continues if the PDF is absent.
 
 ## License
 
