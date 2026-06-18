@@ -1,0 +1,7 @@
+Contact
+________________________________________________________________________________
+
+- resume         @/resume/
+- github         https://github.com/duclos-cavalcanti
+- linkedin       https://www.linkedin.com/in/duclos-cavalcanti/
+- email          <a href=mailto:me@duclos.dev>me@duclos.dev</a>

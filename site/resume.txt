@@ -1,0 +1,6 @@
+Resume
+________________________________________________________________________________
+
+Download: @/resume.pdf
+
+<embed src=/resume.pdf type=application/pdf style="width:80ch;height:90vh">

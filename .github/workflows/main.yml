@@ -5,20 +5,21 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
-        with:
-          submodules: false
+        uses: actions/checkout@v4
 
-      - name: Copy CNAME
-        run: |
-          ls -al
-          cp ./CNAME ./public/
+      - name: Build site
+        run: sh build.sh
+        # build.sh: site/*.txt -> public/ (sh + sed, no deps).
+        # It also copies assets/, the committed resume/resume.pdf, and CNAME.
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

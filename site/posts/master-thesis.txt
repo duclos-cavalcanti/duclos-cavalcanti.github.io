@@ -1,0 +1,35 @@
+Master Thesis — VM Selection for Financial Exchanges
+________________________________________________________________________________
+
+2024-10-22 · tags: research, cloud
+
+After a challenging year I finally defended my master thesis on "VM Selection
+for Financial Exchanges in the Cloud", my final credit at the Technical
+University of Munich. Co-advised by <a href=https://haseeblums.github.io/>PhD. Muhammad Haseeb</a> and
+<a href=https://anirudhsk.github.io/>Dr. Anirudh Sivaraman</a> (Systems@NYU), and <a href=https://nrasadi.github.io/>PhD. Navidreza Asadi</a> and
+Prof. Dr.-Ing. Wolfgang Kellerer (LKN, TUM). Code and docs:
+https://github.com/duclos-cavalcanti/TreeBuilder
+
+<img src=/img/MA_Design.png alt="TreeBuilder design">
+
+[001] Abstract
+________________________________________________________________________________
+
+Cloud computing has revolutionized the deployment of software services by
+providing virtualized resources rented on-demand. Financial exchanges are
+exploring migrating to the cloud for scalability and reduced cost. But the
+cloud's inherent network variance and lack of native multicast challenge the
+fair, low-latency dissemination modern exchanges require.
+
+Jasper implements a multicast solution for cloud-based exchanges, reaching
+ultra-low latency via an overlay proxy tree, kernel bypass, and clock
+synchronization. It does not fully address "stragglers" — underperforming VMs
+that degrade system performance.
+
+TreeBuilder enhances Jasper by intelligently selecting nodes from a pool to form
+a multicast tree, specifically targeting straggler VMs. Using straightforward
+heuristics (WEIGHTED, P90, P50) it improves latency while staying lightweight
+and modular. An instance of TreeBuilder's BEST-WEIGHTED tree showed the lowest
+90th-percentile latency for its worst receiver at 312 us — ~7.7% below
+LemonDrop's 338 us — while remaining an accessible, extensible technique with
+considerable scalability.

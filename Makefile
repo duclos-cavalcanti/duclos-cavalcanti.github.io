@@ -1,44 +1,25 @@
-SHELL  := /bin/bash
-PWD    := $(shell pwd)
-PUBLIC := ${PWD}/public
+SHELL := /bin/sh
 
-
-ifeq (, $(shell which docker))
-$(error docker not found)
-endif
-
-ifeq (, $(shell which hugo))
-$(error hugo not found)
-endif
-
-.PHONY: exit \
-		clean \
-		build \
-		cover \
-		resume \
-		serve
+.PHONY: all build serve resume cover clean
 
 all: build
 
-exit:
-	$(error Exiting Makefile)
-
+# Generate public/ from the plain-text sources in site/.
 build:
-	@cp -v ./resume/resume.pdf ./website/content/data/pdfs/resume.pdf
-	@cd website && hugo
-	@rm -rf public
-	@mv -v website/public ./
-	@touch public/.gitkeep
+	@sh build.sh
 
-serve:
-	@cd website && hugo server
+# Build, then serve locally so absolute links (/about/, ...) resolve.
+serve: build
+	@echo "serving on http://localhost:8000  (Ctrl-C to stop)"
+	@cd public && python3 -m http.server 8000
 
+# Build the LaTeX resume -> resume/resume.pdf (needs a TeX install).
 resume:
 	@$(MAKE) -C resume
 
+# Build the cover letter / statement.
 cover:
 	@$(MAKE) -C cover
 
-clean: 
-	echo "CLEAN"
-
+clean:
+	@rm -rf public

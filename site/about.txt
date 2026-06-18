@@ -1,0 +1,38 @@
+* Background ............................................................. [001]
+* Experience ............................................................. [002]
+* Etc .................................................................... [003]
+
+
+[001] Background
+________________________________________________________________________________
+
+I was born in Minneapolis, raised through my formative years in Brazil, and my
+studies eventually brought me to Germany. Today I live in New York, working at
+the systems layer of the stack.
+
+I've always been curious — since my first programming class I wanted to know how
+programs and the machines that run them actually work. That pulled me across
+many layers of computing abstraction: digital electronics and FPGAs, operating
+systems and Linux, computer networking, machine learning, and the
+software-engineering tooling that ties them together.
+
+[002] Experience
+________________________________________________________________________________
+
+Interests             Experience
+------------------------------------------------------------------------
+Operating Systems     Linux, FreeRTOS, RTOS
+Embedded Systems      ARM Cortex MCUs: TM4C123, XMC4500, STM32
+FPGAs                 Microsemi SmartFusion2, Xilinx Vivado, TCL
+Cloud Computing       Terraform, GCP, AWS, Packer
+Computer Networking   Unix Sockets, IP/TCP/UDP, DPDK, ZeroMQ
+Machine Learning      TensorFlow, TensorFlowLite, TPUs
+
+[003] Etc
+________________________________________________________________________________
+
+Beyond computer science my interests run from language and linguistics to
+comedy, rap, and martial arts. I've been a huge fan of stand-up comedy since I
+first saw it as a kid.
+
+Check out my dotfiles: https://github.com/duclos-cavalcanti/dotfiles

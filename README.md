@@ -1,73 +1,73 @@
 # duclos-cavalcanti.github.io
 
-## Introduction
-Source code to my personal website, currently served via _Github Pages_ at [https://www.duclos.dev](https://www.duclos.dev). 
-The webpage is generated via `hugo` using the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme.
+Source for my personal website, served via _GitHub Pages_ at
+[https://www.duclos.dev](https://www.duclos.dev).
 
-## Background
+The site is a **plain-text static site** in the spirit of
+[kisslinux.github.io](https://github.com/kisslinux/kisslinux.github.io): hand-authored
+`.txt` sources are transformed by a small `sed` script and injected into a single
+`template.html`. No framework, no build dependencies, no JavaScript — the source
+reads almost exactly like the rendered page.
 
-The purpose of this repository is not only to easily deploy a static website, but also serve as a minor working example of how one can start a
-blog easily. The pro's to that approach are nothing other than just having a better understanding of how the website is created 
-and how one can modify it further. Generally, to deploy a static website of any kind, the steps can be generalized as such:
+## Layout
 
-* Structure website: *(manually or ssg)*
-* Obtain a domain.
-* Install/Deploy a Web Server: *(Nginx, Apache, etc)*
-* Upload to Server/Cloud platform service *(Optionally Netlify)*.
-* Optionally set up SSL certificates for HTTPS.
-
-Through `hugo` it becomes easier to generate a static website based on markdown files. In addition to that, _Github Pages_ facilitates the rest 
-leaving us to only specify a URL and place the content correctly on the specified branch.
-
-## Dependencies 
-- [`hugo`](https://gohugo.io/getting-started/quick-start/)
-- [`docker`](https://docs.docker.com/engine/install/) *(optional)* 
-
-
-**Debian/Ubuntu** 
-1. Installation
-```sh 
-sudo apt install hugo texlive-latex-base texlive-xetex
-# texlive-latex-base texlive-xetex: for resume/cover letters
-# docker: enables easy and portable workflows
+```
+site/            sources you edit (plain text, 80-column terminal style)
+  index.txt      home: $ whoami hero + table of contents + sections
+  about.txt
+  posts.txt      post index
+  posts/*.txt    individual posts
+  resume.txt     embeds the built PDF
+  contact.txt
+template.html    the <pre> wrapper: CSS + nav + %%TITLE%% / %%CONTENT%% slots
+build.sh         the generator (POSIX sh + sed)
+Makefile         entrypoint: build / serve / resume / clean
+assets/          images etc. copied verbatim into the output (assets/img -> /img)
+public/          BUILD OUTPUT — committed; GitHub Pages publishes this dir
+resume/          LaTeX -> resume/resume.pdf  (altacv)
+cover/           LaTeX cover letter / statement
 ```
 
-2. Setup 
-```sh
-hugo new site website --format yaml
-cd website/themes && git clone git clone https://github.com/mrmierzejewski/hugo-theme-console
-```
+## Source markup
+
+Sources are plain text. A handful of conventions are expanded at build time:
+
+| In source            | Becomes                                   |
+|----------------------|-------------------------------------------|
+| `https://...`        | auto-linked                               |
+| `@/path`             | relative internal link `<a href=/path>`   |
+| `[001]` (line start) | anchor target (`<span id=001>`)           |
+| `[001]` (inline)     | link to that anchor                       |
+| raw HTML             | passed through verbatim                    |
+
+The ASCII hero box, the dotted-leader table of contents, and the `____` rules are
+hand-maintained 80-column text — edit them directly.
 
 ## Usage
 
-**Build**
-  ```sh
-  make
-  ```
+```sh
+make build     # site/*.txt -> public/
+make serve     # build, then serve on http://localhost:8000 (links resolve)
+make resume    # build the LaTeX resume -> resume/resume.pdf (needs a TeX install)
+make clean     # remove public/
+```
 
-**Deploy**
-  ```sh
-  make deploy
-  ```
+## Deploy
 
-**Serve Locally**
-  ```sh
-  make serve
-  ```
+GitHub Actions ([.github/workflows/main.yml](.github/workflows/main.yml)) publishes
+the committed `public/` directory to Pages on every push to `main`, copying `CNAME`
+for the custom domain. So the workflow is: edit `site/`, `make build`, commit
+`public/`, push.
 
-**Stop local serving**
-  ```sh
-  make stop
-  ```
+> Note: `resume/resume.pdf` is git-ignored and built from LaTeX. Run `make resume`
+> before `make build` if you want the resume page populated; the build warns and
+> continues if the PDF is absent.
 
 ## License
-These files are released under the GPL 3.0 license. See [LICENSE](LICENSE).
+
+Released under the GPL 3.0 license. See [LICENSE](LICENSE).
 
 ## Thanks
-* [ssg](https://github.com/andrew-ayers/ssg)
-* [altacv](https://github.com/liantze/AltaCV?tab=readme-ov-file)
 
-## References
-* [HTML Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML)
-* [CSS Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS)
-
+* [kisslinux](https://github.com/kisslinux/kisslinux.github.io) — the plain-text site approach
+* [altacv](https://github.com/liantze/AltaCV) — the resume template

@@ -1,13 +1,12 @@
-# public/*
+# Generated site output — built by CI (.github/workflows/main.yml) and published
+# to the gh-pages branch. Not committed.
+public/
 
+# LaTeX build stamp (resume/resume.pdf IS committed so CI can embed it).
 resume/.resume
-resume/resume.pdf
 
 cover/*.pdf
 cover/.cover
-
-themes/
-themes/*
 
 
 *.out

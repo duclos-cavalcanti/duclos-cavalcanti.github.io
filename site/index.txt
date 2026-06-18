@@ -1,0 +1,64 @@
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ whoami                                                                   |
+|   daniel duclos-cavalcanti — computer engineer, new york                     |
+|                                                                              |
+|   $ _                                                                        |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+* Overview ............................................................... [001]
+* Research ............................................................... [002]
+* Projects ............................................................... [003]
+* Tooling ................................................................ [004]
+* Links .................................................................. [005]
+
+
+[001] Overview
+________________________________________________________________________________
+
+I'm a computer engineer living in New York with a B.Sc. and M.Sc. from the
+Technical University of Munich. Currently collaborating on independent research
+with Dr. Anirudh Sivaraman and PhD. Muhammad Haseeb of Systems@NYU on
+distributed, low-latency networking in the cloud.
+
+Beyond that I have a strong background in embedded systems, FPGAs,
+high-performance computing, and development for Linux/UNIX environments.
+For the longer story see @/about/ — for the full CV see @/resume/.
+
+[002] Research
+________________________________________________________________________________
+
+The work centers on Jasper, a scalable financial exchange in the cloud. My
+master thesis built TreeBuilder, a heuristic that selects VMs by present cloud
+conditions to improve a multicast tree's latency, both before and at runtime.
+
+- Jasper         https://arxiv.org/abs/2402.09527
+- TreeBuilder    https://github.com/duclos-cavalcanti/TreeBuilder
+- SIGCOMM '24    https://dl.acm.org/doi/abs/10.1145/3672202.3673728
+
+[003] Projects
+________________________________________________________________________________
+
+- TreeBuilder    https://github.com/duclos-cavalcanti/TreeBuilder
+- SpaceInvaders  https://github.com/duclos-cavalcanti/FreeRTOS-SpaceInvaders
+- Hamming-Code   https://github.com/duclos-cavalcanti/microsemi-error-detection
+- OpenMPI VI     https://github.com/duclos-cavalcanti/Open-MPI-ValueIteration
+- shmenu         https://github.com/duclos-cavalcanti/shmenu
+- serve          https://github.com/duclos-cavalcanti/serve
+
+[004] Tooling
+________________________________________________________________________________
+
+Mastering one's tools matters as much as the craft — or I just enjoy hacking my
+setup. Daily-driver Linux for a long time; fond of the freedom in the ecosystem.
+
+- dotfiles       https://github.com/duclos-cavalcanti/dotfiles
+
+[005] Links
+________________________________________________________________________________
+
+- resume         @/resume/
+- github         https://github.com/duclos-cavalcanti
+- linkedin       https://www.linkedin.com/in/duclos-cavalcanti/
+- email          <a href=mailto:me@duclos.dev>me@duclos.dev</a>
