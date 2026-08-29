@@ -1,10 +1,3 @@
-%-------------------------
-% Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
-%------------------------
-
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
@@ -124,11 +117,11 @@
 
 \begin{center}
     {\Huge \scshape Daniel Duclos-Cavalcanti} \\ \vspace{1pt}
-    \textbf{\large{\scshape Computer Engineer}} \\ \vspace{1pt}
+    \textbf{\large{\scshape Systems Software Engineer}} \\ \vspace{1pt}
     New York, New York \\ \vspace{1pt}
     \small 
-    XXX-XXX-XXXX 
-     % 516-912-7975 
+    % XXX-XXX-XXXX 
+     516-912-7975 
     $|$ U.S. Citizen $|$
     \href{mailto:daniel@duclos.dev}{\underline{daniel@duclos.dev}} $|$ 
     \href{https://www.duclos.dev}{\underline{www.duclos.dev}} $|$
@@ -145,140 +138,93 @@
 % }
 
 \vspace{-16pt}
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    %\resumeSubheading
-        %{New York University}{Sept 2023 -- May 2024}
-        %{Visiting Non-Degree Graduate Student}{New York, USA}
-        %\resumeItemListStart
-        %    %\resumeItem{M.Sc. Thesis: \textbf{VM Selection Heuristic for Multicast Overlay Trees in the Cloud}}
-        %    %\resumeItem{\textbf{GPA 4.0}}
-        %    \resumeItem{Co-Authored Publication: \href{https://arxiv.org/abs/2402.09527}{Design and Implementation of A Scalable Financial Exchange in the Cloud}}
-        %    \resumeItem{\textbf{Related Coursework}: Operating Systems, Technologies in Finance -- \textbf{GPA 4.0}}
-        %\resumeItemListEnd
-
-    \resumeSubheading
-        {Technical University of Munich}{Oct 2020 -- Oct 2024}
-        {M.Sc. Electrical and Computer Engineering}{Munich, Germany}
-        \resumeItemListStart
-            %\resumeItem{M.Sc. Thesis: \textbf{VM Selection Heuristic for Multicast Overlay Trees in the Cloud}}
-            \resumeItem{Visiting Non-Degree Graduate Student: \textbf{New York University} -- \textbf{GPA 4.0} (2023 -- 2024)}
-            %\resumeItem{Co-Authored Publication: \href{https://arxiv.org/abs/2402.09527}{Design and Implementation of A Scalable Financial Exchange in the Cloud}}
-            \resumeItem{Master Thesis: \textbf{"VM Selection Heuristic for Financial Exchanges in the Cloud"} -- (\href{https://github.com/duclos-cavalcanti/TreeBuilder}{\textit{TreeBuilder}})}
-            \resumeItem{\textbf{Related Coursework}: Operating Systems, Machine Learning Methods, High-Performance Computing Lab}
-            %\resumeItem{\textbf{Related Coursework}: Machine Learning Methods, HW-SW Co-Design, High Performance Computing Lab}
-        \resumeItemListEnd
-        % \resumeItemListStart
-        %     \resumeItem{M.Sc. Thesis: \textbf{VM Selection Heuristic for Multicast Overlay Trees in the Cloud}}
-        %     \resumeItem{Co-Authored Publication: \href{https://arxiv.org/abs/2402.09527}{Design and Implementation of A Scalable Financial Exchange in the Cloud}}
-        %     \resumeItem{Visiting Graduate Student: \textbf{New York University}}
-        %     \resumeItem{\small{\textbf{Related Coursework}: Operating Systems, Machine Learning Methods, High Performance Computing Lab}}
-        % \resumeItemListEnd
-
-    %\vspace{1.0pt}
-    \resumeSubheading
-        {Technical University of Munich}{Oct 2016 -- Sept 2020}
-        {B.Sc. Electrical and Computer Engineering}{Munich, Germany}
-  \resumeSubHeadingListEnd
-
-%------RELEVANT COURSEWORK-------
-%\section{Relevant Coursework}
-%    %\resumeSubHeadingListStart
-%        \begin{multicols}{4}
-%            \begin{itemize}[itemsep=-5pt, parsep=3pt]
-%                \item\small Data Structures
-%                \item Software Methodology
-%                \item Algorithms Analysis
-%                \item Database Management
-%                \item Artificial Intelligence
-%                \item Internet Technology
-%                \item Systems Programming
-%                \item Computer Architecture
-%            \end{itemize}
-%        \end{multicols}
-%        \vspace*{2.0\multicolsep}
-    %\resumeSubHeadingListEnd
-
-\vspace{-5pt}
-\section{Publications}
-    \vspace{-5.0pt}
-    \resumeSubHeadingListStart
-        \resumeProjectHeading
-          {\textbf{Design and Implementation of A Scalable Financial Exchange in the Cloud} $|$ \emph{\href{https://arxiv.org/abs/2402.09527}{\underline{(Link)}}}}{Jan 2024 -- Present}
-          \resumeItemListStart
-                \resumeItem{Novel Cloud financial exchange achieving low latency of $<=$ 250 µs, with a difference $<$ 1 µs for 1K receivers.}
-                \resumeItem{Achieves better scalability and around 50\% lower latency than the multicast service provided by AWS. }
-                %\resumeItem{Implemented kernel-bypass techniques (DPDK) to scale performance up to a 35K multicast packet rate.}
-                %\resumeItem{Used kernel-bypass techniques (DPDK) to scale and achieve $\sim$50\% lower latency than AWS's multicast service.}
-                \resumeItem{High-performance using kernel bypassing (DPDK) to reach a throughput of 35K multicast packet rate per second.}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
-
 %-----------EXPERIENCE-----------
-\vspace{-8pt}
+\vspace{-4pt}
 \section{Experience}
     \resumeSubHeadingListStart
+        \resumeSubheading
+            {Software Engineer II}{Mar 2025 -- Present}
+            {Ripple}{New York, USA}
+                \resumeSubSubheading
+                    {Managed Custody}{Mar 2026 -- Present}
+                \resumeItemListStart
+                \resumeItem{One of \textbf{3} engineers building a complete \textbf{greenfield} managed-custody product: a \textbf{Rust} orchestration layer over Ripple Custody on \textbf{AWS Lambda}, \textbf{Step Functions}, \textbf{EventBridge}, \textbf{DynamoDB}, and \textbf{KMS} for tier-1/2 bank clients.}
+                \resumeItem{Owned the \textbf{actors}, \textbf{approvals}, \textbf{events}, and \textbf{domains} APIs: \textbf{casbin}-gated maker/checker \textbf{quorums}, per-actor \textbf{KMS} signing keys bound by \textbf{proof-of-possession}, and an \textbf{event-sourced}, cursor-paginated stream.}
+                \resumeItem{Built and managed scalable infrastructure using \textbf{AWS CDK}: \textbf{35 stacks}, $\sim$1,100 resources per environment, branch-scoped naming allowing highly concurrent \textbf{ephemeral environment} deployments with auto-tear-down.}
+                \resumeItem{Architected an \href{https://github.com/duclos-cavalcanti/agent-factory}{\underline{AI-native software factory}}: a crew of role-specialized agents (\textbf{plan $\to$ implement $\to$ review $\to$ merge}) on a cron-driven state machine semi-autonomously shipping \textbf{Jira} tickets to production, lifting delivery \textbf{$\sim$10$\times$} (\textbf{15}$\to$\textbf{155 MRs/mo}, peak \textbf{205}) across the product's \textbf{$\sim$6-month} build.}
+                \resumeItemListEnd
+
+                \resumeSubSubheading
+                    {Ripple Custody (Core Platform)}{Mar 2025 -- Mar 2026}
+                \resumeItemListStart
+                \resumeItem{Migrated a \textbf{HSM}-backed key \textbf{cold-storage} custody service (vault) from legacy \textbf{C\#/.NET} to a \textbf{Rust} (\texttt{axum}) drop-in replacement, serving its batch file-transfer execution API over \textbf{gRPC} to two live customers.}
+                \resumeItem{Developed a benchmarking harness in \textbf{Rust} (\texttt{criterion}) to profile cryptographic operations across the custody's \textbf{KMS} backends (\textbf{IBM} and \textbf{Luna} \textbf{HSMs}, \textbf{MPC}), tracking performance regressions in \textbf{CI}.}
+                \resumeItemListEnd
+
         \resumeSubheading
             {Research Assistant}{Jul 2022 -- Oct 2022}
             {TU Munich}{Munich, Germany}
             \resumeItemListStart
-                \resumeItem{Collaborated on \href{https://github.com/alxhoff/TensorDSE}{\underline{TensorDSE}}, a Design-Space Exploration framework to accelerate machine learning model deployments.}
+                \resumeItem{Profiled ML inference across CPUs, GPUs, and Coral Edge TPUs (TensorFlow Lite) via USB traffic analysis (PyShark).}
+                \resumeItem{Established up to 57\% of inference time is data transmission to the TPU, informing TensorDSE's hardware mapping.}
+                % \resumeItem{Collaborated on \href{https://github.com/alxhoff/TensorDSE}{\underline{TensorDSE}}, a Design-Space Exploration framework to accelerate machine learning model deployments.}
                 % \resumeItem{Assessed the performance metrics of multiple ML models across GPUs, CPUs and TPUs with TensorFlow Lite.}
-                \resumeItem{Assessed the performance metrics of multiple ML models across GPUs, CPUs and TPUs with TensorFlow Lite.}
-                \resumeItem{Generated cost analysis reports on Google's Coral Edge TPU via USB traffic analysis (PyShark) during inference.}
-                \resumeItem{Established that on average up to 57\% of total inference time consists of data transmission with the external TPU.}
-                %\resumeItem{Generated cost analysis reports on Google's Coral Edge TPU via USB traffic analysis (PyShark) during transmission.}
-                %\resumeItem{Discovered that over 60\% of total inference time was attributed to data transmission with the external TPU.}
-                \resumeItem{TensorDSE consumed reports to map a model's deployment optimally onto an available set of hardware devices.}
+                % \resumeItem{Generated inference cost analysis reports on Google's Coral Edge TPU via USB traffic analysis (PyShark).}
+                % \resumeItem{Established that on average up to 57\% of total inference time consists of data transmission with the external TPU.}
+                % \resumeItem{Generated cost analysis reports on Google's Coral Edge TPU via USB traffic analysis (PyShark) during transmission.}
+                % \resumeItem{Discovered that over 60\% of total inference time was attributed to data transmission with the external TPU.}
+                % \resumeItem{TensorDSE consumed reports to map a model's deployment optimally onto an available set of hardware devices.}
             \resumeItemListEnd
 
         \resumeSubheading
-            {Embedded Software Engineer Intern}{Aug 2021 -- Jan 2022}
+            {Embedded Software Engineer -- Part Time}{Aug 2021 -- Jan 2022}
             {Molabo GmbH}{Ottobrunn, Germany}
             \resumeItemListStart
-                %\resumeItem{Added unit tests (GTest), achieving over 25\% test coverage for the team's motor embedded controller critical features.}
-                \resumeItem{Increased test coverage (GTest) up to 25\% on safety-critical motor controller features, identifying and resolving bugs.}
-                \resumeItem{Developed state simulation tooling with Linux’s virtual CAN interface to validate motor functionality in real-time.}
-
+                \resumeItem{Built simulation tooling via Linux virtual CAN, raising GTest coverage 25\% on safety-critical motor-controller firmware.}
+                \resumeItem{Owned the team's Jenkins/Docker/CMake \textbf{CI} pipeline, supporting 10+ engineers.}
+                % \resumeItem{Extended the \textbf{CAN-bus} firmware update system for 18+ clients, hardening partial-update reliability.}
                 % \resumeItem{Extended the firmware update system for over 18 clients, enhancing reliability of partial updates via CAN bus.}
-                \resumeItem{Developed robust firmware update systems, ensuring reliability for partial updates (CAN bus) across 18+ clients.}
-
-                \resumeItem{Actively developed the team's CI/CD build pipeline via Jenkins, Docker, and CMake, supporting over 10+ engineers.}
+                % \resumeItem{Developed robust firmware update systems, ensuring reliability for partial updates (CAN bus) across 18+ clients.}
+                % \resumeItem{Actively developed the team's CI/CD build pipeline via Jenkins, Docker, and CMake, supporting over 10+ engineers.}
             \resumeItemListEnd
 
         \resumeSubheading
             {Tutor (Embedded Systems Programming Lab)}{Apr 2021 -- Aug 2021}
             {TU Munich}{Munich, Germany}
             \resumeItemListStart
-                \resumeItem{Mentored over 12 students on designing and developing low-level embedded FreeRTOS applications in C.}
-                \resumeItem{Conducted 30+ sessions on best practices in data structures, concurrency, performance, and real-time scheduling.}
+                % \resumeItem{Mentored over 12 students on designing and developing low-level embedded FreeRTOS applications in C.}
+                % \resumeItem{Conducted 30+ sessions on best practices in data structures, concurrency, performance, and real-time scheduling.}
+                \resumeItem{Taught 30+ lab sessions to 12+ students on real-time, multi-threaded FreeRTOS development in C.}
             \resumeItemListEnd
     \resumeSubHeadingListEnd 
 
-% -------------------- SKILLS --------------------
-\vspace{-8.0pt}
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-    \textbf{Languages}{: C++, Rust, Python, Golang, Java, C, Bash, JavaScript, HTML, CSS, Lua, VHDL} \\
-    \textbf{Cloud Services}{: Google Cloud Platform (GCP), Amazon EC2 (AWS), Terraform, Docker, Packer, Vagrant} \\
-    \textbf{Tools}{: Linux, Unix Shell, Git, Github CI/CD, Jenkins, CMake, GNU Make, Bazel, Vim, VSCode, GDB, LLDB} \\
-    \textbf{Technologies}{: Docker, ZeroMQ, gRPC, Protobufs, MPI, TensorFlow, Scipy, NumPy, Pandas, DPDK} \\
-    % \textbf{Technologies}{: Cloud Computing, Computer Networking, Operating Systems, Machine Learning, HPC, FPGAs} \\
-    % \textbf{Protocols}{: TCP, UDP, IP, ETHERNET, USB, UART} \\
-    % \textbf{Certificates}{: UCSD: Data Structures Fundamentals, UT Austin: Embedded Systems - uC I/O} \\
-    % \textbf{Hardware}{: Raspberry PIs, Embedded Linux, ARM Cortex MCUs, USB, TCP, UDP, IP, UART, GPIO} \\
-    \textbf{Verbal/Written}{: German -- Fluent, Portuguese -- Fluent}
-    }}
- \end{itemize}
+\vspace{-14pt}
+\section{Publications}
+    \vspace{-5.0pt}
+    \resumeSubHeadingListStart
+            \resumeProjectHeading
+                {\textbf{Network Support For Scalable And High Performance Cloud Exchanges} $|$
+                 \emph{\href{https://dl.acm.org/doi/abs/10.1145/3718958.3750530}{\underline{ACM SIGCOMM '25}}}}
+                {Sept 2025}
+            \resumeItemListStart
+                % \resumeItem{\emph{M. Haseeb, J. Geng, \textbf{D. Duclos-Cavalcanti}, X. Hao, U. Butler, R. Mittal, S. Narayana, A. Sivaraman}}
+                % \resumeItem{\textbf{Onyx}: Novel Cloud financial exchange achieving low latency of $<=$ 250 µs, with a difference $<$ 1 µs across 1K receivers.}
+                \resumeItem{\textbf{Onyx}: cloud financial exchange delivering $\leq$\textbf{250 µs} multicast latency, within $<$ 1 µs across 1K receivers.}
+                \resumeItem{\textbf{Kernel-bypass} datapath (\textbf{DPDK}) sustaining \textbf{35K packets/sec} at $\sim$\textbf{50\% lower latency} than AWS multicast.}
+                % \resumeItem{Latency-minimizing \textbf{overlay multicast tree} fanning out market data, reused bidirectionally for the inbound order path.}
+                % \resumeItem{Achieves better scalability and around 50\% lower latency than the multicast service provided by AWS. }
+                %\resumeItem{Implemented kernel-bypass techniques (DPDK) to scale performance up to a 35K multicast packet rate.}
+                %\resumeItem{Used kernel-bypass techniques (DPDK) to scale and achieve $\sim$50\% lower latency than AWS's multicast service.}
+                % \resumeItem{High-performance using kernel bypassing (DPDK) to reach a throughput of 35K multicast packet rate per second.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
 
-\vspace{-8.0pt}
+\vspace{-13.0pt}
 \section{Projects}
     \vspace{-5.0pt}
     \resumeSubHeadingListStart
         \resumeProjectHeading
-            {\href{https://github.com/duclos-cavalcanti/TreeBuilder}{\textbf{Cloud-TreeBuilder}} $|$ \emph{GCP, AWS, ZMQ, Terraform, Python, C++, Distributed Systems, Heuristic}}{\small{Mar 2024 -- Present}}
+            {\href{https://github.com/duclos-cavalcanti/TreeBuilder}{\textbf{Cloud-TreeBuilder} (\emph{M.Sc. Thesis})} $|$ \emph{GCP, ZMQ, Terraform, Python, C++, Distributed Systems}}{\small{Mar 2024 -- Oct 2024}}
             \resumeItemListStart
               %\resumeItem{Launches and selects K out of N VMs in a cluster to create an optimal multicast tree of depth D and fan-out F.}
               %\resumeItem{Deploys UDP based probe jobs on VM subsets, collecting data regarding individual network performance (JSON).}
@@ -287,34 +233,34 @@
               %\resumeItem{Uses terraform to manage cloud state, ZMQ for node communication and Protobufs for data serialization.}
               %\resumeItem{Leverages \href{https://www.clockwork.io/clock-sync/}{clockwork's high-precision software clock synchronization daemon} to provide a global common clock.}
 
-            \resumeItem{Optimally selects VMs in a cluster to form a multicast tree of depth D and fan-out F, to \textbf{minimize network latency}.}
-
+            % \resumeItem{Optimally selects VMs in a cluster to form a multicast tree of depth D and fan-out F, to \textbf{minimize network latency}.}
             % \resumeItem{Deployed \textbf{UDP} probe jobs on VMs, gathering network performance data for informed heuristic selection (JSON).}
-            \resumeItem{Employs efficient \textbf{data pipelines} to gather VM network performance analytics (\textbf{UDP}) for informed heuristic selection.}
-            \resumeItem{Improved \textbf{multicast latency by 24\%} within the \textbf{microsecond} range of delivery for a cluster of 25 VMs.}
-            \resumeItem{Integrated Terraform for cloud state management, ZMQ for node communication, and Scipy/Numpy for data analysis.}
+            \resumeItem{Mitigates \textbf{straggler VMs} by probing cluster network performance to build a multicast tree of depth D, fan-out F.}
+            \resumeItem{Ranks candidate VMs by weighted \textbf{p90 one-way delay} and standard deviation from UDP probes.}
+            \resumeItem{Developed a heuristic matching \textbf{LemonDrop}'s \textbf{NP-hard QAP} optimizer on a 25-VM cluster: \textbf{7.7\% lower p90} and \textbf{10.6\% lower median} worst-receiver latency at a fraction of the compute.}
+            % \resumeItem{Integrated Terraform for cloud state management, ZMQ for node communication, and Scipy/Numpy for data analysis.}
             \resumeItemListEnd
 
-        \vspace{-16pt}
-        \resumeProjectHeading
-            {\href{https://github.com/duclos-cavalcanti/rust-pkcs11}{\textbf{Rust PKCS11 Client/Server}} $|$ \emph{Rust, Multithreading, HSM, Cryptography, Protobufs}}{\small{Dec 2024 -- Present}}
-            \resumeItemListStart
-              \resumeItem{Implemented a PKCS11 \textbf{server} that accepts concurrent requests (\textbf{clients}) for typical cryptographic operations.}
-              \resumeItem{Designed performant server backend with thread-safe access to SoftHSM for secure encryption, decryption and signing.}
-            \resumeItemListEnd
+        % \vspace{-16pt}
+        % \resumeProjectHeading
+        %     {\href{https://github.com/duclos-cavalcanti/rust-pkcs11}{\textbf{Rust PKCS11 Client/Server}} $|$ \emph{Rust, Multithreading, HSM, Cryptography, Protobufs}}{\small{Dec 2024 -- Present}}
+        %     \resumeItemListStart
+        %       \resumeItem{Implemented a PKCS11 \textbf{server} that accepts concurrent requests (\textbf{clients}) for typical cryptographic operations.}
+        %       \resumeItem{Designed performant server backend with thread-safe access to SoftHSM for secure encryption, decryption and signing.}
+        %     \resumeItemListEnd
 
-        \vspace{-16pt}
-        \resumeProjectHeading
-            {\href{https://github.com/duclos-cavalcanti/Open-MPI-ValueIteration}{\textbf{Open-MPI Value Iteration}} $|$ \emph{C++, Parallel-Computing, MPI, HPC}}{\small{Mar 2022}}
-            \resumeItemListStart
-              %\resumeItem{Uses MPI techniques to iteratively distribute workload across an HPC cluster and gather results.}
-              %\resumeItem{Uses MPI techniques to distribute workload across an HPC cluster to solve a stochastic navigation problem.}
-              \resumeItem{An HPC prototype that solves a stochastic navigation problem by distributing workload across an HPC cluster.}
-              \resumeItem{Leveraged MPI to scale data distribution, achieving a 52\% performance improvement over single-threaded execution.}
-
-              %\resumeItem{An HPC prototype that solves a stochastic navigation problem through Asynchronous Value Iteration (AVI).}
-              %\resumeItem{Leveraged MPI to iteratively distribute workload across an HPC cluster, executing 52\% faster than in single-threaded.}
-            \resumeItemListEnd
+        % \vspace{-16pt}
+        % \resumeProjectHeading
+        %     {\href{https://github.com/duclos-cavalcanti/Open-MPI-ValueIteration}{\textbf{Open-MPI Value Iteration}} $|$ \emph{C++, Parallel-Computing, MPI, HPC}}{\small{Mar 2022}}
+        %     \resumeItemListStart
+        %       %\resumeItem{Uses MPI techniques to iteratively distribute workload across an HPC cluster and gather results.}
+        %       %\resumeItem{Uses MPI techniques to distribute workload across an HPC cluster to solve a stochastic navigation problem.}
+        %       \resumeItem{An HPC prototype that solves a stochastic navigation problem by distributing workload across an HPC cluster.}
+        %       \resumeItem{Leveraged MPI to scale data distribution, achieving a 52\% performance improvement over single-threaded execution.}
+        %
+        %       %\resumeItem{An HPC prototype that solves a stochastic navigation problem through Asynchronous Value Iteration (AVI).}
+        %       %\resumeItem{Leveraged MPI to iteratively distribute workload across an HPC cluster, executing 52\% faster than in single-threaded.}
+        %     \resumeItemListEnd
 
         % \resumeProjectHeading
         %     {\href{https://github.com/duclos-cavalcanti/microsemi-error-detection}{\textbf{Hamming Code Error Detection (16,11)}} $|$ \emph{C, VHDL, FPGA, SoC, UART}}{\small{Feb 2021}}
@@ -331,30 +277,48 @@
 
     \resumeSubHeadingListEnd
 
-%
-%-----------PROGRAMMING SKILLS-----------
-%\section{Technical Skills}
-% \begin{itemize}[leftmargin=0.15in, label={}]
-%    \small{\item{
-%     \textbf{Languages}{: Python, Java, C, HTML/CSS, JavaScript, SQL} \\
-%     \textbf{Developer Tools}{: VS Code, Eclipse, Google Cloud Platform, Android Studio} \\
-%     \textbf{Technologies/Frameworks}{: Linux, Jenkins, GitHub, JUnit, WordPress} \\
-%    }}
-% \end{itemize}
-% \vspace{-16pt}
-%
-%
-%%-----------INVOLVEMENT---------------
-%\section{Leadership / Extracurricular}
-%    \resumeSubHeadingListStart
-%        \resumeSubheading{Fraternity}{Spring 2020 -- Present}{President}{University Name}
-%            \resumeItemListStart
-%                \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
-%                \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
-%                \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
-%            \resumeItemListEnd
-%        
-%    \resumeSubHeadingListEnd
 
+% -------------------- SKILLS --------------------
+\vspace{-10.0pt}
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Languages}{: Rust, C++, C, Python, Golang, Bash, VHDL} \\
+    \textbf{Cloud}{: AWS (CDK, Lambda, Step Functions, DynamoDB, KMS, EventBridge), GCP, Terraform, Packer, Docker} \\
+    \textbf{Tools}{: Unix Shell, Git, GitLab CI, CMake, GNU Make, Vim, Tmux} \\
+    \textbf{Technologies}{: Linux, TCP/UDP, HSM, gRPC, Protobufs, ZeroMQ, Tokio, MPI, OpenMP, DPDK, FreeRTOS, FPGA} \\
+    % \textbf{Languages}{: Rust, C++, C, Python, Golang, Bash, VHDL} \\
+    % \textbf{Cloud Services}{: Amazon EC2 (AWS), Google Cloud Platform (GCP), Terraform, Docker, Packer, Vagrant} \\
+    % \textbf{Tools}{: Linux, Unix Shell, Git, Github CI/CD, CMake, GNU Make, Bazel, Vim, GDB} \\
+    % \textbf{Technologies}{: Cloud Computing, Computer Networking, Operating Systems, Machine Learning, HPC, FPGAs} \\
+    % \textbf{Protocols}{: TCP, UDP, IP, ETHERNET, USB, UART} \\
+    % \textbf{Hardware}{: Raspberry PIs, Embedded Linux, ARM Cortex MCUs, USB, TCP, UDP, IP, UART, GPIO} \\
+    % \textbf{Verbal/Written}{: German -- Fluent, Portuguese -- Fluent}
+    }}
+ \end{itemize}
 
+\vspace{-8.0pt}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    %\resumeSubheading
+    \resumeSubheading
+        {Technical University of Munich}{Oct 2020 -- Oct 2024}
+        {M.Sc. Electrical and Computer Engineering}{Munich, Germany}
+        % \resumeItemListStart
+        %     % \resumeItem{Visiting Non-Degree Graduate Student: \textbf{New York University} (2023 -- 2024)}
+        %     \resumeItem{Visiting Non-Degree Graduate Student: \textbf{New York University} (2023 -- 2024) -- \textit{see publications}}
+        %     % \resumeItem{M.Sc. Thesis: \textbf{Virtual Machine Selection Heuristic for Multicast Overlay Trees in the Cloud}}
+        %     % %\resumeItem{Co-Authored Publication: \href{https://arxiv.org/abs/2402.09527}{Design and Implementation of A Scalable Financial Exchange in the Cloud}}
+        %     % \resumeItem{M.Sc. Thesis: \textbf{"Virtual Machine Selection Heuristic for Multicast Overlay Trees in the Cloud"} -- (\href{https://github.com/duclos-cavalcanti/TreeBuilder}{\textit{Link}})}
+        %     %\resumeItem{M.Sc. Thesis: \textbf{"Virtual Machine Selection Heuristic for Financial Exchanges in the Cloud"} -- (\href{https://github.com/duclos-cavalcanti/TreeBuilder}{\textit{Cloud TreeBuilder}})}
+        %     % \resumeItem{\textbf{Related Coursework}: Operating Systems, Machine Learning Methods, High-Performance Computing Lab}
+        %     %\resumeItem{\textbf{Related Coursework}: Machine Learning Methods, HW-SW Co-Design, High Performance Computing Lab}
+        % \resumeItemListEnd
+    \resumeSubheading
+        {Technical University of Munich}{Oct 2016 -- Sept 2020}
+        {B.Sc. Electrical and Computer Engineering}{Munich, Germany}
+  \resumeSubHeadingListEnd
+
+%
 \end{document}
