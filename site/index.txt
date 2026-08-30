@@ -18,40 +18,50 @@
 ________________________________________________________________________________
 
 I'm a computer engineer living in New York with a B.Sc. and M.Sc. from the
-Technical University of Munich. Currently collaborating on independent research
-with Dr. Anirudh Sivaraman and PhD. Muhammad Haseeb of Systems@NYU on
-distributed, low-latency networking in the cloud.
+Technical University of Munich. I have collaborated in the past on independent 
+research with Dr. Anirudh Sivaraman and PhD. Muhammad Haseeb of Systems@NYU on
+distributed, low-latency networking for financial exchanges in the cloud.
 
-Beyond that I have a strong background in embedded systems, FPGAs,
-high-performance computing, and development for Linux/UNIX environments.
-For the longer story see @/about/ — for the full CV see @/resume/.
+Today I work at Ripple as a Software Engineer building custody infrastructure in
+Rust. I began on the Key Management System (KMS): a unified abstraction over
+heterogeneous HSM and MPC backends (e.g. IBM, Luna) for secure key storage,
+wrapping, and cryptographic signing. More recently I've been building Managed 
+Custody, a greenfield Rust product that orchestrates Ripple Custody over AWS 
+infrastructure for tier-1 and tier-2 banks. As a team of three, we own the 
+complete SDLC, from infra and development to end-to-end testing. That 
+ownership, autonomy, and greenfield slate brought me to fully embrace the 
+current agent-native software-development paradigm, leveraging a crew of 
+role-specialized agents to carry tickets from plan to merge and significantly 
+contribute to our ~6 month design to production sprint.
+
+Beyond that I have a strong background in embedded systems, digital design, 
+FPGAs, high-performance computing, and development for Linux/UNIX environments.
 
 [002] Research
 ________________________________________________________________________________
 
-The work centers on Jasper, a scalable financial exchange in the cloud. My
-master thesis built TreeBuilder, a heuristic that selects VMs by present cloud
+The work centers on Onyx, a highly scalable and performant financial exchange in 
+the cloud, published at ACM SIGCOMM '25, a flagship venue in computer networking. 
+My master thesis built TreeBuilder, a heuristic that selects VMs by present cloud 
 conditions to improve a multicast tree's latency, both before and at runtime.
 
-- Jasper         https://arxiv.org/abs/2402.09527
+- Onyx           https://arxiv.org/abs/2402.09527
 - TreeBuilder    https://github.com/duclos-cavalcanti/TreeBuilder
 - SIGCOMM '24    https://dl.acm.org/doi/abs/10.1145/3672202.3673728
+- SIGCOMM '25    https://dl.acm.org/doi/abs/10.1145/3718958.3750530
 
 [003] Projects
 ________________________________________________________________________________
 
 - TreeBuilder    https://github.com/duclos-cavalcanti/TreeBuilder
-- SpaceInvaders  https://github.com/duclos-cavalcanti/FreeRTOS-SpaceInvaders
-- Hamming-Code   https://github.com/duclos-cavalcanti/microsemi-error-detection
-- OpenMPI VI     https://github.com/duclos-cavalcanti/Open-MPI-ValueIteration
-- shmenu         https://github.com/duclos-cavalcanti/shmenu
-- serve          https://github.com/duclos-cavalcanti/serve
+- Agent Factory  https://github.com/duclos-cavalcanti/agent-factory
 
 [004] Tooling
 ________________________________________________________________________________
 
 Mastering one's tools matters as much as the craft — or I just enjoy hacking my
-setup. Daily-driver Linux for a long time; fond of the freedom in the ecosystem.
+setup. Daily-driver of Linux for a long time, love the freedom and autonomy 
+in the ecosystem.
 
 - dotfiles       https://github.com/duclos-cavalcanti/dotfiles
 
@@ -61,4 +71,4 @@ ________________________________________________________________________________
 - resume         @/resume/
 - github         https://github.com/duclos-cavalcanti
 - linkedin       https://www.linkedin.com/in/duclos-cavalcanti/
-- email          <a href=mailto:me@duclos.dev>me@duclos.dev</a>
+- email          <a href=mailto:daniel@duclos.dev>daniel@duclos.dev</a>
