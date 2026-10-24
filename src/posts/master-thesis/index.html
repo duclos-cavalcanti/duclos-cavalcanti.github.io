@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>duclos.dev — master thesis</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<div id="wrap">
+
+<nav>
+  <a href="../../" id="logo">duclos.dev</a>
+  <a href="../../about/">about</a>
+  <a href="../../posts/">posts</a>
+  <a href="../../resume/">resume</a>
+  <a href="../../contact/">contact</a>
+</nav>
+
+<p>2024-10-22 &middot; research, cloud</p>
+
+<h1>Master Thesis — VM Selection for Financial Exchanges</h1>
+
+<p>After a challenging year I finally defended my master thesis on "VM Selection
+for Financial Exchanges in the Cloud", my final credit at the Technical
+University of Munich. Co-advised by <a href="https://haseeblums.github.io/">PhD. Muhammad Haseeb</a> and
+<a href="https://anirudhsk.github.io/">Dr. Anirudh Sivaraman</a> (Systems@NYU), and <a href="https://nrasadi.github.io/">PhD. Navidreza Asadi</a> and
+Prof. Dr.-Ing. Wolfgang Kellerer (LKN, TUM).</p>
+
+<ul>
+  <li><a href="https://github.com/duclos-cavalcanti/TreeBuilder">Code and docs</a></li>
+</ul>
+
+<img src="/img/MA_Design.png" alt="TreeBuilder design">
+
+<h2>abstract</h2>
+
+<p>Cloud computing has revolutionized the deployment of software services by
+providing virtualized resources rented on-demand. Financial exchanges are
+exploring migrating to the cloud for scalability and reduced cost. But the
+cloud's inherent network variance and lack of native multicast challenge the
+fair, low-latency dissemination modern exchanges require.</p>
+
+<p>Jasper implements a multicast solution for cloud-based exchanges, reaching
+ultra-low latency via an overlay proxy tree, kernel bypass, and clock
+synchronization. It does not fully address "stragglers" — underperforming VMs
+that degrade system performance.</p>
+
+<p>TreeBuilder enhances Jasper by intelligently selecting nodes from a pool to form
+a multicast tree, specifically targeting straggler VMs. Using straightforward
+heuristics (WEIGHTED, P90, P50) it improves latency while staying lightweight
+and modular. An instance of TreeBuilder's BEST-WEIGHTED tree showed the lowest
+90th-percentile latency for its worst receiver at 312 us — ~7.7% below
+LemonDrop's 338 us — while remaining an accessible, extensible technique with
+considerable scalability.</p>
+
+<footer>Daniel Duclos-Cavalcanti &copy; 2026</footer>
+
+</div>
+</body>
+</html>
