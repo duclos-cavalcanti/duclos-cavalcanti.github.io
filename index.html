@@ -1,99 +1,84 @@
-<!doctype html><html lang=en>
-<title>duclos.dev - home</title>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=Description content="Daniel Duclos-Cavalcanti — Computer Engineer. Distributed Systems, Low-latency, Embedded, FPGAs, Linux/UNIX.">
-<style>
-body{overflow-y:scroll;font:16px monospace,monospace}
-pre{margin:0;overflow-x:hidden}
-.t{text-decoration:none}
-a#l{color:#a00}
-@media(max-width:999px){body{font-size:1.94vw}}
-@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}#l{color:#F33}}
-img,#b{max-width:80ch}
-span{display:inline-block}
-</style>
-<div style="display:table;margin:16px auto" id=a><div id=b><pre>
-<span><a href=/ class=t id=l>duclos.dev</a>     <a href=/about/>about</a>  <a href=/posts/>posts</a>  <a href=/resume/>resume</a>  <a href=/contact/>contact</a></span>
+<!doctype html>
+<html lang="en">
+<head>
+<title>duclos.dev</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrap">
 
+<nav>
+  <a href="." id="logo">duclos.dev</a>
+  <a href="about/">about</a>
+  <a href="posts/">posts</a>
+  <a href="resume/">resume</a>
+  <a href="contact/">contact</a>
+</nav>
 
-+------------------------------------------------------------------------------+
-|                                                                              |
-|   $ whoami                                                                   |
-|   daniel duclos-cavalcanti — computer engineer, new york                     |
-|                                                                              |
-|   $ _                                                                        |
-|                                                                              |
-+------------------------------------------------------------------------------+
+<h1>Daniel Duclos-Cavalcanti</h1>
 
-* Overview ............................................................... [<a class=t href=#001>001</a>]
-* Research ............................................................... [<a class=t href=#002>002</a>]
-* Projects ............................................................... [<a class=t href=#003>003</a>]
-* Tooling ................................................................ [<a class=t href=#004>004</a>]
-* Links .................................................................. [<a class=t href=#005>005</a>]
+<h2>overview</h2>
 
-
-<span id=001>[001]</span> Overview
-________________________________________________________________________________
-
-I'm a computer engineer living in New York with a B.Sc. and M.Sc. from the
-Technical University of Munich. I have collaborated in the past on independent 
+<p>I'm a computer engineer living in New York with a B.Sc. and M.Sc. from the
+Technical University of Munich. I have collaborated in the past on independent
 research with Dr. Anirudh Sivaraman and PhD. Muhammad Haseeb of Systems@NYU on
-distributed, low-latency networking for financial exchanges in the cloud.
+distributed, low-latency networking for financial exchanges in the cloud.</p>
 
-Today I work at Ripple as a Software Engineer building custody infrastructure in
+<p>Today I work at Ripple as a Software Engineer building custody infrastructure in
 Rust. I began on the Key Management System (KMS): a unified abstraction over
 heterogeneous HSM and MPC backends (e.g. IBM, Luna) for secure key storage,
-wrapping, and cryptographic signing. More recently I've been building Managed 
-Custody, a greenfield Rust product that orchestrates Ripple Custody over AWS 
-infrastructure for tier-1 and tier-2 banks. As a team of three, we own the 
-complete SDLC, from infra and development to end-to-end testing. That 
-ownership, autonomy, and greenfield slate brought me to fully embrace the 
-current agent-native software-development paradigm, leveraging a crew of 
-role-specialized agents to carry tickets from plan to merge and significantly 
-contribute to our ~6 month design to production sprint.
+wrapping, and cryptographic signing. More recently I've been building Managed
+Custody, a greenfield Rust product that orchestrates Ripple Custody over AWS
+infrastructure for tier-1 and tier-2 banks. As a team of three, we own the
+complete SDLC, from infra and development to end-to-end testing.</p>
 
-Beyond that I have a strong background in embedded systems, digital design, 
-FPGAs, high-performance computing, and development for Linux/UNIX environments.
+<p>Beyond that I have a strong background in embedded systems, digital design,
+FPGAs, high-performance computing, and development for Linux/UNIX environments.</p>
 
-<span id=002>[002]</span> Research
-________________________________________________________________________________
+<h2>research</h2>
 
-The work centers on Onyx, a highly scalable and performant financial exchange in 
-the cloud, published at ACM SIGCOMM '25, a flagship venue in computer networking. 
-My master thesis built TreeBuilder, a heuristic that selects VMs by present cloud 
-conditions to improve a multicast tree's latency, both before and at runtime.
+<p>The work centers on Onyx, a highly scalable and performant financial exchange in
+the cloud, published at ACM SIGCOMM '25, a flagship venue in computer networking.
+My master thesis built TreeBuilder, a heuristic that selects VMs by present cloud
+conditions to improve a multicast tree's latency, both before and at runtime.</p>
 
-- Onyx           <a href=https://arxiv.org/abs/2402.09527>https://arxiv.org/abs/2402.09527</a>
-- TreeBuilder    <a href=https://github.com/duclos-cavalcanti/TreeBuilder>https://github.com/duclos-cavalcanti/TreeBuilder</a>
-- SIGCOMM '24    <a href=https://dl.acm.org/doi/abs/10.1145/3672202.3673728>https://dl.acm.org/doi/abs/10.1145/3672202.3673728</a>
-- SIGCOMM '25    <a href=https://dl.acm.org/doi/abs/10.1145/3718958.3750530>https://dl.acm.org/doi/abs/10.1145/3718958.3750530</a>
+<ul>
+  <li><a href="https://arxiv.org/abs/2402.09527">Onyx</a></li>
+  <li><a href="https://github.com/duclos-cavalcanti/TreeBuilder">TreeBuilder</a></li>
+  <li><a href="https://dl.acm.org/doi/abs/10.1145/3672202.3673728">SIGCOMM '24</a></li>
+  <li><a href="https://dl.acm.org/doi/abs/10.1145/3718958.3750530">SIGCOMM '25</a></li>
+</ul>
 
-<span id=003>[003]</span> Projects
-________________________________________________________________________________
+<h2>projects</h2>
 
-- TreeBuilder    <a href=https://github.com/duclos-cavalcanti/TreeBuilder>https://github.com/duclos-cavalcanti/TreeBuilder</a>
-- Agent Factory  <a href=https://github.com/duclos-cavalcanti/agent-factory>https://github.com/duclos-cavalcanti/agent-factory</a>
+<ul>
+  <li><a href="https://github.com/duclos-cavalcanti/TreeBuilder">TreeBuilder</a></li>
+  <li><a href="https://github.com/duclos-cavalcanti/agent-factory">Agent Factory</a></li>
+</ul>
 
-<span id=004>[004]</span> Tooling
-________________________________________________________________________________
+<h2>tooling</h2>
 
-Mastering one's tools matters as much as the craft — or I just enjoy hacking my
-setup. Daily-driver of Linux for a long time, love the freedom and autonomy 
-in the ecosystem.
+<p>Mastering one's tools matters as much as the craft — or I just enjoy hacking my
+setup. Daily-driver of Linux for a long time, love the freedom and autonomy
+in the ecosystem.</p>
 
-- dotfiles       <a href=https://github.com/duclos-cavalcanti/dotfiles>https://github.com/duclos-cavalcanti/dotfiles</a>
+<ul>
+  <li><a href="https://github.com/duclos-cavalcanti/dotfiles">dotfiles</a></li>
+</ul>
 
-<span id=005>[005]</span> Links
-________________________________________________________________________________
+<h2>links</h2>
 
-- resume         <a href=/resume/>resume/</a>
-- github         <a href=https://github.com/duclos-cavalcanti>https://github.com/duclos-cavalcanti</a>
-- linkedin       <a href=https://www.linkedin.com/in/duclos-cavalcanti/>https://www.linkedin.com/in/duclos-cavalcanti/</a>
-- email          <a href=mailto:daniel@duclos.dev>daniel@duclos.dev</a>
+<ul>
+  <li><a href="resume/">resume</a></li>
+  <li><a href="https://github.com/duclos-cavalcanti">github</a></li>
+  <li><a href="https://www.linkedin.com/in/duclos-cavalcanti/">linkedin</a></li>
+  <li><a href="mailto:daniel@duclos.dev">daniel@duclos.dev</a></li>
+</ul>
 
-________________________________________________________________________________
+<footer>Daniel Duclos-Cavalcanti &copy; 2026</footer>
 
-Daniel Duclos-Cavalcanti (C) 2026
-
-</pre></div></div>
+</div>
+</body>
+</html>
