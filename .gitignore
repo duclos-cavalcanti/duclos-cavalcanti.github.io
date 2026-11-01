@@ -2,6 +2,9 @@
 # to the gh-pages branch. Not committed.
 public/
 
+# Local scratch — not part of the site.
+work/
+
 # LaTeX build stamp (resume/resume.pdf IS committed so CI can embed it).
 resume/.resume
 
